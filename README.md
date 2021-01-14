@@ -43,7 +43,7 @@
 
 *   ### Wireframes
 
-    -   All Devices Wireframe (Adobe XD) - [View](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/)
+    -   Wireframes for 4 devices (Adobe XD) - [View](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/)
 
 
 # Technologies Used
@@ -58,7 +58,7 @@
 
 1. [VS Code:](https://code.visualstudio.com/)
     - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
-1. [SCSS:](https://code.visualstudio.com/)
+1. [SCSS:](https://en.wikipedia.org/wiki/Sass_(stylesheet_language))
     - SCSS helped me write better and faster CSS. I used the 'Live Sass Compiler' extension from VS Code to compile SCSS in realtime.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google Fonts was used to import my font of choice into CSS for use throughout the website.
