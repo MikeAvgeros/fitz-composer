@@ -1,45 +1,74 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Fitz logo](https://www.dropbox.com/s/2xd6v1rjnmtmxls/fitz-logo.png?raw=1)
 
-Welcome USER_NAME,
+<h2>This is my First Milestone Project (User Centric Website) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'Fitz'.</h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# User Experience Design (UX)
 
-## Gitpod Reminders
+-   ### User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+    -   #### User's Goals
+        1. As a User, I want to quickly and easily identify if the site's owner will be suitable for my project.
+        2. As a User, I want to be able to quickly and easily navigate the site to find suitable content that will aid my decision.
+        3. As a User, I want to be able to quickly and easily contact the site's owner.
 
-`python3 -m http.server`
+    -   #### Returning Visitor Goals
+        1. As a Returning Visitor, I want to find information about the different services offered.
+        2. As a Returning Visitor, I want to find out about more information about the site's owner.
+        3. As a Returning Visitor, I want to find what previous client think of the site's owner.
 
-A blue button should appear to click: *Make Public*,
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to be able to see if there are any newly added work examples, photos and testimonials.
+        2. As a Frequent User, I want to check to see if the site's owner offers any new services.
+        3. As a Frequent User, I want to have a section where I can sign up for newsletter, so I can get the latest offers and news.
 
-Another blue button should appear to click: *Open Browser*.
+-   ### Owner Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    -   #### Owner's Goals
+        1. As the Owner, I want to get contacted from potential clients.
+        2. As the Owner, I want to present my services in the best of light.
+        3. As the Owner, I want to work on a variety of interesting projects.
 
-A blue button should appear to click: *Make Public*,
+-   ### Design
 
-Another blue button should appear to click: *Open Browser*.
+    -   #### Colour Scheme
+        -   The main colours used are charcoal, white and yellow.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    -   #### Typography
+        -   The Mukta Vaani and Roboto fonts are used throughout the whole website with Sans Serif as the fallback font in case the font isn't being imported into the site correctly.
 
-## Updates Since The Instructional Video
+    -   #### Landing Page
+        -   A full screen, muted, loopable video related to the site owner is used to create a modern and engaging first experience.
+        -   A catchy header title is used as an effective call to action.
+        -   Quotes from the owner are used to make the site feel more personal.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+*   ### Wireframes
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    -   All Devices Wireframe (Adobe XD) - [View](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Technologies Used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Languages Used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Frameworks, Libraries & Tools Used
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+1. [VS Code:](https://code.visualstudio.com/)
+    - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
+1. [SCSS:](https://code.visualstudio.com/)
+    - SCSS helped me write better and faster CSS. I used the 'Live Sass Compiler' extension from VS Code to compile SCSS in realtime.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google Fonts was used to import my font of choice into CSS for use throughout the website.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used to add icons to the website for aesthetic and UX purposes.
+1. [Git:](https://git-scm.com/)
+    - Git was used to help me manage and keep track of my source code history.
+1. [Sourcetree:](https://www.sourcetreeapp.com/)
+    - Sourcetree simplified and visualized my interaction with the Git repository.
+1. [GitHub:](https://github.com/)
+    - GitHub was used to store and manage the Git repository.
+1. [Adobe XD:](https://www.adobe.com/uk/products/xd.html)
+    - Adobe XD was used to create the [wireframes](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/) during the design and prototyping process.
