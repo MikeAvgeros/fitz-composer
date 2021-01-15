@@ -1,6 +1,6 @@
 ![Fitz logo](https://www.dropbox.com/s/2xd6v1rjnmtmxls/fitz-logo.png?raw=1)
 
-<h2>This is my First Milestone Project (User Centric Website) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'Fitz'.</h2>
+## This is my First Milestone Project (User Centric Website) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'Fitz'.
 
 # User Experience Design (UX)
 
@@ -41,34 +41,32 @@
         -   A catchy header title is used as an effective call to action.
         -   Quotes from the owner are used to make the site feel more personal.
 
-*   ### Wireframes
-
+-   ### Wireframes
     -   Wireframes for 4 devices (Adobe XD) - [View](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/)
 
+# Technologies
 
-# Technologies Used
-
-### Languages Used
+### Languages
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-### Frameworks, Libraries & Tools Used
+### Libraries, Tools & Resources
 
 1. [VS Code:](https://code.visualstudio.com/)
     - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
-1. [SCSS:](https://en.wikipedia.org/wiki/Sass_(stylesheet_language))
+2. [SCSS:](https://en.wikipedia.org/wiki/Sass_(stylesheet_language))
     - SCSS helped me write better and faster CSS. I used the 'Live Sass Compiler' extension from VS Code to compile SCSS in realtime.
-1. [Google Fonts:](https://fonts.google.com/)
+3. [Google Fonts:](https://fonts.google.com/)
     - Google Fonts was used to import my font of choice into CSS for use throughout the website.
-1. [Font Awesome:](https://fontawesome.com/)
+4. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used to add icons to the website for aesthetic and UX purposes.
-1. [Git:](https://git-scm.com/)
+5. [Git:](https://git-scm.com/)
     - Git was used to help me manage and keep track of my source code history.
-1. [Sourcetree:](https://www.sourcetreeapp.com/)
+6. [Sourcetree:](https://www.sourcetreeapp.com/)
     - Sourcetree simplified and visualized my interaction with the Git repository.
-1. [GitHub:](https://github.com/)
+7. [GitHub:](https://github.com/)
     - GitHub was used to store and manage the Git repository.
-1. [Adobe XD:](https://www.adobe.com/uk/products/xd.html)
+8. [Adobe XD:](https://www.adobe.com/uk/products/xd.html)
     - Adobe XD was used to create the [wireframes](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/) during the design and prototyping process.
