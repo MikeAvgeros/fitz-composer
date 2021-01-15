@@ -1,6 +1,6 @@
 ![Fitz logo](https://www.dropbox.com/s/2xd6v1rjnmtmxls/fitz-logo.png?raw=1)
 
-## This is my First Milestone Project (User Centric Website) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'Fitz'.
+## This is my First Milestone Project (User Centric Frontend Development) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'Fitz'.
 
 # User Experience Design (UX)
 
@@ -70,3 +70,7 @@
     - GitHub was used to store and manage the Git repository.
 8. [Adobe XD:](https://www.adobe.com/uk/products/xd.html)
     - Adobe XD was used to create the [wireframes](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/) during the design and prototyping process.
+9. [CDNJS:](https://cdnjs.com/)
+    - CDNJS was used to quickly import library files in my HTML document.
+10. [Bootstrap 4.5.3:](https://getbootstrap.com/)
+    - Bootstrap was used to help me customize and design my site.
