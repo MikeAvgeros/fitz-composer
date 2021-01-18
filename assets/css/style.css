@@ -1,0 +1,19 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  .logo-img {
+      width: 96px;
+      height: 54px;
+  }
+
+  .navbar-nav, .navbar-toggler {
+      margin-right: 3rem;
+  }
+
+  .nav-item {
+      text-align: center;
+  }
