@@ -1,13 +1,14 @@
+:root {
+    --clr-bg:  #000000;
+    --clr-text: #fafafa;
+    --clr-accent: #ffd54f;
+}
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-  }
-
-  .logo-img {
-      width: 96px;
-      height: 54px;
   }
 
   .navbar-nav, .navbar-toggler {
@@ -16,4 +17,22 @@
 
   .nav-item {
       text-align: center;
+  }
+
+  body {
+      width: 100%;
+  }
+
+  .wrapper {
+    display: grid;
+  }
+
+  .navbar-bg {
+      opacity: 0.8;
+  }
+
+  .landing-page {
+      height: 100vh;
+      background: url("https://ik.imagekit.io/emapm0xdwkx/home-img_tZnFk_vzB5LQ.jpg") no-repeat center;
+      background-size: cover;
   }
