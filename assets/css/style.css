@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400&family=Roboto&display=swap');
+
 :root {
     --clr-bg:  #000000;
-    --clr-text: #fafafa;
-    --clr-accent: #ffd54f;
+    --clr-text: #ffd54f;
+    --ff-main: 'Mukta Vaani', sans-serif;
+    --ff-secondary: 'Roboto', sans-serif;
 }
 
 *, ::before, ::after {
@@ -12,7 +15,7 @@
   }
 
   .navbar-nav, .navbar-toggler {
-      margin-right: 3rem;
+      margin-right: 2rem;
   }
 
   .nav-item {
@@ -25,14 +28,44 @@
 
   .wrapper {
     display: grid;
+    background-color: var(--clr-bg);
+  }
+
+   .landing-page {
+    height: 100vh;
+    background: url("https://ik.imagekit.io/emapm0xdwkx/home-img_tZnFk_vzB5LQ.jpg") no-repeat center;
+    background-size: cover;
   }
 
   .navbar-bg {
+      background-color: var(--clr-bg);
       opacity: 0.8;
   }
 
-  .landing-page {
-      height: 100vh;
-      background: url("https://ik.imagekit.io/emapm0xdwkx/home-img_tZnFk_vzB5LQ.jpg") no-repeat center;
-      background-size: cover;
+  .navbar-nav a {
+      color: var(--clr-text) !important;
+      letter-spacing: 2px;
+      font-family: var(--ff-main);
+      font-size: 20px;
+  }
+
+  .navbar-toggler {
+    border: 1px solid var(--clr-text) !important;
+  }
+
+  i {
+    color: var(--clr-text);
+    opacity: 0.8;
+  }
+
+  .hero-header {
+    padding-top: 20vh;
+    text-align: center;
+    color: var(--clr-text);
+    font-family: var(--ff-secondary);
+  }
+
+  .section-title {
+      color: var(--clr-text);
+      font-family: var(--ff-main);
   }
