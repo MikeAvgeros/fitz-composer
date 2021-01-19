@@ -14,32 +14,28 @@
     box-sizing: border-box;
   }
 
-  .navbar-nav, .navbar-toggler {
-      margin-right: 2rem;
-  }
-
-  .nav-item {
-      text-align: center;
-  }
-
-  body {
-      width: 100%;
-  }
-
   .wrapper {
-    display: grid;
+    width: 100%;
     background-color: var(--clr-bg);
   }
 
-   .landing-page {
+  .landing-page {
     height: 100vh;
-    background: url("https://ik.imagekit.io/emapm0xdwkx/home-img_tZnFk_vzB5LQ.jpg") no-repeat center;
+    background: url("https://ik.imagekit.io/emapm0xdwkx/jefferson-santos-fCEJGBzAkrU-unsplash__1__4WAp0v8j6Y7q.jpg") no-repeat center;
     background-size: cover;
   }
 
   .navbar-bg {
       background-color: var(--clr-bg);
       opacity: 0.8;
+  }
+
+  .navbar-toggler {
+    margin-right: 3rem;
+  }
+
+  .nav-item {
+    text-align: center;
   }
 
   .navbar-nav a {
@@ -58,9 +54,15 @@
     opacity: 0.8;
   }
 
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(16, calc(100vw / 16));
+    grid-template-rows: repeat(9, calc(100vh / 9));
+  }
+
   .hero-header {
-    padding-top: 20vh;
-    text-align: center;
+    grid-column: 3 / 9;
+    grid-row: 5;
     color: var(--clr-text);
     font-family: var(--ff-secondary);
   }
