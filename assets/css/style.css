@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400&family=Roboto&display=swap');
-
 :root {
     --clr-bg:  #000000;
-    --clr-landing: rgba(0,0,0, 0.7);
-    --clr-primary: #ffd54f;
-    --clr-secondary: #c3c3c3;
-    --ff-primary: 'Mukta Vaani', sans-serif;
-    --ff-secondary: 'Roboto', sans-serif;
+    --clr-primary: #ffc845;
+    --clr-secondary: #caccd1;
 }
 
 *, ::before, ::after {
@@ -16,8 +11,12 @@
     border: 0;
   }
 
+  body {
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
   .landing-page {
-    background-color: var(--clr-landing);
+    background-color: rgba(0,0,0,0.7);
     height: 100vh;
     position: relative;
   }
@@ -35,11 +34,11 @@
 
   .navbar-bg {
       background-color: var(--clr-bg);
-      opacity: 0.8;
+      opacity: 0.9;
   }
 
   .navbar-toggler {
-    margin-right: 3rem;
+    margin-right: 42px;
   }
 
   .nav-item {
@@ -62,14 +61,27 @@
   }
 
   .hero {
+    height: inherit;
     display: grid;
-    grid-template-columns: repeat(9, calc(100vw / 9));
-    grid-template-rows: repeat(16, calc(100vh / 16));
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(16, 1fr);
   }
 
   .hero-header {
-    grid-column: 3 / 9;
-    grid-row: 4;
+    grid-column: 2 / 9;
+    grid-row: 4 / 8;
+    text-align: center;
+  }
+
+  .hero-quote {
+    grid-column: 2 / 9;
+    grid-row: 10 / 12; 
+  }
+
+  .cta {
+    grid-column: 2 / 9;
+    grid-row: 14 / 15;
+    justify-self: center;
   }
 
   .hero-title {
@@ -82,11 +94,6 @@
     font-family: var(--ff-primary);
   }
 
-  .hero-quote {
-    grid-column: 3 / 8;
-    grid-row: 10;
-  }
-
   .hero-quote blockquote {
     color: var(--clr-primary);
     font-family: var(--ff-secondary);
@@ -97,16 +104,10 @@
     font-family: var(--ff-secondary);
   }
 
-  .cta {
-    grid-column: 3/ 9;
-    grid-row: 14;
-  }
-
   .button {
     background: var(--clr-primary);
     border: 2px solid var(--clr-primary);
-    border-radius: 20px;
-    margin-left: 20px;
+    border-radius: 15px;
   }
 
   .button-primary {
@@ -132,10 +133,43 @@
 
   .button .cta-secondary {
     color: var(--clr-primary);
-    
   }
 
-  .section-title {
-      color: var(--clr-primary);
-      font-family: var(--ff-primary);
+  .about-page {
+    background-color: var(--clr-bg);
+    height: auto;
+    position: relative;
+  }
+
+  .about {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+
+  .about-header {
+    grid-column: 1 / 10;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+
+  .about-title {
+    color: var(--clr-primary);
+  }
+
+  .about-subtitle {
+    color: var(--clr-secondary);
+  }
+
+  .about-img {
+    grid-column: 2 / 9;
+    grid-row: 3 / 8;
+    background: url("https://ik.imagekit.io/emapm0xdwkx/Fitz_Studio/IMG_8032_DZZ3FRaBj.JPG") no-repeat center center/contain;
+  }
+
+  .about-main {
+    color: var(--clr-secondary);
+    grid-column: 2 / 9;
+    grid-row: 8 / 14;
   }

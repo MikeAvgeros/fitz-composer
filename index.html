@@ -11,6 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Original Music Composition for Film and TV - Record Production">
     <!--- CSS LINKS --->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">   
 </head>
@@ -23,23 +24,23 @@
             aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#work" class="nav-link">Work</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <section id="home" class="hero">
             <header class="hero-header">
                 <h1 class="hero-title">
-                    Bespoke Music Composition & Song Production
+                    Bespoke Music Composition & <br> Record Production
                 </h1>
-                <h4 class="hero-subtitle">
-                    Story-telling through sound
-                </h4>
+                <h5 class="hero-subtitle">
+                    Storytelling through sound
+                </h5>
             </header>
             <section class="hero-quote">
                 <blockquote>
@@ -50,43 +51,43 @@
                 </cite>
             </section>
             <footer class="cta">
-                <button type="button" class="button button-primary"><a href="#contact" class="cta-primary">Contact Me</a></button>
-                <button type="button" class="button button-secondary"><a href="#about" class="cta-secondary">Learn More</a></button>
+                <button type="button" class="button button-primary"><a href="#contact" class="cta-primary"><strong>Contact Me</strong></a></button>
+                <button type="button" class="button button-secondary"><a href="#about" class="cta-secondary"><strong>Learn More</strong></a></button>
             </footer>
         </section>
     </section>
     <!----- ABOUT PAGE ----->
-    <div id="about" class="about">
-        <header class="about-header">
-            <h1 class="section-title">
-                About Me
-            </h1>
-        </header>
-
-        <section class="about-section">
-            <h2 class="about-title">
-
-            </h2>
-            <h3 class="about-subtitle">
-
-            </h3>
-            <p>
-
-            </p>
+    <section class="about-page">
+        <section id="about" class="about">
+            <div class="about-img"></div>
+            <header class="about-header">
+                <h3 class="about-title">
+                    Francesco Marseglia
+                </h3>
+                <h4 class="about-subtitle">
+                    Film Composer | Record Producer
+                </h4>
+            </header>
+            <section class="about-main">
+                <p>
+                    Growing up as a classically trained musician and composer, Francesco soon developed an interest in a variety of music styles and genres. He joined numerous rock bands as a teenager and pursued jazz studies in his undergraduate years at a Music Conservatory in Italy. After his studies, he moved to London in 2012 to undertake a Master Degree in Music Composition for Film and TV. Since then, he has worked on a multitude of film, theatre, TV and song productions with established names in the industry and up-and-coming filmmakers and artists. 
+                </p>
+                <p>
+                    In 2016, he joined an award winning Music Production Studio in Central London as a senior Music Producer and Sound Engineer. Alongside his studio activities, he continues to work as a freelancer on projects, writing and producing in a wide range of music genres.
+                </p>
+            </section>
         </section>
-    </div>
+    </section>
     <!----- WORK PAGE ----->
     <div id="work" class="work">
         <header class="work-header">
-            <h1 class="section-title">
+            <h2 class="section-title">
                 My Work
-            </h1>
+            </h2>
         </header>
-
         <section class="work-section">
 
         </section>
-
         <section class="testimonials">
             <blockquote>
 
@@ -99,11 +100,10 @@
     <!----- SERVICES PAGE ----->
     <div id="services" class="services">
         <header class="services-header">
-            <h1 class="section-title">
+            <h2 class="section-title">
                 Services
-            </h1>
+            </h2>
         </header>
-
         <section class="services-section">
 
         </section>
@@ -111,11 +111,10 @@
     <!----- GALLERY PAGE ----->
     <div id="gallery" class="gallery">
         <header class="gallery-header">
-            <h1 class="section-title">
+            <h2 class="section-title">
                 Gallery
-            </h1>
+            </h2>
         </header>
-
         <section class="gallery-section">
 
         </section>
@@ -123,11 +122,11 @@
     <!----- CONTACT PAGE ----->
     <div id="contact" class="contact">
         <header class="contact-header">
-            <h1 class="section-title">
+            <h2 class="section-title">
                 Contact
-            </h1>
+            </h2>
+            <hr class="underline">
         </header>
-
         <section class="contact-section">
 
         </section>
