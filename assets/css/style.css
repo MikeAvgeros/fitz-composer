@@ -137,8 +137,7 @@
 
   .about-page {
     background-color: var(--clr-bg);
-    height: auto;
-    position: relative;
+    height: 160vh;
   }
 
   .about {
@@ -150,7 +149,7 @@
 
   .about-header {
     grid-column: 1 / 10;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     text-align: center;
   }
 
@@ -162,14 +161,48 @@
     color: var(--clr-secondary);
   }
 
+  img {
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+
   .about-img {
-    grid-column: 2 / 9;
-    grid-row: 3 / 8;
-    background: url("https://ik.imagekit.io/emapm0xdwkx/Fitz_Studio/IMG_8032_DZZ3FRaBj.JPG") no-repeat center center/contain;
+    grid-column: 1 / 10;
+    grid-row: 4 / 5;
+    padding-top: 2rem;
   }
 
   .about-main {
     color: var(--clr-secondary);
     grid-column: 2 / 9;
-    grid-row: 8 / 14;
+    grid-row: 5 / 17;
+  }
+
+  .work-page {
+    background-color: var(--clr-bg);
+    height: 200vh;
+  }
+
+  .work {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+
+  .work-header {
+    grid-column: 1 / 10;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+
+  .work-title {
+    color: var(--clr-primary);
+  }
+
+  .work-subtitle {
+    color: var(--clr-secondary);
   }
