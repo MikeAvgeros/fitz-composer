@@ -82,6 +82,7 @@
 
   .hero-quote {
     grid-area: quote;
+    justify-self: center;
     align-self: center;
     font-family: var(--ff-secondary);
   }
@@ -191,11 +192,12 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 95vw 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
     "header header header"
-    ".....  main   ......"
-    ".....  quote  ......"
+    ".....  iframe ......"
+    ".....  links  ......"
+    ".....  quotes ......"
   }
 
   .work-header {
@@ -213,8 +215,21 @@
     color: var(--clr-secondary);
   }
 
-  .work-main {
-    grid-area: main;
+  .work-iframe {
+    grid-area: iframe;
+    display: grid;
+    justify-items: center;
+  }
+
+  .work-iframe iframe {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+  }
+
+  .work-links {
+    grid-area: links;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     row-gap: 1rem;
@@ -225,5 +240,20 @@
     max-width: 200px;
     max-height: 200px;
     border-radius: 8px;
+    padding-bottom: 1rem;
   }
 
+  .testimonials {
+    grid-area: quotes;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    color: var(--clr-secondary);
+    padding-top: 2rem;
+  }
+
+  .review {
+    max-width: 200px;
+    max-height: 200px;
+    padding-bottom: 1rem;
+    justify-self: center;
+  }
