@@ -46,6 +46,7 @@
   }
 
   .navbar-nav a {
+      grid-area: nav;
       color: var(--clr-primary) !important;
       letter-spacing: 2px;
       font-family: var(--ff-primary);
@@ -63,25 +64,30 @@
   .hero {
     height: inherit;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: 1fr 60vw 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "nav    nav    nav   "
+    "header header header"
+    "...... quote  ......"
+    "...... cta    ......"
   }
 
   .hero-header {
-    grid-column: 2 / 9;
-    grid-row: 4 / 8;
+    grid-area: header;
     text-align: center;
+    align-self: center;
   }
 
   .hero-quote {
-    grid-column: 2 / 9;
-    grid-row: 10 / 12; 
+    grid-area: quote;
+    align-self: center;
   }
 
   .cta {
-    grid-column: 2 / 9;
-    grid-row: 14 / 15;
+    grid-area: cta;
     justify-self: center;
+    align-self: center;
   }
 
   .hero-title {
@@ -137,20 +143,21 @@
 
   .about-page {
     background-color: var(--clr-bg);
-    height: 160vh;
-  }
-
-  .about {
-    height: inherit;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header"
+    "...... img    ......"
+    "...... main   ......"
   }
 
   .about-header {
-    grid-column: 1 / 10;
-    grid-row: 3 / 4;
+    grid-area: header;
     text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .about-title {
@@ -161,33 +168,22 @@
     color: var(--clr-secondary);
   }
 
-  img {
-    display: grid;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-
   .about-img {
-    grid-column: 1 / 10;
-    grid-row: 4 / 5;
-    padding-top: 2rem;
+    grid-area: img;
+    border-radius: 8px;
+    margin: 0 auto;
   }
 
   .about-main {
     color: var(--clr-secondary);
-    grid-column: 2 / 9;
-    grid-row: 5 / 17;
+    grid-area: main;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .work-page {
     background-color: var(--clr-bg);
     height: 200vh;
-  }
-
-  .work {
-    height: inherit;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(16, 1fr);
