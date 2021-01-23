@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Questrial&display=swap');
+
 :root {
-    --clr-bg:  #000000;
+    --clr-bg:  #101010;
     --clr-primary: #ffc845;
     --clr-secondary: #caccd1;
+    --ff-primary: 'Lato', sans-serif;
+    --ff-secondary: 'Questrial', sans-serif;
 }
 
 *, ::before, ::after {
@@ -11,12 +15,8 @@
     border: 0;
   }
 
-  body {
-    font-family: 'Libre Franklin', sans-serif;
-  }
-
   .landing-page {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(10,10,10,0.7);
     height: 100vh;
     position: relative;
   }
@@ -77,43 +77,43 @@
     grid-area: header;
     text-align: center;
     align-self: center;
+    font-family: var(--ff-primary);
   }
 
   .hero-quote {
     grid-area: quote;
     align-self: center;
+    font-family: var(--ff-secondary);
   }
 
   .cta {
     grid-area: cta;
     justify-self: center;
     align-self: center;
+    font-family: var(--ff-secondary);
   }
 
   .hero-title {
     color: var(--clr-primary);
-    font-family: var(--ff-primary);
   }
 
   .hero-subtitle {
     color: var(--clr-secondary);
-    font-family: var(--ff-primary);
   }
 
   .hero-quote blockquote {
     color: var(--clr-primary);
-    font-family: var(--ff-secondary);
+    text-align: justify;
   }
 
   .hero-quote cite {
     color: var(--clr-secondary);
-    font-family: var(--ff-secondary);
   }
 
   .button {
     background: var(--clr-primary);
     border: 2px solid var(--clr-primary);
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   .button-primary {
@@ -125,11 +125,9 @@
   }
 
   .cta button a {
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
+    text-decoration: none;
     padding: 10px;
-    font-family: var(--ff-primary);
     color: var(--clr-primary);
   }
 
@@ -157,7 +155,8 @@
     grid-area: header;
     text-align: center;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    font-family: var(--ff-primary);
   }
 
   .about-title {
@@ -170,8 +169,12 @@
 
   .about-img {
     grid-area: img;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin: 0 auto;
   }
 
   .about-main {
@@ -179,20 +182,27 @@
     grid-area: main;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    text-align: justify;
+    font-family: var(--ff-secondary);
   }
 
   .work-page {
     background-color: var(--clr-bg);
-    height: 200vh;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: 1fr 95vw 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header"
+    ".....  main   ......"
+    ".....  quote  ......"
   }
 
   .work-header {
-    grid-column: 1 / 10;
-    grid-row: 2 / 3;
+    grid-area: header;
     text-align: center;
+    font-family: var(--ff-primary);
+    padding-bottom: 2rem;
   }
 
   .work-title {
@@ -202,3 +212,18 @@
   .work-subtitle {
     color: var(--clr-secondary);
   }
+
+  .work-main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 1rem;
+    justify-items: center;
+  }
+
+  .music-link img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+  }
+
