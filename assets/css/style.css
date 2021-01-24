@@ -2,8 +2,9 @@
 
 :root {
     --clr-bg:  #101010;
+    --clr-fg: #073d44;
     --clr-primary: #ffc845;
-    --clr-secondary: #caccd1;
+    --clr-secondary: #f3f4f7;
     --ff-primary: 'Lato', sans-serif;
     --ff-secondary: 'Questrial', sans-serif;
 }
@@ -13,6 +14,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: 0;
   }
 
   .landing-page {
@@ -33,8 +35,8 @@
   }
 
   .navbar-bg {
-      background-color: var(--clr-bg);
-      opacity: 0.9;
+    background-color: var(--clr-bg);
+    opacity: 0.9;
   }
 
   .navbar-toggler {
@@ -48,9 +50,9 @@
   .navbar-nav a {
       grid-area: nav;
       color: var(--clr-primary) !important;
-      letter-spacing: 2px;
       font-family: var(--ff-primary);
       font-size: 20px;
+      letter-spacing: 2px;
   }
 
   .navbar-toggler {
@@ -64,51 +66,54 @@
   .hero {
     height: inherit;
     display: grid;
-    grid-template-columns: 1fr 60vw 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid: 80px repeat(3, auto) / 1fr 80vw 1fr;
     grid-template-areas:
     "nav    nav    nav   "
-    "header header header"
+    "...... header ......"
     "...... quote  ......"
     "...... cta    ......"
+    ;
   }
 
   .hero-header {
     grid-area: header;
-    text-align: center;
-    align-self: center;
+    display: grid;
     font-family: var(--ff-primary);
   }
 
-  .hero-quote {
-    grid-area: quote;
-    justify-self: center;
-    align-self: center;
-    font-family: var(--ff-secondary);
-  }
-
-  .cta {
-    grid-area: cta;
-    justify-self: center;
-    align-self: center;
-    font-family: var(--ff-secondary);
+  .hero-title, .hero-subtitle {
+    place-self: center center;
   }
 
   .hero-title {
     color: var(--clr-primary);
+    font-size: calc(3rem + 1vw);
   }
 
   .hero-subtitle {
     color: var(--clr-secondary);
+    font-size: calc(1rem + 1vw);
+    transform: translateX(-3rem);
+  }
+
+  .hero-quote {
+    grid-area: quote;
+    display: grid;
+    font-family: var(--ff-secondary);
   }
 
   .hero-quote blockquote {
-    color: var(--clr-primary);
+    place-self: center center;
     text-align: justify;
+    color: var(--clr-primary);
+    font-size: calc(1rem + 1vw);
   }
 
-  .hero-quote cite {
-    color: var(--clr-secondary);
+  .cta {
+    grid-area: cta;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--ff-secondary);
   }
 
   .button {
@@ -118,18 +123,20 @@
   }
 
   .button-primary {
+    width: 8rem;
+    height: 3rem;
     background-color: var(--clr-primary);
   }
 
   .button-secondary {
+    width: 8rem;
+    height: 3rem;
     background: none;
   }
 
   .cta button a {
-    display: inline-block;
     text-decoration: none;
-    padding: 10px;
-    color: var(--clr-primary);
+    font-size: 20px;
   }
 
   .button .cta-primary {
@@ -144,28 +151,30 @@
     background-color: var(--clr-bg);
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 80vw 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid: 80px repeat(3, auto) / 1fr 80vw 1fr;
     grid-template-areas:
+    "nav    nav    nav   "
     "header header header"
     "...... img    ......"
     "...... main   ......"
+    ;
   }
 
   .about-header {
     grid-area: header;
     text-align: center;
-    padding-top: 2.5rem;
     padding-bottom: 2rem;
     font-family: var(--ff-primary);
   }
 
   .about-title {
     color: var(--clr-primary);
+    font-size: calc(2rem + 1vw);
   }
 
   .about-subtitle {
     color: var(--clr-secondary);
+    font-size: calc(1rem + 1vw);
   }
 
   .about-img {
@@ -179,25 +188,26 @@
   }
 
   .about-main {
-    color: var(--clr-secondary);
     grid-area: main;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
     text-align: justify;
+    color: var(--clr-secondary);
     font-family: var(--ff-secondary);
+    font-size: calc(.8rem + 1vw);
   }
 
   .work-page {
     background-color: var(--clr-bg);
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 95vw 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid: 80px repeat(3, auto) / 1fr 95vw 1fr;
     grid-template-areas:
+    "nav    nav    nav   "
     "header header header"
     ".....  iframe ......"
     ".....  links  ......"
     ".....  quotes ......"
+    ;
   }
 
   .work-header {
@@ -209,10 +219,12 @@
 
   .work-title {
     color: var(--clr-primary);
+    font-size: calc(2rem + 1vw);
   }
 
   .work-subtitle {
     color: var(--clr-secondary);
+    font-size: calc(1rem + 1vw);
   }
 
   .work-iframe {
@@ -246,14 +258,49 @@
   .testimonials {
     grid-area: quotes;
     display: grid;
+    row-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     color: var(--clr-secondary);
     padding-top: 2rem;
   }
 
   .review {
-    max-width: 200px;
+    border: 2px solid var(--clr-fg);
+    background-color: var(--clr-fg);
+    border-radius: 5px;
+    max-width: 250px;
     max-height: 200px;
-    padding-bottom: 1rem;
     justify-self: center;
+    text-align: justify;
+    padding: 10px;
+    font-size: calc(.8rem + 1vw);
+  }
+
+  .services-page {
+    background-color: var(--clr-bg);
+    height: auto;
+    display: grid;
+    grid: 80px repeat(3, auto) / 1fr 95vw 1fr;
+    grid-template-areas:
+    "nav    nav    nav   "
+    "header header header"
+    ".....  iframe ......"
+    ".....  links  ......"
+    ".....  quotes ......"
+    ;
+  }
+
+  .services-header {
+    grid-area: header;
+    text-align: center;
+    font-family: var(--ff-primary);
+    padding-bottom: 2rem;
+  }
+
+  .services-title {
+    color: var(--clr-primary);
+  }
+
+  .services-subtitle {
+    color: var(--clr-secondary);
   }
