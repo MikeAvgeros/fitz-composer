@@ -165,45 +165,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--ff-secondary);
 }
 
-.button {
-  background: var(--clr-primary);
+.cta a {
+  width: 7rem;
+  height: 3rem;
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
-}
-
-.button-primary {
-  width: 7rem;
-  height: 3rem;
-  background-color: var(--clr-primary);
-  transform: translateX(-1.5vw);
-}
-
-.button-secondary {
-  width: 7rem;
-  height: 3rem;
-  background: none;
-  transform: translateX(1.5vw);
-}
-
-.cta button a {
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-secondary);
   font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .cta-primary {
   color: var(--clr-bg);
+  background-color: var(--clr-primary);
+  transform: translateX(-1.5vw);
 }
 
-.button-primary:hover, .button .cta-primary:hover {
-  background-color: var(--clr-fg);
-  color: var(--clr-secondary);
-}
-
-.button .cta-secondary {
+.cta-secondary {
   color: var(--clr-primary);
+  background: none;
+  transform: translateX(1.5vw);
+}
+
+.cta-primary:hover {
+  color: var(--clr-secondary);
+  background-color: var(--clr-fg);
+}
+
+.cta-secondary:hover {
+  color: var(--clr-secondary);
+  background-color: var(--clr-fg);
 }
 
 .about-page {
