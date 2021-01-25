@@ -10,12 +10,12 @@
 }
 
 *, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
 
 .landing-page {
   background-color: rgba(10,10,10,0.7);
@@ -138,12 +138,14 @@
 .hero-title {
   color: var(--clr-primary);
   font-size: calc(2.5rem + 2vw);
+  letter-spacing: 2px;
 }
 
 .hero-subtitle {
   color: var(--clr-secondary);
   font-weight: lighter;
   font-size: calc(.8rem + 1vw);
+  letter-spacing: 2px;
   transform: translateY(-2rem);
 }
 
@@ -225,12 +227,15 @@
 
 .about-title {
   color: var(--clr-primary);
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1.8rem + 1vw);
+  letter-spacing: 2px;
 }
 
 .about-subtitle {
   color: var(--clr-secondary);
-  font-size: calc(1rem + 1vw);
+  font-size: calc(.8rem + 1vw);
+  letter-spacing: 2px;
+  padding-top: 10px;
 }
 
 .about-img {
@@ -275,12 +280,14 @@
 
 .work-title {
   color: var(--clr-primary);
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1.8rem + 1vw);
+  letter-spacing: 2px;
 }
 
 .work-subtitle {
   color: var(--clr-secondary);
-  font-size: calc(1rem + 1vw);
+  font-size: calc(.8rem + 1vw);
+  letter-spacing: 2px;
 }
 
 .work-iframe {
@@ -321,7 +328,7 @@
 }
 
 .review {
-  border: 2px solid var(--clr-fg);
+  border: 2px solid var(--clr-primary);
   background-color: var(--clr-fg);
   border-radius: 5px;
   max-width: 250px;
@@ -355,8 +362,12 @@
 
 .services-title {
   color: var(--clr-primary);
+  font-size: calc(1.8rem + 1vw);
+  letter-spacing: 2px;
 }
 
 .services-subtitle {
   color: var(--clr-secondary);
+  font-size: calc(.8rem + 1vw);
+  letter-spacing: 2px;
 }
