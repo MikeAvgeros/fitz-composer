@@ -49,13 +49,18 @@
   z-index: 4;
 }
 
-.menu-btn {
+input[type="checkbox"] {
   display: none;
 }
 
-.navigation .menu-btn:checked ~ .menu {
+input[type="checkbox"]:checked + .menu {
   max-height: 300px;
   transition: max-height .25s ease-in;
+}
+
+.navigation .menu {
+  max-height: 0;
+  transition: max-height .25s ease-out;
 }
 
 .navigation .menu {
@@ -108,15 +113,10 @@
   color: var(--clr-secondary);
 }
 
-.navigation .menu {
-  max-height: 0;
-  transition: max-height .25s ease-out;
-}
-
 .hero {
   height: inherit;
   display: grid;
-  grid: 80px repeat(3, auto) / 1fr 80vw 1fr;
+  grid: 80px repeat(3, auto)/ 1fr 80vw 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "...... header ......"
@@ -138,6 +138,7 @@
 .hero-title {
   color: var(--clr-primary);
   font-size: calc(2.5rem + 2vw);
+  font-weight: lighter;
   letter-spacing: 2px;
 }
 
@@ -332,11 +333,23 @@
   background-color: var(--clr-fg);
   border-radius: 5px;
   max-width: 250px;
-  max-height: 200px;
+  max-height: auto;
   justify-self: center;
   text-align: justify;
+  display: grid;
   padding: 10px;
   font-size: calc(.8rem + 1vw);
+}
+
+.review img {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  justify-self: center;
+}
+
+.review blockquote, .review cite, .review img {
+  padding: 10px 0;
 }
 
 .services-page {
