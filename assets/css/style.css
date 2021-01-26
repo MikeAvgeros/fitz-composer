@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Questrial&display=swap');
 
 :root {
-    --clr-bg:  #101010;
-    --clr-fg: #073d44;
-    --clr-primary: #ffc845;
-    --clr-secondary: #f3f4f7;
-    --ff-primary: 'Lato', sans-serif;
-    --ff-secondary: 'Questrial', sans-serif;
+  --clr-bg:  #202020;
+  --clr-primary: #ffc845;
+  --clr-secondary: #f3f4f7;
+  --ff-primary: 'Lato', sans-serif;
+  --ff-secondary: 'Questrial', sans-serif;
 }
 
 *, ::before, ::after {
@@ -18,7 +17,7 @@
 }
 
 .landing-page {
-  background-color: rgba(10,10,10,0.7);
+  background-color: rgba(20,20,20,0.7);
   height: 100vh;
   position: relative;
 }
@@ -203,7 +202,7 @@ input[type="checkbox"]:checked + .menu {
 
 .cta-secondary:hover {
   color: var(--clr-secondary);
-  background-color: var(--clr-fg);
+  background-color: var(--clr-bg);
 }
 
 .about-page {
@@ -262,7 +261,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(3, auto) / 1fr 95vw 1fr;
+  grid: 80px repeat(4, auto) / 1fr 95vw 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
@@ -289,6 +288,7 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-secondary);
   font-size: calc(.8rem + 1vw);
   letter-spacing: 2px;
+  padding-top: 10px;
 }
 
 .work-iframe {
@@ -314,30 +314,26 @@ input[type="checkbox"]:checked + .menu {
 
 .music-link img {
   max-width: 200px;
-  max-height: 200px;
+  max-height: 250px;
   border-radius: 8px;
   padding-bottom: 1rem;
 }
 
-.testimonials {
+.reviews {
   grid-area: quotes;
   display: grid;
   row-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   color: var(--clr-secondary);
   padding-top: 2rem;
 }
 
 .review {
-  border: 2px solid var(--clr-primary);
-  background-color: var(--clr-fg);
-  border-radius: 5px;
-  max-width: 250px;
+  font-family: var(--ff-secondary);
+  max-width: 300px;
   max-height: auto;
   justify-self: center;
-  text-align: justify;
   display: grid;
-  padding: 10px;
   font-size: calc(.8rem + 1vw);
 }
 
@@ -349,20 +345,19 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .review blockquote, .review cite, .review img {
-  padding: 10px 0;
+  color: var(--clr-secondary);
+  padding: 20px 0;
 }
 
 .services-page {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(3, auto) / 1fr 95vw 1fr;
+  grid: 80px repeat(2, auto) / 1fr 95vw 1fr;
   grid-template-areas:
-  "nav    nav    nav   "
-  "header header header"
-  ".....  iframe ......"
-  ".....  links  ......"
-  ".....  quotes ......"
+  "nav    nav      nav   "
+  "header header   header"
+  ".....  services ......"
   ;
 }
 
@@ -380,6 +375,83 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .services-subtitle {
+  color: var(--clr-secondary);
+  font-size: calc(.8rem + 1vw);
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+.services {
+  grid-area: services;
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  color: var(--clr-secondary);
+  padding-top: 2rem;
+}
+
+.service {
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  font-family: var(--ff-secondary);
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+  display: grid;
+  justify-self: center;
+  padding-bottom: 10px;
+  font-size: calc(.8rem + 1vw);
+}
+
+.service img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.service h4 {
+  justify-self: center;
+}
+
+.service p {
+  justify-self: center;
+  padding: 20px 10px;
+}
+
+.service a {
+  border: 2px solid var(--clr-bg);
+  border-radius: 5px;
+  background-color: var(--clr-bg);
+  place-self: end center;
+}
+
+.gallery-page {
+  background-color: var(--clr-bg);
+  height: auto;
+  display: grid;
+  grid: 80px repeat(2, auto) / 1fr 95vw 1fr;
+  grid-template-areas:
+  "nav    nav      nav   "
+  "header header   header"
+  ".....  gallery  ......"
+  ;
+}
+
+.gallery-header {
+  grid-area: header;
+  text-align: center;
+  font-family: var(--ff-primary);
+  padding-bottom: 2rem;
+}
+
+.gallery-title {
+  color: var(--clr-primary);
+  font-size: calc(1.8rem + 1vw);
+  letter-spacing: 2px;
+}
+
+.gallery-subtitle {
   color: var(--clr-secondary);
   font-size: calc(.8rem + 1vw);
   letter-spacing: 2px;
