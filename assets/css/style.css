@@ -2,8 +2,9 @@
 
 :root {
   --clr-bg:  #202020;
-  --clr-primary: #ffc845;
-  --clr-secondary: #f3f4f7;
+  --clr-fg:  #333333;
+  --clr-primary: #e4b13b;
+  --clr-secondary: #dadada;
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Questrial', sans-serif;
 }
@@ -14,6 +15,10 @@
   padding: 0;
   border: 0;
   outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .landing-page {
@@ -146,7 +151,7 @@ input[type="checkbox"]:checked + .menu {
   font-weight: lighter;
   font-size: calc(.8rem + 1vw);
   letter-spacing: 2px;
-  transform: translateY(-2rem);
+  transform: translate(.25rem, -3.5rem);
 }
 
 .hero-quote {
@@ -157,7 +162,6 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote blockquote {
   place-self: end center;
-  text-align: justify;
   color: var(--clr-primary);
   font-size: calc(.8rem + 1vw);
 }
@@ -202,7 +206,7 @@ input[type="checkbox"]:checked + .menu {
 
 .cta-secondary:hover {
   color: var(--clr-secondary);
-  background-color: var(--clr-bg);
+  background-color: var(--clr-fg);
 }
 
 .about-page {
@@ -329,6 +333,8 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .review {
+  background-color: var(--clr-fg);
+  border-radius: 8px;
   font-family: var(--ff-secondary);
   max-width: 300px;
   max-height: auto;
@@ -346,7 +352,7 @@ input[type="checkbox"]:checked + .menu {
 
 .review blockquote, .review cite, .review img {
   color: var(--clr-secondary);
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 
 .services-page {
@@ -391,10 +397,8 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .service {
-  background-color: var(--clr-primary);
-  color: var(--clr-bg);
-  font-family: var(--ff-secondary);
-  border-radius: 5px;
+  background-color: var(--clr-fg);
+  border-radius: 8px;
   width: 300px;
   height: auto;
   display: grid;
@@ -404,33 +408,30 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .service img {
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
-  padding-bottom: 20px;
+  border-radius: 8px;
+  width: 300px;
+  height: 250px;
+  padding-bottom: 30px;
 }
 
 .service h4 {
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
   justify-self: center;
 }
 
 .service p {
+  color: var(--clr-secondary);
+  font-family: var(--ff-secondary);
   justify-self: center;
   padding: 20px 10px;
-}
-
-.service a {
-  border: 2px solid var(--clr-bg);
-  border-radius: 5px;
-  background-color: var(--clr-bg);
-  place-self: end center;
 }
 
 .gallery-page {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(2, auto) / 1fr 95vw 1fr;
+  grid: 80px repeat(2, auto) / 1fr 80vw 1fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -455,4 +456,72 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-secondary);
   font-size: calc(.8rem + 1vw);
   letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+.gallery {
+  grid-area: gallery;
+  overflow: hidden;
+}
+
+.gallery figure {
+  position: relative;
+  display: flex;
+  width: 500%;
+  left: 0;
+  animation: 25s carousel infinite;
+}
+
+.gallery figure img {
+  width: 20%;
+}
+
+@keyframes carousel {
+  0% {left: 0;}
+  10% {left: 0;}
+  20%  {left: -100%;}
+  30%  {left: -100%;}
+  40% {left: -200%;}
+  50% {left: -200%;}
+  60%  {left: -300%;}
+  70%  {left: -300%;}
+  80% {left: -400%;}
+  90% {left: -400%;}
+  100%  {left: 0;}
+}
+
+.contact-page {
+  background-color: var(--clr-bg);
+  height: auto;
+  display: grid;
+  grid: 80px repeat(2, auto) / 1fr 70vw 1fr;
+  grid-template-areas:
+  "nav    nav      nav   "
+  "header header   header"
+  ".....  contact  ......"
+  ;
+}
+
+.contact-header {
+  grid-area: header;
+  text-align: center;
+  font-family: var(--ff-primary);
+  padding-bottom: 2rem;
+}
+
+.contact-title {
+  color: var(--clr-primary);
+  font-size: calc(1.8rem + 1vw);
+  letter-spacing: 2px;
+}
+
+.contact-subtitle {
+  color: var(--clr-secondary);
+  font-size: calc(.8rem + 1vw);
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+.contact-form {
+  grid-area: contact;
 }
