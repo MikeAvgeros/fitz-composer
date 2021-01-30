@@ -462,6 +462,7 @@ input[type="checkbox"]:checked + .menu {
 .gallery {
   grid-area: gallery;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .gallery figure {
@@ -494,7 +495,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(2, auto) / 1fr 70vw 1fr;
+  grid: 80px repeat(2, auto) / 1fr 80vw 1fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -524,4 +525,53 @@ input[type="checkbox"]:checked + .menu {
 
 .contact-form {
   grid-area: contact;
+  display: grid;
+  border-radius: 8px;
+  font-family: var(--ff-primary);
+}
+
+.contact-form form .input-field {
+  padding: 10px;
+}
+
+.contact-form form label {
+  color: var(--clr-primary);
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  opacity: 0.7;
+}
+
+.contact-form form .snd-btn {
+  padding: 10px;
+}
+
+button[type="submit"], input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  background-color: var(--clr-fg);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border: 1px solid var(--clr-primary);
+}
+
+input, textarea {
+  color: var(--clr-secondary);
+}
+
+button[type="submit"] {
+  width: 20%;
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  font-family: var(--ff-primary);
 }
