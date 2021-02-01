@@ -4,7 +4,7 @@
   --clr-bg:  #202020;
   --clr-fg:  #333333;
   --clr-primary: #e4b13b;
-  --clr-secondary: #dadada;
+  --clr-secondary: #d3d3d3;
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Questrial', sans-serif;
 }
@@ -136,14 +136,13 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
 }
 
-.hero-title, .hero-subtitle, .hero-quote {
+.hero-title, .hero-subtitle {
   place-self: end start;
 }
 
 .hero-title {
   color: var(--clr-primary);
   font-size: 2.5rem;
-  font-weight: lighter;
   letter-spacing: 2px;
 }
 
@@ -157,6 +156,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote {
   grid-area: quote;
+  place-self: end center;
   display: grid;
   font-family: var(--ff-secondary);
 }
@@ -174,15 +174,15 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .cta a {
-  width: calc(6rem + 2vw);
-  height: calc(2.5rem + 1vw);
+  width: 6rem;
+  height: 2.5rem;
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--ff-secondary);
-  font-size: calc(.8rem + .5vw);
+  font-size: .8rem;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -231,12 +231,12 @@ input[type="checkbox"]:checked + .menu {
 
 .about-title {
   color: var(--clr-primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .about-subtitle {
   color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 10px;
 }
 
@@ -286,12 +286,12 @@ input[type="checkbox"]:checked + .menu {
 
 .work-title {
   color: var(--clr-primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .work-subtitle {
   color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 10px;
 }
 
@@ -350,7 +350,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: lighter;
   letter-spacing: 2px;
 }
@@ -388,12 +388,12 @@ input[type="checkbox"]:checked + .menu {
 
 .services-title {
   color: var(--clr-primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .services-subtitle {
   color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 10px;
 }
 
@@ -413,17 +413,17 @@ input[type="checkbox"]:checked + .menu {
 .service {
   background-color: var(--clr-fg);
   border-radius: 8px;
-  width: 100%;
+  width: 300px;
   height: auto;
   display: grid;
   justify-self: center;
   padding-bottom: 10px;
-  font-size: calc(.8rem + 1vw);
+  font-size: 1.1rem;
 }
 
 .service img {
   border-radius: 8px;
-  width: 100%;
+  width: 300px;
   height: 250px;
   padding-bottom: 30px;
 }
@@ -433,7 +433,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   justify-self: center;
   letter-spacing: 2px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: lighter;
 }
 
@@ -465,12 +465,12 @@ input[type="checkbox"]:checked + .menu {
 
 .gallery-title {
   color: var(--clr-primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .gallery-subtitle {
   color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 10px;
 }
 
@@ -532,12 +532,12 @@ input[type="checkbox"]:checked + .menu {
 
 .contact-title {
   color: var(--clr-primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .contact-subtitle {
   color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 10px;
 }
 
@@ -567,6 +567,7 @@ input[type="checkbox"]:checked + .menu {
 
 .required-icon {
   color: red;
+  opacity: 0.8;
 }
 
 input::placeholder, textarea::placeholder {
@@ -603,7 +604,7 @@ button[type="submit"] {
   background-color: var(--clr-primary);
   color: var(--clr-bg);
   font-family: var(--ff-primary);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bolder;
   letter-spacing: 1px;
 }
@@ -617,7 +618,7 @@ button[type="submit"]:hover {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px auto / 1fr;
+  grid: 40px auto / 1fr;
   grid-template-areas:
   "nav "
   "footer"
@@ -636,7 +637,84 @@ button[type="submit"]:hover {
   color: var(--clr-secondary);
   place-self: end start;
   padding-left: 10px;
-  padding-bottom: 10px;
-  font-size: 10px;
+  font-size: 8px;
   letter-spacing: 1px;
+  transform: translateY(40px);
+}
+
+.contacts {
+  font-family: var(--ff-secondary);
+  color: var(--clr-secondary);
+  place-self: start end;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  padding-right: 20px;
+}
+
+@media (min-width: 375px) {
+  .hero-quote blockquote {
+    color: var(--clr-primary);
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .hero-quote blockquote {
+    color: var(--clr-primary);
+    font-size: 1.1rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta a {
+    width: 7rem;
+    height: 2.8rem;
+    font-size: 1rem;
+  }
+
+  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+    font-size: 2.3rem;
+  }
+
+  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .review-title {
+    font-size: 1.5rem;
+  }
+
+  .music-link img {
+    max-width: 300px;
+    max-height: 350px;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+  }
+  
+  .review {
+    max-width: 300px;
+    font-size: 1.2rem;
+  }
+
+  .service {
+    width: 350px;
+    font-size: 1.2rem;
+  }
+  
+  .service img {
+    width: 350px;
+    height: 300px;
+  }
+  
+  .service h4 {
+    font-size: 1.5rem;
+  }
 }
