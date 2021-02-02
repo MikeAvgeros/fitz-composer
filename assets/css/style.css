@@ -267,12 +267,13 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(4, auto) / 1fr 95% 1fr;
+  grid: 80px repeat(5, auto) / 1fr 95% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
   ".....  iframe ......"
   ".....  links  ......"
+  ".....  qtitle ......"
   ".....  quotes ......"
   ;
 }
@@ -310,28 +311,54 @@ input[type="checkbox"]:checked + .menu {
   max-width: 100%;
   max-height: auto;
   border-radius: 8px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .work-links {
   grid-area: links;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 1rem;
   justify-items: center;
 }
 
 .music-link img {
   max-width: 250px;
-  max-height: 300px;
+  max-height: 250px;
   border-radius: 8px;
   padding-bottom: 1rem;
+}
+
+@keyframes zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.1);
+  }
+}
+
+.music-link img:hover {
+  animation: zoom .5s forwards;
+}
+
+.review-title {
+  grid-area: qtitle;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+  justify-self: center;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 1rem;
 }
 
 .reviews {
   grid-area: quotes;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: var(--clr-secondary);
 }
 
@@ -346,13 +373,8 @@ input[type="checkbox"]:checked + .menu {
   font-size: 1.1rem;
 }
 
-.review-title {
-  font-family: var(--ff-primary);
-  color: var(--clr-primary);
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: lighter;
-  letter-spacing: 2px;
+.review:hover {
+  animation: zoom .5s forwards;
 }
 
 .review img {
@@ -405,9 +427,10 @@ input[type="checkbox"]:checked + .menu {
 .services {
   grid-area: services;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 2rem;
-  color: var(--clr-secondary);
   padding-top: 1rem;
+  color: var(--clr-secondary);
 }
 
 .service {
@@ -419,6 +442,10 @@ input[type="checkbox"]:checked + .menu {
   justify-self: center;
   padding-bottom: 10px;
   font-size: 1.1rem;
+}
+
+.service:hover {
+  animation: zoom .5s forwards;
 }
 
 .service img {
@@ -448,7 +475,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(2, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(2, auto) / 1fr 95% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -599,12 +626,12 @@ input, textarea {
 }
 
 button[type="submit"] {
-  width: 5rem;
+  width: 4rem;
   border: 1px solid var(--clr-primary);
   background-color: var(--clr-primary);
   color: var(--clr-bg);
   font-family: var(--ff-primary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 1px;
 }
@@ -614,7 +641,7 @@ button[type="submit"]:hover {
   background-color: var(--clr-fg);
 }
 
-.footer-area {
+.footer-section {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
@@ -628,29 +655,24 @@ button[type="submit"]:hover {
 .footer {
   grid-area: footer;
   display: grid;
-  height: 10vh;
+  height: auto;
   background-color: var(--clr-fg);
 }
 
-.copyright {
-  font-family: var(--ff-secondary);
-  color: var(--clr-secondary);
-  place-self: end start;
-  padding-left: 10px;
-  font-size: 8px;
-  letter-spacing: 1px;
-  transform: translateY(40px);
+.socials ul {
+  list-style: none;
+  text-align: center;
 }
 
-.contacts {
-  font-family: var(--ff-secondary);
+.contact-list li a {
+  display: block;
+  text-decoration: none;
   color: var(--clr-secondary);
-  place-self: start end;
-  padding-left: 10px;
+  font-family: var(--ff-primary);
+  font-size: .8rem;
+  letter-spacing: 2px;
   padding-bottom: 10px;
-  font-size: 8px;
-  letter-spacing: 1px;
-  padding-right: 20px;
+  padding-top: 10px;
 }
 
 @media (min-width: 375px) {
@@ -658,11 +680,15 @@ button[type="submit"]:hover {
     color: var(--clr-primary);
     font-size: 1rem;
   }
+
+  button[type="submit"] {
+    width: 5rem;
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 425px) {
   .hero-quote blockquote {
-    color: var(--clr-primary);
     font-size: 1.1rem;
   }
 
@@ -694,7 +720,7 @@ button[type="submit"]:hover {
 
   .music-link img {
     max-width: 300px;
-    max-height: 350px;
+    max-height: 300px;
     border-radius: 8px;
     padding-bottom: 1rem;
   }
@@ -716,5 +742,40 @@ button[type="submit"]:hover {
   
   .service h4 {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .hero-quote blockquote {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+    font-size: 2.8rem;
+  }
+
+  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-main {
+    font-size: 1.3rem;
+  }
+
+  .review-title {
+    font-size: 1.6rem;
+  }
+  
+  .review {
+    max-width: 350px;
+    font-size: 1.3rem;
   }
 }
