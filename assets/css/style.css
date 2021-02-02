@@ -236,7 +236,7 @@ input[type="checkbox"]:checked + .menu {
 
 .about-subtitle {
   color: var(--clr-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
@@ -260,7 +260,7 @@ input[type="checkbox"]:checked + .menu {
   padding-top: 2rem;
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .work-page {
@@ -292,7 +292,7 @@ input[type="checkbox"]:checked + .menu {
 
 .work-subtitle {
   color: var(--clr-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
@@ -347,7 +347,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   justify-self: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   letter-spacing: 2px;
   padding: 1rem;
@@ -370,7 +370,7 @@ input[type="checkbox"]:checked + .menu {
   border-radius: 8px;
   justify-self: center;
   display: grid;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .review:hover {
@@ -415,7 +415,7 @@ input[type="checkbox"]:checked + .menu {
 
 .services-subtitle {
   color: var(--clr-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
@@ -441,7 +441,7 @@ input[type="checkbox"]:checked + .menu {
   display: grid;
   justify-self: center;
   padding-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .service:hover {
@@ -460,7 +460,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   justify-self: center;
   letter-spacing: 2px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 
@@ -497,7 +497,7 @@ input[type="checkbox"]:checked + .menu {
 
 .gallery-subtitle {
   color: var(--clr-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
@@ -564,7 +564,7 @@ input[type="checkbox"]:checked + .menu {
 
 .contact-subtitle {
   color: var(--clr-secondary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
@@ -654,20 +654,23 @@ button[type="submit"]:hover {
 
 .footer {
   grid-area: footer;
-  display: grid;
   height: auto;
   background-color: var(--clr-fg);
 }
 
+.socials {
+  display: grid;
+}
+
 .socials ul {
   list-style: none;
-  text-align: center;
+  justify-self: center;
 }
 
 .contact-list li a {
   display: block;
   text-decoration: none;
-  color: var(--clr-secondary);
+  color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: .8rem;
   letter-spacing: 2px;
@@ -715,7 +718,7 @@ button[type="submit"]:hover {
   }
 
   .review-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .music-link img {
@@ -759,19 +762,19 @@ button[type="submit"]:hover {
   }
 
   .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .about-main {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .review-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   
   .review {
