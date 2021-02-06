@@ -43,9 +43,9 @@ html {
   opacity: 0.95;
   position: fixed;
   display: grid;
-  grid: 80px 300px / 1fr 2fr 1fr;
+  grid: 80px 280px / 1fr 2fr 1fr;
   grid-template-areas:
-  "logo .... burger"
+  "logo .... menu"
   "list list list"
   ;
   width: 100%;
@@ -64,11 +64,8 @@ input[type="checkbox"]:checked + .menu {
 
 .navigation .menu {
   max-height: 0;
-  transition: max-height .25s ease-out;
-}
-
-.navigation .menu {
   grid-area: list;
+  transition: max-height .25s ease-out;
 }
 
 .logo {
@@ -77,7 +74,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .menu-icon {
-  grid-area: burger;
+  grid-area: menu;
   place-self: center center;
   font-size: 1.7rem;
   font-weight: lighter;
@@ -96,7 +93,7 @@ input[type="checkbox"]:checked + .menu {
 
 .navigation ul {
   grid-area: list;
-  list-style: none;
+  list-style-type: none;
   text-align: center;
   background-color: var(--clr-bg);
   opacity: 0.95;
@@ -105,7 +102,7 @@ input[type="checkbox"]:checked + .menu {
 
 .menu li a {
   display: block;
-  padding: 10px;
+  padding: 10px 0px;
   text-decoration: none;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
@@ -151,12 +148,11 @@ input[type="checkbox"]:checked + .menu {
   font-weight: lighter;
   font-size: 1rem;
   letter-spacing: 2px;
-  transform: translateY(-3.5rem);
+  transform: translateY(-3rem);
 }
 
 .hero-quote {
   grid-area: quote;
-  place-self: end center;
   display: grid;
   font-family: var(--ff-secondary);
 }
@@ -164,6 +160,14 @@ input[type="checkbox"]:checked + .menu {
 .hero-quote blockquote {
   color: var(--clr-primary);
   font-size: .85rem;
+}
+
+.hero-quote .bq1 {
+  place-self: end center;
+}
+
+.hero-quote .bq2 {
+  display: none;
 }
 
 .cta {
@@ -430,7 +434,7 @@ input[type="checkbox"]:checked + .menu {
   grid-area: services;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 2rem;
+  row-gap: 1rem;
   padding-top: 1rem;
   color: var(--clr-secondary);
 }
@@ -702,6 +706,10 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 375px) {
+  .menu-icon {
+    font-size: 1.8rem;
+  }
+
   .hero-quote blockquote {
     color: var(--clr-primary);
     font-size: 1rem;
@@ -714,7 +722,6 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 425px) {
-
   .menu-icon {
     font-size: 2rem;
   }
@@ -729,6 +736,7 @@ button[type="submit"]:hover {
   
   .hero-subtitle {
     font-size: 1.2rem;
+    transform: translateY(-2.5rem);
   }
 
   .cta a {
@@ -842,5 +850,104 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 1024px) {
+  .menu li {
+    float: left;
+  }
 
+  .menu li a {
+    padding: 0px 15px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navigation {
+    grid: 80px / 1fr 4fr;
+    grid-template-areas:
+    "logo menu"
+    ;
+  }
+
+  .logo {
+    grid-area: logo;
+    place-self: center center;
+  }
+
+  .navigation .menu {
+    max-height: 80px;
+    grid-area: menu;
+    place-self: center center;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.9rem;
+  }
+
+  .hero-quote .bq1 {
+    place-self: end end;
+  }
+
+  .hero-quote .bq2 {
+    display: block;
+    place-self: center end;
+    transform: translateY(1.5rem);
+  }
+
+  .hero-quote blockquote {
+    font-size: 1.4rem;
+  }
+
+  .cta a {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .about-page {
+    grid: 80px repeat(2, auto) / 1fr 40% 1fr 40% 1fr;
+    grid-template-areas:
+    "nav    nav    nav    nav    nav"
+    "header header header header header"
+    "...... img    ...... main   ......"
+    ;
+  }
+
+  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+    font-size: 2.8rem;
+  }
+
+  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-main {
+    font-size: 1.5rem;
+  }
+
+  .about-img {
+    align-self: center;
+  }
+
+  .review-title {
+    font-size: 1.7rem;
+  }
+
+  .services {
+    row-gap: 2rem;
+  }
+
+  .gallery-page {
+    grid: 80px repeat(2, auto) / 1fr 90% 1fr;
+    grid-template-areas:
+    "nav    nav      nav   "
+    "header header   header"
+    ".....  gallery  ......"
+  ;
+  }
 }
+
