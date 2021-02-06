@@ -29,7 +29,7 @@ html {
 
 .landing-page:before {
   content: '';
-  background: url("https://ik.imagekit.io/emapm0xdwkx/jefferson-santos-fCEJGBzAkrU-unsplash__1__4WAp0v8j6Y7q.jpg") no-repeat center center/cover;
+  background: url("https://ik.imagekit.io/emapm0xdwkx/fitz-landing-page_fCZQ32E4w.jpg") no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -79,7 +79,7 @@ input[type="checkbox"]:checked + .menu {
 .menu-icon {
   grid-area: burger;
   place-self: center center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: lighter;
 }
 
@@ -213,7 +213,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(3, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(3, auto) / 1fr 80% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
@@ -247,10 +247,12 @@ input[type="checkbox"]:checked + .menu {
 
 .about-img {
   grid-area: img;
+  justify-self: center;
 }
 
 .about-img img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 8px;
 }
@@ -267,7 +269,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(5, auto) / 1fr 95% 1fr;
+  grid: 80px repeat(5, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
@@ -654,17 +656,33 @@ button[type="submit"]:hover {
 
 .footer {
   grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas:
+  "copyright socials"
+  ;
   height: auto;
   background-color: var(--clr-fg);
 }
 
+.copyright {
+  grid-area: copyright;
+  align-self: end;
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+  font-size: .7rem;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
 .socials {
-  display: grid;
+  grid-area: socials;
+  justify-self: end;
 }
 
 .socials ul {
   list-style: none;
-  justify-self: center;
 }
 
 .contact-list li a {
@@ -676,6 +694,11 @@ button[type="submit"]:hover {
   letter-spacing: 2px;
   padding-bottom: 10px;
   padding-top: 10px;
+  padding-right: 20px;
+}
+
+.contact-list li a:hover {
+  color: var(--clr-secondary);
 }
 
 @media (min-width: 375px) {
@@ -691,6 +714,11 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 425px) {
+
+  .menu-icon {
+    font-size: 2rem;
+  }
+
   .hero-quote blockquote {
     font-size: 1.1rem;
   }
@@ -781,4 +809,38 @@ button[type="submit"]:hover {
     max-width: 350px;
     font-size: 1.3rem;
   }
+}
+
+@media (min-width: 768px) {
+  .hero-quote blockquote {
+    font-size: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+    font-size: 2.6rem;
+  }
+
+  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .about-main {
+    font-size: 1.4rem;
+  }
+
+  .review-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
 }
