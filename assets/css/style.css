@@ -106,7 +106,7 @@ input[type="checkbox"]:checked + .menu {
   text-decoration: none;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + .5vw);
   letter-spacing: 2px;
 }
 
@@ -323,7 +323,7 @@ input[type="checkbox"]:checked + .menu {
 .work-links {
   grid-area: links;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 1rem;
   justify-items: center;
 }
@@ -362,7 +362,7 @@ input[type="checkbox"]:checked + .menu {
 .reviews {
   grid-area: quotes;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   row-gap: 2rem;
   padding-top: 1rem;
   color: var(--clr-secondary);
@@ -399,7 +399,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(2, auto) / 1fr 95% 1fr;
+  grid: 80px repeat(2, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -433,7 +433,7 @@ input[type="checkbox"]:checked + .menu {
 .services {
   grid-area: services;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   row-gap: 1rem;
   padding-top: 1rem;
   color: var(--clr-secondary);
@@ -514,6 +514,9 @@ input[type="checkbox"]:checked + .menu {
 
 .gallery {
   grid-area: gallery;
+  width: 100%;
+  max-width: 960px;
+  justify-self: center;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -581,7 +584,10 @@ input[type="checkbox"]:checked + .menu {
 
 .contact-form {
   grid-area: contact;
+  width: 100%;
+  max-width: 600px;
   display: grid;
+  justify-self: center;
   border-radius: 8px;
   font-family: var(--ff-primary);
   letter-spacing: 1px;
@@ -661,9 +667,9 @@ button[type="submit"]:hover {
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 30% 30% 40%;
   grid-template-areas:
-  "copyright socials"
+  "copyright socials subscribe"
   ;
   height: auto;
   background-color: var(--clr-fg);
@@ -671,38 +677,53 @@ button[type="submit"]:hover {
 
 .copyright {
   grid-area: copyright;
-  align-self: end;
+  display: grid;
+  place-items: end center;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: .7rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding-bottom: 10px;
-  padding-left: 20px;
 }
 
 .socials {
   grid-area: socials;
-  justify-self: end;
+  display: grid;
+  place-items: center center;
 }
 
 .socials ul {
   list-style: none;
 }
 
-.contact-list li a {
+.socials-list li a {
   display: block;
   text-decoration: none;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  font-size: .8rem;
-  letter-spacing: 2px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-right: 20px;
+  font-size: 1rem;
+  padding: 10px 0px;
 }
 
-.contact-list li a:hover {
+.socials-list li a:hover {
   color: var(--clr-secondary);
+}
+
+.subscribe {
+  grid-area: subscribe;
+  display: grid;
+  place-items: center center;
+}
+
+.subscribe-field label {
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+  transform: translateY(-1rem);
+}
+
+.subscribe-field input {
+  background-color: var(--clr-bg);
+  place-self: center end;
 }
 
 @media (min-width: 375px) {
@@ -871,13 +892,15 @@ button[type="submit"]:hover {
 
   .logo {
     grid-area: logo;
-    place-self: center center;
+    place-self: center start;
+    padding-left: 3vw;
   }
 
   .navigation .menu {
     max-height: 80px;
     grid-area: menu;
-    place-self: center center;
+    place-self: center end;
+    padding-right: 3vw;
   }
 
   .hero-title {
@@ -909,7 +932,7 @@ button[type="submit"]:hover {
   }
 
   .about-page {
-    grid: 80px repeat(2, auto) / 1fr 40% 1fr 40% 1fr;
+    grid: 80px repeat(2, auto) / 1fr 40% .5fr 40% 1fr;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -927,18 +950,33 @@ button[type="submit"]:hover {
 
   .about-main {
     font-size: 1.5rem;
+    padding: 0px;
   }
 
   .about-img {
-    align-self: center;
+    align-self: start;
   }
 
   .review-title {
     font-size: 1.7rem;
   }
 
+  .reviews {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    row-gap: 3rem;
+  }
+
+  .review {
+    max-width: 350px;
+  }
+
   .services {
-    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    row-gap: 3rem;
+  }
+
+  .service {
+    width: 350px;
   }
 
   .gallery-page {
@@ -951,3 +989,66 @@ button[type="submit"]:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  .reviews {
+    row-gap: 4rem;
+  }
+  
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    row-gap: 4rem;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .hero-quote .bq1 {
+    place-self: end end;
+  }
+
+  .hero-quote .bq2 {
+    display: block;
+    place-self: center end;
+    transform: translateY(1.5rem);
+  }
+
+  .hero-quote .bq2 {
+    transform: translateY(2rem);
+  }
+
+  .hero-quote blockquote {
+    font-size: 1.5rem;
+  }
+
+  .cta a {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+    font-size: 3rem;
+  }
+
+  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .about-main {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+
+  .about-img {
+    align-self: start;
+  }
+
+  .review-title {
+    font-size: 2rem;
+  }
+}
