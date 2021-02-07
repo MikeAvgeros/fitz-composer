@@ -275,12 +275,13 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 80px repeat(5, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(6, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
-  ".....  iframe ......"
-  ".....  links  ......"
+  ".....  flinks ......"
+  ".....  divider......"
+  ".....  mlinks ......"
   ".....  qtitle ......"
   ".....  quotes ......"
   ;
@@ -322,15 +323,32 @@ input[type="checkbox"]:checked + .menu {
   padding-bottom: 2rem;
 }
 
-.work-links {
-  grid-area: links;
+.music-links, .film-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 1rem;
   justify-items: center;
 }
 
-.music-link img {
+.film-links {
+  grid-area: flinks;
+}
+
+.music-links {
+  grid-area: mlinks;
+  padding-top: 2rem;
+}
+
+.divider {
+  grid-area: divider;
+  width: 25%;
+  height: 2px;
+  border-radius: 5px;
+  justify-self: center;
+  background-color: var(--clr-primary);
+}
+
+.music-link img, .film-link img {
   max-width: 250px;
   max-height: 250px;
   border-radius: 8px;
@@ -346,7 +364,7 @@ input[type="checkbox"]:checked + .menu {
   }
 }
 
-.music-link img:hover {
+.music-link img:hover, .film-link img:hover {
   animation: zoom .5s forwards;
 }
 
@@ -364,7 +382,7 @@ input[type="checkbox"]:checked + .menu {
 .reviews {
   grid-area: quotes;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 2rem;
   padding-top: 1rem;
   color: var(--clr-secondary);
@@ -372,9 +390,8 @@ input[type="checkbox"]:checked + .menu {
 
 .review {
   display: grid;
-  background-color: var(--clr-fg);
   font-family: var(--ff-secondary);
-  max-width: 250px;
+  width: 250px;
   height: auto;
   border-radius: 8px;
   justify-self: center;
@@ -465,7 +482,7 @@ input[type="checkbox"]:checked + .menu {
 
 .service h4 {
   color: var(--clr-primary);
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   justify-self: center;
   letter-spacing: 2px;
   font-size: 1.2rem;
@@ -781,11 +798,9 @@ button[type="submit"]:hover {
     font-size: 1.4rem;
   }
 
-  .music-link img {
+  .music-link img, .film-link img {
     max-width: 300px;
     max-height: 300px;
-    border-radius: 8px;
-    padding-bottom: 1rem;
   }
   
   .review {
@@ -835,11 +850,6 @@ button[type="submit"]:hover {
 
   .review-title {
     font-size: 1.5rem;
-  }
-  
-  .review {
-    max-width: 350px;
-    font-size: 1.3rem;
   }
 }
 
@@ -963,11 +973,6 @@ button[type="submit"]:hover {
     font-size: 1.7rem;
   }
 
-  .reviews {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    row-gap: 3rem;
-  }
-
   .review {
     max-width: 350px;
   }
@@ -978,7 +983,11 @@ button[type="submit"]:hover {
   }
 
   .service {
-    width: 350px;
+    width: 400px;
+  }
+
+  .service img {
+    width: 400px;
   }
 
   .gallery-page {
