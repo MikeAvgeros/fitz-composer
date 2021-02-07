@@ -310,19 +310,6 @@ input[type="checkbox"]:checked + .menu {
   letter-spacing: 2px;
 }
 
-.work-iframe {
-  grid-area: iframe;
-  display: grid;
-  justify-items: center;
-}
-
-.work-iframe iframe {
-  max-width: 100%;
-  max-height: auto;
-  border-radius: 8px;
-  padding-bottom: 2rem;
-}
-
 .music-links, .film-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -332,6 +319,21 @@ input[type="checkbox"]:checked + .menu {
 
 .film-links {
   grid-area: flinks;
+}
+
+.film-link {
+  width: 250px;
+  height: auto;
+  display: grid;
+  justify-self: center;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.film-link p, .music-link p {
+  color: var(--clr-secondary);
+  font-family: var(--ff-secondary);
+  padding-bottom: 10px;
 }
 
 .music-links {
@@ -349,7 +351,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .music-link img, .film-link img {
-  max-width: 250px;
+  width: 250px;
   max-height: 250px;
   border-radius: 8px;
   padding-bottom: 1rem;
@@ -393,6 +395,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-secondary);
   width: 250px;
   height: auto;
+  border: 1px solid var(--clr-primary);
   border-radius: 8px;
   justify-self: center;
   font-size: 1rem;
@@ -794,15 +797,20 @@ button[type="submit"]:hover {
     font-size: 1.2rem;
   }
 
+  .music-link, .film-link {
+    width: 300px;
+    height: auto;
+  }
+
+  .music-link img, .film-link img {
+    width: 300px;
+    max-height: 300px;
+  }
+
   .review-title {
     font-size: 1.4rem;
   }
 
-  .music-link img, .film-link img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-  
   .review {
     max-width: 300px;
     font-size: 1.2rem;
@@ -974,7 +982,7 @@ button[type="submit"]:hover {
   }
 
   .review {
-    max-width: 350px;
+    width: 350px;
   }
 
   .services {
@@ -983,11 +991,11 @@ button[type="submit"]:hover {
   }
 
   .service {
-    width: 400px;
+    width: 350px;
   }
 
   .service img {
-    width: 400px;
+    width: 350px;
   }
 
   .gallery-page {
