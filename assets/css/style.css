@@ -615,15 +615,16 @@ input[type="checkbox"]:checked + .menu {
   letter-spacing: 1px;
 }
 
-.contact-form form .input-field {
+.contact-form form .input-form {
   padding: 10px;
 }
 
-.contact-form form label {
+.contact-form label {
   color: var(--clr-primary);
   display: block;
+  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 4px;
 }
 
 .required-icon {
@@ -637,8 +638,9 @@ input::placeholder, textarea::placeholder {
   opacity: 0.7;
 }
 
-.contact-form form .snd-btn {
-  padding: 12px;
+.contact-form .snd-btn {
+  padding-top: 10px;
+  padding-left: 2px;
 }
 
 button[type="submit"], input[type="text"], input[type="email"], textarea {
@@ -660,17 +662,18 @@ input, textarea {
 }
 
 button[type="submit"] {
-  width: 3rem;
-  height: 1rem;
+  width: calc(3rem + 2vw);
+  height: calc(1rem + 1vw);
   border: 1px solid var(--clr-primary);
   background-color: var(--clr-primary);
   color: var(--clr-bg);
   font-family: var(--ff-primary);
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bolder;
   letter-spacing: 1px;
   display: grid;
   align-content: center;
+  justify-content: center;
 }
 
 button[type="submit"]:hover {
@@ -692,7 +695,7 @@ button[type="submit"]:hover {
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 30% 30% 40%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
   "copyright socials subscribe"
   ;
@@ -703,12 +706,13 @@ button[type="submit"]:hover {
 .copyright {
   grid-area: copyright;
   display: grid;
-  place-items: end center;
+  place-items: end start;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: .7rem;
   letter-spacing: 1px;
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .socials {
@@ -738,16 +742,24 @@ button[type="submit"]:hover {
   font-family: var(--ff-secondary);
   grid-area: subscribe;
   display: grid;
-  place-items: center start;
+  place-items: center center;
 }
 
-.subscribe-field label {
+.subscribe-form label {
   color: var(--clr-primary);
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 4px;
 }
 
-.subscribe-field input {
+.subscribe-form input {
   background-color: var(--clr-bg);
-  width: calc(10rem + 5vw);
+  width: calc(5rem + 15vw);
+}
+
+.subscribe-form .snd-btn {
+  padding-top: 10px;
+  padding-left: 2px;
 }
 
 @media (min-width: 375px) {
@@ -760,9 +772,7 @@ button[type="submit"]:hover {
   }
 
   button[type="submit"] {
-    width: 5rem;
-    height: 2rem;
-    font-size: 1.1rem;
+    font-size: .9rem;
   }
 }
 
@@ -859,6 +869,10 @@ button[type="submit"]:hover {
   .review-title {
     font-size: 1.5rem;
   }
+
+  button[type="submit"] {
+    font-size: 1.1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -888,6 +902,10 @@ button[type="submit"]:hover {
 
   .review-title {
     font-size: 1.6rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1.2rem;
   }
 }
 
