@@ -80,7 +80,7 @@ input[type="checkbox"]:checked + .menu {
 .menu-icon {
   grid-area: menu;
   place-self: center center;
-  font-size: 1.7rem;
+  font-size: calc(1rem + 3vw);
 }
 
 .nav-icon {
@@ -384,7 +384,7 @@ input[type="checkbox"]:checked + .menu {
   border: 1px solid var(--clr-primary);
   border-radius: 8px;
   justify-self: center;
-  font-size: 1rem;
+  font-size: calc(.8rem + 1vw);
 }
 
 .review:hover {
@@ -433,7 +433,7 @@ input[type="checkbox"]:checked + .menu {
   display: grid;
   justify-self: center;
   padding-bottom: 10px;
-  font-size: 1rem;
+  font-size: calc(.8rem + 1vw);
 }
 
 .service:hover {
@@ -452,7 +452,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-secondary);
   justify-self: center;
   letter-spacing: 2px;
-  font-size: 1.2rem;
+  font-size: calc(1rem + 1.2vw);
   font-weight: lighter;
 }
 
@@ -485,7 +485,7 @@ input[type="checkbox"]:checked + .menu {
   border-radius: 5px;
 }
 
-.gallery figure {
+.gallery > figure {
   position: relative;
   display: flex;
   width: 500%;
@@ -493,7 +493,7 @@ input[type="checkbox"]:checked + .menu {
   animation: 25s carousel infinite;
 }
 
-.gallery figure img {
+.gallery img {
   width: 20%;
 }
 
@@ -533,10 +533,6 @@ input[type="checkbox"]:checked + .menu {
   border-radius: 8px;
   font-family: var(--ff-primary);
   letter-spacing: 2px;
-}
-
-.contact-form form .input-form {
-  padding: 10px;
 }
 
 .contact-form label {
@@ -580,14 +576,14 @@ input, textarea {
 }
 
 button[type="submit"] {
-  width: calc(2.5rem + 2vw);
-  height: calc(1.5rem + 1vw);
+  width: calc(3rem + 2vw);
+  height: calc(1.7rem + 1vw);
+  font-size: calc(.75rem + .75vw);
+  letter-spacing: 1px;
   border: 1px solid var(--clr-primary);
   background-color: var(--clr-primary);
   color: var(--clr-bg);
   font-family: var(--ff-secondary);
-  font-size: .8rem;
-  letter-spacing: 1px;
   display: grid;
   place-content: center center;
 }
@@ -611,22 +607,11 @@ button[type="submit"]:hover {
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  "socials subscribe copyright";
+  "socials subscribe";
   height: auto;
   background-color: var(--clr-fg);
-}
-
-.copyright {
-  grid-area: copyright;
-  display: grid;
-  place-items: end center;
-  color: var(--clr-primary);
-  font-family: var(--ff-primary);
-  font-size: .7rem;
-  letter-spacing: 1px;
-  padding-bottom: 10px;
 }
 
 .socials, .subscribe {
@@ -685,21 +670,7 @@ button[type="submit"]:hover {
   padding-top: 10px;
 }
 
-@media (min-width: 375px) {
-  .menu-icon {
-    font-size: 1.8rem;
-  }
-
-  button[type="submit"] {
-    font-size: .9rem;
-  }
-}
-
 @media (min-width: 425px) {
-  .menu-icon {
-    font-size: 2rem;
-  }
-
   .music-link, .film-link {
     width: 300px;
     height: auto;
@@ -712,33 +683,29 @@ button[type="submit"]:hover {
 
   .review {
     max-width: 300px;
-    font-size: 1.2rem;
   }
 
   .service {
     width: 350px;
-    font-size: 1.2rem;
   }
   
   .service img {
     width: 350px;
     height: 300px;
   }
-  
-  .service h4 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 480px) {
-  button[type="submit"] {
-    font-size: 1rem;
-  }
 }
 
 @media (min-width: 768px) {
-  button[type="submit"] {
-    font-size: 1.1rem;
+  .review {
+    font-size: 1.2rem;
+  }
+
+  .service {
+    font-size: 1.2rem;
+  }
+
+  .service h4 {
+    font-size: 1.6rem;
   }
 }
 
@@ -900,5 +867,11 @@ button[type="submit"]:hover {
 
   .review-title {
     font-size: 1.9rem;
+  }
+
+  button[type="submit"] {
+    width: 4.5rem;
+    height: 2.25rem;
+    font-size: 1.3rem;
   }
 }
