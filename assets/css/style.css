@@ -180,9 +180,11 @@ input[type="checkbox"]:checked + .menu {
 
 .cta {
   grid-area: cta;
+  width: calc(12rem + 10vw);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  justify-self: center;
 }
 
 .cta a {
@@ -201,13 +203,11 @@ input[type="checkbox"]:checked + .menu {
 .cta-primary {
   color: var(--clr-bg);
   background-color: var(--clr-primary);
-  transform: translateX(-2vw);
 }
 
 .cta-secondary {
   color: var(--clr-primary);
   background: none;
-  transform: translateX(2vw);
 }
 
 .cta-primary:hover {
@@ -221,7 +221,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .cta-primary:active, .cta-secondary:active {
-  animation: wiggle .25s ease-in-out;
+  animation: wiggle .2s ease-in-out;
 }
 
 .about-page, .work-page, .services-page, .gallery-page, .contact-page {
