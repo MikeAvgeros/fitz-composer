@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+}
+
 .landing-page {
   background-color: rgba(20,20,20,0.8);
   height: 100vh;
@@ -115,7 +119,7 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-secondary);
 }
 
-.hero {
+.home-page {
   height: inherit;
   display: grid;
   grid: 80px repeat(3, auto)/ 1fr 90% 1fr;
@@ -135,19 +139,18 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-title, .hero-subtitle {
   place-self: end start;
+  letter-spacing: 2px;
 }
 
 .hero-title {
   color: var(--clr-primary);
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+  font-size: calc(1.5rem + 5vw);
 }
 
 .hero-subtitle {
   color: var(--clr-secondary);
   font-weight: lighter;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  font-size: calc(.8rem + 1.5vw);
   transform: translateY(calc(-10vh + 2.5vw));
   padding-left: .3vw;
 }
@@ -160,7 +163,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote blockquote {
   color: var(--clr-primary);
-  font-size: .9rem;
+  font-size: calc(.3rem + 3vw);
 }
 
 .hero-quote .bq1 {
@@ -179,15 +182,14 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .cta a {
-  width: 6rem;
-  height: 2.5rem;
+  width: calc(5rem + 5vw);
+  height: calc(2rem + 2vw);
+  font-size: calc(.6rem + 1vw);
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center center;
   font-family: var(--ff-secondary);
-  font-size: .8rem;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -214,10 +216,35 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-fg);
 }
 
-.about-page {
+.about-page, .work-page, .services-page, .gallery-page, .contact-page {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
+}
+
+.about-header, .work-header, .services-header, .gallery-header, .contact-header {
+  font-family: var(--ff-primary);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.about-title, .work-title, .services-title, .gallery-title, .contact-title {
+  color: var(--clr-primary);
+  font-size: calc(1.5rem + 2.5vw);
+}
+
+.about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+  color: var(--clr-secondary);
+  font-size: calc(.8rem + 1vw);
+  padding-top: 10px;
+}
+
+.about-title, .work-title, .services-title, .gallery-title, .contact-title, .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.about-page {
   grid: 80px repeat(3, auto) / 1fr 80% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
@@ -229,25 +256,6 @@ input[type="checkbox"]:checked + .menu {
 
 .about-header {
   grid-area: header;
-  text-align: center;
-  padding-bottom: 2rem;
-  font-family: var(--ff-primary);
-}
-
-.about-title {
-  color: var(--clr-primary);
-  font-size: 2rem;
-}
-
-.about-subtitle {
-  color: var(--clr-secondary);
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-.about-title, .about-subtitle {
-  font-weight: lighter;
-  letter-spacing: 2px;
 }
 
 .about-img {
@@ -257,7 +265,7 @@ input[type="checkbox"]:checked + .menu {
 
 .about-img img {
   width: 100%;
-  max-width: 540px;
+  max-width: 520px;
   height: auto;
   border-radius: 8px;
 }
@@ -267,14 +275,11 @@ input[type="checkbox"]:checked + .menu {
   padding-top: 2rem;
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
-  font-size: 1rem;
+  font-size: calc(.8rem + 1vw);
   text-align: justify;
 }
 
 .work-page {
-  background-color: var(--clr-bg);
-  height: auto;
-  display: grid;
   grid: 80px repeat(6, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
@@ -289,25 +294,6 @@ input[type="checkbox"]:checked + .menu {
 
 .work-header {
   grid-area: header;
-  text-align: center;
-  font-family: var(--ff-primary);
-  padding-bottom: 2rem;
-}
-
-.work-title {
-  color: var(--clr-primary);
-  font-size: 2rem;
-}
-
-.work-subtitle {
-  color: var(--clr-secondary);
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-.work-title, .work-subtitle {
-  font-weight: lighter;
-  letter-spacing: 2px;
 }
 
 .music-links, .film-links {
@@ -366,7 +352,7 @@ input[type="checkbox"]:checked + .menu {
   }
 }
 
-.music-link img:hover, .film-link img:hover {
+.music-link:hover, .film-link:hover {
   animation: zoom .5s forwards;
 }
 
@@ -375,7 +361,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   justify-self: center;
-  font-size: 1.2rem;
+  font-size: calc(.8rem + 1.5vw);
   font-weight: lighter;
   letter-spacing: 2px;
   padding: calc(1rem + 2vw);
@@ -418,9 +404,6 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .services-page {
-  background-color: var(--clr-bg);
-  height: auto;
-  display: grid;
   grid: 80px repeat(2, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
@@ -431,25 +414,6 @@ input[type="checkbox"]:checked + .menu {
 
 .services-header {
   grid-area: header;
-  text-align: center;
-  font-family: var(--ff-primary);
-  padding-bottom: 2rem;
-}
-
-.services-title {
-  color: var(--clr-primary);
-  font-size: 2rem;
-}
-
-.services-subtitle {
-  color: var(--clr-secondary);
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-.services-title, .services-subtitle {
-  font-weight: lighter;
-  letter-spacing: 2px;
 }
 
 .services {
@@ -500,9 +464,6 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .gallery-page {
-  background-color: var(--clr-bg);
-  height: auto;
-  display: grid;
   grid: 80px repeat(2, auto) / 1fr 95% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
@@ -513,25 +474,6 @@ input[type="checkbox"]:checked + .menu {
 
 .gallery-header {
   grid-area: header;
-  text-align: center;
-  font-family: var(--ff-primary);
-  padding-bottom: 2rem;
-}
-
-.gallery-title {
-  color: var(--clr-primary);
-  font-size: 2rem;
-}
-
-.gallery-subtitle {
-  color: var(--clr-secondary);
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-.gallery-title, .gallery-subtitle {
-  font-weight: lighter;
-  letter-spacing: 2px;
 }
 
 .gallery {
@@ -570,9 +512,6 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .contact-page {
-  background-color: var(--clr-bg);
-  height: auto;
-  display: grid;
   grid: 80px repeat(2, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
@@ -583,25 +522,6 @@ input[type="checkbox"]:checked + .menu {
 
 .contact-header {
   grid-area: header;
-  text-align: center;
-  font-family: var(--ff-primary);
-  padding-bottom: 2rem;
-}
-
-.contact-title {
-  color: var(--clr-primary);
-  font-size: 2rem;
-}
-
-.contact-subtitle {
-  color: var(--clr-secondary);
-  font-size: 1rem;
-  padding-top: 10px;
-}
-
-.contact-title, .contact-subtitle {
-  font-weight: lighter;
-  letter-spacing: 2px;
 }
 
 .contact-form {
@@ -612,7 +532,7 @@ input[type="checkbox"]:checked + .menu {
   justify-self: center;
   border-radius: 8px;
   font-family: var(--ff-primary);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .contact-form form .input-form {
@@ -622,9 +542,7 @@ input[type="checkbox"]:checked + .menu {
 .contact-form label {
   color: var(--clr-primary);
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 4px;
+  padding: 10px 0px 10px 4px;
 }
 
 .required-icon {
@@ -636,16 +554,16 @@ input::placeholder, textarea::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
+  letter-spacing: 2px;
 }
 
 .contact-form .snd-btn {
-  padding-top: 10px;
-  padding-left: 2px;
+  padding: 10px 0px 0px 2px;
 }
 
 button[type="submit"], input[type="text"], input[type="email"], textarea {
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -662,18 +580,16 @@ input, textarea {
 }
 
 button[type="submit"] {
-  width: calc(3rem + 2vw);
-  height: calc(1rem + 1vw);
+  width: calc(2.5rem + 2vw);
+  height: calc(1.5rem + 1vw);
   border: 1px solid var(--clr-primary);
   background-color: var(--clr-primary);
   color: var(--clr-bg);
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   font-size: .8rem;
-  font-weight: bolder;
   letter-spacing: 1px;
   display: grid;
-  align-content: center;
-  justify-content: center;
+  place-content: center center;
 }
 
 button[type="submit"]:hover {
@@ -697,8 +613,7 @@ button[type="submit"]:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-  "copyright socials subscribe"
-  ;
+  "socials subscribe copyright";
   height: auto;
   background-color: var(--clr-fg);
 }
@@ -706,23 +621,26 @@ button[type="submit"]:hover {
 .copyright {
   grid-area: copyright;
   display: grid;
-  place-items: end start;
+  place-items: end center;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: .7rem;
   letter-spacing: 1px;
   padding-bottom: 10px;
-  padding-left: 10px;
 }
 
-.socials {
-  grid-area: socials;
+.socials, .subscribe {
+  font-family: var(--ff-primary);
   display: grid;
   place-items: center center;
 }
 
+.socials {
+  grid-area: socials;
+}
+
 .socials ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 .socials-list li a {
@@ -739,36 +657,37 @@ button[type="submit"]:hover {
 }
 
 .subscribe {
-  font-family: var(--ff-secondary);
   grid-area: subscribe;
-  display: grid;
-  place-items: center center;
 }
 
 .subscribe-form label {
   color: var(--clr-primary);
   display: block;
-  padding-bottom: 10px;
-  padding-left: 4px;
+  padding: 0px 0px 15px 2px;
+  letter-spacing: 2px;
 }
 
 .subscribe-form input {
   background-color: var(--clr-bg);
   width: calc(5rem + 15vw);
+  letter-spacing: 2px;
 }
 
 .subscribe-form .snd-btn {
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   padding-left: 2px;
+}
+
+.socials h3, .subscribe h3 {
+  place-self: start center;
+  color: var(--clr-primary);
+  padding-top: 10px;
 }
 
 @media (min-width: 375px) {
   .menu-icon {
     font-size: 1.8rem;
-  }
-
-  .hero-quote blockquote {
-    font-size: 1rem;
   }
 
   button[type="submit"] {
@@ -781,32 +700,6 @@ button[type="submit"]:hover {
     font-size: 2rem;
   }
 
-  .hero-quote blockquote {
-    font-size: 1.1rem;
-  }
-
-  .hero-title {
-    font-size: 2.8rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .cta a {
-    width: 7rem;
-    height: 2.8rem;
-    font-size: 1rem;
-  }
-
-  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 2.3rem;
-  }
-
-  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
-    font-size: 1.2rem;
-  }
-
   .music-link, .film-link {
     width: 300px;
     height: auto;
@@ -815,10 +708,6 @@ button[type="submit"]:hover {
   .music-link img, .film-link img {
     width: 300px;
     max-height: 300px;
-  }
-
-  .review-title {
-    font-size: 1.4rem;
   }
 
   .review {
@@ -842,70 +731,14 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 480px) {
-  .hero-quote blockquote {
-    font-size: 1.2rem;
-  }
-
-  .hero-title {
-    font-size: 3.2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.5rem;
-  }
-
-  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 2.5rem;
-  }
-
-  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .about-main {
-    font-size: 1.2rem;
-  }
-
-  .review-title {
-    font-size: 1.5rem;
-  }
-
   button[type="submit"] {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .hero-quote blockquote {
-    font-size: 1.4rem;
-  }
-
-  .hero-title {
-    font-size: 3.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.6rem;
-  }
-
-  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 2.6rem;
-  }
-
-  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
-    font-size: 1.4rem;
-  }
-
-  .about-main {
-    font-size: 1.4rem;
-  }
-
-  .review-title {
-    font-size: 1.6rem;
-  }
-
   button[type="submit"] {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -942,14 +775,6 @@ button[type="submit"]:hover {
     padding-right: 3vw;
   }
 
-  .hero-title {
-    font-size: 4rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 2rem;
-  }
-
   .hero-quote .bq1 {
     place-self: center end;
   }
@@ -965,7 +790,7 @@ button[type="submit"]:hover {
 
   .cta a {
     width: 8rem;
-    height: 2.7rem;
+    height: 2.8rem;
     font-size: 1.1rem;
   }
 
@@ -993,10 +818,7 @@ button[type="submit"]:hover {
 
   .about-img {
     place-self: start start;
-  }
-
-  .review-title {
-    font-size: 1.7rem;
+    padding-top: 5px;
   }
 
   .review {
@@ -1037,7 +859,7 @@ button[type="submit"]:hover {
   }
 
   .hero-title {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   
   .hero-subtitle {
@@ -1059,28 +881,24 @@ button[type="submit"]:hover {
 
   .cta a {
     width: 9rem;
-    height: 3rem;
+    height: 3.2rem;
     font-size: 1.2rem;
   }
 
   .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
-    font-size: 1.8rem;
-  }
-
-  .about-main {
-    font-size: 1.5rem;
-    padding: 0px;
+    font-size: 1.75rem;
   }
 
   .about-img {
     align-self: start;
+    padding-top: 10px;
   }
 
   .review-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
