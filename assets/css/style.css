@@ -3,8 +3,8 @@
 :root {
   --clr-bg:  #202020;
   --clr-fg:  #333333;
-  --clr-primary: #e4b13b;
-  --clr-secondary: #d3d3d3;
+  --clr-primary: #cc9921;
+  --clr-secondary: #c4c4c4;
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
 }
@@ -306,7 +306,7 @@ input[type="checkbox"]:checked + .menu {
 
 .music-links, .film-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 1rem;
   justify-items: center;
 }
@@ -374,7 +374,7 @@ input[type="checkbox"]:checked + .menu {
 .reviews {
   grid-area: quotes;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 2rem;
   padding-top: 1rem;
   color: var(--clr-secondary);
@@ -383,7 +383,7 @@ input[type="checkbox"]:checked + .menu {
 .review {
   display: grid;
   font-family: var(--ff-secondary);
-  width: 250px;
+  width: 300px;
   height: auto;
   border: 1px solid var(--clr-primary);
   border-radius: 8px;
@@ -423,7 +423,7 @@ input[type="checkbox"]:checked + .menu {
 .services {
   grid-area: services;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   row-gap: 1rem;
   padding-top: 1rem;
   color: var(--clr-secondary);
@@ -756,7 +756,7 @@ button[type="submit"]:active {
   }
 
   .hero-quote .bq2 {
-    display: block;
+    display: grid;
     place-self: start end;
   }
 
@@ -801,19 +801,6 @@ button[type="submit"]:active {
     width: 350px;
   }
 
-  .services {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    row-gap: 3rem;
-  }
-
-  .service {
-    width: 350px;
-  }
-
-  .service img {
-    width: 350px;
-  }
-
   .gallery-page {
     grid: 80px repeat(2, auto) / 1fr 90% 1fr;
     grid-template-areas:
@@ -825,8 +812,13 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 1200px) {
+  .film-links, .music-links {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 3rem;
+  }
   .reviews {
-    row-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 3rem;
   }
   
   .services {
@@ -884,3 +876,4 @@ button[type="submit"]:active {
     font-size: 1.2rem;
   }
 }
+
