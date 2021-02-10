@@ -284,7 +284,6 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
   font-size: calc(.8rem + 1vw);
-  text-align: justify;
 }
 
 .work-page {
@@ -304,21 +303,26 @@ input[type="checkbox"]:checked + .menu {
   grid-area: header;
 }
 
-.music-links, .film-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 1rem;
-  justify-items: center;
-}
-
 .film-links {
   grid-area: flinks;
 }
 
-.film-link {
-  width: 250px;
-  height: auto;
+.music-links {
+  grid-area: mlinks;
+}
+
+.music-links, .film-links {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
+  padding-top: calc(1rem + 2vw);
+}
+
+.film-link, .music-link {
+  display: grid;
+  width: calc(10rem + 25vw);
+  max-width: 300px;
+  height: auto;
   justify-self: center;
   padding-bottom: 10px;
   font-size: 1rem;
@@ -330,11 +334,6 @@ input[type="checkbox"]:checked + .menu {
   padding-bottom: 10px;
 }
 
-.music-links {
-  grid-area: mlinks;
-  padding-top: 2rem;
-}
-
 .divider {
   grid-area: divider;
   width: 25%;
@@ -342,11 +341,12 @@ input[type="checkbox"]:checked + .menu {
   border-radius: 5px;
   justify-self: center;
   background-color: var(--clr-primary);
+  margin: calc(1rem + 2vw) 0px calc(1rem + 1vw) 0px;
 }
 
 .music-link img, .film-link img {
-  width: 250px;
-  max-height: 250px;
+  width: 100%;
+  max-height: auto;
   border-radius: 8px;
   padding-bottom: 1rem;
 }
@@ -365,7 +365,7 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   justify-self: center;
-  font-size: calc(.8rem + 1.5vw);
+  font-size: calc(.9rem + 1.5vw);
   font-weight: lighter;
   letter-spacing: 2px;
   padding: calc(1rem + 2vw);
@@ -374,25 +374,30 @@ input[type="checkbox"]:checked + .menu {
 .reviews {
   grid-area: quotes;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 2rem;
-  padding-top: 1rem;
-  color: var(--clr-secondary);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+  padding-top: calc(1rem + 2vw);
+  font-family: var(--ff-secondary);
+}
+
+.music-links, .film-links, .reviews {
+  row-gap: calc(1rem + 2.5vw);
 }
 
 .review {
   display: grid;
-  font-family: var(--ff-secondary);
-  width: 300px;
+  width: calc(10rem + 40vw);
+  max-width: 400px;
   height: auto;
-  border: 1px solid var(--clr-primary);
-  border-radius: 8px;
   justify-self: center;
-  font-size: calc(.8rem + 1vw);
+  place-content: start start;
+  border-radius: 8px;
+  font-size: calc(.7rem + 1vw);
 }
 
-.review:hover {
-  animation: zoom .5s forwards;
+.stars {
+  color: var(--clr-primary);
+  justify-self: center;
 }
 
 .review img {
@@ -404,7 +409,8 @@ input[type="checkbox"]:checked + .menu {
 
 .review blockquote, .review cite, .review img {
   color: var(--clr-secondary);
-  padding: 20px 10px;
+  letter-spacing: 1px;
+  padding: 10px 10px;
 }
 
 .services-page {
@@ -423,8 +429,9 @@ input[type="checkbox"]:checked + .menu {
 .services {
   grid-area: services;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-content: center;
+  row-gap: calc(1rem + 10vw);
   padding-top: 1rem;
   color: var(--clr-secondary);
 }
@@ -432,7 +439,8 @@ input[type="checkbox"]:checked + .menu {
 .service {
   background-color: var(--clr-fg);
   border-radius: 8px;
-  width: 300px;
+  width: calc(10rem + 40vw);
+  max-width: 400px;
   height: auto;
   display: grid;
   justify-self: center;
@@ -446,8 +454,8 @@ input[type="checkbox"]:checked + .menu {
 
 .service img {
   border-radius: 8px;
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   padding-bottom: 30px;
 }
 
@@ -648,6 +656,7 @@ button[type="submit"]:active {
 
 .socials-list li a:hover {
   color: var(--clr-secondary);
+  animation: zoom .5s forwards;
 }
 
 .subscribe {
@@ -677,31 +686,6 @@ button[type="submit"]:active {
   color: var(--clr-primary);
   padding-top: 10px;
   font-size: calc(.8rem + 1vw);
-}
-
-@media (min-width: 425px) {
-  .music-link, .film-link {
-    width: 300px;
-    height: auto;
-  }
-
-  .music-link img, .film-link img {
-    width: 300px;
-    max-height: 300px;
-  }
-
-  .review {
-    max-width: 300px;
-  }
-
-  .service {
-    width: 350px;
-  }
-  
-  .service img {
-    width: 350px;
-    height: 300px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -797,10 +781,6 @@ button[type="submit"]:active {
     padding-top: 5px;
   }
 
-  .review {
-    width: 350px;
-  }
-
   .gallery-page {
     grid: 80px repeat(2, auto) / 1fr 90% 1fr;
     grid-template-areas:
@@ -812,20 +792,6 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 1200px) {
-  .film-links, .music-links {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    row-gap: 3rem;
-  }
-  .reviews {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    row-gap: 3rem;
-  }
-  
-  .services {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    row-gap: 4rem;
-  }
-
   .hero-title {
     font-size: 5rem;
   }
