@@ -3,7 +3,7 @@
 :root {
   --clr-bg:  #202020;
   --clr-fg:  #333333;
-  --clr-primary: #cc9921;
+  --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
@@ -231,7 +231,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .about-header, .work-header, .services-header, .gallery-header, .contact-header {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -282,7 +282,7 @@ input[type="checkbox"]:checked + .menu {
   grid-area: main;
   padding-top: 2rem;
   color: var(--clr-secondary);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   font-size: calc(.8rem + 1vw);
 }
 
@@ -330,7 +330,7 @@ input[type="checkbox"]:checked + .menu {
 
 .film-link p, .music-link p {
   color: var(--clr-secondary);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   padding-bottom: 10px;
 }
 
@@ -366,7 +366,6 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-primary);
   justify-self: center;
   font-size: calc(.9rem + 1.5vw);
-  font-weight: lighter;
   letter-spacing: 2px;
   padding: calc(1rem + 2vw);
 }
@@ -377,7 +376,7 @@ input[type="checkbox"]:checked + .menu {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   padding-top: calc(1rem + 2vw);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
 }
 
 .music-links, .film-links, .reviews {
@@ -438,6 +437,7 @@ input[type="checkbox"]:checked + .menu {
 
 .service {
   background-color: var(--clr-fg);
+  font-family: var(--ff-primary);
   border-radius: 8px;
   width: calc(10rem + 40vw);
   max-width: 400px;
@@ -461,16 +461,13 @@ input[type="checkbox"]:checked + .menu {
 
 .service h4 {
   color: var(--clr-primary);
-  font-family: var(--ff-secondary);
   justify-self: center;
   letter-spacing: 2px;
   font-size: calc(1rem + 1.2vw);
-  font-weight: lighter;
 }
 
 .service p {
   color: var(--clr-secondary);
-  font-family: var(--ff-secondary);
   justify-self: center;
   padding: 20px 10px;
 }
@@ -764,7 +761,7 @@ button[type="submit"]:active {
   }
 
   .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
   }
 
   .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
@@ -820,7 +817,7 @@ button[type="submit"]:active {
   }
 
   .about-title, .work-title, .services-title, .gallery-title, .contact-title {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
   }
 
   .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {

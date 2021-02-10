@@ -4,11 +4,11 @@
 
 <br>
 
-# User Experience Design (UX)
+# User Experience
 
 ## Project Goals and Objectives
 
--   ### Users
+-   ### User
 
     -   #### User's Goals
         1. As a User, I want to quickly and easily identify if the site's owner will be suitable for my project.
@@ -58,7 +58,11 @@
     - Adobe XD was used to create the wireframes
     - Wireframes for mobile, tablet, laptop and desktop - [View](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/)
 
-# Technologies
+# Features
+
+
+
+# Technologies Used
 
 ## Languages
 
@@ -88,3 +92,7 @@
     - CDNJS was used to quickly import library files in my HTML document.
 
 # Testing
+
+# Deployment
+
+# Credits
