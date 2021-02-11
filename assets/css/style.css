@@ -247,7 +247,7 @@ input[type="checkbox"]:checked + .menu {
   padding-top: 10px;
 }
 
-.about-title, .work-title, .services-title, .gallery-title, .contact-title, .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+.about-title, .work-title, .services-title, .gallery-title, .contact-title, .about-subtitle, .work-subtitle, .review-title, .services-subtitle, .gallery-subtitle, .contact-subtitle {
   font-weight: lighter;
   letter-spacing: 2px;
 }
@@ -287,15 +287,16 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .work-page {
-  grid: 80px repeat(6, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(4, auto) 80px repeat(2, auto) / 1fr 90% 1fr;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
   ".....  flinks ......"
   ".....  divider......"
   ".....  mlinks ......"
-  ".....  qtitle ......"
-  ".....  quotes ......"
+  ".....  ...... ......"
+  "qtitle qtitle qtitle"
+  "quotes quotes quotes"
   ;
 }
 
@@ -341,7 +342,7 @@ input[type="checkbox"]:checked + .menu {
   border-radius: 5px;
   justify-self: center;
   background-color: var(--clr-primary);
-  margin: calc(1rem + 2vw) 0px calc(1rem + 1vw) 0px;
+  margin: calc(1rem + 2vw) 0rem calc(1rem + 1vw) 0rem;
 }
 
 .music-link img, .film-link img {
@@ -362,12 +363,11 @@ input[type="checkbox"]:checked + .menu {
 
 .review-title {
   grid-area: qtitle;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   color: var(--clr-primary);
-  justify-self: center;
-  font-size: calc(.9rem + 1.5vw);
-  letter-spacing: 2px;
-  padding: calc(1rem + 2vw);
+  text-align: center;
+  font-size: calc(1rem + 1.5vw);
+  padding: 1rem 0rem calc(1rem + 1vw);
 }
 
 .reviews {
@@ -377,6 +377,10 @@ input[type="checkbox"]:checked + .menu {
   justify-content: center;
   padding-top: calc(1rem + 2vw);
   font-family: var(--ff-primary);
+}
+
+.review-title, .reviews {
+  background-color: var(--clr-fg);
 }
 
 .music-links, .film-links, .reviews {
@@ -830,7 +834,7 @@ button[type="submit"]:active {
   }
 
   .review-title {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   button[type="submit"] {
@@ -839,4 +843,3 @@ button[type="submit"]:active {
     font-size: 1.2rem;
   }
 }
-
