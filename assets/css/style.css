@@ -44,7 +44,7 @@ body {
   opacity: 0.95;
   position: fixed;
   display: grid;
-  grid: 80px 280px / 1fr 2fr 1fr;
+  grid: 80px calc(15rem + 7vw) / 1fr 2fr 1fr;
   grid-template-areas:
   "logo .... menu"
   "list list list"
@@ -59,7 +59,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .menu {
-  max-height: 280px;
+  max-height: calc(15rem + 7vw);
   transition: max-height .2s ease-in;
 }
 
@@ -75,13 +75,14 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .logo img {
-  height: 70px;
+  height: calc(3rem + 3vw);
+  max-height: 70px;
 }
 
 .menu-icon {
   grid-area: menu;
   place-self: center center;
-  font-size: calc(1.2rem + 2vw);
+  font-size: calc(1.5rem + 2vw);
 }
 
 .nav-icon {
@@ -106,7 +107,7 @@ input[type="checkbox"]:checked + .menu {
   text-decoration: none;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  font-size: calc(1rem + .6vw);
+  font-size: calc(1.1rem + .7vw);
   font-weight: bolder;
   letter-spacing: 2px;
 }
@@ -629,14 +630,16 @@ button[type="submit"]:active {
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid: repeat(2, auto) / repeat(2, 1fr);
   grid-template-areas:
-  "socials subscribe";
+  "socials   subscribe"
+  "copyright copyright"
+  ;
   height: auto;
   background-color: var(--clr-fg);
 }
 
-.socials, .subscribe {
+.socials, .subscribe, .copyright {
   font-family: var(--ff-primary);
   display: grid;
   place-items: center center;
@@ -691,6 +694,18 @@ button[type="submit"]:active {
   color: var(--clr-primary);
   padding-top: 10px;
   font-size: calc(.8rem + 1vw);
+}
+
+.copyright {
+  grid-area: copyright;
+  background-color: var(--clr-bg);
+}
+
+.copyright p {
+  color: var(--clr-primary);
+  padding: 1rem 0rem;
+  font-size: calc(.7rem + .5vw);
+  letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {
