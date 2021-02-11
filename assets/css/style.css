@@ -74,6 +74,10 @@ input[type="checkbox"]:checked + .menu {
   place-self: center center;
 }
 
+.logo img {
+  height: 70px;
+}
+
 .menu-icon {
   grid-area: menu;
   place-self: center center;
@@ -708,8 +712,8 @@ button[type="submit"]:active {
     float: left;
   }
 
-  .menu li a {
-    padding: 0px 15px;
+  .menu a {
+    padding: 0rem 1rem;
   }
 
   .menu-icon {
@@ -733,7 +737,7 @@ button[type="submit"]:active {
     max-height: 80px;
     grid-area: menu;
     place-self: center end;
-    padding-right: 3vw;
+    padding-right: 3.5vw;
   }
 
   .hero-quote .bq1 {
@@ -751,7 +755,7 @@ button[type="submit"]:active {
 
   .cta a {
     width: 8rem;
-    height: 2.8rem;
+    height: 3rem;
     font-size: 1.1rem;
   }
 
@@ -792,13 +796,21 @@ button[type="submit"]:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
+  .menu a {
+    font-size: calc(1.2rem + .6vw);
+  }
+
+  .navigation .menu {
+    padding-right: 4vw;
+  }
+
   .hero-title {
-    font-size: 5rem;
+    font-size: calc(5rem + 1vw);
   }
   
   .hero-subtitle {
-    font-size: 2rem;
+    font-size: calc(2rem + .5vw);
   }
 
   .hero-quote .bq1 {
@@ -806,17 +818,17 @@ button[type="submit"]:active {
   }
 
   .hero-quote .bq2 {
-    display: block;
     place-self: start end;
   }
 
   .hero-quote blockquote {
-    font-size: 1.7rem;
+    font-size: calc(1.5rem + .5vw);
+    padding-right: .5rem;
   }
 
   .cta a {
     width: 9rem;
-    height: 3.2rem;
+    height: 3.5rem;
     font-size: 1.2rem;
   }
 
