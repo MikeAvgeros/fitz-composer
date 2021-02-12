@@ -292,16 +292,16 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .work-page {
-  grid: 80px repeat(4, auto) 80px repeat(2, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(4, auto) 80px repeat(2, auto) / 1fr 95% 1fr;
   grid-template-areas:
-  "nav    nav    nav   "
-  "header header header"
-  ".....  flinks ......"
-  ".....  divider......"
-  ".....  mlinks ......"
-  ".....  ...... ......"
-  "qtitle qtitle qtitle"
-  "quotes quotes quotes"
+  "nav    nav     nav   "
+  "header header  header"
+  ".....  films   ......"
+  ".....  divider ......"
+  ".....  records ......"
+  ".....  ......  ......"
+  "title title     title"
+  "quotes quotes  quotes"
   ;
 }
 
@@ -310,16 +310,16 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .film-links {
-  grid-area: flinks;
+  grid-area: films;
 }
 
 .music-links {
-  grid-area: mlinks;
+  grid-area: records;
 }
 
 .music-links, .film-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   padding-top: calc(1rem + 2vw);
 }
@@ -353,7 +353,7 @@ input[type="checkbox"]:checked + .menu {
 .music-link img, .film-link img {
   width: 100%;
   max-height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
   padding-bottom: 1rem;
 }
 
@@ -367,7 +367,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .review-title {
-  grid-area: qtitle;
+  grid-area: title;
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
   text-align: center;
@@ -382,6 +382,7 @@ input[type="checkbox"]:checked + .menu {
   justify-content: center;
   padding-top: calc(1rem + 2vw);
   font-family: var(--ff-primary);
+  padding: 0% 2.5% 0% 2.5%;
 }
 
 .review-title, .reviews {
@@ -422,7 +423,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .services-page {
-  grid: 80px repeat(2, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(2, auto) / 1fr 95% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -437,7 +438,7 @@ input[type="checkbox"]:checked + .menu {
 .services {
   grid-area: services;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   row-gap: calc(1rem + 5vw);
   padding-top: 1rem;
@@ -450,7 +451,7 @@ input[type="checkbox"]:checked + .menu {
   max-width: 400px;
   height: auto;
   display: grid;
-  grid: repeat(3, auto) / 100%;
+  grid: 250px 80px auto / 100%;
   grid-template-areas:
   "img"
   "header"
@@ -465,10 +466,11 @@ input[type="checkbox"]:checked + .menu {
   grid-area: img;
   width: 100%;
   height: calc(10rem + 30vw);
-  max-height: 300px;
+  max-height: 250px;
 }
 
-.service .header1, .service .header2, .service .header3, .service .header4 {
+.service .header1, .service .header2, .service .header3, 
+.service .header4, .service .header5, .service .header6 {
   background-color: var(--clr-fg);
   color: var(--clr-primary);
   font-family: var(--ff-secondary);
@@ -480,16 +482,18 @@ input[type="checkbox"]:checked + .menu {
   place-items: center center;
 }
 
-#header1:checked + .description1, #header2:checked + .description2, #header3:checked + .description3, #header4:checked + .description4 {
+#header1:checked + .description1, #header2:checked + .description2, #header3:checked + .description3, 
+#header4:checked + .description4, #header5:checked + .description5, #header6:checked + .description6 {
   animation: show .5s forwards;
 }
 
 @keyframes show {
   0% {height: 0px;}
-  100% {height: 280px;}
+  100% {height: 250px;}
 }
 
-.service .description1, .service .description2, .service .description3, .service .description4 {
+.service .description1, .service .description2, .service .description3, 
+.service .description4, .service .description5, .service .description6 {
   grid-area: description;
   height: 0;
   overflow: hidden;
@@ -510,7 +514,8 @@ input[type="checkbox"]:checked + .menu {
   padding: 20px 10px;
 }
 
-.service .header1:hover, .service .header2:hover, .service .header3:hover, .service .header4:hover {
+.service .header1:hover, .service .header2:hover, .service .header3:hover, 
+.service .header4:hover, .service .header5:hover, .service .header6:hover {
   color: var(--clr-bg);
   background-color: var(--clr-secondary);
   outline: 1px solid var(--clr-fg);
@@ -565,7 +570,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .contact-page {
-  grid: 80px repeat(2, auto) / 1fr 90% 1fr;
+  grid: 80px repeat(2, auto) / 1fr 95% 1fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -755,6 +760,19 @@ button[type="submit"]:active {
   .service label {
     font-size: 1.8rem;
   }
+
+  .service {
+    grid: 300px 80px auto / 100%;
+    grid-template-areas:
+    "img"
+    "header"
+    "description"
+    ;
+  }
+
+  .service img {
+    max-height: 300px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -810,7 +828,7 @@ button[type="submit"]:active {
   }
 
   .about-page {
-    grid: 80px repeat(2, auto) / 1fr 40% .25fr 40% 1fr;
+    grid: 80px repeat(2, auto) / 1fr 40% 5% 40% 1fr;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -832,7 +850,7 @@ button[type="submit"]:active {
   }
 
   .about-img {
-    place-self: start start;
+    place-self: center center;
     padding-top: 5px;
   }
 
