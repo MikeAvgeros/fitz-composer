@@ -13,6 +13,12 @@
     <meta property="og:description" content="Original Music Composition for Film and TV - Record Production">
     <!--- CSS LINKS --->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_29WTPFgCm9JgR2Bb2Yzxl");
+        })();
+    </script>
 </head>
 <body>  
     <!----- LANDING PAGE ----->
@@ -385,7 +391,7 @@
             </h4>
         </header>
         <section class="contact-form">
-            <form action="" method="post">
+            <form onsubmit="return sendMail(this);" method="POST">
                 <div class="input-field">
                     <label for="name">Full Name<span class="required-icon">*</span></label>
                     <input type="text" name="name" id="name" placeholder="Enter your name" required>
@@ -419,7 +425,7 @@
             <div class="subscribe">
                 <h3>Subscribe</h3>
                 <div class="subscribe-form">
-                    <form action="" method="post">
+                    <form onsubmit="return subscribe(this);" method="POST">
                         <div class="input-field">
                             <label for="email">Email Address<span class="required-icon"></span></label>
                             <input type="email" name="email" id="email" placeholder="Enter your email" required>
@@ -437,5 +443,6 @@
     </div>
     <!--- JAVASCRIPT LINKS --->
     <script src="https://kit.fontawesome.com/08022ae364.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
