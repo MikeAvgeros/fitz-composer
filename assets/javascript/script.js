@@ -31,3 +31,7 @@ function subscribe(subscribeForm) {
     );
     return false;  // To block from loading a new page
 }
+
+function collapseNav() {
+    document.getElementById("menu-btn").checked = false;
+}

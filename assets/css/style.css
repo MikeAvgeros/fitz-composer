@@ -63,10 +63,13 @@ input[type="checkbox"]:checked + .menu {
   transition: max-height .2s ease-in;
 }
 
-.navigation .menu {
+input[type="checkbox"]:not(:checked) + .menu {
   max-height: 0;
-  grid-area: list;
   transition: max-height .2s ease-out;
+}
+
+.navigation .menu {
+  grid-area: list;
 }
 
 .logo {
