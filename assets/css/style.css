@@ -192,6 +192,15 @@ input[type="checkbox"]:checked + .menu {
   justify-self: center;
 }
 
+@keyframes zoom {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+
+.cta:hover {
+  animation: zoom .5s forwards;
+}
+
 .cta a {
   width: calc(5rem + 5vw);
   height: calc(2rem + 2vw);
@@ -252,7 +261,8 @@ input[type="checkbox"]:checked + .menu {
   padding-top: 10px;
 }
 
-.about-title, .work-title, .services-title, .gallery-title, .contact-title, .about-subtitle, .work-subtitle, .review-title, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+.about-title, .work-title, .services-title, .gallery-title, .contact-title, 
+.about-subtitle, .work-subtitle, .review-title, .services-subtitle, .gallery-subtitle, .contact-subtitle {
   font-weight: lighter;
   letter-spacing: 2px;
 }
@@ -285,7 +295,7 @@ input[type="checkbox"]:checked + .menu {
 
 .about-main {
   grid-area: main;
-  padding-top: 2rem;
+  padding-top: 32px;
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
   font-size: calc(.8rem + 1vw);
@@ -357,11 +367,6 @@ input[type="checkbox"]:checked + .menu {
   padding-bottom: 1rem;
 }
 
-@keyframes zoom {
-  0% {transform: scale(1);}
-  100% {transform: scale(1.1);}
-}
-
 .music-link:hover, .film-link:hover {
   animation: zoom .5s forwards;
 }
@@ -382,7 +387,7 @@ input[type="checkbox"]:checked + .menu {
   justify-content: center;
   padding-top: calc(1rem + 2vw);
   font-family: var(--ff-primary);
-  padding: 0% 2.5% 0% 2.5%;
+  padding: 0% 2.5% 2.5% 2.5%;
 }
 
 .review-title, .reviews {
@@ -496,11 +501,11 @@ input[type="checkbox"]:checked + .menu {
 
 @keyframes show {
   0% {height: 0rem;}
-  100% {height: 15.625rem;}
+  100% {height: 25rem;}
 }
 
 @keyframes hide {
-  0% {height: 15.625rem;}
+  0% {height: 25rem;}
   100% {height: 0rem;}
 }
 
@@ -523,7 +528,7 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
   justify-self: center;
-  padding: 1.25rem .625rem;
+  padding: 20px 10px;
 }
 
 .service .header1:hover, .service .header2:hover, .service .header3:hover, 
@@ -726,11 +731,15 @@ button[type="submit"]:active {
 
 .socials-list li a:hover {
   color: var(--clr-secondary);
-  animation: zoom .5s forwards;
+  animation: zoom .2s forwards;
 }
 
 .subscribe {
   grid-area: subscribe;
+}
+
+.subscribe:hover, .subscribe:focus-within {
+  animation: zoom .5s forwards;
 }
 
 .subscribe-form label {
@@ -803,7 +812,7 @@ button[type="submit"]:active {
   }
 
   .menu a {
-    padding: 0rem 1rem;
+    padding: 0px 16px;
   }
 
   .menu-icon {
@@ -913,7 +922,7 @@ button[type="submit"]:active {
 
   .hero-quote blockquote {
     font-size: calc(1.5rem + .5vw);
-    padding-right: .5rem;
+    padding-right: 8px;
   }
 
   .cta a {
