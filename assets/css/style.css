@@ -660,7 +660,8 @@ input::placeholder, textarea::placeholder {
   padding: .625rem 0rem 0rem .125rem;
 }
 
-button[type="submit"], input[type="text"], input[type="email"], textarea {
+button[type="submit"], input[type="text"], 
+input[type="email"], textarea {
   padding: .625rem;
   border-radius: 5px;
 }
@@ -673,9 +674,6 @@ input[type="text"], input[type="email"], textarea {
 
 .radio {
   display: inline-flex;
-  background-color: var(--clr-fg);
-  border-radius: 5px;
-  padding: 0px 2.5px;
 }
 
 input[type="radio"] {
@@ -686,17 +684,14 @@ input[type="radio"] {
   cursor: pointer;
   font-family: var(--ff-primary);
   font-size: calc(.5rem + .5vw);
-  padding-right: 2.5px;
-}
-
-.radio label:not(:last-of-type) {
-  padding-right: 5px;
-  border-right: 2.5px solid var(--clr-bg);
+  background-color: var(--clr-fg);
+  border-radius: 5px;
+  width: calc(2rem + 2vw);
+  text-align: center;
 }
 
 .radio label:last-of-type {
-  padding-right: 10px;
-  transform: translateX(2.5px);
+  transform: translateX(10px);
 }
 
 input[type="radio"]:not(:checked) + label {
