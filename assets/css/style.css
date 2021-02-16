@@ -173,7 +173,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-title, .hero-subtitle {
   letter-spacing: 2px;
-  animation: fadetoleft 1s forwards;
+  animation: fadetoleft 1.5s forwards;
 }
 
 .hero-title {
@@ -201,7 +201,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote .bq1 {
   place-self: center center;
-  animation: fadetoright 1.25s forwards;
+  animation: fadetoright 1.75s forwards;
 }
 
 .hero-quote .bq2 {
@@ -233,13 +233,13 @@ input[type="checkbox"]:checked + .menu {
 .cta-primary {
   color: var(--clr-bg);
   background-color: var(--clr-primary);
-  animation: fadein 3s forwards;
+  animation: fadein 4s forwards;
 }
 
 .cta-secondary {
   color: var(--clr-primary);
   background: none;
-  animation: fadein 3s forwards;
+  animation: fadein 4s forwards;
 }
 
 .cta-primary:hover {
@@ -671,6 +671,44 @@ input[type="text"], input[type="email"], textarea {
   font-size: calc(.5rem + .5vw);
 }
 
+.radio {
+  display: inline-flex;
+  background-color: var(--clr-fg);
+  border-radius: 5px;
+  padding: 0px 2.5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio label {
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  font-size: calc(.5rem + .5vw);
+  padding-right: 2.5px;
+}
+
+.radio label:not(:last-of-type) {
+  padding-right: 5px;
+  border-right: 2.5px solid var(--clr-bg);
+}
+
+.radio label:last-of-type {
+  padding-right: 10px;
+  transform: translateX(2.5px);
+}
+
+input[type="radio"]:not(:checked) + label {
+  color: var(--clr-secondary);
+  opacity: .7;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--clr-primary);
+  opacity: 1;
+}
+
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   border: 1px solid var(--clr-primary);
 }
@@ -865,7 +903,7 @@ button[type="submit"]:active {
   .hero-quote .bq2 {
     display: grid;
     place-self: start end;
-    animation: fadetoright 1s forwards;
+    animation: fadetoright 2s forwards;
   }
 
   .hero-quote blockquote {
@@ -974,4 +1012,3 @@ button[type="submit"]:active {
     font-size: 1.2rem;
   }
 }
-
