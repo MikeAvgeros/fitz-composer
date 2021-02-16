@@ -734,7 +734,8 @@ button[type="submit"]:active {
   grid-area: subscribe;
 }
 
-.subscribe:hover, .subscribe:focus-within {
+.subscribe:hover .subscribe-form, 
+.subscribe:focus-within .subscribe-form {
   animation: zoom .5s forwards;
 }
 
@@ -950,3 +951,4 @@ button[type="submit"]:active {
     font-size: 1.2rem;
   }
 }
+
