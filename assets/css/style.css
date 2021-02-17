@@ -73,7 +73,7 @@ body {
 .landing-page:before {
   content: '';
   background: var(--clr-bg) 
-  url("https://ik.imagekit.io/emapm0xdwkx/fitz-landing-page_fCZQ32E4w.jpg") 
+  url("https://ik.imagekit.io/emapm0xdwkx/MS1_Website/fitz-landing-page_fCZQ32E4w.jpg") 
   no-repeat center center/cover;
   position: absolute;
   width: 100%;
