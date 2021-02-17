@@ -57,13 +57,15 @@
 
 # Structure & Layout
 
-### I have designed the structure of the website using Adobe XD. I have created low fidelity wireframes for various devices that showcase my layout.
-
--   ### Wireframes
+## Wireframes
+- I have designed the layout of the website using Adobe XD. I created low fidelity wireframes to show case my layout.
     - Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
     - Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
     - Wireframe for Tablet - [View](https://www.dropbox.com/s/e38tp54njyoz0rv/MS1_Wireframe%20-%20Tablet.pdf?raw=1)
     - Wireframe for Mobile - [View](https://www.dropbox.com/s/84xm213iui0xn00/MS1_Wireframe%20-%20Mobile.pdf?raw=1)
+
+## CSS
+- I have used the grid system with grid template areas to create and structure the layout of my website.
 
 # Technologies Used
 
