@@ -187,7 +187,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-title, .hero-subtitle {
   letter-spacing: 2px;
-  animation: fadetoleft 1.5s forwards;
+  animation: fadetoleft 2s forwards;
 }
 
 .hero-title {
@@ -215,7 +215,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote .bq1 {
   place-self: center center;
-  animation: fadetoright 1.75s forwards;
+  animation: fadetoright 2s forwards;
 }
 
 .hero-quote .bq2 {
@@ -229,7 +229,7 @@ input[type="checkbox"]:checked + .menu {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
-  animation: fadein 4s forwards;
+  animation: fadein 5s forwards;
 }
 
 .cta a {
