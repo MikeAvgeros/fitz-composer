@@ -1,4 +1,8 @@
+/*----------------------- GOOGLE FONTS -----------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+
+/*----------------------- GLOBAL STYLES -----------------------*/
 
 :root {
   --clr-bg:  #202020;
@@ -23,6 +27,8 @@ html {
 body {
   width: 100%;
 }
+
+/*----------------------- GLOBAL ANIMATIONS -----------------------*/
 
 @keyframes wiggle {
   0% {transform: scale(1);}
@@ -56,6 +62,8 @@ body {
   100% {opacity: 1;}
 }
 
+/*----------------------- LANDING PAGE BANNER -----------------------*/
+
 .landing-page {
   background-color: rgba(20,20,20,0.8);
   height: 100vh;
@@ -64,12 +72,16 @@ body {
 
 .landing-page:before {
   content: '';
-  background: var(--clr-bg) url("https://ik.imagekit.io/emapm0xdwkx/fitz-landing-page_fCZQ32E4w.jpg") no-repeat center center/cover;
+  background: var(--clr-bg) 
+  url("https://ik.imagekit.io/emapm0xdwkx/fitz-landing-page_fCZQ32E4w.jpg") 
+  no-repeat center center/cover;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -2;
 }
+
+/*----------------------- NAVIGATION BAR -----------------------*/
 
 .navigation {
   background-color: var(--clr-bg);
@@ -151,6 +163,8 @@ input[type="checkbox"]:checked + .menu {
 .menu a:active, .nav-icon:active {
   animation: wiggle .2s ease-in-out;
 }
+
+/*----------------------- HOME PAGE -----------------------*/
 
 .home-page {
   height: inherit;
@@ -256,34 +270,44 @@ input[type="checkbox"]:checked + .menu {
   animation: wiggle .2s ease-in-out;
 }
 
-.about-page, .work-page, .services-page, .gallery-page, .contact-page {
+/*----------------------- GLOBAL PAGE LAYOUTS -----------------------*/
+
+.about-page, .work-page, .services-page, 
+.gallery-page, .contact-page {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
 }
 
-.about-header, .work-header, .services-header, .gallery-header, .contact-header {
+.about-header, .work-header, .services-header, 
+.gallery-header, .contact-header {
   font-family: var(--ff-secondary);
   padding-bottom: 2rem;
   text-align: center;
 }
 
-.about-title, .work-title, .services-title, .gallery-title, .contact-title {
+.about-title, .work-title, .services-title, 
+.gallery-title, .contact-title {
   color: var(--clr-primary);
   font-size: calc(1.5rem + 2.25vw);
 }
 
-.about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+.about-subtitle, .work-subtitle, .services-subtitle, 
+.gallery-subtitle, .contact-subtitle {
   color: var(--clr-secondary);
   font-size: calc(.8rem + 1vw);
   padding-top: 10px;
 }
 
-.about-title, .work-title, .services-title, .gallery-title, .contact-title, 
-.about-subtitle, .work-subtitle, .review-title, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+.about-title, .work-title, .services-title, 
+.gallery-title, .contact-title, 
+.about-subtitle, .work-subtitle, .review-title, 
+.services-subtitle, .gallery-subtitle, .contact-subtitle {
   font-weight: lighter;
   letter-spacing: 2px;
 }
+
+/*----------------------- ABOUT PAGE -----------------------*/
 
 .about-page {
   grid: 5rem repeat(3, auto) / 1fr 80% 1fr;
@@ -318,6 +342,8 @@ input[type="checkbox"]:checked + .menu {
   font-family: var(--ff-primary);
   font-size: calc(.8rem + 1vw);
 }
+
+/*----------------------- WORK PAGE -----------------------*/
 
 .work-page {
   grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / 1fr 95% 1fr;
@@ -389,6 +415,8 @@ input[type="checkbox"]:checked + .menu {
   animation: zoom .5s forwards;
 }
 
+/*----------------------- REVIEWS SECTION -----------------------*/
+
 .review-title {
   grid-area: title;
   font-family: var(--ff-secondary);
@@ -445,6 +473,8 @@ input[type="checkbox"]:checked + .menu {
   letter-spacing: 1px;
   padding: 10px 10px;
 }
+
+/*----------------------- SERVICES PAGE -----------------------*/
 
 .services-page {
   grid: 5rem repeat(2, auto) / 1fr 95% 1fr;
@@ -507,13 +537,15 @@ input[type="checkbox"]:checked + .menu {
   place-items: center center;
 }
 
-#header1:checked + .description1, #header2:checked + .description2, #header3:checked + .description3, 
-#header4:checked + .description4, #header5:checked + .description5, #header6:checked + .description6 {
+#header1:checked + .description1, #header2:checked + .description2, 
+#header3:checked + .description3, #header4:checked + .description4, 
+#header5:checked + .description5, #header6:checked + .description6 {
   animation: show .5s forwards;
 }
 
-#header1:not(:checked) + .description1, #header2:not(:checked) + .description2, #header3:not(:checked) + .description3, 
-#header4:not(:checked) + .description4, #header5:not(:checked) + .description5, #header6:not(:checked) + .description6 {
+#header1:not(:checked) + .description1, #header2:not(:checked) + .description2, 
+#header3:not(:checked) + .description3, #header4:not(:checked) + .description4, 
+#header5:not(:checked) + .description5, #header6:not(:checked) + .description6 {
   animation: hide .5s forwards;
 }
 
@@ -555,6 +587,8 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-secondary);
   outline: 1px solid var(--clr-fg);
 }
+
+/*----------------------- GALLERY PAGE -----------------------*/
 
 .gallery-page {
   grid: 5rem repeat(2, auto) / 1fr 95% 1fr;
@@ -613,6 +647,8 @@ input[type="checkbox"]:checked + .menu {
   95%  {left: -900%;}
   100% {left: 0;}
 }
+
+/*----------------------- CONTACT PAGE -----------------------*/
 
 .contact-page {
   grid: 5rem repeat(2, auto) / 1fr 95% 1fr;
@@ -704,7 +740,8 @@ input[type="radio"]:checked + label {
   opacity: 1;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, 
+textarea:focus {
   border: 1px solid var(--clr-primary);
 }
 
@@ -733,6 +770,8 @@ button[type="submit"]:hover {
 button[type="submit"]:active {
   animation: wiggle .25s ease-in-out;
 }
+
+/*----------------------- FOOTER SECTION -----------------------*/
 
 .footer-section {
   background-color: var(--clr-bg);
@@ -831,6 +870,8 @@ button[type="submit"]:active {
   letter-spacing: 2px;
 }
 
+/*----------------------- MEDIA QUERIES -----------------------*/
+
 @media (min-width: 768px) {
   .review {
     font-size: 1.2rem;
@@ -920,11 +961,13 @@ button[type="submit"]:active {
     ;
   }
 
-  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+  .about-title, .work-title, .services-title, 
+  .gallery-title, .contact-title {
     font-size: 2.8rem;
   }
 
-  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+  .about-subtitle, .work-subtitle, .services-subtitle, 
+  .gallery-subtitle, .contact-subtitle {
     font-size: 1.5rem;
   }
 
@@ -984,11 +1027,13 @@ button[type="submit"]:active {
     font-size: 1.2rem;
   }
 
-  .about-title, .work-title, .services-title, .gallery-title, .contact-title {
+  .about-title, .work-title, .services-title, 
+  .gallery-title, .contact-title {
     font-size: 3.2rem;
   }
 
-  .about-subtitle, .work-subtitle, .services-subtitle, .gallery-subtitle, .contact-subtitle {
+  .about-subtitle, .work-subtitle, .services-subtitle, 
+  .gallery-subtitle, .contact-subtitle {
     font-size: 1.75rem;
   }
 
