@@ -6,11 +6,8 @@ function sendMail(contactForm) {
         "message": contactForm.description.value
     })
     .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
+        function() {
+            alert("Email sent succesfully!");
         }
     );
     return false;  // To block from loading a new page
@@ -23,11 +20,8 @@ function subscribe(subscribeForm) {
         "message": "Please add me to your mailing list"
     })
     .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
+        function() {
+            alert("Thank you!");
         }
     );
     return false;  // To block from loading a new page
