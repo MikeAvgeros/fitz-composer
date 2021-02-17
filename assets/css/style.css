@@ -229,6 +229,7 @@ input[type="checkbox"]:checked + .menu {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
+  animation: fadein 4s forwards;
 }
 
 .cta a {
@@ -247,13 +248,11 @@ input[type="checkbox"]:checked + .menu {
 .cta-primary {
   color: var(--clr-bg);
   background-color: var(--clr-primary);
-  animation: fadein 4s forwards;
 }
 
 .cta-secondary {
   color: var(--clr-primary);
   background: none;
-  animation: fadein 4s forwards;
 }
 
 .cta-primary:hover {
@@ -406,7 +405,7 @@ input[type="checkbox"]:checked + .menu {
 
 .music-link img, .film-link img {
   width: 100%;
-  max-height: auto;
+  height: auto;
   border-radius: 5px;
   padding-bottom: 1rem;
 }

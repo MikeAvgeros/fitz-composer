@@ -19,7 +19,7 @@ function sendMail(contactForm) {
 function subscribe(subscribeForm) {
     emailjs.send("gmail", "fitz", {
         "from_name": "Website Visitor",
-        "from_email": subscribeForm.email.value,
+        "from_email": subscribeForm.email_address.value,
         "message": "Please add me to your mailing list"
     })
     .then(

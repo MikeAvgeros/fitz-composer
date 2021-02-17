@@ -1,6 +1,6 @@
 ![Fitz logo](https://www.dropbox.com/sh/5wdl8qasb5wzft7/AADqR667RZVgKeGhumkbZewea/New%20material/Logo%202%20-%20new%20name.png?raw=1)
 
-## This is my First Milestone Project (User Centric Frontend Development) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'Fitz'.
+## This is my First Milestone Project (User Centric Frontend Development) for the Code Institute. I have created a portfolio website for a film composer / record producer under the alias 'F!tz'.
 
 <br>
 
@@ -42,6 +42,7 @@
 
     -   #### Typography
         -   The Lato is the primary font for headings and Roboto the secondary font for paragraphs with Sans Serif as the fallback font in case they aren't being imported into the site correctly.
+        -   I am using fluid font sizes that grow together with the viewport width. This is achieved using the viewport width unit (vw).
 
     -   #### Layout
         -   Due to the simplicity and nature of the project, I decided to create a single-page scrolling website as it created a smoother user-experience with an easier navigation.
@@ -54,13 +55,15 @@
         -   Quotes from the owner are used to make the site feel more personal.
         - A clear distinction between the 2 buttons, with the contact owner button having the superiority.
 
+# Structure & Layout
+
+### I have designed the structure of the website using Adobe XD. I have created low fidelity wireframes for various devices that showcase my layout.
+
 -   ### Wireframes
-    - Adobe XD was used to create the wireframes
-    - Wireframes for mobile, tablet, laptop and desktop - [View](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/)
-
-# Features
-
-
+    - Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
+    - Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
+    - Wireframe for Tablet - [View](https://www.dropbox.com/s/e38tp54njyoz0rv/MS1_Wireframe%20-%20Tablet.pdf?raw=1)
+    - Wireframe for Mobile - [View](https://www.dropbox.com/s/84xm213iui0xn00/MS1_Wireframe%20-%20Mobile.pdf?raw=1)
 
 # Technologies Used
 
@@ -90,6 +93,12 @@
     - Adobe XD was used to create the [wireframes](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/) during the design and prototyping process.
 9. [CDNJS:](https://cdnjs.com/)
     - CDNJS was used to quickly import library files in my HTML document.
+10. [Squoosh:](https://squoosh.app/)
+    - Squoosh was used to convert, compress and resize my images.
+11. [Chrome DevTools:](https://developers.google.com/web/tools/chrome-devtools)
+    - Chrome DevTools helped me debug issues that I've had during development. In addition, by using the inspection mode I could see how responsive my site was.
+12. [W3C Validator:](https://validator.w3.org/)
+    - W3C Validator was used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
 
 # Testing
 
