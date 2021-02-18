@@ -380,7 +380,7 @@ input[type="checkbox"]:checked + .menu {
 .film-link, .music-link {
   display: grid;
   width: calc(160px + 25vw);
-  max-width: 320px;
+  max-width: 360px;
   height: auto;
   justify-self: center;
   padding-bottom: 10px;
@@ -505,7 +505,7 @@ input[type="checkbox"]:checked + .menu {
   max-width: 25rem;
   height: auto;
   display: grid;
-  grid: 250px 5rem auto / 100%;
+  grid: 240px 5rem auto / 100%;
   grid-template-areas:
   "img"
   "header"
@@ -520,7 +520,7 @@ input[type="checkbox"]:checked + .menu {
   grid-area: img;
   width: 100%;
   height: calc(160px + 30vw);
-  max-height: 250px;
+  max-height: 240px;
 }
 
 .service .header1, .service .header2, .service .header3, 
@@ -883,19 +883,6 @@ button[type="submit"]:active {
 
   .service label {
     font-size: 1.8rem;
-  }
-
-  .service {
-    grid: 300px 80px auto / 100%;
-    grid-template-areas:
-    "img"
-    "header"
-    "description"
-    ;
-  }
-
-  .service img {
-    max-height: 300px;
   }
 }
 
