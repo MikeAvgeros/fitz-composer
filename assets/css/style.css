@@ -954,6 +954,16 @@ button[type="submit"]:active {
     padding-right: 3.5vw;
   }
 
+  .home-page {
+    grid: 5rem repeat(3, auto)/ 1fr 90% 1fr;
+    grid-template-areas:
+    "nav    nav    nav   "
+    "...... header ......"
+    "...... quote  ......"
+    "...... cta    ......"
+    ;
+  }
+
   .hero-quote .bq1 {
     place-self: center end;
   }
