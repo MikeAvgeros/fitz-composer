@@ -389,7 +389,7 @@ input[type="checkbox"]:checked + .menu {
 
 .film-link p, .music-link p {
   color: var(--clr-secondary);
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   padding-bottom: 10px;
 }
 
@@ -418,7 +418,7 @@ input[type="checkbox"]:checked + .menu {
 
 .review-title {
   grid-area: title;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   color: var(--clr-primary);
   text-align: center;
   font-size: calc(1rem + 1.5vw);
@@ -670,7 +670,7 @@ input[type="checkbox"]:checked + .menu {
   display: grid;
   justify-self: center;
   border-radius: 8px;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   letter-spacing: 2px;
 }
 
