@@ -161,6 +161,7 @@ input[type="checkbox"]:checked + .menu {
 
 .menu a:active, .nav-icon:active {
   animation: wiggle .2s ease-in-out;
+  color: var(--clr-primary);
 }
 
 /*----------------------- HOME PAGE -----------------------*/
@@ -206,20 +207,20 @@ input[type="checkbox"]:checked + .menu {
   grid-area: quote;
   display: grid;
   font-family: var(--ff-secondary);
+  animation: fadetoright 2s forwards;
 }
 
 .hero-quote blockquote {
   color: var(--clr-primary);
-  font-size: calc(.3rem + 3vw);
+  font-size: calc(.6rem + 1.5vw);
 }
 
 .hero-quote .bq1 {
-  place-self: center center;
-  animation: fadetoright 2s forwards;
+  place-self: end center;
 }
 
 .hero-quote .bq2 {
-  display: none;
+  place-self: center center;
 }
 
 .cta {
@@ -956,9 +957,7 @@ button[type="submit"]:active {
   }
 
   .hero-quote .bq2 {
-    display: grid;
     place-self: start end;
-    animation: fadetoright 2s forwards;
   }
 
   .hero-quote blockquote {
@@ -1038,7 +1037,7 @@ button[type="submit"]:active {
   }
 
   .hero-quote blockquote {
-    font-size: calc(1.5rem + .5vw);
+    font-size: 1.7rem;
     padding-right: 8px;
   }
 
