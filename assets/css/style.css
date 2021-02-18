@@ -204,7 +204,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .hero-quote {
-  row-gap: 2rem;
+  row-gap: calc(1rem + 3vw);
   grid-area: quote;
   display: grid;
   font-family: var(--ff-secondary);
@@ -213,7 +213,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote blockquote {
   color: var(--clr-primary);
-  font-size: calc(.6rem + 1.5vw);
+  font-size: calc(.5rem + 2vw);
 }
 
 .hero-quote .bq1 {
