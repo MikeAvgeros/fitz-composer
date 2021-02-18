@@ -281,7 +281,6 @@ input[type="checkbox"]:checked + .menu {
 .about-header, .work-header, .services-header, 
 .gallery-header, .contact-header {
   font-family: var(--ff-secondary);
-  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -320,6 +319,7 @@ input[type="checkbox"]:checked + .menu {
 
 .about-header {
   grid-area: header;
+  padding-bottom: calc(16px + 2vw);
 }
 
 .about-img {
@@ -329,13 +329,15 @@ input[type="checkbox"]:checked + .menu {
 
 .about-img img {
   width: 100%;
-  max-width: 450px;
+  max-width: 360px;
   height: auto;
   border-radius: 5px;
 }
 
 .about-main {
   grid-area: main;
+  max-width: 60ch;
+  justify-self: center;
   padding-top: 32px;
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
@@ -375,7 +377,7 @@ input[type="checkbox"]:checked + .menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
-  padding-top: calc(1rem + 2vw);
+  padding-top: calc(16px + 2vw);
 }
 
 .film-link, .music-link {
@@ -497,34 +499,33 @@ input[type="checkbox"]:checked + .menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
-  row-gap: calc(1rem + 5vw);
-  padding-top: 1rem;
+  row-gap: calc(16px + 2vw);
+  padding-top: calc(16px + 2vw);
   color: var(--clr-secondary);
 }
 
 .service {
   border: 2px solid var(--clr-bg);
   border-radius: 8px;
-  width: calc(10rem + 40vw);
+  width: calc(160px + 40vw);
   max-width: 360px;
   height: auto;
+  justify-self: center;
+  padding-bottom: 10px;
+  font-size: calc(.8rem + 1vw);
   display: grid;
-  grid: 240px 5rem auto / 100%;
+  grid: 240px 5rem auto / auto;
   grid-template-areas:
   "img"
   "header"
   "description"
   ;
-  justify-self: center;
-  padding-bottom: 10px;
-  font-size: calc(.8rem + 1vw);
 }
 
 .service img {
   grid-area: img;
-  width: 100%;
-  height: calc(160px + 30vw);
-  max-height: 240px;
+  width: auto;
+  height: 240px;
 }
 
 .service .header1, .service .header2, .service .header3, 
@@ -533,6 +534,7 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-primary);
   font-family: var(--ff-secondary);
   grid-area: header;
+  width: auto;
   height: 5rem;
   max-height: 5rem;
   cursor: pointer;
@@ -565,6 +567,7 @@ input[type="checkbox"]:checked + .menu {
 .service .description1, .service .description2, .service .description3, 
 .service .description4, .service .description5, .service .description6 {
   grid-area: description;
+  width: auto;
   height: 0;
   overflow: hidden;
   background-color: var(--clr-fg);
@@ -615,6 +618,7 @@ input[type="checkbox"]:checked + .menu {
   justify-self: center;
   overflow: hidden;
   border-radius: 5px;
+  padding-top: calc(16px + 2vw);
 }
 
 .gallery > figure {
@@ -672,6 +676,7 @@ input[type="checkbox"]:checked + .menu {
   grid-area: contact;
   width: 100%;
   max-width: 640px;
+  padding-top: calc(16px + 2vw);
   display: grid;
   justify-self: center;
   border-radius: 8px;
@@ -878,6 +883,10 @@ button[type="submit"]:active {
 /*----------------------- MEDIA QUERIES -----------------------*/
 
 @media (min-width: 768px) {
+  .about-main {
+    font-size: 1.2rem;
+  }
+
   .review {
     font-size: 1.2rem;
   }
@@ -964,13 +973,15 @@ button[type="submit"]:active {
   }
 
   .about-main {
-    font-size: 1.4rem;
     padding: 0px;
   }
 
   .about-img {
     place-self: center center;
-    padding-top: 5px;
+  }
+
+  .service p {
+    font-size: 1.2rem;
   }
 
   .gallery-page {
@@ -1030,7 +1041,6 @@ button[type="submit"]:active {
   }
 
   .about-img {
-    align-self: start;
     padding-top: 10px;
   }
 
