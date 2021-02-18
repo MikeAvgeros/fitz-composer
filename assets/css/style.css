@@ -204,6 +204,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .hero-quote {
+  row-gap: 2rem;
   grid-area: quote;
   display: grid;
   font-family: var(--ff-secondary);
@@ -961,13 +962,13 @@ button[type="submit"]:active {
   }
 
   .hero-quote blockquote {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .cta a {
-    width: 8rem;
-    height: 3rem;
-    font-size: 1.1rem;
+    width: 8.5rem;
+    height: 3.25rem;
+    font-size: 1.2rem;
   }
 
   .about-page {
