@@ -584,6 +584,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-fg);
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
+  font-size: calc(1rem + .4vw);
   letter-spacing: 1px;
   justify-self: center;
   padding: 20px 10px;
