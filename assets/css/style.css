@@ -329,7 +329,7 @@ input[type="checkbox"]:checked + .menu {
 
 .about-img img {
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
   height: auto;
   border-radius: 5px;
 }
@@ -954,7 +954,7 @@ button[type="submit"]:active {
   }
 
   .about-page {
-    grid: 5rem repeat(2, auto) / 1fr 40% 5% 40% 1fr;
+    grid: 5rem repeat(2, auto) / 1fr 40% 2.5% 40% 1fr;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -1038,10 +1038,6 @@ button[type="submit"]:active {
   .about-subtitle, .work-subtitle, .services-subtitle, 
   .gallery-subtitle, .contact-subtitle {
     font-size: 1.75rem;
-  }
-
-  .about-img {
-    padding-top: 10px;
   }
 
   .review-title {
