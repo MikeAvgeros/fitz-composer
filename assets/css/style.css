@@ -152,7 +152,6 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: calc(1.1rem + .7vw);
-  font-weight: bolder;
   letter-spacing: 2px;
 }
 
@@ -186,6 +185,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .hero-title, .hero-subtitle {
+  font-weight: lighter;
   letter-spacing: 2px;
   animation: fadetoleft 2s forwards;
 }
@@ -331,7 +331,7 @@ input[type="checkbox"]:checked + .menu {
   width: 100%;
   max-width: 450px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .about-main {
@@ -340,6 +340,7 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
   font-size: calc(.8rem + 1vw);
+  letter-spacing: 1px;
 }
 
 /*----------------------- WORK PAGE -----------------------*/
@@ -384,13 +385,14 @@ input[type="checkbox"]:checked + .menu {
   height: auto;
   justify-self: center;
   padding-bottom: 10px;
-  font-size: 1rem;
 }
 
 .film-link p, .music-link p {
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
   padding-bottom: 10px;
+  font-size: calc(.5rem + .5vw);
+  letter-spacing: 2px;
 }
 
 .divider {
@@ -422,7 +424,8 @@ input[type="checkbox"]:checked + .menu {
   color: var(--clr-primary);
   text-align: center;
   font-size: calc(1rem + 1.5vw);
-  padding: 1rem 0rem calc(1rem + 1vw);
+  letter-spacing: 3px;
+  padding: 1.5rem 0rem calc(1rem + 1vw);
 }
 
 .reviews {
@@ -446,7 +449,7 @@ input[type="checkbox"]:checked + .menu {
 .review {
   display: grid;
   width: calc(10rem + 40vw);
-  max-width: 25rem;
+  max-width: 22.5rem;
   height: auto;
   justify-self: center;
   place-content: start start;
@@ -465,9 +468,10 @@ input[type="checkbox"]:checked + .menu {
   max-width: 150px;
   height: auto;
   justify-self: center;
+  padding: 10px 10px;
 }
 
-.review blockquote, .review cite, .review img {
+.review blockquote, .review cite {
   color: var(--clr-secondary);
   letter-spacing: 1px;
   padding: 10px 10px;
@@ -502,7 +506,7 @@ input[type="checkbox"]:checked + .menu {
   border: 2px solid var(--clr-bg);
   border-radius: 8px;
   width: calc(10rem + 40vw);
-  max-width: 25rem;
+  max-width: 360px;
   height: auto;
   display: grid;
   grid: 240px 5rem auto / 100%;
@@ -550,11 +554,11 @@ input[type="checkbox"]:checked + .menu {
 
 @keyframes show {
   0% {height: 0rem;}
-  100% {height: 25rem;}
+  100% {height: 33rem;}
 }
 
 @keyframes hide {
-  0% {height: 25rem;}
+  0% {height: 33rem;}
   100% {height: 0rem;}
 }
 
@@ -576,6 +580,7 @@ input[type="checkbox"]:checked + .menu {
   background-color: var(--clr-fg);
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
+  letter-spacing: 1px;
   justify-self: center;
   padding: 20px 10px;
 }
