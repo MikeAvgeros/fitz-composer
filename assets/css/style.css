@@ -67,6 +67,7 @@ body {
 .landing-page {
   background-color: rgba(20,20,20,0.8);
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
 }
 
@@ -173,7 +174,7 @@ input[type="checkbox"]:checked + .menu {
   grid-template-areas:
   "nav    nav    nav   "
   "...... header ......"
-  "...... quote  ......"
+  "quote  quote   quote"
   "...... cta    ......"
   ;
 }
@@ -198,7 +199,6 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-subtitle {
   color: var(--clr-secondary);
-  font-weight: lighter;
   font-size: calc(.7rem + 1.5vw);
   padding-left: .3vw;
 }
@@ -213,7 +213,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote blockquote {
   color: var(--clr-primary);
-  font-size: calc(.5rem + 2vw);
+  font-size: calc(.6rem + 2vw);
 }
 
 .hero-quote .bq1 {
