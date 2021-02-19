@@ -180,7 +180,7 @@ input[type="checkbox"]:checked + .menu {
 }
 
 .hero-header {
-  place-self: center start;
+  place-self: center center;
   grid-area: header;
   display: grid;
   font-family: var(--ff-primary);
@@ -213,7 +213,7 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-quote blockquote {
   color: var(--clr-primary);
-  font-size: calc(.6rem + 2vw);
+  font-size: calc(.55rem + 2vw);
 }
 
 .hero-quote .bq1 {
@@ -900,6 +900,32 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 768px) {
+  .home-page {
+    grid: 5rem repeat(3, auto)/ 1fr 90% 1fr;
+    grid-template-areas:
+    "nav    nav    nav   "
+    "...... header ......"
+    "...... quote  ......"
+    "...... cta    ......"
+    ;
+  }
+
+  .hero-header {
+    place-self: center start;
+  }
+
+  .hero-quote .bq1 {
+    place-self: center end;
+  }
+
+  .hero-quote .bq2 {
+    place-self: start end;
+  }
+
+  .hero-quote blockquote {
+    font-size: 1.4rem;
+  }
+
   .about-main {
     font-size: 1.2rem;
   }
@@ -962,24 +988,6 @@ button[type="submit"]:active {
     grid-area: menu;
     place-self: center end;
     padding-right: 3.5vw;
-  }
-
-  .home-page {
-    grid: 5rem repeat(3, auto)/ 1fr 90% 1fr;
-    grid-template-areas:
-    "nav    nav    nav   "
-    "...... header ......"
-    "...... quote  ......"
-    "...... cta    ......"
-    ;
-  }
-
-  .hero-quote .bq1 {
-    place-self: center end;
-  }
-
-  .hero-quote .bq2 {
-    place-self: start end;
   }
 
   .hero-quote blockquote {
