@@ -958,6 +958,14 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 1024px) {
+  .hero-title {
+    font-size: calc(4rem + 1vw);
+  }
+  
+  .hero-subtitle {
+    font-size: calc(2rem + .5vw);
+  }
+
   .menu li {
     float: left;
   }
@@ -1044,14 +1052,6 @@ button[type="submit"]:active {
 
   .navigation .menu {
     padding-right: 4vw;
-  }
-
-  .hero-title {
-    font-size: calc(5rem + 1vw);
-  }
-  
-  .hero-subtitle {
-    font-size: calc(2rem + .5vw);
   }
 
   .hero-quote .bq1 {
