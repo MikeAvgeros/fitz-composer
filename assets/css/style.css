@@ -915,11 +915,11 @@ button[type="submit"]:active {
   }
 
   .hero-quote .bq1 {
-    place-self: center end;
+    place-self: end end;
   }
 
   .hero-quote .bq2 {
-    place-self: start end;
+    place-self: center end;
   }
 
   .hero-quote blockquote {
