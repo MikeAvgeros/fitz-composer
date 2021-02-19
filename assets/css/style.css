@@ -914,6 +914,10 @@ button[type="submit"]:active {
     place-self: center start;
   }
 
+  .hero-quote {
+    place-self: start end;
+  }
+
   .hero-quote .bq1 {
     place-self: end end;
   }
@@ -924,6 +928,10 @@ button[type="submit"]:active {
 
   .hero-quote blockquote {
     font-size: 1.4rem;
+  }
+
+  .cta {
+    place-self: start center;
   }
 
   .about-main {
@@ -999,7 +1007,7 @@ button[type="submit"]:active {
   }
 
   .hero-quote blockquote {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .cta a {
@@ -1054,6 +1062,14 @@ button[type="submit"]:active {
     padding-right: 4vw;
   }
 
+  .hero-title {
+    font-size: calc(4.5rem + 1vw);
+  }
+  
+  .hero-subtitle {
+    font-size: calc(2.1rem + .5vw);
+  }
+
   .hero-quote .bq1 {
     place-self: center end;
   }
@@ -1063,7 +1079,7 @@ button[type="submit"]:active {
   }
 
   .hero-quote blockquote {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     padding-right: 8px;
   }
 
