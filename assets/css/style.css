@@ -963,7 +963,7 @@ button[type="submit"]:active {
   }
   
   .hero-subtitle {
-    font-size: calc(2rem + .5vw);
+    font-size: calc(1.9rem + .5vw);
   }
 
   .menu li {
