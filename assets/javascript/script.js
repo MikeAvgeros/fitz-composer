@@ -1,8 +1,8 @@
-window.onload = function {
+window.onload = function() {
     let vh = window.innerHeight;
     document.getElementById("landing").style.height = vh;
     document.getElementById("home").style.height = vh;
-};
+}
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "fitz", {
