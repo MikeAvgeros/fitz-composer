@@ -1017,7 +1017,7 @@ button[type="submit"]:active {
   }
 
   .about-page {
-    grid: 5rem repeat(2, auto) / 1fr 40% 1.5% 40% 1fr;
+    grid: 5rem repeat(2, auto) / 1fr 40% 1% 40% 1fr;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -1037,6 +1037,7 @@ button[type="submit"]:active {
 
   .about-main {
     padding: 0px;
+    max-width: 50ch;
   }
 
   .about-img {
