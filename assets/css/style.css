@@ -62,7 +62,7 @@ body {
   100% {opacity: 1;}
 }
 
-/*----------------------- LANDING PAGE BANNER -----------------------*/
+/*----------------------- LANDING PAGE BANNER & OVERLAY -----------------------*/
 
 .landing-page {
   background-color: rgba(20,20,20,0.8);
@@ -76,6 +76,8 @@ body {
   url("https://ik.imagekit.io/emapm0xdwkx/MS1_Website/fitz-landing-page_fCZQ32E4w.jpg") 
   no-repeat center center/cover;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -2;
@@ -161,10 +163,6 @@ input[type="checkbox"]:checked + .menu {
 
 .menu a:active, .nav-icon:active {
   animation: wiggle .2s ease-in-out;
-}
-
-.menu a:focus, .nav-icon:focus {
-  color: var(--clr-primary);
 }
 
 /*----------------------- HOME PAGE -----------------------*/
