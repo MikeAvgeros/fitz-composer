@@ -194,12 +194,12 @@ input[type="checkbox"]:checked + .menu {
 
 .hero-title {
   color: var(--clr-primary);
-  font-size: calc(1.2rem + 5.5vw);
+  font-size: calc(1.3rem + 6vw);
 }
 
 .hero-subtitle {
   color: var(--clr-secondary);
-  font-size: calc(.7rem + 1.5vw);
+  font-size: calc(.65rem + 2.5vw);
   padding-left: .3vw;
 }
 
