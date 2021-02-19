@@ -67,7 +67,6 @@ body {
 .landing-page {
   background-color: rgba(20,20,20,0.8);
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   position: relative;
 }
 
@@ -162,6 +161,9 @@ input[type="checkbox"]:checked + .menu {
 
 .menu a:active, .nav-icon:active {
   animation: wiggle .2s ease-in-out;
+}
+
+.menu a:focus, .nav-icon:focus {
   color: var(--clr-primary);
 }
 

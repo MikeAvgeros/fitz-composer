@@ -1,7 +1,8 @@
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+window.onload = function {
+    let vh = window.innerHeight;
+    document.getElementById("landing").style.height = vh;
+    document.getElementById("home").style.height = vh;
+};
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "fitz", {
