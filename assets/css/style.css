@@ -617,6 +617,7 @@ input[type="checkbox"]:checked + .menu {
   width: 100%;
   max-width: 864px;
   height: auto;
+  max-height: 576px;
   justify-self: center;
   overflow: hidden;
   border-radius: 5px;
