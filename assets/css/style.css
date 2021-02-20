@@ -332,6 +332,7 @@ input[type="checkbox"]:checked + .menu {
 .about-img img {
   width: 100%;
   max-width: 400px;
+  min-width: 288px;
   height: auto;
   border-radius: 5px;
 }
@@ -339,6 +340,7 @@ input[type="checkbox"]:checked + .menu {
 .about-main {
   grid-area: main;
   max-width: 60ch;
+  min-width: 288px;
   justify-self: center;
   padding-top: 32px;
   color: var(--clr-secondary);
