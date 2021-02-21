@@ -1081,6 +1081,16 @@ button[type="submit"]:active {
     font-size: calc(1.75rem + .5vw);
   }
 
+  .home-quotes {
+    place-self: start end;
+    padding-bottom: 1vh;
+  }
+
+  .home-btn {
+    place-self: start center;
+    padding-top: 1vh;
+  }
+
   .home-btn a {
     width: calc(7.5rem + 1vw);
     font-size: calc(.95rem + .25vw);
@@ -1137,11 +1147,6 @@ button[type="submit"]:active {
     font-size: calc(2rem + .5vw);
   }
 
-  .home-quotes {
-    place-self: start end;
-    padding-bottom: 1vh;
-  }
-
   .home-quotes blockquote {
     font-size: calc(1.75rem + .25vw);
     padding-right: 8px;
@@ -1156,8 +1161,6 @@ button[type="submit"]:active {
   }
 
   .home-btn {
-    place-self: start center;
-    padding-top: 1vh;
     width: calc(18rem + 5vw);
   }
 
