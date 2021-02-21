@@ -1,6 +1,8 @@
-window.onload = function() {
+window.onload = resetViewPortHeight;
+
+function resetViewPortHeight() {
     let vh = window.innerHeight;
-    document.getElementById("landing").style.height = vh;
+    document.getElementById("landing-page").style.height = vh;
     document.getElementById("home").style.height = vh;
 }
 
@@ -14,6 +16,7 @@ function sendMail(contactForm) {
     .then(
         function() {
             alert("Email sent succesfully!");
+            // scroll to top from here
         }
     );
     return false;  // To block from loading a new page
@@ -28,11 +31,14 @@ function subscribe(subscribeForm) {
     .then(
         function() {
             alert("Thank you!");
+        },
+        function(error) {
+        console.log('FAILED...', error);
         }
     );
     return false;  // To block from loading a new page
 }
 
 function collapseNav() {
-    document.getElementById("menu-btn").checked = false;
+    document.getElementById("navbar-menu-checkbox").checked = false;
 }

@@ -14,22 +14,15 @@
     <meta property="og:description" content="Original Music Composition for Film and TV - Record Production">
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <!-- EMAILJS LINKS -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("user_29WTPFgCm9JgR2Bb2Yzxl");
-        })();
-    </script>
 </head>
 <body>  
     <!-- LANDING PAGE -->
-    <div id="landing" class="landing-page">
-        <nav class="navigation">
-            <a class="logo" href="#home"><img src="https://ik.imagekit.io/emapm0xdwkx/tr:w-960,h-540,c-force/MS1_Website/Logo_hxbsD4l-gTP_.png" alt="logo"></a>
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"><i class="fas fa-bars"></i></span></label>
-            <input type="checkbox" id="menu-btn">
-            <ul class="menu">
+    <div id="landing-page">
+        <nav class="navbar">
+            <a class="brand-logo" href="#home"><img src="https://ik.imagekit.io/emapm0xdwkx/tr:w-960,h-540,c-force/MS1_Website/Logo_hxbsD4l-gTP_.png" alt="logo"></a>
+            <label class="navbar-icon" for="navbar-menu-checkbox"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="navbar-menu-checkbox">
+            <ul class="navbar-menu">
                 <li><a href="#home" onclick="collapseNav();">Home</a></li>
                 <li><a href="#about" onclick="collapseNav();">About</a></li>
                 <li><a href="#work" onclick="collapseNav();">Work</a></li>
@@ -38,31 +31,31 @@
                 <li><a href="#contact" onclick="collapseNav();">Contact</a></li>
             </ul>
         </nav>
-        <div id="home" class="home-page">
-            <header class="hero-header">
-                <h1 class="hero-title">
+        <div id="home">
+            <header class="home-header">
+                <h1 class="home-title">
                     Storytelling <br> through sound
                 </h1>
-                <h4 class="hero-subtitle">
+                <h4 class="home-subtitle">
                     Bespoke Music Composition <br> & Record Production
                 </h4>
             </header>
-            <section class="hero-quote">
-                <blockquote class="bq1">
+            <section class="home-quotes">
+                <blockquote id="bq1">
                     Without music, life would be a mistake
                 </blockquote>
-                <blockquote class="bq2">
+                <blockquote id="bq2">
                     Music is a way to express what words can't
                 </blockquote>
             </section>
-            <footer class="cta">
-                <a href="#contact" class="cta-primary"><strong>Contact Me</strong></a>
-                <a href="#work" class="cta-secondary"><strong>Learn More</strong></a>
+            <footer class="home-btn">
+                <a href="#contact" id="btn-contact"><strong>Contact Me</strong></a>
+                <a href="#work" id="btn-learnmore"><strong>Learn More</strong></a>
             </footer>
         </div>
     </div>
     <!-- ABOUT PAGE -->
-    <div id="about" class="about-page">
+    <div id="about">
         <header class="about-header">
             <h2 class="about-title">
                 About Me
@@ -71,7 +64,7 @@
                 Composer | Record Producer
             </h4>
         </header>
-        <div class="about-img"><img src="https://ik.imagekit.io/emapm0xdwkx/MS1_Website/fitz-about_vt9NcT5gM5.jpg" alt="image of F!tz in the studio"></div>
+        <div class="about-img"><img src="https://ik.imagekit.io/emapm0xdwkx/tr:w-1080,h-1080,c-force/MS1_Website/fitz-about_vt9NcT5gM5.jpg" alt="image of F!tz in the studio"></div>
         <section class="about-main">
             <p>
                 Growing up as a classically trained musician, F!tz soon developed an interest in a variety of musical styles and genres. As a teenager, he joined numerous rock bands and pursued jazz studies in his undergraduate years at a Music Conservatory in Italy. 
@@ -82,12 +75,16 @@
             </p>
             <br>
             <p>
-                In 2016, he joined an award winning Music Production Studio in Central London as a Senior Music Producer and Sound Engineer. Alongside his studio activities, he continues to work as a freelance composer and record producer on numerous projects, writing and producing in a wide range of musical styles.
+                In 2016, he joined Soho Sonic Studios, an award winning Music Production Studio in Central London as a Senior Music Producer and Sound Engineer. His job in the studio requires him to be proficient in all styles of music and he can combine multiple influences effortlessly into your track. He is also a multi-instrumentalist and a skilled vocal producer.
+            </p>
+            <br>
+            <p>
+                Alongside his studio activities, he continues to work as a freelance composer and record producer on numerous exciting projects, writing and producing in a wide range of musical styles.
             </p>
         </section>
     </div>
     <!-- WORK PAGE -->
-    <div id="work" class="work-page">
+    <div id="work">
         <header class="work-header">
             <h2 class="work-title">
                 Listen Below
@@ -243,7 +240,7 @@
         </section>
     </div>
     <!-- SERVICES PAGE -->
-    <div id="services" class="services-page">
+    <div id="services">
         <header class="services-header">
             <h2 class="services-title">
                 My Services
@@ -358,7 +355,7 @@
         </section>
     </div>
     <!-- GALLERY PAGE -->
-    <div id="gallery" class="gallery-page">
+    <div id="gallery">
         <header class="gallery-header">
             <h2 class="gallery-title">
                 Gallery
@@ -383,7 +380,7 @@
         </section>
     </div>
     <!-- CONTACT PAGE -->
-    <div id="contact" class="contact-page">
+    <div id="contact">
         <header class="contact-header">
             <h2 class="contact-title">
                 Contact
@@ -456,5 +453,12 @@
     <!-- JAVASCRIPT LINKS -->
     <script src="https://kit.fontawesome.com/08022ae364.js" crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
+    <!-- EMAILJS LINKS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("user_29WTPFgCm9JgR2Bb2Yzxl");
+        })();
+    </script>
 </body>
 </html>
