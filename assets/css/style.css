@@ -340,7 +340,7 @@ body {
 
 .about-header {
   grid-area: header;
-  padding-bottom: calc(16px + 2vw);
+  padding-bottom: calc(16px + 3vw);
 }
 
 .about-img {
@@ -372,7 +372,7 @@ body {
 /*----------------------- WORK PAGE -----------------------*/
 
 #work {
-  grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / 5% 90% 5%;
+  grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / 2.5% 95% 2.5%;
   grid-template-areas:
   "nav    nav     nav   "
   "header header  header"
@@ -401,7 +401,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
-  padding-top: calc(16px + 2vw);
+  padding-top: calc(16px + 3vw);
+  row-gap: calc(16px + 3vw);
 }
 
 .film-link, .music-link {
@@ -454,21 +455,21 @@ body {
   padding: 1.5rem 0rem calc(1rem + 1vw);
 }
 
-.reviews {
+#reviews {
   grid-area: quotes;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
-  padding-top: calc(16px + 2vw);
+  padding-top: calc(16px + 3vw);
   font-family: var(--ff-primary);
   padding: 0% 2.5% 2.5% 2.5%;
 }
 
-.review-title, .reviews {
+.review-title, #reviews {
   background-color: var(--clr-fg);
 }
 
-.music-links, .film-links, .reviews {
+.music-links, .film-links, #reviews {
   row-gap: calc(16px + 2.5vw);
 }
 
@@ -506,7 +507,7 @@ body {
 /*----------------------- SERVICES PAGE -----------------------*/
 
 #services {
-  grid: 5rem repeat(2, auto) / 5% 90% 5%;
+  grid: 5rem repeat(2, auto) / 2.5% 95% 2.5%;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -523,8 +524,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
-  row-gap: calc(16px + 2vw);
-  padding-top: calc(16px + 2vw);
+  row-gap: calc(16px + 3vw);
+  padding-top: calc(16px + 3vw);
   color: var(--clr-secondary);
 }
 
@@ -552,8 +553,7 @@ body {
   height: calc(80px + 35vw);
 }
 
-.service .header1, .service .header2, .service .header3, 
-.service .header4, .service .header5, .service .header6 {
+.service-header {
   background-color: var(--clr-fg);
   color: var(--clr-primary);
   font-family: var(--ff-secondary);
@@ -565,16 +565,26 @@ body {
   place-items: center center;
 }
 
-#header1:checked + .description1, #header2:checked + .description2, 
-#header3:checked + .description3, #header4:checked + .description4, 
-#header5:checked + .description5, #header6:checked + .description6 {
+.service-header-radio {
+  display: none;
+}
+
+#service-header-radio1:checked + #service-description1,
+#service-header-radio2:checked + #service-description2,
+#service-header-radio3:checked + #service-description3,
+#service-header-radio4:checked + #service-description4,
+#service-header-radio5:checked + #service-description5,
+#service-header-radio6:checked + #service-description6 {
   animation: show .5s forwards;
 }
 
-#header1:not(:checked) + .description1, #header2:not(:checked) + .description2, 
-#header3:not(:checked) + .description3, #header4:not(:checked) + .description4, 
-#header5:not(:checked) + .description5, #header6:not(:checked) + .description6 {
-  animation: hide .5s forwards;
+#service-header-radio1:not(:checked) + #service-description1,
+#service-header-radio2:not(:checked) + #service-description2,
+#service-header-radio3:not(:checked) + #service-description3,
+#service-header-radio4:not(:checked) + #service-description4,
+#service-header-radio5:not(:checked) + #service-description5,
+#service-header-radio6:not(:checked) + #service-description6 {
+  animation: hide .25s forwards;
 }
 
 @keyframes show {
@@ -587,13 +597,22 @@ body {
   100% {height: 0rem;}
 }
 
-.service .description1, .service .description2, .service .description3, 
-.service .description4, .service .description5, .service .description6 {
+.service-description {
   grid-area: description;
   width: auto;
   height: 0;
   overflow: hidden;
   background-color: var(--clr-fg);
+}
+
+.service-description i {
+  float: right;
+  padding: 10px 10px 0px 0px;
+  cursor: pointer;
+}
+
+.service-description i:active {
+  animation: wiggle .2s ease-in-out;
 }
 
 .service label {
@@ -612,8 +631,7 @@ body {
   padding: 20px 10px;
 }
 
-.service .header1:hover, .service .header2:hover, .service .header3:hover, 
-.service .header4:hover, .service .header5:hover, .service .header6:hover {
+.service .service-header:hover {
   color: var(--clr-bg);
   background-color: var(--clr-secondary);
   outline: 1px solid var(--clr-fg);
@@ -747,7 +765,7 @@ input[type="text"], input[type="email"], textarea {
   display: inline-flex;
 }
 
-input[type="radio"] {
+.contact-radio {
   display: none;
 }
 
@@ -1242,6 +1260,14 @@ button[type="submit"]:active {
     "header header header header header"
     "...... img    ...... main   ......"
     ;
+  }
+
+  .contact-form {
+    max-width: 720px;
+  }
+
+  .gallery  {
+    max-width: 960px;
   }
 }
 

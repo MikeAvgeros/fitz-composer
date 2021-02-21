@@ -42,3 +42,7 @@ function subscribe(subscribeForm) {
 function collapseNav() {
     document.getElementById("navbar-menu-checkbox").checked = false;
 }
+
+function collapseService(x) {
+    document.getElementById("service-header-radio" + x).checked = false;
+}
