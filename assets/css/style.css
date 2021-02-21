@@ -506,7 +506,7 @@ body {
 /*----------------------- SERVICES PAGE -----------------------*/
 
 #services {
-  grid: 5rem repeat(2, auto) / .25fr 9.5fr .25fr;;
+  grid: 5rem repeat(2, auto) / .25fr 9.5fr .25fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
