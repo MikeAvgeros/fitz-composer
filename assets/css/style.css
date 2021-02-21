@@ -931,7 +931,7 @@ button[type="submit"]:active {
   }
 
   .home-quotes blockquote {
-    font-size: calc(1.25rem + .25vw);
+    font-size: calc(1.15rem + .25vw);
   }
 
   .home-btn {
@@ -940,6 +940,10 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 475px) {
+  .home-quotes blockquote {
+    font-size: calc(1.25rem + .25vw);
+  }
+
   .service {
     grid: 240px 5rem auto / 360px;
     grid-template-areas:
