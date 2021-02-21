@@ -372,7 +372,7 @@ body {
 /*----------------------- WORK PAGE -----------------------*/
 
 #work {
-  grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / 1fr 95% 1fr;
+  grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / .25fr 9.5fr .25fr;
   grid-template-areas:
   "nav    nav     nav   "
   "header header  header"
@@ -506,7 +506,7 @@ body {
 /*----------------------- SERVICES PAGE -----------------------*/
 
 #services {
-  grid: 5rem repeat(2, auto) / 1fr 95% 1fr;
+  grid: 5rem repeat(2, auto) / .25fr 9.5fr .25fr;;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -622,7 +622,7 @@ body {
 /*----------------------- GALLERY PAGE -----------------------*/
 
 #gallery {
-  grid: 5rem repeat(2, auto) / 1fr 95% 1fr;
+  grid: 5rem repeat(2, auto) / .25fr 9.5fr .25fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -685,7 +685,7 @@ body {
 /*----------------------- CONTACT PAGE -----------------------*/
 
 #contact {
-  grid: 5rem repeat(2, auto) / 1fr 95% 1fr;
+  grid: 5rem repeat(2, auto) / .25fr 9.5fr .25fr;
   grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
@@ -1101,7 +1101,7 @@ button[type="submit"]:active {
   }
 
   #about {
-    grid: 5rem repeat(2, auto) / 1fr 40% 1% 40% 1fr;
+    grid: 5rem repeat(2, auto) / .9fr 4fr .2fr 4fr .9fr;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -1222,6 +1222,15 @@ button[type="submit"]:active {
     height: calc(3.5rem + .5vw);
     font-size: calc(1rem + .25vw);
   }
+
+  #about {
+    grid: 5rem repeat(2, auto) / 1.4fr 3.5fr .2fr 3.5fr 1.4fr;
+    grid-template-areas:
+    "nav    nav    nav    nav    nav"
+    "header header header header header"
+    "...... img    ...... main   ......"
+    ;
+  }
 }
 
 @media (min-width: 2560px) {
@@ -1241,5 +1250,14 @@ button[type="submit"]:active {
   
   .home-subtitle{
     font-size: calc(2.5rem + .5vw);
+  }
+
+  #about {
+    grid: 5rem repeat(2, auto) / 1.8fr 3fr .4fr 3fr 1.8fr;
+    grid-template-areas:
+    "nav    nav    nav    nav    nav"
+    "header header header header header"
+    "...... img    ...... main   ......"
+    ;
   }
 }
