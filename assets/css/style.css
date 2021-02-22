@@ -10,8 +10,8 @@
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
   --fs-jumboxl: calc(2.25rem + 1vw);
-  --fs-xl: calc(1.25rem + 1vw);
-  --fs-l: calc(1rem + .5vw);
+  --fs-xl: calc(1.5rem + 1vw);
+  --fs-l: calc(1.35rem + .5vw);
   --fs-m: calc(.85rem + .5vw);
   --fs-s: calc(.8rem + .25vw);
   --fs-xs: calc(.75rem + .25vw);
@@ -626,7 +626,7 @@ body {
 .service-description i {
   float: right;
   padding: 10px 10px 0px 0px;
-  font-size: var(--fs-s);
+  font-size: var(--fs-m);
   color: var(--clr-primary);
   font-weight: bolder;
   cursor: pointer;
@@ -638,7 +638,7 @@ body {
 
 .service label {
   letter-spacing: 2px;
-  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
 }
 
 .service p {
@@ -931,22 +931,16 @@ body {
   :root {
     --fs-jumboxl: calc(2.75rem + 1vw);
     --fs-xl: calc(1.75rem + 1vw);
-    --fs-l: calc(1.25rem + .5vw);
+    --fs-l: calc(1.5rem + .5vw);
     --fs-m: calc(1rem + .5vw);
     --fs-s: calc(.85rem + .25vw);
     --fs-xs: calc(.8rem + .25vw);
-  }
-
-  .service label {
-    font-size: var(--fs-l);
   }
 }
 
 @media (min-width: 425px) {
   :root {
     --fs-jumboxl: calc(3rem + 1vw);
-    --fs-xl: calc(1.75rem + 1vw);
-    --fs-l: calc(1.5rem + .5vw);
     --fs-m: calc(1rem + .5vw);
     --fs-s: calc(.9rem + .25vw);
     --fs-xs: calc(.85rem + .25vw);
@@ -1041,7 +1035,6 @@ body {
   :root {
     --fs-jumboxl: calc(3.75rem + 1vw);
     --fs-xl: calc(2rem + 1vw);
-    --fs-l: calc(1.5rem + .5vw);
     --fs-m: calc(1.25rem + .5vw);
   }
 
@@ -1123,6 +1116,7 @@ body {
   :root {
     --fs-jumboxl: calc(4.25rem + 1vw);
     --fs-xl: calc(2.25rem + 1vw);
+    --fs-l: calc(1.75rem + .5vw);
     --fs-m: calc(1.5rem + .5vw);
   }
 
@@ -1157,12 +1151,6 @@ body {
 }
 
 @media (min-width: 1920px) {
-  :root {
-    --fs-jumboxl: calc(4.5rem + 1vw);
-    --fs-xl: calc(2.5rem + 1vw);
-    --fs-l: calc(2rem + .5vw);
-  }
-
   #home {
     grid: 5rem repeat(3, auto)/ 10% 80% 10%;
     grid-template-areas:
@@ -1197,6 +1185,12 @@ body {
 }
 
 @media (min-width: 2560px) {
+  :root {
+    --fs-jumboxl: calc(4.5rem + 1vw);
+    --fs-xl: calc(2.5rem + 1vw);
+    --fs-l: calc(2.5rem + .5vw);
+  }
+  
   #home {
     grid: 5rem repeat(3, auto)/ 20% 60% 20%;
     grid-template-areas:
@@ -1205,11 +1199,6 @@ body {
     "...... quote   ......"
     "...... buttons ......"
     ;
-  }
-
-  :root {
-    --fs-jumboxl: calc(5rem + 1vw);
-    --fs-l: calc(2.5rem + .5vw);
   }
 
   #about {
