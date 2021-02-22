@@ -9,13 +9,13 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-jumboxl: 2.5rem;
-  --fs-xl: 1.25rem;
-  --fs-l: 1rem;
-  --fs-m:.9rem;
-  --fs-s: .85rem;
-  --fs-xs: .75rem;
-  --fs-xxs: .7rem;
+  --fs-jumboxl: calc(2.25rem + 1vw);
+  --fs-xl: calc(1.25rem + 1vw);
+  --fs-l: calc(1rem + .5vw);
+  --fs-m: calc(.85rem + .5vw);
+  --fs-s: calc(.8rem + .25vw);
+  --fs-xs: calc(.75rem + .25vw);
+  --fs-xxs: calc(.7rem + .25vw);
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
 }
@@ -623,7 +623,7 @@ body {
 
 .service label {
   letter-spacing: 2px;
-  font-size: var(--fs-m);
+  font-size: var(--fs-xl);
 }
 
 .service p {
@@ -930,26 +930,29 @@ button[type="submit"]:active {
 }
 
 /*----------------------- MEDIA QUERIES -----------------------*/
-
 @media (min-width: 375px) {
   :root {
     --fs-jumboxl: calc(2.5rem + 1vw);
-    --fs-xl: calc(1.25rem + 1vw);
-    --fs-l: calc(1rem + .5vw);
-    --fs-m: calc(.9rem + .5vw);
+    --fs-xl: calc(1.5rem + 1vw);
+    --fs-l: calc(1.25rem + .5vw);
+    --fs-m: calc(1rem + .5vw);
     --fs-s: calc(.85rem + .25vw);
-    --fs-xs: calc(.75rem + .25vw);
-    --fs-xxs: calc(.7rem + .25vw);
+    --fs-xs: calc(.8rem + .25vw);
+  }
+
+  .service label {
+    font-size: var(--fs-l);
   }
 }
 
 @media (min-width: 425px) {
   :root {
     --fs-jumboxl: calc(3rem + 1vw);
-    --fs-xl: calc(1.5rem + 1vw);
-    --fs-l: calc(1.25rem + .5vw);
+    --fs-xl: calc(1.75rem + 1vw);
+    --fs-l: calc(1.5rem + .5vw);
     --fs-m: calc(1rem + .5vw);
-    --fs-s: calc(.95rem + .25vw);
+    --fs-s: calc(.9rem + .25vw);
+    --fs-xs: calc(.85rem + .25vw);
   }
 
   .home-btn {
@@ -958,10 +961,6 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 475px) {
-  :root {
-    --fs-m: calc(1.15rem + .5vw);
-  }
-
   .service {
     grid: 240px 5rem auto / 360px;
     grid-template-areas:
@@ -979,10 +978,9 @@ button[type="submit"]:active {
 @media (min-width: 768px) {
   :root {
     --fs-jumboxl: calc(3.5rem + 1vw);
-    --fs-xl: calc(1.5rem + 1vw);
-    --fs-l: calc(1.5rem + .5vw);
+    --fs-m: calc(1.15rem + .5vw);
     --fs-s: calc(1rem + .25vw);
-    --fs-xs: calc(.85rem + .25vw);
+    --fs-xs: calc(.9rem + .25vw);
     --fs-xxs: calc(.8rem + .25vw);
   }
 
@@ -1047,7 +1045,7 @@ button[type="submit"]:active {
   :root {
     --fs-jumboxl: calc(3.75rem + 1vw);
     --fs-xl: calc(2rem + 1vw);
-    --fs-l: calc(1.75rem + .5vw);
+    --fs-l: calc(1.5rem + .5vw);
   }
 
   .navbar-menu li {
@@ -1128,8 +1126,7 @@ button[type="submit"]:active {
   :root {
     --fs-jumboxl: calc(4.25rem + 1vw);
     --fs-xl: calc(2.25rem + 1vw);
-    --fs-l: calc(2rem + .5vw);
-    --fs-ml: calc(1.75rem + .5vw);
+    --fs-l: calc(1.75rem + .5vw);
     --fs-m: calc(1.5rem + .5vw);
     --fs-s: calc(1.15rem + .25vw);
     --fs-xs: calc(.9rem + .25vw);
@@ -1169,8 +1166,7 @@ button[type="submit"]:active {
   :root {
     --fs-jumboxl: calc(4.5rem + 1vw);
     --fs-xl: calc(2.5rem + 1vw);
-    --fs-l: calc(2.25rem + .5vw);
-    --fs-ml:calc(2rem + .5vw);
+    --fs-l: calc(2rem + .5vw);
     --fs-m: calc(1.75rem + .5vw);
     --fs-s: calc(1.25rem + .25vw);
     --fs-xs: calc(1rem + .25vw);
