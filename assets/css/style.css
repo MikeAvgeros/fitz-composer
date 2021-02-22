@@ -297,7 +297,7 @@ body {
   animation: wiggle .2s ease-in-out;
 }
 
-/*----------------- SHARED SITE LAYOUTS -----------------*/
+/*----------------- SHARED ATTRIBUTES -----------------*/
 
 #about, #work, #services, 
 #gallery, #contact {
@@ -412,6 +412,8 @@ body {
   row-gap: calc(16px + 3vw);
 }
 
+/*--------------------- FILM LINKS ---------------------*/
+
 .film-link, .music-link {
   display: grid;
   width: calc(160px + 40vw);
@@ -429,6 +431,8 @@ body {
   letter-spacing: 2px;
 }
 
+/*------------------- LINKS DIVIDER -------------------*/
+
 .divider {
   grid-area: divider;
   width: 25%;
@@ -438,6 +442,8 @@ body {
   background-color: var(--clr-primary);
   margin: calc(1rem + 2vw) 0rem calc(1rem + 1vw) 0rem;
 }
+
+/*-------------------- MUSIC LINKS --------------------*/
 
 .music-link img, .film-link img {
   width: 100%;
@@ -559,6 +565,8 @@ body {
   height: calc(80px + 35vw);
 }
 
+/*------------------- SERVICE HEADER -------------------*/
+
 .service-header {
   background-color: var(--clr-fg);
   color: var(--clr-primary);
@@ -570,6 +578,8 @@ body {
   display: grid;
   place-items: center center;
 }
+
+/*----------------- SERVICE RADIO BUTTONS -----------------*/
 
 .service-header-radio {
   display: none;
@@ -602,6 +612,8 @@ body {
   0% {height: calc(32rem + 7vw);}
   100% {height: 0rem;}
 }
+
+/*-------------------- SERVICE DESCRIPTION --------------------*/
 
 .service-description {
   grid-area: description;
@@ -643,7 +655,7 @@ body {
   outline: 1px solid var(--clr-fg);
 }
 
-/*----------------------- GALLERY PAGE -----------------------*/
+/*--------------------- GALLERY PAGE ---------------------*/
 
 #gallery {
   grid: 5rem repeat(2, auto) / 5% 90% 5%;
@@ -670,6 +682,8 @@ body {
   padding-top: calc(16px + 2vw);
 }
 
+/*-------------------- GALLERY IMAGES --------------------*/
+
 .gallery > figure {
   position: relative;
   display: flex;
@@ -681,6 +695,8 @@ body {
 .gallery img {
   width: 10%;
 }
+
+/*------------------ CAROUSEL ANIMATION ------------------*/
 
 @keyframes carousel {
   0% {left: 0;}
@@ -706,7 +722,7 @@ body {
   100% {left: 0;}
 }
 
-/*----------------------- CONTACT PAGE -----------------------*/
+/*---------------------- CONTACT PAGE ----------------------*/
 
 #contact {
   grid: 5rem repeat(2, auto) / 5% 90% 5%;
@@ -720,6 +736,8 @@ body {
 .contact-header {
   grid-area: header;
 }
+
+/*--------------------- CONTACT FORM ---------------------*/
 
 .contact-form {
   grid-area: contact;
@@ -826,7 +844,7 @@ body {
   animation: wiggle .25s ease-in-out;
 }
 
-/*----------------------- FOOTER SECTION -----------------------*/
+/*-------------------- FOOTER SECTION --------------------*/
 
 .footer-section {
   background-color: var(--clr-bg);
@@ -857,8 +875,18 @@ body {
   place-items: center center;
 }
 
+/*-------------------- USEFUL LINKS --------------------*/
+
 .useful-links {
   grid-area: useful-links;
+}
+
+.useful-links h3 {
+  place-self: start center;
+  color: var(--clr-primary);
+  padding-top: 20px;
+  font-size: var(--fs-m);
+  font-weight: lighter;
 }
 
 .useful-links ul {
@@ -872,6 +900,7 @@ body {
   color: var(--clr-primary);
   font-size: var(--fs-s);
   padding: 20px;
+  font-size: var(--fs-s);
 }
 
 .useful-links li a:hover {
@@ -879,20 +908,7 @@ body {
   animation: zoom .2s forwards;
 }
 
-.subscribe-form label {
-  color: var(--clr-primary);
-  display: block;
-  padding: 0px 0px 10px 4px;
-  font-size: var(--fs-s);
-  letter-spacing: 2px;
-}
-
-.useful-links h3{
-  place-self: start center;
-  color: var(--clr-primary);
-  padding-top: 20px;
-  font-size: var(--fs-m);
-}
+/*--------------------- COPYRIGHT ---------------------*/
 
 .copyright {
   grid-area: copyright;
@@ -907,6 +923,7 @@ body {
 }
 
 /*----------------------- MEDIA QUERIES -----------------------*/
+
 @media (min-width: 375px) {
   :root {
     --fs-jumboxl: calc(2.75rem + 1vw);
