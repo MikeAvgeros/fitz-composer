@@ -978,7 +978,7 @@ body {
   }
 
   .navbar {
-    grid: 5rem calc(15rem + 8vw) / 10% 80% 10%;
+    grid: 5rem calc(15rem + 8vw) / 20% 60% 20%;
     grid-template-areas:
     "logo .... menu"
     "list list list"
