@@ -1034,7 +1034,7 @@ body {
 @media (min-width: 1024px) {
   :root {
     --fs-jumboxl: calc(3.75rem + 1vw);
-    --fs-xl: calc(2rem + 1vw);
+    --fs-xl: calc(1.9rem + 1vw);
     --fs-m: calc(1.25rem + .5vw);
   }
 
@@ -1115,7 +1115,7 @@ body {
 @media (min-width: 1440px) {
   :root {
     --fs-jumboxl: calc(4.25rem + 1vw);
-    --fs-xl: calc(2.25rem + 1vw);
+    --fs-xl: calc(2.1rem + 1vw);
     --fs-l: calc(1.75rem + .5vw);
     --fs-m: calc(1.5rem + .5vw);
   }
@@ -1142,6 +1142,10 @@ body {
 
   .home-btn a {
     width: calc(8rem + 1vw);
+  }
+
+  .service label {
+    font-size: var(--fs-m);
   }
 
   .contact-btn {
