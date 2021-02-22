@@ -15,25 +15,11 @@ function sendMail(contactForm) {
     })
     .then(
         function() {
-            alert("Email sent succesfully!");
-            // scroll to top from here
-        }
-    );
-    return false;  // To block from loading a new page
-}
-
-function subscribe(subscribeForm) {
-    emailjs.send("gmail", "fitz", {
-        "from_name": "Website Visitor",
-        "from_email": subscribeForm.email_address.value,
-        "message": "Please add me to your mailing list"
-    })
-    .then(
-        function() {
-            alert("Thank you!");
+            alert("Thank you for getting in touch! We'll get back to you shortly.");
         },
         function(error) {
         console.log('FAILED...', error);
+            alert("There was an error with your form. Please try again.")
         }
     );
     return false;  // To block from loading a new page

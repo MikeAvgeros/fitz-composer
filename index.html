@@ -411,27 +411,27 @@
             <form onsubmit="return sendMail(this);" method="POST">
                 <div>
                     <label for="name">Full Name<span class="required-icon">*</span></label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <input class="contact-input-field" type="text" name="name" id="name" placeholder="Enter your name" required>
                 </div>
                 <div>
                     <label for="email">Email Address<span class="required-icon">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <input class="contact-input-field" type="email" name="email" id="email" placeholder="Enter your email" required>
                 </div>
                 <div>
                     <label>Client Type</label>
-                    <div class="radio">
-                        <input class="contact-radio" type="radio" id="Major" name="client_type" value="Major">
+                    <div class="contact-radio">
+                        <input class="contact-radio-field" type="radio" id="Major" name="client_type" value="Major">
                         <label for="Major">Major</label>
-                        <input class="contact-radio" type="radio" id="Indie" name="client_type" value="Indie">
+                        <input class="contact-radio-field" type="radio" id="Indie" name="client_type" value="Indie">
                         <label for="Indie">Indie </label>
                     </div>
                 </div>
                 <div>
                     <label for="description">Description</label>
-                    <textarea class="input-field" name="description" id="description" rows="6" placeholder="Describe your project"></textarea>
+                    <textarea class="contact-input-field" name="description" id="description" rows="6" placeholder="Describe your project"></textarea>
                 </div>
                 <div class="snd-btn">
-                    <button type="submit">Send</button>
+                    <button class="contact-btn" type="submit">Send</button>
                 </div>
             </form>
         </section>
@@ -439,32 +439,17 @@
     <!-- FOOTER -->
     <div class="footer-section">
         <footer class="footer">
-            <div class="socials">
+            <div class="useful-links">
                 <h3>Useful Links</h3>
-                <ul class="socials-list">
+                <ul>
                     <li><a href="https://www.instagram.com/fitz.musicproduction/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="https://soundbetter.com/profiles/152111-f!tz" target="_blank" rel="noopener"><i class="fas fa-music"></i></a></li>
                     <li><a href="mailto:fitz.musicproduction@gmail.com" target="_blank" rel="noopener"><i class="far fa-envelope"></i></a></li>
                     <li><a href="tel:00447928460179" target="_blank" rel="noopener"><i class="fas fa-phone"></i></a></li>
                 </ul>
             </div>
-            <div class="subscribe">
-                <h3>Subscribe</h3>
-                <div class="subscribe-form">
-                    <form onsubmit="return subscribe(this);" method="POST">
-                        <div class="input-field">
-                            <label for="email_address">Email Address<span class="required-icon"></span></label>
-                            <input type="email" name="email_address" id="email_address" placeholder="Enter your email" required>
-                        </div>
-                        <div class="snd-btn">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
             <div class="copyright">
-                <p>Design by Mike Avgeros</p>
-                <p>Copyright 2021</p>
+                <p> <span><i class="far fa-copyright"></i></span> 2021 Design by Mike Avgeros</p>
             </div>
         </footer>
     </div>

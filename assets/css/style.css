@@ -190,7 +190,7 @@ body {
   "nav"
   "header"
   "quote"
-  "cta"
+  "buttons"
   ;
 }
 
@@ -248,9 +248,9 @@ body {
 /*------------------ HOME BUTTONS ------------------*/
 
 .home-btn {
-  grid-area: cta;
+  grid-area: buttons;
   place-self: center center;
-  width: calc(13rem + 5vw);
+  width: calc(13.5rem + 5vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,7 +261,7 @@ body {
 .home-btn a {
   width: calc(6.5rem + 1vw);
   height: calc(2.75rem + 1vw);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-s);
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
   display: grid;
@@ -744,7 +744,7 @@ body {
   color: rgba(250,0,0,0.6);
 }
 
-input::placeholder, textarea::placeholder {
+.contact-input-field::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
@@ -755,27 +755,26 @@ input::placeholder, textarea::placeholder {
   padding: .625rem 0rem 0rem .125rem;
 }
 
-button[type="submit"], input[type="text"], 
-input[type="email"], textarea {
+.contact.btn, .contact-input-field {
   padding: .625rem;
   border-radius: 5px;
 }
 
-input[type="text"], input[type="email"], textarea {
+.contact-input-field {
   width: 100%;
   background-color: var(--clr-fg);
   font-size: var(--fs-xs);
 }
 
-.radio {
+.contact-radio {
   display: inline-flex;
 }
 
-.contact-radio {
+.contact-radio-field {
   display: none;
 }
 
-.radio label {
+.contact-radio label {
   cursor: pointer;
   font-family: var(--ff-primary);
   font-size: var(--fs-xs);
@@ -785,36 +784,32 @@ input[type="text"], input[type="email"], textarea {
   text-align: center;
 }
 
-.radio label:last-of-type {
+.contact-radio label:last-of-type {
   transform: translateX(10px);
 }
 
-input[type="radio"]:not(:checked) + label {
+.contact-radio-field:not(:checked) + label {
   color: var(--clr-secondary);
   opacity: .7;
 }
 
-input[type="radio"]:checked + label {
+.contact-radio-field:checked + label {
   color: var(--clr-primary);
   opacity: 1;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, 
-textarea:focus {
-  border: 1px solid var(--clr-primary);
-}
-
-input, textarea {
+.contact-input-field {
   color: var(--clr-secondary);
 }
 
-button[type="submit"] {
+.contact-btn {
   width: calc(3rem + 2vw);
   height: calc(1.5rem + 1vw);
   font-size: var(--fs-xs);
   font-weight: bolder;
   letter-spacing: 1px;
-  border: 1px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  border-radius: 5px;
   background-color: var(--clr-primary);
   color: var(--clr-bg);
   font-family: var(--ff-secondary);
@@ -822,12 +817,12 @@ button[type="submit"] {
   place-content: center center;
 }
 
-button[type="submit"]:hover {
+.contact-btn:hover {
   color: var(--clr-secondary);
   background-color: var(--clr-fg);
 }
 
-button[type="submit"]:active {
+.contact-btn:active {
   animation: wiggle .25s ease-in-out;
 }
 
@@ -847,49 +842,41 @@ button[type="submit"]:active {
 .footer {
   grid-area: footer;
   display: grid;
-  grid: repeat(2, auto) / repeat(2, 1fr);
+  grid: repeat(2, auto) / 100%;
   grid-template-areas:
-  "socials   subscribe"
-  "copyright copyright"
+  "useful-links"
+  "copyright"
   ;
   height: auto;
   background-color: var(--clr-fg);
 }
 
-.socials, .subscribe, .copyright {
+.useful-links, .copyright {
   font-family: var(--ff-primary);
   display: grid;
   place-items: center center;
 }
 
-.socials {
-  grid-area: socials;
+.useful-links {
+  grid-area: useful-links;
 }
 
-.socials ul {
+.useful-links ul {
   list-style-type: none;
+  display: inline-flex;
+  padding: 20px;
 }
 
-.socials-list li a {
-  display: block;
+.useful-links li a {
   text-decoration: none;
   color: var(--clr-primary);
   font-size: var(--fs-s);
-  padding: 10px 0px;
+  padding: 20px;
 }
 
-.socials-list li a:hover {
+.useful-links li a:hover {
   color: var(--clr-secondary);
   animation: zoom .2s forwards;
-}
-
-.subscribe {
-  grid-area: subscribe;
-}
-
-.subscribe:hover .subscribe-form, 
-.subscribe:focus-within .subscribe-form {
-  animation: zoom .5s forwards;
 }
 
 .subscribe-form label {
@@ -900,31 +887,21 @@ button[type="submit"]:active {
   letter-spacing: 2px;
 }
 
-.subscribe-form input {
-  background-color: var(--clr-bg);
-  width: calc(5rem + 20vw);
-  letter-spacing: 2px;
-}
-
-.subscribe-form .snd-btn {
-  padding: 10px 0px 10px 2px;
-}
-
-.socials h3, .subscribe h3 {
+.useful-links h3{
   place-self: start center;
   color: var(--clr-primary);
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: var(--fs-m);
 }
 
 .copyright {
   grid-area: copyright;
-  background-color: var(--clr-bg);
+  background-color: var(--clr-fg);
 }
 
 .copyright p {
   color: var(--clr-primary);
-  padding: 1rem 0rem;
+  padding-bottom: 20px;
   font-size: var(--fs-s);
   letter-spacing: 2px;
 }
@@ -932,8 +909,8 @@ button[type="submit"]:active {
 /*----------------------- MEDIA QUERIES -----------------------*/
 @media (min-width: 375px) {
   :root {
-    --fs-jumboxl: calc(2.5rem + 1vw);
-    --fs-xl: calc(1.5rem + 1vw);
+    --fs-jumboxl: calc(2.75rem + 1vw);
+    --fs-xl: calc(1.75rem + 1vw);
     --fs-l: calc(1.25rem + .5vw);
     --fs-m: calc(1rem + .5vw);
     --fs-s: calc(.85rem + .25vw);
@@ -956,7 +933,7 @@ button[type="submit"]:active {
   }
 
   .home-btn {
-    width: calc(14rem + 5vw);
+    width: calc(14.5rem + 5vw);
   }
 }
 
@@ -978,7 +955,6 @@ button[type="submit"]:active {
 @media (min-width: 768px) {
   :root {
     --fs-jumboxl: calc(3.5rem + 1vw);
-    --fs-m: calc(1.15rem + .5vw);
     --fs-s: calc(1rem + .25vw);
     --fs-xs: calc(.9rem + .25vw);
     --fs-xxs: calc(.8rem + .25vw);
@@ -995,10 +971,10 @@ button[type="submit"]:active {
   #home {
     grid: 5rem repeat(3, auto)/ .5fr 9fr .5fr;
     grid-template-areas:
-    "nav    nav    nav   "
-    "...... header ......"
-    "...... quote  ......"
-    "...... cta    ......"
+    "nav    nav     nav   "
+    "...... header  ......"
+    "...... quote   ......"
+    "...... buttons ......"
     ;
   }
 
@@ -1046,6 +1022,7 @@ button[type="submit"]:active {
     --fs-jumboxl: calc(3.75rem + 1vw);
     --fs-xl: calc(2rem + 1vw);
     --fs-l: calc(1.5rem + .5vw);
+    --fs-m: calc(1.25rem + .5vw);
   }
 
   .navbar-menu li {
@@ -1126,10 +1103,7 @@ button[type="submit"]:active {
   :root {
     --fs-jumboxl: calc(4.25rem + 1vw);
     --fs-xl: calc(2.25rem + 1vw);
-    --fs-l: calc(1.75rem + .5vw);
     --fs-m: calc(1.5rem + .5vw);
-    --fs-s: calc(1.15rem + .25vw);
-    --fs-xs: calc(.9rem + .25vw);
   }
 
   .navbar .navbar-menu {
@@ -1156,9 +1130,9 @@ button[type="submit"]:active {
     width: calc(8rem + 1vw);
   }
 
-  button[type="submit"] {
+  .contact-btn {
     width: 4.5rem;
-    height: 2.2rem;
+    height: 2.5rem;
   }
 }
 
@@ -1167,18 +1141,15 @@ button[type="submit"]:active {
     --fs-jumboxl: calc(4.5rem + 1vw);
     --fs-xl: calc(2.5rem + 1vw);
     --fs-l: calc(2rem + .5vw);
-    --fs-m: calc(1.75rem + .5vw);
-    --fs-s: calc(1.25rem + .25vw);
-    --fs-xs: calc(1rem + .25vw);
   }
 
   #home {
     grid: 5rem repeat(3, auto)/ 1fr 8fr 1fr;
     grid-template-areas:
-    "nav    nav    nav   "
-    "...... header ......"
-    "...... quote  ......"
-    "...... cta    ......"
+    "nav    nav     nav   "
+    "...... header  ......"
+    "...... quote   ......"
+    "...... buttons ......"
     ;
   }
 
@@ -1209,16 +1180,15 @@ button[type="submit"]:active {
   #home {
     grid: 5rem repeat(3, auto)/ 2fr 6fr 2fr;
     grid-template-areas:
-    "nav    nav    nav   "
-    "...... header ......"
-    "...... quote  ......"
-    "...... cta    ......"
+    "nav    nav     nav   "
+    "...... header  ......"
+    "...... quote   ......"
+    "...... buttons ......"
     ;
   }
 
   :root {
     --fs-jumboxl: calc(5rem + 1vw);
-    --fs-xl: calc(2.75rem + 1vw);
     --fs-l: calc(2.5rem + .5vw);
   }
 
