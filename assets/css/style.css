@@ -99,7 +99,7 @@ body {
   opacity: 0.95;
   position: fixed;
   display: grid;
-  grid: 5rem calc(15rem + 8vw) / 1fr 2fr 1fr;
+  grid: 5rem calc(15rem + 8vw) / 25% 50% 25%;
   grid-template-areas:
   "logo .... menu"
   "list list list"
@@ -357,7 +357,7 @@ body {
 
 .about-img img {
   width: 100%;
-  max-width: 640px;
+  max-width: 540px;
   min-width: 288px;
   height: auto;
   max-height: 640px;
@@ -961,7 +961,7 @@ body {
   }
 
   .navbar {
-    grid: 5rem calc(15rem + 8vw) / 1fr 4fr 1fr;
+    grid: 5rem calc(15rem + 8vw) / 10% 80% 10%;
     grid-template-areas:
     "logo .... menu"
     "list list list"
@@ -969,7 +969,7 @@ body {
   }
 
   #home {
-    grid: 5rem repeat(3, auto)/ .5fr 9fr .5fr;
+    grid: 5rem repeat(3, auto)/ 5% 90% 5%;
     grid-template-areas:
     "nav    nav     nav   "
     "...... header  ......"
@@ -1038,7 +1038,7 @@ body {
   }
 
   .navbar {
-    grid: 5rem / 1fr 4fr;
+    grid: 5rem / 20% 80%;
     grid-template-areas:
     "logo menu"
     ;
@@ -1072,7 +1072,7 @@ body {
   }
 
   #about {
-    grid: 5rem repeat(2, auto) / .9fr 4fr .2fr 4fr .9fr;
+    grid: 5rem repeat(2, auto) / 9% 40% 2% 40% 9%;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -1090,7 +1090,7 @@ body {
   }
 
   #gallery {
-    grid: 80px repeat(2, auto) / .5fr 9fr .5fr;
+    grid: 80px repeat(2, auto) / 5% 90% 5%;
     grid-template-areas:
     "nav    nav      nav   "
     "header header   header"
@@ -1144,7 +1144,7 @@ body {
   }
 
   #home {
-    grid: 5rem repeat(3, auto)/ 1fr 8fr 1fr;
+    grid: 5rem repeat(3, auto)/ 10% 80% 10%;
     grid-template-areas:
     "nav    nav     nav   "
     "...... header  ......"
@@ -1159,7 +1159,7 @@ body {
   }
 
   #about {
-    grid: 5rem repeat(2, auto) / 1.4fr 3.5fr .2fr 3.5fr 1.4fr;
+    grid: 5rem repeat(2, auto) / 14.5% 35% 1% 35% 14.5%;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -1178,7 +1178,7 @@ body {
 
 @media (min-width: 2560px) {
   #home {
-    grid: 5rem repeat(3, auto)/ 2fr 6fr 2fr;
+    grid: 5rem repeat(3, auto)/ 20% 60% 20%;
     grid-template-areas:
     "nav    nav     nav   "
     "...... header  ......"
@@ -1193,7 +1193,7 @@ body {
   }
 
   #about {
-    grid: 5rem repeat(2, auto) / 1.8fr 3fr .4fr 3fr 1.8fr;
+    grid: 5rem repeat(2, auto) / 19.5% 30% 1% 30% 19.5%;
     grid-template-areas:
     "nav    nav    nav    nav    nav"
     "header header header header header"
@@ -1201,3 +1201,4 @@ body {
     ;
   }
 }
+
