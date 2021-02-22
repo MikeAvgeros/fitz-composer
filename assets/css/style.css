@@ -9,6 +9,13 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
+  --fs-jumboxl: 2.5rem;
+  --fs-xl: 1.25rem;
+  --fs-l: 1rem;
+  --fs-m:.9rem;
+  --fs-s: .85rem;
+  --fs-xs: .75rem;
+  --fs-xxs: .7rem;
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
 }
@@ -124,7 +131,7 @@ body {
 .navbar-icon i {
   cursor: pointer;
   color: var(--clr-primary);
-  font-size: calc(1.5rem + 1.5vw);
+  font-size: calc(1.5rem + 1vw);
 }
 
 #navbar-menu-checkbox {
@@ -159,7 +166,7 @@ body {
   text-decoration: none;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  font-size: calc(1rem + 1vw);
+  font-size: var(--fs-m);
   letter-spacing: 2px;
 }
 
@@ -205,12 +212,12 @@ body {
 
 .home-title {
   color: var(--clr-primary);
-  font-size: 2.5rem;
+  font-size: var(--fs-jumboxl);
 }
 
 .home-subtitle {
   color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: var(--fs-l);
   padding-left: .5vw;
 }
 
@@ -227,7 +234,7 @@ body {
 
 .home-quotes blockquote {
   color: var(--clr-primary);
-  font-size: .9rem;
+  font-size: var(--fs-m);
 }
 
 #bq1 {
@@ -252,9 +259,9 @@ body {
 }
 
 .home-btn a {
-  width: calc(6rem + 1vw);
+  width: calc(6.5rem + 1vw);
   height: calc(2.75rem + 1vw);
-  font-size: calc(.8rem + .25vw);
+  font-size: var(--fs-xs);
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
   display: grid;
@@ -308,13 +315,13 @@ body {
 .about-title, .work-title, .services-title, 
 .gallery-title, .contact-title {
   color: var(--clr-primary);
-  font-size: calc(1.5rem + 2.25vw);
+  font-size: var(--fs-xl);
 }
 
 .about-subtitle, .work-subtitle, .services-subtitle, 
 .gallery-subtitle, .contact-subtitle {
   color: var(--clr-secondary);
-  font-size: calc(.8rem + 1vw);
+  font-size: var(--fs-m);
   padding-top: 10px;
 }
 
@@ -365,7 +372,7 @@ body {
   padding-top: 32px;
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
-  font-size: .9rem;
+  font-size: var(--fs-s);
   letter-spacing: 1px;
 }
 
@@ -418,7 +425,7 @@ body {
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
   padding-bottom: 10px;
-  font-size: calc(.5rem + .5vw);
+  font-size: var(--fs-xxs);
   letter-spacing: 2px;
 }
 
@@ -450,7 +457,7 @@ body {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   text-align: center;
-  font-size: calc(1rem + 1.5vw);
+  font-size: var(--fs-l);
   letter-spacing: 3px;
   padding: 1.5rem 0rem calc(1rem + 1vw);
 }
@@ -481,7 +488,7 @@ body {
   justify-self: center;
   place-content: start start;
   border-radius: 8px;
-  font-size: calc(.8rem + 1vw);
+  font-size: var(--fs-s);
 }
 
 .stars {
@@ -537,7 +544,6 @@ body {
   height: auto;
   justify-self: center;
   padding-bottom: 10px;
-  font-size: calc(.8rem + 1vw);
   display: grid;
   grid: calc(80px + 35vw) 5rem auto / 100%;
   grid-template-areas:
@@ -589,11 +595,11 @@ body {
 
 @keyframes show {
   0% {height: 0rem;}
-  100% {height: calc(30rem + 5vw);}
+  100% {height: calc(32rem + 7vw);}
 }
 
 @keyframes hide {
-  0% {height: calc(30rem + 5vw);}
+  0% {height: calc(32rem + 7vw);}
   100% {height: 0rem;}
 }
 
@@ -617,7 +623,7 @@ body {
 
 .service label {
   letter-spacing: 2px;
-  font-size: calc(1.2rem + 1vw);
+  font-size: var(--fs-m);
 }
 
 .service p {
@@ -625,7 +631,7 @@ body {
   background-color: var(--clr-fg);
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
-  font-size: calc(.8rem + 1vw);
+  font-size: var(--fs-s);
   letter-spacing: 1px;
   justify-self: center;
   padding: 20px 10px;
@@ -731,7 +737,7 @@ body {
   color: var(--clr-primary);
   display: block;
   padding: .625rem 0rem .625rem .25rem;
-  font-size: calc(.7rem + .5vw);
+  font-size: var(--fs-xs);
 }
 
 .required-icon {
@@ -758,7 +764,7 @@ input[type="email"], textarea {
 input[type="text"], input[type="email"], textarea {
   width: 100%;
   background-color: var(--clr-fg);
-  font-size: calc(.5rem + .5vw);
+  font-size: var(--fs-xs);
 }
 
 .radio {
@@ -772,7 +778,7 @@ input[type="text"], input[type="email"], textarea {
 .radio label {
   cursor: pointer;
   font-family: var(--ff-primary);
-  font-size: calc(.5rem + .5vw);
+  font-size: var(--fs-xs);
   background-color: var(--clr-fg);
   border-radius: 5px;
   width: calc(2rem + 2vw);
@@ -805,7 +811,7 @@ input, textarea {
 button[type="submit"] {
   width: calc(3rem + 2vw);
   height: calc(1.5rem + 1vw);
-  font-size: calc(.7rem + .7vw);
+  font-size: var(--fs-xs);
   font-weight: bolder;
   letter-spacing: 1px;
   border: 1px solid var(--clr-primary);
@@ -868,7 +874,7 @@ button[type="submit"]:active {
   display: block;
   text-decoration: none;
   color: var(--clr-primary);
-  font-size: calc(.8rem + .5vw);
+  font-size: var(--fs-s);
   padding: 10px 0px;
 }
 
@@ -890,7 +896,7 @@ button[type="submit"]:active {
   color: var(--clr-primary);
   display: block;
   padding: 0px 0px 10px 4px;
-  font-size: calc(.7rem + .5vw);
+  font-size: var(--fs-s);
   letter-spacing: 2px;
 }
 
@@ -908,7 +914,7 @@ button[type="submit"]:active {
   place-self: start center;
   color: var(--clr-primary);
   padding-top: 10px;
-  font-size: calc(.8rem + 1vw);
+  font-size: var(--fs-m);
 }
 
 .copyright {
@@ -919,41 +925,31 @@ button[type="submit"]:active {
 .copyright p {
   color: var(--clr-primary);
   padding: 1rem 0rem;
-  font-size: calc(.7rem + .5vw);
+  font-size: var(--fs-s);
   letter-spacing: 2px;
 }
 
 /*----------------------- MEDIA QUERIES -----------------------*/
 
 @media (min-width: 375px) {
-  .home-title {
-    font-size: calc(2.5rem + 1vw);
-  }
-
-  .home-subtitle {
-    font-size: calc(1rem + .5vw);
-  }
-
-  .home-quotes blockquote {
-    font-size: calc(1rem + .25vw);
-  }
-
-  .about-main {
-    font-size: calc(.9rem + .25vw);
+  :root {
+    --fs-jumboxl: calc(2.5rem + 1vw);
+    --fs-xl: calc(1.25rem + 1vw);
+    --fs-l: calc(1rem + .5vw);
+    --fs-m: calc(.9rem + .5vw);
+    --fs-s: calc(.85rem + .25vw);
+    --fs-xs: calc(.75rem + .25vw);
+    --fs-xxs: calc(.7rem + .25vw);
   }
 }
 
 @media (min-width: 425px) {
-  .home-title {
-    font-size: calc(3rem + 1vw);
-  }
-
-  .home-subtitle {
-    font-size: calc(1.25rem + .5vw);
-  }
-
-  .home-quotes blockquote {
-    font-size: calc(1.15rem + .25vw);
+  :root {
+    --fs-jumboxl: calc(3rem + 1vw);
+    --fs-xl: calc(1.5rem + 1vw);
+    --fs-l: calc(1.25rem + .5vw);
+    --fs-m: calc(1rem + .5vw);
+    --fs-s: calc(.95rem + .25vw);
   }
 
   .home-btn {
@@ -962,12 +958,8 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 475px) {
-  .home-quotes blockquote {
-    font-size: calc(1.25rem + .25vw);
-  }
-
-  .about-main {
-    font-size: calc(1rem + .25vw);
+  :root {
+    --fs-m: calc(1.15rem + .5vw);
   }
 
   .service {
@@ -985,6 +977,15 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 768px) {
+  :root {
+    --fs-jumboxl: calc(3.5rem + 1vw);
+    --fs-xl: calc(1.5rem + 1vw);
+    --fs-l: calc(1.5rem + .5vw);
+    --fs-s: calc(1rem + .25vw);
+    --fs-xs: calc(.85rem + .25vw);
+    --fs-xxs: calc(.8rem + .25vw);
+  }
+
   .navbar {
     grid: 5rem calc(15rem + 8vw) / 1fr 4fr 1fr;
     grid-template-areas:
@@ -1018,41 +1019,17 @@ button[type="submit"]:active {
   #bq2 {
     place-self: center end;
   }
-
-  .home-title {
-    font-size: calc(3.5rem + 1vw);
-  }
-  
-  .home-subtitle{
-    font-size: calc(1.5rem + .5vw);
-  }
-
-  .home-quotes blockquote {
-    font-size: calc(1.35rem + .25vw);
-  }
   
   .home-btn {
     width: calc(16rem + 5vw);
   }
 
   .home-btn a {
-    width: calc(6.5rem + 1vw);
-  }
-
-  .review {
-    font-size: 1.2rem;
+    width: calc(7rem + 1vw);
   }
 
   .service img {
     max-height: 240px;
-  }
-
-  .service label {
-    font-size: 1.8rem;
-  }
-
-  .service p {
-    font-size: 1.2rem;
   }
 
   @keyframes show {
@@ -1067,6 +1044,12 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 1024px) {
+  :root {
+    --fs-jumboxl: calc(3.75rem + 1vw);
+    --fs-xl: calc(2rem + 1vw);
+    --fs-l: calc(1.75rem + .5vw);
+  }
+
   .navbar-menu li {
     float: left;
   }
@@ -1099,14 +1082,6 @@ button[type="submit"]:active {
     padding-right: 3.5vw;
   }
 
-  .home-title {
-    font-size: calc(3.75rem + 1vw);
-  }
-  
-  .home-subtitle{
-    font-size: calc(1.75rem + .5vw);
-  }
-
   .home-quotes {
     place-self: start end;
     padding-bottom: 1vh;
@@ -1119,7 +1094,6 @@ button[type="submit"]:active {
 
   .home-btn a {
     width: calc(7.5rem + 1vw);
-    font-size: calc(.95rem + .25vw);
   }
 
   #about {
@@ -1129,16 +1103,6 @@ button[type="submit"]:active {
     "header header header header header"
     "...... img    ...... main   ......"
     ;
-  }
-
-  .about-title, .work-title, .services-title, 
-  .gallery-title, .contact-title {
-    font-size: calc(2rem + .5vw);
-  }
-
-  .about-subtitle, .work-subtitle, .services-subtitle, 
-  .gallery-subtitle, .contact-subtitle {
-    font-size: calc(.9rem + .5vw);
   }
 
   .about-main {
@@ -1161,25 +1125,22 @@ button[type="submit"]:active {
 }
 
 @media (min-width: 1440px) {
+  :root {
+    --fs-jumboxl: calc(4.25rem + 1vw);
+    --fs-xl: calc(2.25rem + 1vw);
+    --fs-l: calc(2rem + .5vw);
+    --fs-ml: calc(1.75rem + .5vw);
+    --fs-m: calc(1.5rem + .5vw);
+    --fs-s: calc(1.15rem + .25vw);
+    --fs-xs: calc(.9rem + .25vw);
+  }
+
   .navbar .navbar-menu {
     padding-right: 4vw;
   }
 
-  .home-title {
-    font-size: calc(4.25rem + 1vw);
-  }
-  
-  .home-subtitle{
-    font-size: calc(2rem + .5vw);
-  }
-
   .home-quotes blockquote {
-    font-size: calc(1.5rem + .25vw);
     padding-right: 8px;
-  }
-
-  .about-main {
-    font-size: calc(1.15rem + .25vw);
   }
 
   #bq1 {
@@ -1196,31 +1157,25 @@ button[type="submit"]:active {
 
   .home-btn a {
     width: calc(8rem + 1vw);
-    font-size: calc(1rem + .25vw);
-  }
-
-  .about-title, .work-title, .services-title, 
-  .gallery-title, .contact-title {
-    font-size: calc(2.5rem + .5vw);
-  }
-
-  .about-subtitle, .work-subtitle, .services-subtitle, 
-  .gallery-subtitle, .contact-subtitle {
-    font-size: calc(1.25rem + .5vw);
-  }
-
-  .review-title {
-    font-size: 2rem;
   }
 
   button[type="submit"] {
     width: 4.5rem;
     height: 2.2rem;
-    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1920px) {
+  :root {
+    --fs-jumboxl: calc(4.5rem + 1vw);
+    --fs-xl: calc(2.5rem + 1vw);
+    --fs-l: calc(2.25rem + .5vw);
+    --fs-ml:calc(2rem + .5vw);
+    --fs-m: calc(1.75rem + .5vw);
+    --fs-s: calc(1.25rem + .25vw);
+    --fs-xs: calc(1rem + .25vw);
+  }
+
   #home {
     grid: 5rem repeat(3, auto)/ 1fr 8fr 1fr;
     grid-template-areas:
@@ -1231,26 +1186,9 @@ button[type="submit"]:active {
     ;
   }
 
-  .home-title {
-    font-size: calc(4.5rem + 1vw);
-  }
-  
-  .home-subtitle{
-    font-size: calc(2.25rem + .5vw);
-  }
-
-  .home-quotes blockquote {
-    font-size: calc(1.75rem + .25vw);
-  }
-
-  .about-main {
-    font-size: calc(1.3rem + .25vw);
-  }
-
   .home-btn a {
     width: calc(8rem + 1vw);
     height: calc(3.5rem + .5vw);
-    font-size: calc(1rem + .25vw);
   }
 
   #about {
@@ -1282,22 +1220,10 @@ button[type="submit"]:active {
     ;
   }
 
-  .home-title {
-    font-size: calc(5rem + 1vw);
-  }
-  
-  .home-subtitle{
-    font-size: calc(2.5rem + .5vw);
-  }
-
-  .about-title, .work-title, .services-title, 
-  .gallery-title, .contact-title {
-    font-size: calc(3rem + .5vw);
-  }
-
-  .about-subtitle, .work-subtitle, .services-subtitle, 
-  .gallery-subtitle, .contact-subtitle {
-    font-size: calc(1.5rem + .5vw);
+  :root {
+    --fs-jumboxl: calc(5rem + 1vw);
+    --fs-xl: calc(2.75rem + 1vw);
+    --fs-l: calc(2.5rem + .5vw);
   }
 
   #about {
