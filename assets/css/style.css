@@ -908,7 +908,6 @@ body {
 
 .useful-links li a:hover {
   color: var(--clr-secondary);
-  animation: zoom .2s forwards;
 }
 
 /*--------------------- COPYRIGHT ---------------------*/
