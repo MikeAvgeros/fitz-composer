@@ -29,6 +29,6 @@ function collapseNav() {
     document.getElementById("navbar-menu-checkbox").checked = false;
 }
 
-function collapseService(x) {
-    document.getElementById("service-header-radio" + x).checked = false;
+function collapseRadio(radioID) {
+    document.getElementById(radioID).checked = false;
 }

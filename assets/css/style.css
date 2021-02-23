@@ -99,7 +99,7 @@ body {
   opacity: 0.95;
   position: fixed;
   display: grid;
-  grid: 5rem calc(15rem + 8vw) / 25% 50% 25%;
+  grid: 5rem calc(15rem + 7vw) / 25% 50% 25%;
   grid-template-areas:
   "logo .... menu"
   "list list list"
@@ -139,7 +139,7 @@ body {
 }
 
 #navbar-menu-checkbox:checked + .navbar-menu{
-  max-height: calc(15rem + 8vw);
+  max-height: calc(15rem + 7vw);
   transition: max-height .2s ease-in;
 }
 
@@ -465,29 +465,29 @@ body {
   text-align: center;
   font-size: var(--fs-l);
   letter-spacing: 3px;
-  padding: 1.5rem 0rem calc(1rem + 1vw);
+  padding: 2rem 0rem calc(1rem + 3vw);
 }
 
-#reviews {
+.reviews {
   grid-area: quotes;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   padding-top: calc(16px + 3vw);
+  row-gap: calc(16px + 3vw);
   font-family: var(--ff-primary);
   padding: 0% 2.5% 2.5% 2.5%;
 }
 
-.review-title, #reviews {
+.review-title, .reviews {
   background-color: var(--clr-fg);
 }
 
-.music-links, .film-links, #reviews {
+.music-links, .film-links, .reviews {
   row-gap: calc(16px + 2.5vw);
 }
 
 .review {
-  display: grid;
   width: calc(160px + 40vw);
   max-width: 360px;
   height: auto;
@@ -495,14 +495,19 @@ body {
   place-content: start start;
   border-radius: 8px;
   font-size: var(--fs-s);
-}
-
-.stars {
-  color: var(--clr-primary);
-  justify-self: center;
+  display: grid;
+  row-gap: calc(10px);
+  grid: repeat(4 auto) / 100%;
+  grid-template-areas:
+  "img"
+  "stars"
+  "header"
+  "description"
+  ;
 }
 
 .review img {
+  grid-area: img;
   border-radius: 50%;
   width: 50%;
   max-width: 150px;
@@ -511,10 +516,73 @@ body {
   padding: 10px 10px;
 }
 
-.review blockquote, .review cite {
+.stars {
+  grid-area: stars;
+  color: var(--clr-primary);
+  justify-self: center;
+}
+
+.review-header {
+  grid-area: header;
+  border: 2px solid var(--clr-secondary);
+  border-radius: 5px;
   color: var(--clr-secondary);
   letter-spacing: 1px;
   padding: 10px 10px;
+  cursor: pointer;
+  display: grid;
+  place-items: center center;
+}
+
+.review-header:hover {
+  background-color: var(--clr-bg);
+}
+
+.review-header-radio {
+  display: none;
+}
+
+#review-header-radio1:checked + #review-description1,
+#review-header-radio2:checked + #review-description2,
+#review-header-radio3:checked + #review-description3,
+#review-header-radio4:checked + #review-description4,
+#review-header-radio5:checked + #review-description5,
+#review-header-radio6:checked + #review-description6 {
+  height: fit-content;
+}
+
+#review-header-radio1:not(:checked) + #review-description1,
+#review-header-radio2:not(:checked) + #review-description2,
+#review-header-radio3:not(:checked) + #review-description3,
+#review-header-radio4:not(:checked) + #review-description4,
+#review-header-radio5:not(:checked) + #review-description5,
+#review-header-radio6:not(:checked) + #review-description6 {
+  height: 0;
+}
+
+.review-description {
+  grid-area: description;
+  color: var(--clr-secondary);
+  height: 0;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: grid;
+}
+
+.review-description a {
+  justify-self: center;
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.review-description a:hover {
+  color: var(--clr-primary);
+}
+
+.review-header:active {
+  animation: wiggle .1s ease-in-out;
 }
 
 /*----------------------- SERVICES PAGE -----------------------*/
@@ -591,7 +659,7 @@ body {
 #service-header-radio4:checked + #service-description4,
 #service-header-radio5:checked + #service-description5,
 #service-header-radio6:checked + #service-description6 {
-  animation: show .5s forwards;
+  height: fit-content;
 }
 
 #service-header-radio1:not(:checked) + #service-description1,
@@ -600,17 +668,7 @@ body {
 #service-header-radio4:not(:checked) + #service-description4,
 #service-header-radio5:not(:checked) + #service-description5,
 #service-header-radio6:not(:checked) + #service-description6 {
-  animation: hide .25s forwards;
-}
-
-@keyframes show {
-  0% {height: 0rem;}
-  100% {height: calc(32rem + 7vw);}
-}
-
-@keyframes hide {
-  0% {height: calc(32rem + 7vw);}
-  100% {height: 0rem;}
+  height: 0;
 }
 
 /*-------------------- SERVICE DESCRIPTION --------------------*/
@@ -630,10 +688,6 @@ body {
   color: var(--clr-primary);
   font-weight: bolder;
   cursor: pointer;
-}
-
-.service-description i:active {
-  animation: wiggle .2s ease-in-out;
 }
 
 .service label {
@@ -1017,16 +1071,6 @@ body {
 
   .service img {
     max-height: 240px;
-  }
-
-  @keyframes show {
-    0% {height: 0rem;}
-    100% {height: 35rem;}
-  }
-  
-  @keyframes hide {
-    0% {height: 35rem;}
-    100% {height: 0rem;}
   }
 }
 
