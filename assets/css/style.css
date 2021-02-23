@@ -1,23 +1,21 @@
-/*----------------------- BEGINNING OF CSS CODE -----------------------*/
-
 /*----------------------- GOOGLE FONTS -----------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@400&display=swap');
 
-/*----------------------- GLOBAL STYLES -----------------------*/
+/*---------------------- GLOBAL STYLES -----------------------*/
 
 :root {
   --clr-bg:  #202020;
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-jumboxl: calc(2.25rem + 1vw);
-  --fs-xl: calc(1.5rem + 1vw);
-  --fs-l: calc(1.35rem + .5vw);
-  --fs-m: calc(.85rem + .5vw);
-  --fs-s: calc(.8rem + .25vw);
-  --fs-xs: calc(.75rem + .25vw);
-  --fs-xxs: calc(.7rem + .25vw);
+  --fs-xxl: clamp(calc(2rem + 3vw), 6vw, calc(4.25rem + 1vw));
+  --fs-xl: clamp(calc(1.5rem + 1.5vw), 3.5vw, calc(2rem + 1vw));
+  --fs-l: clamp(calc(1rem + 1.1vw), 3vw, calc(1.5rem + 1vw));
+  --fs-m: clamp(calc(.8rem + 1vw), 2vw, calc(1.25rem + 1vw));
+  --fs-s: clamp(calc(.8rem + .5vw), 1vw, 1.5rem);
+  --fs-xs: clamp(calc(.75rem + .5vw), .75vw, 1rem);
+  --fs-xxs: clamp(calc(.65rem + .5vw), .75vw, .8rem);
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
 }
@@ -254,7 +252,7 @@ body {
 
 .home-title {
   color: var(--clr-primary);
-  font-size: var(--fs-jumboxl);
+  font-size: var(--fs-xxl);
 }
 
 .home-subtitle {
@@ -498,7 +496,6 @@ body {
   height: auto;
   justify-self: center;
   place-content: start start;
-  font-size: var(--fs-s);
   display: grid;
   row-gap: 10px;
   grid: repeat(4, auto) / 100%;
@@ -535,7 +532,8 @@ body {
   border: 2px solid var(--clr-secondary);
   border-radius: 5px;
   color: var(--clr-secondary);
-  letter-spacing: 2px;
+  font-size: var(--fs-m);
+  letter-spacing: 1px;
   padding: 10px 10px;
   cursor: pointer;
   display: grid;
@@ -562,7 +560,7 @@ body {
 #review-header-radio4:checked + #review-description4,
 #review-header-radio5:checked + #review-description5,
 #review-header-radio6:checked + #review-description6 {
-  max-height: fit-content;
+  height: auto;
 }
 
 #review-header-radio1:not(:checked) + #review-description1,
@@ -571,7 +569,7 @@ body {
 #review-header-radio4:not(:checked) + #review-description4,
 #review-header-radio5:not(:checked) + #review-description5,
 #review-header-radio6:not(:checked) + #review-description6 {
-  max-height: 0;
+  height: 0;
 }
 
 /*------------------ REVIEW DESCRIPTION ------------------*/
@@ -579,7 +577,7 @@ body {
 .review-description {
   grid-area: description;
   color: var(--clr-secondary);
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   display: grid;
 }
@@ -663,7 +661,7 @@ body {
   color: var(--clr-primary);
   font-family: var(--ff-secondary);
   font-size: var(--fs-l);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 16px 16px;
   cursor: pointer;
   display: grid;
@@ -687,7 +685,7 @@ body {
 #service-header-radio4:checked + #service-description4,
 #service-header-radio5:checked + #service-description5,
 #service-header-radio6:checked + #service-description6 {
-  max-height: fit-content;
+  height: auto;
 }
 
 #service-header-radio1:not(:checked) + #service-description1,
@@ -696,7 +694,7 @@ body {
 #service-header-radio4:not(:checked) + #service-description4,
 #service-header-radio5:not(:checked) + #service-description5,
 #service-header-radio6:not(:checked) + #service-description6 {
-  max-height: 0;
+  height: 0;
 }
 
 /*------------------ SERVICE DESCRIPTION ------------------*/
@@ -704,7 +702,7 @@ body {
 .service-description {
   grid-area: description;
   background-color: var(--clr-fg);
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   display: grid;
 }
@@ -876,7 +874,7 @@ body {
   font-size: var(--fs-xs);
   background-color: var(--clr-fg);
   border-radius: 5px;
-  width: calc(2rem + 2vw);
+  width: auto;
   text-align: center;
 }
 
@@ -900,7 +898,7 @@ body {
 
 .contact-btn {
   width: calc(3rem + 2vw);
-  height: calc(1.5rem + 1vw);
+  height: calc(1.75rem + 1vw);
   font-size: var(--fs-xs);
   font-weight: bolder;
   letter-spacing: 1px;
@@ -1003,25 +1001,7 @@ body {
 
 /*----------------------- MOBILE -----------------------*/
 
-@media (min-width: 375px) {
-  :root {
-    --fs-jumboxl: calc(2.75rem + 1vw);
-    --fs-xl: calc(1.75rem + 1vw);
-    --fs-l: calc(1.5rem + .5vw);
-    --fs-m: calc(1rem + .5vw);
-    --fs-s: calc(.85rem + .25vw);
-    --fs-xs: calc(.8rem + .25vw);
-  }
-}
-
 @media (min-width: 425px) {
-  :root {
-    --fs-jumboxl: calc(3rem + 1vw);
-    --fs-m: calc(1rem + .5vw);
-    --fs-s: calc(.9rem + .25vw);
-    --fs-xs: calc(.85rem + .25vw);
-  }
-
   .home-btn {
     width: calc(14.5rem + 5vw);
   }
@@ -1045,13 +1025,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  :root {
-    --fs-jumboxl: calc(3.5rem + 1vw);
-    --fs-s: calc(1rem + .25vw);
-    --fs-xs: calc(.9rem + .25vw);
-    --fs-xxs: calc(.8rem + .25vw);
-  }
-
   .navbar {
     grid: 5rem calc(15rem + 8vw) / 20% 60% 20%;
     grid-template-areas:
@@ -1102,12 +1075,6 @@ body {
 /*----------------------- LAPTOP -----------------------*/
 
 @media (min-width: 1024px) {
-  :root {
-    --fs-jumboxl: calc(3.75rem + 1vw);
-    --fs-xl: calc(1.9rem + 1vw);
-    --fs-m: calc(1.25rem + .5vw);
-  }
-
   .navbar-menu li {
     float: left;
   }
@@ -1172,6 +1139,10 @@ body {
     place-self: center center;
   }
 
+  .review-header {
+    font-size: var(--fs-s);
+  }
+
   #gallery {
     grid: 80px repeat(2, auto) / 5% 90% 5%;
     grid-template-areas:
@@ -1183,13 +1154,6 @@ body {
 }
 
 @media (min-width: 1440px) {
-  :root {
-    --fs-jumboxl: calc(4.25rem + 1vw);
-    --fs-xl: calc(2.1rem + 1vw);
-    --fs-l: calc(1.75rem + .5vw);
-    --fs-m: calc(1.5rem + .5vw);
-  }
-
   .navbar .navbar-menu {
     padding-right: 4vw;
   }
@@ -1219,8 +1183,8 @@ body {
   }
 
   .contact-btn {
-    width: 4.5rem;
-    height: 2.5rem;
+    width: 4.75rem;
+    height: 2.75rem;
   }
 }
 
@@ -1261,12 +1225,6 @@ body {
 }
 
 @media (min-width: 2560px) {
-  :root {
-    --fs-jumboxl: calc(4.5rem + 1vw);
-    --fs-xl: calc(2.5rem + 1vw);
-    --fs-l: calc(2.5rem + .5vw);
-  }
-  
   #home {
     grid: 5rem repeat(3, auto)/ 20% 60% 20%;
     grid-template-areas:
@@ -1286,5 +1244,3 @@ body {
     ;
   }
 }
-
-/*----------------------- END OF CSS CODE -----------------------*/
