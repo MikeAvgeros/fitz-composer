@@ -15,7 +15,7 @@
   --fs-m: clamp(calc(.85rem + 1vw), 2vw, calc(1.25rem + 1vw));
   --fs-s: clamp(calc(.8rem + .5vw), 1vw, 1.25rem);
   --fs-xs: clamp(calc(.7rem + .5vw), .75vw, 1rem);
-  --fs-xxs: clamp(calc(.6rem + .5vw), .7vw, .8rem);
+  --fs-xxs: clamp(calc(.5rem + .5vw), .7vw, .7rem);
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
 }
@@ -471,7 +471,7 @@ body {
 .film-link p, .music-link p {
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-size: var(--fs-xxs);
   letter-spacing: 2px;
 }
@@ -490,11 +490,19 @@ body {
 
 /*----------------- SHARED FILM/MUSIC ATTRIBUTES -----------------*/
 
-.music-link img, .film-link img {
+.film-link iframe, .music-link iframe {
   width: 100%;
   height: auto;
   border-radius: 5px;
   padding-bottom: 1rem;
+}
+
+.film-link iframe {
+  min-height: 210px;
+}
+
+.music-link iframe {
+  max-height: 96px;
 }
 
 .music-link:hover, .film-link:hover {
@@ -513,7 +521,7 @@ body {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   text-align: center;
-  font-size: var(--fs-l);
+  font-size: var(--fs-m);
   letter-spacing: 3px;
   padding: 2rem 0rem calc(1rem + 3vw);
 }
@@ -567,7 +575,6 @@ body {
 
 .review-header {
   grid-area: header;
-  border: 2px solid var(--clr-secondary);
   border-radius: 5px;
   color: var(--clr-secondary);
   font-size: var(--fs-m);
@@ -579,7 +586,6 @@ body {
 }
 
 .review-header:hover {
-  background-color: var(--clr-bg);
   color: var(--clr-primary);
 }
 
@@ -1103,7 +1109,7 @@ body {
   letter-spacing: 2px;
 }
 
-/*----------------------- MEDIA QUERIES -----------------------*/
+/*--------------------- MEDIA QUERIES ---------------------*/
 
 /*----------------------- MOBILE -----------------------*/
 @media (min-width: 375px) {
