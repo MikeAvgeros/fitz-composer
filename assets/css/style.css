@@ -37,6 +37,14 @@ body {
 
 /*--------------------- GLOBAL ANIMATIONS ---------------------*/
 
+@-webkit-keyframes wiggle {
+  0% {transform: scale(1);}
+  25% {transform: scale(.9);}
+  50% {transform: scale(.8);}
+  75% {transform: scale(.9);}
+  100% {transform: scale(1);}
+}
+
 @keyframes wiggle {
   0% {transform: scale(1);}
   25% {transform: scale(.9);}
@@ -45,9 +53,21 @@ body {
   100% {transform: scale(1);}
 }
 
+@-webkit-keyframes zoom {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+
 @keyframes zoom {
   0% {transform: scale(1);}
   100% {transform: scale(1.1);}
+}
+
+@-webkit-keyframes fadetoleft {
+  0% {opacity: 0;}
+  0% {transform: translateX(50%);}
+  100% {opacity: 1;}
+  100% {transform: translateX(0);}
 }
 
 @keyframes fadetoleft {
@@ -57,11 +77,23 @@ body {
   100% {transform: translateX(0);}
 }
 
+@-webkit-keyframes fadetoright {
+  0% {opacity: 0;}
+  0% {transform: translateX(-50%);}
+  100% {opacity: 1;}
+  100% {transform: translateX(0);}
+}
+
 @keyframes fadetoright {
   0% {opacity: 0;}
   0% {transform: translateX(-50%);}
   100% {opacity: 1;}
   100% {transform: translateX(0);}
+}
+
+@-webkit-keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @keyframes fadein {
@@ -217,7 +249,8 @@ body {
 }
 
 .navbar-menu a:active, .navbar-icon:active, .brand-logo:active {
-  animation: wiggle .2s ease-in-out;
+  -webkit-animation: wiggle .2s ease-in-out;
+          animation: wiggle .2s ease-in-out;
 }
 
 /*--------------------- HOME PAGE ---------------------*/
@@ -247,7 +280,8 @@ body {
 .home-title, .home-subtitle {
   font-weight: lighter;
   letter-spacing: 2px;
-  animation: fadetoleft 2s forwards;
+  -webkit-animation: fadetoleft 2s forwards;
+          animation: fadetoleft 2s forwards;
 }
 
 .home-title {
@@ -269,7 +303,8 @@ body {
   place-self: center center;
   row-gap: calc(2rem + 2vw);
   font-family: var(--ff-secondary);
-  animation: fadetoright 2s forwards;
+  -webkit-animation: fadetoright 2s forwards;
+          animation: fadetoright 2s forwards;
 }
 
 .home-quotes blockquote {
@@ -295,7 +330,8 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
-  animation: fadein 4s forwards;
+  -webkit-animation: fadein 4s forwards;
+          animation: fadein 4s forwards;
 }
 
 .home-btn a {
@@ -334,7 +370,8 @@ body {
 }
 
 #btn-contact:active, #btn-learnmore:active {
-  animation: wiggle .2s ease-in-out;
+  -webkit-animation: wiggle .2s ease-in-out;
+          animation: wiggle .2s ease-in-out;
 }
 
 /*-------------------- ABOUT PAGE --------------------*/
@@ -412,6 +449,8 @@ body {
   grid-area: records;
 }
 
+/*------------------ SHARED FILM/MUSIC ATTRIBUTES ------------------*/
+
 .music-links, .film-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -419,8 +458,6 @@ body {
   padding-top: calc(16px + 3vw);
   row-gap: calc(16px + 3vw);
 }
-
-/*--------------------- FILM LINKS ---------------------*/
 
 .film-link, .music-link {
   display: grid;
@@ -439,7 +476,7 @@ body {
   letter-spacing: 2px;
 }
 
-/*------------------- LINKS DIVIDER -------------------*/
+/*-------------------- LINKS DIVIDER --------------------*/
 
 .divider {
   grid-area: divider;
@@ -451,7 +488,7 @@ body {
   margin: calc(1rem + 2vw) 0rem calc(1rem + 1vw) 0rem;
 }
 
-/*-------------------- MUSIC LINKS --------------------*/
+/*----------------- SHARED FILM/MUSIC ATTRIBUTES -----------------*/
 
 .music-link img, .film-link img {
   width: 100%;
@@ -461,10 +498,11 @@ body {
 }
 
 .music-link:hover, .film-link:hover {
-  animation: zoom .5s forwards;
+  -webkit-animation: zoom .5s forwards;
+          animation: zoom .5s forwards;
 }
 
-/*----------------------- REVIEWS SECTION -----------------------*/
+/*---------------------- REVIEWS SECTION -----------------------*/
 
 .review-title, .reviews {
   background-color: var(--clr-fg);
@@ -546,10 +584,11 @@ body {
 }
 
 .review-header:active {
-  animation: wiggle .1s ease-in-out;
+  -webkit-animation: wiggle .1s ease-in-out;
+          animation: wiggle .1s ease-in-out;
 }
 
-/*---------------- REVIEW RADIO BUTTONS ----------------*/
+/*----------------- REVIEW RADIO BUTTONS ------------------*/
 
 .review-header-radio {
   display: none;
@@ -676,7 +715,8 @@ body {
 }
 
 .service-header:active {
-  animation: wiggle .1s ease-in-out;
+  -webkit-animation: wiggle .1s ease-in-out;
+          animation: wiggle .1s ease-in-out;
 }
 
 /*---------------- SERVICE RADIO BUTTONS ----------------*/
@@ -770,7 +810,8 @@ body {
   display: flex;
   width: 1000%;
   left: 0;
-  animation: 50s carousel infinite;
+  -webkit-animation: 50s carousel infinite;
+          animation: 50s carousel infinite;
 }
 
 .gallery img {
@@ -778,6 +819,30 @@ body {
 }
 
 /*------------------ CAROUSEL ANIMATION ------------------*/
+
+@-webkit-keyframes carousel {
+  0% {left: 0;}
+  5% {left: 0;}
+  10%  {left: -100%;}
+  15%  {left: -100%;}
+  20% {left: -200%;}
+  25% {left: -200%;}
+  30%  {left: -300%;}
+  35%  {left: -300%;}
+  40% {left: -400%;}
+  45% {left: -400%;}
+  50%  {left: -500%;}
+  55%  {left: -500%;}
+  60%  {left: -600%;}
+  65% {left: -600%;}
+  70% {left: -700%;}
+  75%  {left: -700%;}
+  80%  {left: -800%;}
+  85% {left: -800%;}
+  90% {left: -900%;}
+  95%  {left: -900%;}
+  100% {left: 0;}
+}
 
 @keyframes carousel {
   0% {left: 0;}
@@ -841,6 +906,34 @@ body {
 
 .required-icon {
   color: rgba(250,0,0,0.6);
+}
+
+.contact-input-field::-webkit-input-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+.contact-input-field::-moz-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+.contact-input-field:-ms-input-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+.contact-input-field::-ms-input-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-secondary);
+  opacity: 0.7;
+  letter-spacing: 2px;
 }
 
 .contact-input-field::placeholder {
@@ -929,7 +1022,8 @@ body {
 }
 
 .contact-btn:active {
-  animation: wiggle .25s ease-in-out;
+  -webkit-animation: wiggle .25s ease-in-out;
+          animation: wiggle .25s ease-in-out;
 }
 
 /*-------------------- FOOTER SECTION --------------------*/
