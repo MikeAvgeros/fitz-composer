@@ -907,46 +907,48 @@ body {
   color: var(--clr-primary);
   display: block;
   padding: .625rem 0rem .625rem .25rem;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-s);
 }
 
 .required-icon {
   color: rgba(250,0,0,0.6);
 }
 
+.contact-input-field {
+  width: 100%;
+  background-color: var(--clr-fg);
+  font-size: var(--fs-xs);
+  letter-spacing: 1px;
+}
+
 .contact-input-field::-webkit-input-placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
-  letter-spacing: 2px;
 }
 
 .contact-input-field::-moz-placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
-  letter-spacing: 2px;
 }
 
 .contact-input-field:-ms-input-placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
-  letter-spacing: 2px;
 }
 
 .contact-input-field::-ms-input-placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
-  letter-spacing: 2px;
 }
 
 .contact-input-field::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   opacity: 0.7;
-  letter-spacing: 2px;
 }
 
 .contact-form .snd-btn {
@@ -956,12 +958,6 @@ body {
 .contact.btn, .contact-input-field {
   padding: .625rem;
   border-radius: 5px;
-}
-
-.contact-input-field {
-  width: 100%;
-  background-color: var(--clr-fg);
-  font-size: var(--fs-xs);
 }
 
 .contact-radio {
@@ -1003,7 +999,7 @@ body {
 .contact-btn {
   width: calc(3rem + 2vw);
   height: calc(1.75rem + 1vw);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-s);
   font-weight: bolder;
   letter-spacing: 1px;
   border: 2px solid var(--clr-primary);
@@ -1339,6 +1335,10 @@ body {
   .gallery  {
     max-width: 1080px;
     max-height: 720px;
+  }
+
+  .contact-form {
+    max-width: 720px;
   }
 }
 
