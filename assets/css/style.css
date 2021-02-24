@@ -473,7 +473,7 @@ body {
   font-family: var(--ff-secondary);
   padding-bottom: 5px;
   font-size: var(--fs-xxs);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /*-------------------- LINKS DIVIDER --------------------*/
@@ -1337,7 +1337,8 @@ body {
   }
 
   .gallery  {
-    max-width: 960px;
+    max-width: 1080px;
+    max-height: 720px;
   }
 }
 
