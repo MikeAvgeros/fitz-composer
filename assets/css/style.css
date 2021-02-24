@@ -12,10 +12,10 @@
   --fs-xxl: clamp(calc(2rem + 3vw), 6vw, calc(4.25rem + 1vw));
   --fs-xl: clamp(calc(1.5rem + 1.5vw), 3.5vw, calc(2rem + 1vw));
   --fs-l: clamp(calc(1rem + 1.1vw), 3vw, calc(1.5rem + 1vw));
-  --fs-m: clamp(calc(.8rem + 1vw), 2vw, calc(1.25rem + 1vw));
-  --fs-s: clamp(calc(.8rem + .5vw), 1vw, 1.5rem);
-  --fs-xs: clamp(calc(.75rem + .5vw), .75vw, 1rem);
-  --fs-xxs: clamp(calc(.65rem + .5vw), .75vw, .8rem);
+  --fs-m: clamp(calc(.85rem + 1vw), 2vw, calc(1.25rem + 1vw));
+  --fs-s: clamp(calc(.8rem + .5vw), 1vw, 1.25rem);
+  --fs-xs: clamp(calc(.7rem + .5vw), .75vw, 1rem);
+  --fs-xxs: clamp(calc(.6rem + .5vw), .7vw, .8rem);
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
 }
@@ -274,7 +274,7 @@ body {
 
 .home-quotes blockquote {
   color: var(--clr-primary);
-  font-size: var(--fs-m);
+  font-size: var(--fs-s);
 }
 
 #bq1 {
@@ -542,6 +542,7 @@ body {
 
 .review-header:hover {
   background-color: var(--clr-bg);
+  color: var(--clr-primary);
 }
 
 .review-header:active {
@@ -595,7 +596,7 @@ body {
 
 .review-description i {
   justify-self: center;
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   color: var(--clr-secondary);
   font-weight: bolder;
   cursor: pointer;
@@ -657,6 +658,7 @@ body {
 
 .service-header {
   grid-area: header;
+  border: 2px solid var(--clr-primary);
   background-color: var(--clr-fg);
   color: var(--clr-primary);
   font-family: var(--ff-secondary);
@@ -671,6 +673,10 @@ body {
 .service-header:hover {
   color: var(--clr-bg);
   background-color: var(--clr-secondary);
+}
+
+.service-header:active {
+  animation: wiggle .1s ease-in-out;
 }
 
 /*---------------- SERVICE RADIO BUTTONS ----------------*/
@@ -709,7 +715,6 @@ body {
 
 .service-description p {
   display: grid;
-  background-color: var(--clr-fg);
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
   font-size: var(--fs-s);
@@ -720,7 +725,7 @@ body {
 
 .service-description i {
   justify-self: center;
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   color: var(--clr-primary);
   font-weight: bolder;
   cursor: pointer;
@@ -1000,6 +1005,11 @@ body {
 /*----------------------- MEDIA QUERIES -----------------------*/
 
 /*----------------------- MOBILE -----------------------*/
+@media (min-width: 375px) {
+  .home-quotes blockquote {
+    font-size: var(--fs-m);
+  }
+}
 
 @media (min-width: 425px) {
   .home-btn {
