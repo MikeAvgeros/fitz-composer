@@ -161,7 +161,7 @@ body {
   max-height: 4.375rem;
 }
 
-/*------------------ BURGER ICON -----------------*/
+/*--------------- NAVBAR BURGER ICON ---------------*/
 
 .navbar-icon {
   grid-area: menu;
@@ -183,7 +183,7 @@ body {
   transition: max-height .2s ease-in;
 }
 
-/*----------------- NAVBAR MENU -----------------*/
+/*------------------- NAVBAR MENU -------------------*/
 
 .navbar .navbar-menu {
   grid-area: list;
@@ -914,6 +914,13 @@ body {
   font-family: var(--ff-secondary);
   display: grid;
   place-content: center center;
+}
+
+#submit-notification {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+  font-size: var(--fs-xs);
+  padding-top: 20px;
 }
 
 .contact-btn:hover {

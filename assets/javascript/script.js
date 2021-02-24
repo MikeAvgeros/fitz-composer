@@ -15,11 +15,11 @@ function sendMail(contactForm) {
     })
     .then(
         function() {
-            alert("Thank you for getting in touch! We'll get back to you shortly.");
+            document.getElementById("submit-notification").innerHTML = "Thank you for getting in touch! We'll get back to you shortly.";
         },
         function(error) {
         console.log('FAILED...', error);
-            alert("There was an error with your form. Please try again.")
+        document.getElementById("submit-notification").innerHTML = "There was an error with your form. Please try again.";
         }
     );
     return false;  // To block from loading a new page
