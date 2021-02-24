@@ -1180,6 +1180,10 @@ body {
     width: calc(7rem + 1vw);
   }
 
+  .review-header {
+    font-size: var(--fs-s);
+  }
+
   .service img {
     max-height: 240px;
   }
@@ -1250,10 +1254,6 @@ body {
 
   .about-img {
     place-self: center center;
-  }
-
-  .review-header {
-    font-size: var(--fs-s);
   }
 
   #gallery {
