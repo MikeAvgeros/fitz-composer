@@ -498,7 +498,7 @@ body {
 }
 
 .film-link iframe {
-  min-height: 210px;
+  min-height: 215px;
 }
 
 .music-link iframe {
@@ -543,7 +543,6 @@ body {
   justify-self: center;
   place-content: start start;
   display: grid;
-  row-gap: 10px;
   grid: repeat(4, auto) / 100%;
   grid-template-areas:
   "img"
@@ -569,13 +568,16 @@ body {
   grid-area: stars;
   color: var(--clr-primary);
   justify-self: center;
+  padding-bottom: 10px;
 }
 
 /*------------------- REVIEW REVEAL -------------------*/
 
 .review-header {
   grid-area: header;
+  border: 2px solid var(--clr-secondary);
   border-radius: 5px;
+  background-color: var(--clr-bg);
   color: var(--clr-secondary);
   font-size: var(--fs-m);
   letter-spacing: 1px;
@@ -586,6 +588,7 @@ body {
 }
 
 .review-header:hover {
+  background-color: var(--clr-fg);
   color: var(--clr-primary);
 }
 
@@ -622,6 +625,7 @@ body {
 
 .review-description {
   grid-area: description;
+  background-color: var(--clr-bg);
   color: var(--clr-secondary);
   height: 0;
   overflow: hidden;
@@ -630,7 +634,6 @@ body {
 
 .review-description blockquote, .review-description cite {
   display: grid;
-  background-color: var(--clr-fg);
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
   font-size: var(--fs-s);
