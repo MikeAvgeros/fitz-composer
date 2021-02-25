@@ -1164,6 +1164,10 @@ body {
     place-self: center end;
   }
 
+  .home-quotes blockquote {
+    letter-spacing: 1px;
+  }
+
   #bq1 {
     place-self: end end;
   }
