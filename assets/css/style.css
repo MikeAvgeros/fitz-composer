@@ -893,7 +893,7 @@ body {
 .contact-form {
   grid-area: contact;
   width: 100%;
-  max-width: 640px;
+  max-width: 720px;
   padding-top: calc(16px + 2vw);
   display: grid;
   justify-self: center;
@@ -1334,7 +1334,7 @@ body {
   }
 
   .contact-form {
-    max-width: 720px;
+    max-width: 864px;
   }
 
   .gallery  {
