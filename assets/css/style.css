@@ -1,6 +1,6 @@
 /*----------------------- GOOGLE FONTS -----------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300,400,500&family=Roboto:wght@300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Raleway:wght@400&display=swap');
 
 /*---------------------- GLOBAL STYLES -----------------------*/
 
@@ -9,15 +9,14 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(calc(2rem + 3vw), 6vw, calc(4.25rem + 1vw));
-  --fs-xl: clamp(calc(1.5rem + 1.5vw), 3.5vw, calc(2rem + 1vw));
-  --fs-l: clamp(calc(1rem + 1.1vw), 3vw, calc(1.5rem + 1vw));
-  --fs-m: clamp(calc(.85rem + 1vw), 2vw, calc(1.25rem + 1vw));
-  --fs-s: clamp(calc(.8rem + .5vw), 1vw, 1.25rem);
-  --fs-xs: clamp(calc(.7rem + .5vw), .75vw, 1rem);
-  --fs-xxs: clamp(calc(.5rem + .5vw), .7vw, .7rem);
-  --ff-primary: 'Lato', sans-serif;
-  --ff-secondary: 'Roboto', sans-serif;
+  --fs-xxl: clamp(2rem + 2.5vw, 5vw, 5rem);        /*---- 40px min @ 320px / 80px max ----*/
+  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);    /*---- 28.8px min @320px / 48px max ----*/
+  --fs-l: clamp(1.05rem + 1vw, 3vw, 2.25rem);    /*---- 20px min @320px / 36px max ----*/
+  --fs-m: clamp(.8rem + 1vw, 2vw, 1.5rem);      /*---- 16px min @320px / 24px max ----*/
+  --fs-s: clamp(.75rem + .75vw, 1vw, 1.25rem); /*---- 14.4px min @320px / 20px max ----*/
+  --fs-xs: clamp(.7rem + .5vw, .75vw, 1rem);  /*---- 12.8px min @320px / 16px max ----*/
+  --ff-primary: 'Raleway', sans-serif;
+  --ff-secondary: 'Lato', sans-serif;
 }
 
 *, ::before, ::after {
@@ -112,7 +111,7 @@ body {
 
 .about-header, .work-header, .services-header, 
 .gallery-header, .contact-header {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   text-align: center;
 }
 
@@ -120,21 +119,15 @@ body {
 .gallery-title, .contact-title {
   color: var(--clr-primary);
   font-size: var(--fs-xl);
+  letter-spacing: 2px;
 }
 
 .about-subtitle, .work-subtitle, .services-subtitle, 
 .gallery-subtitle, .contact-subtitle {
   color: var(--clr-secondary);
   font-size: var(--fs-m);
-  padding-top: 10px;
-}
-
-.about-title, .work-title, .services-title, 
-.gallery-title, .contact-title, 
-.about-subtitle, .work-subtitle, .review-title, 
-.services-subtitle, .gallery-subtitle, .contact-subtitle {
-  font-weight: lighter;
   letter-spacing: 2px;
+  padding-top: 10px;
 }
 
 .music-links, .film-links, .reviews, .services {
@@ -239,6 +232,7 @@ body {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: var(--fs-m);
+  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -278,7 +272,6 @@ body {
 }
 
 .home-title, .home-subtitle {
-  font-weight: lighter;
   letter-spacing: 2px;
   -webkit-animation: fadetoleft 2s forwards;
           animation: fadetoleft 2s forwards;
@@ -309,7 +302,7 @@ body {
 
 .home-quotes blockquote {
   color: var(--clr-primary);
-  font-size: var(--fs-s);
+  font-size: var(--fs-m);
 }
 
 #bq1 {
@@ -337,7 +330,7 @@ body {
 .home-btn a {
   width: calc(6.5rem + 1vw);
   height: calc(2.75rem + 1vw);
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
   display: grid;
@@ -400,7 +393,7 @@ body {
 
 .about-img img {
   width: 100%;
-  max-width: 540px;
+  max-width: 640px;
   min-width: 288px;
   height: auto;
   max-height: 640px;
@@ -416,7 +409,7 @@ body {
   justify-self: center;
   padding-top: 32px;
   color: var(--clr-secondary);
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-s);
   letter-spacing: 1px;
 }
@@ -471,8 +464,9 @@ body {
 .film-link p, .music-link p {
   color: var(--clr-secondary);
   font-family: var(--ff-secondary);
+  font-style: italic;
   padding-bottom: 5px;
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xs);
   letter-spacing: 1px;
 }
 
@@ -521,7 +515,7 @@ body {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   text-align: center;
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   letter-spacing: 3px;
   padding: 2rem 0rem calc(1rem + 3vw);
 }
@@ -532,7 +526,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   padding-top: calc(16px + 3vw);
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   padding: 0% 2.5% 2.5% 2.5%;
 }
 
@@ -579,7 +573,7 @@ body {
   border-radius: 5px;
   background-color: var(--clr-bg);
   color: var(--clr-secondary);
-  font-size: var(--fs-m);
+  font-size: var(--fs-s);
   letter-spacing: 1px;
   padding: 10px 10px;
   cursor: pointer;
@@ -637,6 +631,7 @@ body {
   color: var(--clr-secondary);
   font-family: var(--ff-primary);
   font-size: var(--fs-s);
+  font-style: italic;
   letter-spacing: 1px;
   justify-self: start;
   padding: 10px 10px;
@@ -648,6 +643,7 @@ body {
   color: var(--clr-secondary);
   font-weight: bolder;
   cursor: pointer;
+  padding-bottom: 20px;
 }
 
 .review-description i:hover {
@@ -778,7 +774,7 @@ body {
   color: var(--clr-primary);
   font-weight: bolder;
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .service-description i:hover {
@@ -910,7 +906,7 @@ body {
   color: var(--clr-primary);
   display: block;
   padding: .625rem 0rem .625rem .25rem;
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
 }
 
 .required-icon {
@@ -931,31 +927,31 @@ body {
 }
 
 .contact-input-field::-moz-placeholder {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   color: var(--clr-secondary);
   opacity: 0.7;
 }
 
 .contact-input-field:-ms-input-placeholder {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   color: var(--clr-secondary);
   opacity: 0.7;
 }
 
 .contact-input-field::-ms-input-placeholder {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   color: var(--clr-secondary);
   opacity: 0.7;
 }
 
 .contact-input-field::placeholder {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   color: var(--clr-secondary);
   opacity: 0.7;
 }
 
 .contact-form .snd-btn {
-  padding: .625rem 0rem 0rem .125rem;
+  padding: .625rem 0rem 0rem 0rem;
 }
 
 .contact.btn, .contact-input-field {
@@ -973,7 +969,7 @@ body {
 
 .contact-radio label {
   cursor: pointer;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-xs);
   background-color: var(--clr-fg);
   border-radius: 5px;
@@ -1002,7 +998,7 @@ body {
 .contact-btn {
   width: calc(3rem + 2vw);
   height: calc(1.75rem + 1vw);
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
   font-weight: bolder;
   letter-spacing: 1px;
   border: 2px solid var(--clr-primary);
@@ -1072,7 +1068,7 @@ body {
   place-self: start center;
   color: var(--clr-primary);
   padding-top: 20px;
-  font-size: var(--fs-m);
+  font-size: var(--fs-l);
   font-weight: lighter;
 }
 
@@ -1111,12 +1107,6 @@ body {
 /*--------------------- MEDIA QUERIES ---------------------*/
 
 /*----------------------- MOBILE -----------------------*/
-@media (min-width: 375px) {
-  .home-quotes blockquote {
-    font-size: var(--fs-m);
-  }
-}
-
 @media (min-width: 425px) {
   .home-btn {
     width: calc(14.5rem + 5vw);
@@ -1163,6 +1153,10 @@ body {
     place-self: center start;
   }
 
+  .home-title, .home-subtitle {
+    letter-spacing: 3px;
+  }
+
   .home-quotes {
     place-self: center end;
   }
@@ -1193,6 +1187,10 @@ body {
 
   .service img {
     max-height: 240px;
+  }
+
+  .service-header {
+    font-size: var(--fs-m);
   }
 }
 
@@ -1278,6 +1276,10 @@ body {
     padding-right: 4vw;
   }
 
+  .home-header {
+    place-self: end start;
+  }
+
   .home-quotes blockquote {
     padding-right: 8px;
   }
@@ -1296,10 +1298,6 @@ body {
 
   .home-btn a {
     width: calc(8rem + 1vw);
-  }
-
-  .service label {
-    font-size: var(--fs-m);
   }
 
   .contact-btn {
