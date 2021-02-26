@@ -164,7 +164,7 @@ body {
   opacity: 0.95;
   position: fixed;
   display: grid;
-  grid: 5rem calc(15rem + 7vw) / 25% 50% 25%;
+  grid: 5rem calc(30vh + 7vw) / 25% 50% 25%;
   grid-template-areas:
   "logo .... menu"
   "list list list"
@@ -204,7 +204,7 @@ body {
 }
 
 #navbar-menu-checkbox:checked + .navbar-menu{
-  max-height: calc(15rem + 7vw);
+  max-height: calc(30vh + 7vw);
   transition: max-height .2s ease-in;
 }
 
