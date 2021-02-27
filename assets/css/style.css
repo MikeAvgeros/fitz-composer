@@ -639,7 +639,7 @@ body {
 
 .review-description i {
   justify-self: center;
-  font-size: var(--fs-l);
+  font-size: var(--fs-xl);
   color: var(--clr-secondary);
   font-weight: bolder;
   cursor: pointer;
@@ -770,7 +770,7 @@ body {
 
 .service-description i {
   justify-self: center;
-  font-size: var(--fs-l);
+  font-size: var(--fs-xl);
   color: var(--clr-primary);
   font-weight: bolder;
   cursor: pointer;
@@ -1253,6 +1253,14 @@ body {
 
   .about-img {
     place-self: center center;
+  }
+
+  .review-description i {
+    font-size: var(--fs-l);
+  }
+
+  .service-description i {
+    font-size: var(--fs-l);
   }
 
   #gallery {
