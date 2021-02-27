@@ -9,11 +9,11 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem + 2.5vw, 5vw, 5rem);        /*---- 40px min @ 320px / 80px max ----*/
-  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);    /*---- 28.8px min @320px / 48px max ----*/
-  --fs-l: clamp(1.05rem + 1vw, 3vw, 2.25rem);    /*---- 20px min @320px / 36px max ----*/
+  --fs-xxl: clamp(2rem + 2vw, 5vw, 5rem);        /*---- 38.4px min @ 320px / 80px max ----*/
+  --fs-xl: clamp(1.5rem + 1.5vw, 4vw, 3rem);    /*---- 28.8px min @320px / 48px max ----*/
+  --fs-l: clamp(.9rem + 1vw, 3vw, 2.25rem);       /*---- 17.6px min @320px / 36px max ----*/
   --fs-m: clamp(.8rem + 1vw, 2vw, 1.5rem);      /*---- 16px min @320px / 24px max ----*/
-  --fs-s: clamp(.75rem + .75vw, 1vw, 1.25rem); /*---- 14.4px min @320px / 20px max ----*/
+  --fs-s: clamp(.8rem + .75vw, 1vw, 1.25rem); /*---- 15.2px min @320px / 20px max ----*/
   --fs-xs: clamp(.7rem + .5vw, .75vw, 1rem);  /*---- 12.8px min @320px / 16px max ----*/
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
@@ -267,7 +267,7 @@ body {
   grid-area: header;
   display: grid;
   place-self: center center;
-  row-gap: .5rem;
+  row-gap: calc(.5rem + 1vh);
   font-family: var(--ff-primary);
 }
 
@@ -294,7 +294,7 @@ body {
   grid-area: quote;
   display: grid;
   place-self: center center;
-  row-gap: calc(2rem + 2vw);
+  row-gap: calc(2rem + 2.5vh);
   font-family: var(--ff-secondary);
   -webkit-animation: fadetoright 2s forwards;
           animation: fadetoright 2s forwards;
@@ -329,7 +329,7 @@ body {
 
 .home-btn a {
   width: calc(6.5rem + 1vw);
-  height: calc(2.75rem + 1vw);
+  height: calc(2.5rem + 1vw);
   font-size: var(--fs-xs);
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
@@ -1149,28 +1149,12 @@ body {
     ;
   }
 
-  .home-header {
-    place-self: center start;
-  }
-
   .home-title, .home-subtitle {
     letter-spacing: 3px;
   }
 
-  .home-quotes {
-    place-self: center end;
-  }
-
   .home-quotes blockquote {
-    letter-spacing: 1px;
-  }
-
-  #bq1 {
-    place-self: end end;
-  }
-
-  #bq2 {
-    place-self: center end;
+    letter-spacing: 2px;
   }
   
   .home-btn {
@@ -1229,14 +1213,24 @@ body {
     padding-right: 3.5vw;
   }
 
+  .home-header {
+    place-self: center start;
+  }
+
   .home-quotes {
     place-self: start end;
-    padding-bottom: 1vh;
+  }
+
+  #bq1 {
+    place-self: end end;
+  }
+
+  #bq2 {
+    place-self: center end;
   }
 
   .home-btn {
-    place-self: start center;
-    padding-top: 1vh;
+    padding-bottom: 2vh;
   }
 
   .home-btn a {
