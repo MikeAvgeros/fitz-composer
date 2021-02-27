@@ -8,6 +8,8 @@
 
 ### The idea is to create a one-page scrolling site which quickly and effectively showcases the owner's work and skill set with a simple and easy to use navigation.
 
+### You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
+
 <br>
 
 # User Experience
@@ -54,12 +56,19 @@
     -   Off-white is used for main text and subtitles.
 
 -   #### Typography
-    -   The fonts used are Raleway and Lato. They are both being imported from google fonts.
+    -   I have used google fonts to import the fonts for the website.
+    -   The fonts used are Raleway and Lato and the weight is 400 (Regular).
     -   The Raleway font is used for the headings of each page/section.
     -   The Lato font is used for paragraphs and descriptions. 
     -   Sans Serif is used as the fallback font for both font options in case they aren't being imported into the site correctly.
     -   I am using fluid font sizes that grow together with the viewport width. This is achieved by using the clamp attribute and for the min and desired values, I am using a combination of rem units with the viewport width unit.
     -   I have created 5 font sizes that are being shared by all the text elements in the site depending on their importance.
+
+-   #### Images
+    -   I have used unsplash to source all the images on the website. You can find more information on the Credit section.
+
+-   #### Icons
+    -   I have used fontawesome to source all the icons used on the website.
 
 -   #### Structure & Layout
     -   Due to the simplicity and nature of the project, I decided to create a single-page scrolling website as it created a smoother user-experience with an easier and effective navigation.
@@ -80,13 +89,11 @@
 # Technologies Used
 
 ## Languages
-
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Libraries, Tools & Resources
-
 1. [VS Code:](https://code.visualstudio.com/)
     - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
 2. [Google Fonts:](https://fonts.google.com/)
@@ -102,7 +109,7 @@
 7. [GitHub:](https://github.com/)
     - GitHub was used to store and manage the Git repository.
 8. [Adobe XD:](https://www.adobe.com/uk/products/xd.html)
-    - Adobe XD was used to create the [wireframes](https://xd.adobe.com/view/14523a83-8524-4f79-9d3e-505503a9e2f0-4101/) during the design and prototyping process.
+    - Adobe XD was used to create the [wireframes](https://www.dropbox.com/sh/47nl19x70nqnbqe/AACs9wpsU86-84pEg55kyMyJa?dl=0) during the design and prototyping process.
 9. [CDNJS:](https://cdnjs.com/)
     - CDNJS was used to quickly import library files in my HTML document.
 10. [Squoosh:](https://squoosh.app/)
