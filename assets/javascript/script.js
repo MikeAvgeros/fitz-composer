@@ -16,13 +16,19 @@ function sendMail(contactForm) {
     .then(
         function() {
             document.getElementById("submit-notification").innerHTML = "Thank you for getting in touch! We'll get back to you shortly.";
+            setTimeout(() => { homeReload(); }, 2000);
         },
         function(error) {
         console.log('FAILED...', error);
-        document.getElementById("submit-notification").innerHTML = "There was an error with your form. Please try again.";
+        document.getElementById("submit-notification").innerHTML = "There was an error with your message. Please try again.";
         }
     );
     return false;  // To block from loading a new page
+}
+
+function homeReload() {
+    location.href = "#home";
+    location.reload();
 }
 
 function collapseNav() {
