@@ -10,6 +10,7 @@ function sendMail(contactForm) {
     emailjs.send("gmail", "fitz", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
+        "from_phone": contactForm.phone.value,
         "client_type": contactForm.client_type.value,
         "message": contactForm.description.value
     })
