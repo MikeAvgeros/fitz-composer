@@ -350,7 +350,7 @@ body {
   background: none;
 }
 
-/*------------- BUTTONS HOVER/ACTIVE EFFECTS -------------*/
+/*------------ BUTTONS HOVER/ACTIVE EFFECTS ------------*/
 
 #btn-contact:hover {
   color: var(--clr-secondary);
@@ -417,21 +417,22 @@ body {
 /*----------------------- WORK PAGE -----------------------*/
 
 #work {
-  grid: 5rem repeat(7, auto) 5rem repeat(2, auto) / 5% 90% 5%;
+  grid: 5rem repeat(6, auto) 5rem repeat(2, auto) / 5% 90% 5%;
   grid-template-areas:
-  "nav       nav        nav   "
-  "header    header     header"
-  ".....     films      ......"
-  ".....     divider1   ......"
-  ".....     records    ......"
-  ".....     divider2   ......"
-  "title1    title1     title1"
-  ".....     credits    ......"
-  ".....     ......     ......"
-  "title2    title2     title2"
-  "reviews   reviews    reviews"
+  "nav           nav           nav   "
+  "header        header        header"
+  ".....         films         ......"
+  ".....         divider       ......"
+  ".....         records       ......"
+  ".....         credits-title ......"
+  ".....         credits       ......"
+  ".....         ......        ......"
+  "reviews-title reviews-title reviews-title"
+  "reviews       reviews       reviews"
   ;
 }
+
+/*------------------ FILM/MUSIC ATTRIBUTES ------------------*/
 
 .work-header {
   grid-area: header;
@@ -444,8 +445,6 @@ body {
 .music-links {
   grid-area: records;
 }
-
-/*------------------ SHARED FILM/MUSIC ATTRIBUTES ------------------*/
 
 .music-links, .film-links {
   display: grid;
@@ -473,27 +472,6 @@ body {
   letter-spacing: 1px;
 }
 
-/*-------------------- LINKS DIVIDERS --------------------*/
-
-.divider {
-  width: 25%;
-  height: 2px;
-  border-radius: 5px;
-  justify-self: center;
-  background-color: var(--clr-primary);
-  margin: calc(1rem + 2vw) 0rem calc(1rem + 1vw) 0rem;
-}
-
-#divider1 {
-  grid-area: divider1;
-}
-
-#divider2 {
-  grid-area: divider2;
-}
-
-/*----------------- SHARED FILM/MUSIC ATTRIBUTES -----------------*/
-
 .film-link iframe, .music-link iframe {
   width: 100%;
   height: auto;
@@ -514,8 +492,22 @@ body {
           animation: zoom .5s forwards;
 }
 
+/*-------------------- LINKS DIVIDER --------------------*/
+
+.divider {
+  grid-area: divider;
+  width: 25%;
+  height: 2px;
+  border-radius: 5px;
+  justify-self: center;
+  background-color: var(--clr-primary);
+  margin: calc(1rem + 2vw) 0rem calc(1rem + 1vw) 0rem;
+}
+
+/*---------------- COMPANY CREDITS SECTION ----------------*/
+
 .credits-title {
-  grid-area: title1;
+  grid-area: credits-title;
 }
 
 .credits-title, .review-title {
@@ -524,7 +516,7 @@ body {
   text-align: center;
   font-size: var(--fs-l);
   letter-spacing: 3px;
-  padding: 2rem 0rem calc(1rem + 3vw);
+  padding: calc(1rem + 3vw) 0rem calc(1rem + 3vw);
 }
 
 .company-credits {
@@ -532,26 +524,27 @@ body {
   width: 100%;
   max-width: 500px;
   height: auto;
-  max-height: 500px;
+  max-height: 250px;
   justify-self: center;
   overflow: hidden;
 }
+
+/*------------------- COMPANY LOGOS -------------------*/
 
 .company-credits > figure {
   position: relative;
   display: flex;
   width: 500%;
   left: 0;
-  -webkit-animation: 25s creditscarousel infinite;
-          animation: 25s creditscarousel infinite;
+  -webkit-animation: 15s credits-carousel infinite;
+          animation: 15s credits-carousel infinite;
 }
 
 .company-credits img {
   width: 20%;
-  height: auto;
 }
 
-@-webkit-keyframes creditscarousel {
+@-webkit-keyframes credits-carousel {
   0% {left: 0;}
   10%  {left: 0%;}
   20% {left: -100%;}
@@ -565,7 +558,7 @@ body {
   100% {left: 0;}
 }
 
-@keyframes creditscarousel {
+@keyframes credits-carousel {
   0% {left: 0;}
   10%  {left: 0%;}
   20% {left: -100%;}
@@ -579,14 +572,14 @@ body {
   100% {left: 0;}
 }
 
-/*---------------------- REVIEWS SECTION -----------------------*/
+/*-------------------- REVIEWS SECTION ---------------------*/
 
 .review-title, .reviews {
   background-color: var(--clr-fg);
 }
 
 .review-title {
-  grid-area: title2;
+  grid-area: reviews-title;
 }
 
 .reviews {
@@ -596,7 +589,7 @@ body {
   justify-content: center;
   padding-top: calc(16px + 3vw);
   font-family: var(--ff-secondary);
-  padding: 0% 5% 2.5%;
+  padding: 0% 5% calc(1rem + 3vw);
 }
 
 .review {
@@ -615,7 +608,7 @@ body {
   ;
 }
 
-/*------------------- REVIEW IMAGE -------------------*/
+/*------------------- REVIEW IMAGES -------------------*/
 
 .review img {
   grid-area: img;
@@ -884,8 +877,8 @@ body {
   display: flex;
   width: 1000%;
   left: 0;
-  -webkit-animation: 50s gallerycarousel infinite;
-          animation: 50s gallerycarousel infinite;
+  -webkit-animation: 50s gallery-carousel infinite;
+          animation: 50s gallery-carousel infinite;
 }
 
 .gallery img {
@@ -894,7 +887,7 @@ body {
 
 /*------------------ CAROUSEL ANIMATION ------------------*/
 
-@-webkit-keyframes gallerycarousel {
+@-webkit-keyframes gallery-carousel {
   0% {left: 0;}
   5% {left: 0;}
   10%  {left: -100%;}
@@ -918,7 +911,7 @@ body {
   100% {left: 0;}
 }
 
-@keyframes gallerycarousel {
+@keyframes gallery-carousel {
   0% {left: 0;}
   5% {left: 0;}
   10%  {left: -100%;}
