@@ -16,11 +16,11 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem + 2vw, 5vw, 5rem);           /*---- 38.4px min @ 320px / 80px max ----*/
-  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);       /*---- 28.8px min @320px / 48px max ----*/
+  --fs-xxl: clamp(2rem + 2vw, 5vw, 5rem);        /*---- 38.4px min @ 320px / 80px max ----*/
+  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);    /*---- 28.8px min @320px / 48px max ----*/
   --fs-l: clamp(.9rem + 1vw, 3vw, 2.25rem);       /*---- 17.6px min @320px / 36px max ----*/
   --fs-m: clamp(.8rem + 1vw, 2vw, 1.5rem);      /*---- 16px min @320px / 24px max ----*/
-  --fs-s: clamp(.8rem + .75vw, 1vw, 1.25rem);  /*---- 15.2px min @320px / 20px max ----*/
+  --fs-s: clamp(.8rem + .75vw, 1vw, 1.25rem); /*---- 15.2px min @320px / 20px max ----*/
   --fs-xs: clamp(.7rem + .5vw, .75vw, 1rem);  /*---- 12.8px min @320px / 16px max ----*/
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
@@ -45,57 +45,57 @@ body {
 /*--------------------- GLOBAL ANIMATIONS ---------------------*/
 
 @-webkit-keyframes wiggle {
-  0% {transform: scale(1);}
-  25% {transform: scale(.9);}
-  50% {transform: scale(.8);}
-  75% {transform: scale(.9);}
-  100% {transform: scale(1);}
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  25% {-webkit-transform: scale(.9);transform: scale(.9);}
+  50% {-webkit-transform: scale(.8);transform: scale(.8);}
+  75% {-webkit-transform: scale(.9);transform: scale(.9);}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 
 @keyframes wiggle {
-  0% {transform: scale(1);}
-  25% {transform: scale(.9);}
-  50% {transform: scale(.8);}
-  75% {transform: scale(.9);}
-  100% {transform: scale(1);}
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  25% {-webkit-transform: scale(.9);transform: scale(.9);}
+  50% {-webkit-transform: scale(.8);transform: scale(.8);}
+  75% {-webkit-transform: scale(.9);transform: scale(.9);}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 
 @-webkit-keyframes zoom {
-  0% {transform: scale(1);}
-  100% {transform: scale(1.1);}
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
 }
 
 @keyframes zoom {
-  0% {transform: scale(1);}
-  100% {transform: scale(1.1);}
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
 }
 
 @-webkit-keyframes fadetoleft {
   0% {opacity: 0;}
-  0% {transform: translateX(50%);}
+  0% {-webkit-transform: translateX(50%);transform: translateX(50%);}
   100% {opacity: 1;}
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @keyframes fadetoleft {
   0% {opacity: 0;}
-  0% {transform: translateX(50%);}
+  0% {-webkit-transform: translateX(50%);transform: translateX(50%);}
   100% {opacity: 1;}
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @-webkit-keyframes fadetoright {
   0% {opacity: 0;}
-  0% {transform: translateX(-50%);}
+  0% {-webkit-transform: translateX(-50%);transform: translateX(-50%);}
   100% {opacity: 1;}
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @keyframes fadetoright {
   0% {opacity: 0;}
-  0% {transform: translateX(-50%);}
+  0% {-webkit-transform: translateX(-50%);transform: translateX(-50%);}
   100% {opacity: 1;}
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @-webkit-keyframes fadein {
@@ -175,7 +175,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid: 5rem calc(30vh + 7vw) / 25% 50% 25%;
-  grid-template-areas:
+      grid-template-areas:
   "logo .... menu"
   "list list list"
   ;
@@ -282,7 +282,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid: 5rem repeat(3, auto)/ 100%;
-  grid-template-areas:
+      grid-template-areas:
   "nav"
   "header"
   "quote"
@@ -467,7 +467,7 @@ body {
 
 #about {
   grid: 5rem repeat(3, auto) / 10% 80% 10%;
-  grid-template-areas:
+      grid-template-areas:
   "nav    nav    nav   "
   "header header header"
   "...... img    ......"
@@ -574,7 +574,7 @@ body {
 
 #work {
   grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / 2.5% 95% 2.5%;
-  grid-template-areas:
+      grid-template-areas:
   "nav     nav      nav   "
   "header  header   header"
   ".....   films    ......"
@@ -761,7 +761,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid: repeat(4, auto) / 100%;
-  grid-template-areas:
+      grid-template-areas:
   "img"
   "stars"
   "header"
@@ -923,7 +923,7 @@ body {
 .review-description i {
   -ms-grid-column-align: center;
       justify-self: center;
-  font-size: var(--fs-l);
+  font-size: var(--fs-xl);
   color: var(--clr-secondary);
   font-weight: bolder;
   cursor: pointer;
@@ -938,7 +938,7 @@ body {
 
 #services {
   grid: 5rem repeat(2, auto) / 2.5% 95% 2.5%;
-  grid-template-areas:
+      grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
   ".....  services ......"
@@ -1018,7 +1018,7 @@ body {
   display: grid;
   padding-bottom: 10px;
   grid: calc(80px + 35vw) repeat(2, auto) / 100%;
-  grid-template-areas:
+      grid-template-areas:
   "img"
   "header"
   "description"
@@ -1163,7 +1163,7 @@ body {
 .service-description i {
   -ms-grid-column-align: center;
       justify-self: center;
-  font-size: var(--fs-l);
+  font-size: var(--fs-xl);
   color: var(--clr-primary);
   font-weight: bolder;
   cursor: pointer;
@@ -1178,7 +1178,7 @@ body {
 
 #gallery {
   grid: 5rem repeat(2, auto) / 5% 90% 5%;
-  grid-template-areas:
+      grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
   ".....  gallery  ......"
@@ -1319,7 +1319,7 @@ body {
 
 #contact {
   grid: 5rem repeat(2, auto) / 5% 90% 5%;
-  grid-template-areas:
+      grid-template-areas:
   "nav    nav      nav   "
   "header header   header"
   ".....  contact  ......"
@@ -1530,7 +1530,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid: 5rem auto / 1fr;
-  grid-template-areas:
+      grid-template-areas:
   "nav "
   "footer"
   ;
@@ -1543,7 +1543,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid: repeat(2, auto) / 100%;
-  grid-template-areas:
+      grid-template-areas:
   "useful-links"
   "copyright"
   ;
@@ -1626,7 +1626,7 @@ body {
 @media (min-width: 475px) {
   .service {
     grid: 240px repeat(2, auto) / 360px;
-    grid-template-areas:
+        grid-template-areas:
     "img"
     "header"
     "description"
@@ -1701,7 +1701,7 @@ body {
 @media (min-width: 768px) {
   .navbar {
     grid: 5rem calc(15rem + 8vw) / 20% 60% 20%;
-    grid-template-areas:
+        grid-template-areas:
     "logo .... menu"
     "list list list"
   ;
@@ -1709,7 +1709,7 @@ body {
 
   #home {
     grid: 5rem repeat(3, auto)/ 5% 90% 5%;
-    grid-template-areas:
+        grid-template-areas:
     "nav    nav     nav   "
     "...... header  ......"
     "...... quote   ......"
@@ -1839,7 +1839,7 @@ body {
 
   .navbar {
     grid: 5rem / 20% 80%;
-    grid-template-areas:
+        grid-template-areas:
     "logo menu"
     ;
   }
@@ -1877,6 +1877,7 @@ body {
   }
 
   @media (min-width: 1024px){
+
   .brand-logo {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
@@ -1938,6 +1939,14 @@ body {
     -ms-grid-row-align: center;
     -ms-grid-column-align: center;
     place-self: center center;
+  }
+
+  .review-description i {
+    font-size: var(--fs-l);
+  }
+
+  .service-description i {
+    font-size: var(--fs-l);
   }
 
   #gallery {
@@ -2127,7 +2136,7 @@ body {
 @media (min-width: 1920px) {
   #home {
     grid: 5rem repeat(3, auto)/ 10% 80% 10%;
-    grid-template-areas:
+        grid-template-areas:
     "nav    nav     nav   "
     "...... header  ......"
     "...... quote   ......"
