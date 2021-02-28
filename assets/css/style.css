@@ -522,9 +522,9 @@ body {
 .company-credits {
   grid-area: credits;
   width: 100%;
-  max-width: 500px;
+  max-width: 540px;
   height: auto;
-  max-height: 250px;
+  max-height: 270px;
   justify-self: center;
   overflow: hidden;
 }
