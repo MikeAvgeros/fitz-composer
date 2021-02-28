@@ -9,12 +9,12 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem + 2vw, 5.5vw, 5rem);        /*---- 38.4px min @ 320px / 80px max ----*/
-  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);  /*---- 28.8px min @320px / 48px max ----*/
-  --fs-l: clamp(.9rem + 1vw, 2.5vw, 2.25rem);     /*---- 17.6px min @320px / 36px max ----*/
-  --fs-m: clamp(.8rem + 1vw, 2vw, 1.5rem);     /*---- 16px min @320px / 24px max ----*/
-  --fs-s: clamp(.8rem + .75vw, 1vw, 1.25rem); /*---- 15.2px min @320px / 20px max ----*/
-  --fs-xs: clamp(.7rem + .5vw, .75vw, 1rem);  /*---- 12.8px min @320px / 16px max ----*/
+  --fs-xxl: clamp(2rem + 2vw, 4.5vw, 4rem);        /*---- 38.4px min @ 320px / 80px max ----*/
+  --fs-xl: clamp(1.25rem + 1.5vw, 2vw, 2rem);  /*---- 28.8px min @320px / 48px max ----*/
+  --fs-l: clamp(.9rem + 1vw, 1.5vw, 1.25rem);     /*---- 17.6px min @320px / 36px max ----*/
+  --fs-m: clamp(.8rem + .75vw, 1.25vw, 1rem);     /*---- 16px min @320px / 24px max ----*/
+  --fs-s: clamp(.75rem + .75vw, 1vw, .9rem); /*---- 15.2px min @320px / 16px max ----*/
+  --fs-xs: clamp(.7rem + .5vw, .7vw, .8rem);  /*---- 12.8px min @320px / 16px max ----*/
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
 }
@@ -306,11 +306,11 @@ body {
 }
 
 #bq1 {
-  place-self: end center;
+  place-self: center center;
 }
 
 #bq2 {
-  place-self: center center;
+  place-self: end center;
 }
 
 /*------------------ HOME BUTTONS ------------------*/
@@ -1213,20 +1213,24 @@ body {
     padding-right: 3.5vw;
   }
 
+  .navbar-menu a {
+    font-size: var(--fs-s);
+  }
+
   .home-header {
     place-self: center start;
   }
 
   .home-quotes {
-    place-self: start end;
+    place-self: center end;
   }
 
   #bq1 {
-    place-self: end end;
+    place-self: center end;
   }
 
   #bq2 {
-    place-self: center end;
+    place-self: end end;
   }
 
   .home-btn {
@@ -1287,11 +1291,11 @@ body {
   }
 
   #bq1 {
-    place-self: center end;
+    place-self: start end;
   }
 
   #bq2 {
-    place-self: start end;
+    place-self: center end;
   }
 
   .home-btn {
