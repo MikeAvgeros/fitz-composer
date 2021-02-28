@@ -15,7 +15,7 @@ function sendMail(contactForm) {
     })
     .then(
         function() {
-            document.getElementById("submit-notification").innerHTML = "Thank you for getting in touch! We'll get back to you shortly.";
+            document.getElementById("submit-notification").innerHTML = "Thank you for getting in touch! I'll get back to you shortly.";
             setTimeout(() => { homeReload(); }, 2000);
         },
         function(error) {
