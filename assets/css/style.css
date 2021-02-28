@@ -9,12 +9,12 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem + 2vw, 4.5vw, 4rem);        /*---- 38.4px min @ 320px / 80px max ----*/
-  --fs-xl: clamp(1.25rem + 1.5vw, 2vw, 2rem);  /*---- 28.8px min @320px / 48px max ----*/
-  --fs-l: clamp(.9rem + 1vw, 1.5vw, 1.25rem);     /*---- 17.6px min @320px / 36px max ----*/
-  --fs-m: clamp(.8rem + .75vw, 1.25vw, 1rem);     /*---- 16px min @320px / 24px max ----*/
-  --fs-s: clamp(.75rem + .75vw, 1vw, .9rem); /*---- 15.2px min @320px / 16px max ----*/
-  --fs-xs: clamp(.7rem + .5vw, .75vw, .8rem);  /*---- 12.8px min @320px / 16px max ----*/
+  --fs-xxl: clamp(2rem + 2vw, 4.5vw, 4rem);        
+  --fs-xl: clamp(1.25rem + 1.5vw, 2vw, 2rem);  
+  --fs-l: clamp(.9rem + 1vw, 1.5vw, 1.25rem);    
+  --fs-m: clamp(.8rem + .75vw, 1.25vw, 1rem);     
+  --fs-s: clamp(.7rem + .75vw, 1vw, .9rem); 
+  --fs-xs: clamp(.7rem + .5vw, .75vw, .8rem);  
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
 }
