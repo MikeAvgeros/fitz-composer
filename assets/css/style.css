@@ -11,8 +11,8 @@
   --clr-secondary: #c4c4c4;
   --fs-xxl: clamp(2rem + 2vw, 4.5vw, 4rem);        
   --fs-xl: clamp(1.25rem + 1.5vw, 2vw, 2rem);  
-  --fs-l: clamp(.9rem + 1vw, 1.5vw, 1.25rem);    
-  --fs-m: clamp(.8rem + .75vw, 1.25vw, 1rem);     
+  --fs-l: clamp(.9rem + 1vw, 1.25vw, 1.25rem);    
+  --fs-m: clamp(.8rem + .75vw, 1.2vw, 1rem);     
   --fs-s: clamp(.7rem + .75vw, 1vw, .9rem); 
   --fs-xs: clamp(.7rem + .5vw, .75vw, .8rem);  
   --ff-primary: 'Raleway', sans-serif;
@@ -1223,7 +1223,7 @@ body {
   }
 
   .home-quotes blockquote {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   
   .home-btn {
