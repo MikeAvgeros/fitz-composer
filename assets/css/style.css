@@ -9,10 +9,10 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem + 2vw, 5vw, 5rem);        /*---- 38.4px min @ 320px / 80px max ----*/
-  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);    /*---- 28.8px min @320px / 48px max ----*/
-  --fs-l: clamp(.9rem + 1vw, 3vw, 2.25rem);       /*---- 17.6px min @320px / 36px max ----*/
-  --fs-m: clamp(.8rem + 1vw, 2vw, 1.5rem);      /*---- 16px min @320px / 24px max ----*/
+  --fs-xxl: clamp(2rem + 2vw, 5.5vw, 5rem);        /*---- 38.4px min @ 320px / 80px max ----*/
+  --fs-xl: clamp(1.5rem + 1.5vw, 3.5vw, 3rem);  /*---- 28.8px min @320px / 48px max ----*/
+  --fs-l: clamp(.9rem + 1vw, 2.5vw, 2.25rem);     /*---- 17.6px min @320px / 36px max ----*/
+  --fs-m: clamp(.8rem + 1vw, 2vw, 1.5rem);     /*---- 16px min @320px / 24px max ----*/
   --fs-s: clamp(.8rem + .75vw, 1vw, 1.25rem); /*---- 15.2px min @320px / 20px max ----*/
   --fs-xs: clamp(.7rem + .5vw, .75vw, 1rem);  /*---- 12.8px min @320px / 16px max ----*/
   --ff-primary: 'Raleway', sans-serif;
@@ -294,7 +294,7 @@ body {
   grid-area: quote;
   display: grid;
   place-self: center center;
-  row-gap: calc(2rem + 2.5vh);
+  row-gap: calc(2rem + 3vh);
   font-family: var(--ff-secondary);
   -webkit-animation: fadetoright 2s forwards;
           animation: fadetoright 2s forwards;
