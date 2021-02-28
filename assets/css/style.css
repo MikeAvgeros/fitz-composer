@@ -14,7 +14,7 @@
   --fs-l: clamp(.9rem + 1vw, 1.5vw, 1.25rem);     /*---- 17.6px min @320px / 36px max ----*/
   --fs-m: clamp(.8rem + .75vw, 1.25vw, 1rem);     /*---- 16px min @320px / 24px max ----*/
   --fs-s: clamp(.75rem + .75vw, 1vw, .9rem); /*---- 15.2px min @320px / 16px max ----*/
-  --fs-xs: clamp(.7rem + .5vw, .7vw, .8rem);  /*---- 12.8px min @320px / 16px max ----*/
+  --fs-xs: clamp(.7rem + .5vw, .75vw, .8rem);  /*---- 12.8px min @320px / 16px max ----*/
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
 }
@@ -417,16 +417,19 @@ body {
 /*----------------------- WORK PAGE -----------------------*/
 
 #work {
-  grid: 5rem repeat(4, auto) 5rem repeat(2, auto) / 2.5% 95% 2.5%;
+  grid: 5rem repeat(7, auto) 5rem repeat(2, auto) / 2.5% 95% 2.5%;
   grid-template-areas:
-  "nav     nav      nav   "
-  "header  header   header"
-  ".....   films    ......"
-  ".....   divider  ......"
-  ".....   records  ......"
-  ".....   ......   ......"
-  "title   title    title"
-  "reviews reviews  reviews"
+  "nav       nav        nav   "
+  "header    header     header"
+  ".....     films      ......"
+  ".....     divider1   ......"
+  ".....     records    ......"
+  ".....     divider2   ......"
+  "title1    title1     title1"
+  ".....     credits    ......"
+  ".....     ......     ......"
+  "title2    title2     title2"
+  "reviews   reviews    reviews"
   ;
 }
 
@@ -470,16 +473,23 @@ body {
   letter-spacing: 1px;
 }
 
-/*-------------------- LINKS DIVIDER --------------------*/
+/*-------------------- LINKS DIVIDERS --------------------*/
 
 .divider {
-  grid-area: divider;
   width: 25%;
   height: 2px;
   border-radius: 5px;
   justify-self: center;
   background-color: var(--clr-primary);
   margin: calc(1rem + 2vw) 0rem calc(1rem + 1vw) 0rem;
+}
+
+#divider1 {
+  grid-area: divider1;
+}
+
+#divider2 {
+  grid-area: divider2;
 }
 
 /*----------------- SHARED FILM/MUSIC ATTRIBUTES -----------------*/
@@ -504,6 +514,71 @@ body {
           animation: zoom .5s forwards;
 }
 
+.credits-title {
+  grid-area: title1;
+}
+
+.credits-title, .review-title {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+  text-align: center;
+  font-size: var(--fs-l);
+  letter-spacing: 3px;
+  padding: 2rem 0rem calc(1rem + 3vw);
+}
+
+.company-credits {
+  grid-area: credits;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 500px;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.company-credits > figure {
+  position: relative;
+  display: flex;
+  width: 500%;
+  left: 0;
+  -webkit-animation: 25s creditscarousel infinite;
+          animation: 25s creditscarousel infinite;
+}
+
+.company-credits img {
+  width: 20%;
+  height: auto;
+}
+
+@-webkit-keyframes creditscarousel {
+  0% {left: 0;}
+  10%  {left: 0%;}
+  20% {left: -100%;}
+  30%  {left: -100%;}
+  40% {left: -200%;}
+  50%  {left: -200%;}
+  60%  {left: -300%;}
+  70% {left: -300%;}
+  80%  {left: -400%;}
+  90% {left: -400%;}
+  100% {left: 0;}
+}
+
+@keyframes creditscarousel {
+  0% {left: 0;}
+  10%  {left: 0%;}
+  20% {left: -100%;}
+  30%  {left: -100%;}
+  40% {left: -200%;}
+  50%  {left: -200%;}
+  60%  {left: -300%;}
+  70% {left: -300%;}
+  80%  {left: -400%;}
+  90% {left: -400%;}
+  100% {left: 0;}
+}
+
 /*---------------------- REVIEWS SECTION -----------------------*/
 
 .review-title, .reviews {
@@ -511,13 +586,7 @@ body {
 }
 
 .review-title {
-  grid-area: title;
-  font-family: var(--ff-primary);
-  color: var(--clr-primary);
-  text-align: center;
-  font-size: var(--fs-l);
-  letter-spacing: 3px;
-  padding: 2rem 0rem calc(1rem + 3vw);
+  grid-area: title2;
 }
 
 .reviews {
@@ -815,8 +884,8 @@ body {
   display: flex;
   width: 1000%;
   left: 0;
-  -webkit-animation: 50s carousel infinite;
-          animation: 50s carousel infinite;
+  -webkit-animation: 50s gallerycarousel infinite;
+          animation: 50s gallerycarousel infinite;
 }
 
 .gallery img {
@@ -825,7 +894,7 @@ body {
 
 /*------------------ CAROUSEL ANIMATION ------------------*/
 
-@-webkit-keyframes carousel {
+@-webkit-keyframes gallerycarousel {
   0% {left: 0;}
   5% {left: 0;}
   10%  {left: -100%;}
@@ -849,7 +918,7 @@ body {
   100% {left: 0;}
 }
 
-@keyframes carousel {
+@keyframes gallerycarousel {
   0% {left: 0;}
   5% {left: 0;}
   10%  {left: -100%;}
