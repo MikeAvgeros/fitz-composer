@@ -527,6 +527,7 @@ body {
   max-height: 270px;
   justify-self: center;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 /*------------------- COMPANY LOGOS -------------------*/
