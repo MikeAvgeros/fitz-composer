@@ -563,6 +563,7 @@ body {
 .company-credits > figure {
   position: relative;
   display: flex;
+  align-items: flex-start;
   width: 500%;
   left: 0;
   -webkit-animation: 15s credits-carousel infinite;
@@ -571,6 +572,8 @@ body {
 
 .company-credits img {
   width: 20%;
+  height: auto;
+  max-height: 100%;
 }
 
 @-webkit-keyframes credits-carousel {
@@ -904,6 +907,7 @@ body {
 .gallery > figure {
   position: relative;
   display: flex;
+  align-items: flex-start;
   width: 1000%;
   left: 0;
   -webkit-animation: 50s gallery-carousel infinite;
@@ -912,6 +916,8 @@ body {
 
 .gallery img {
   width: 10%;
+  height: auto;
+  max-height: 100%;
 }
 
 /*------------------ CAROUSEL ANIMATION ------------------*/
