@@ -1092,6 +1092,14 @@ body {
   color: var(--clr-secondary);
 }
 
+.mailing-list {
+  display: inline-flex;
+}
+
+#mailing-list {
+  align-self: center;
+}
+
 .contact-btn {
   width: calc(3rem + 2vw);
   height: calc(1.75rem + 1vw);

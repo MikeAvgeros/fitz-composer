@@ -14,48 +14,88 @@
 
 # User Experience
 
-## Project Goals and Objectives
+## Strategy Plane
 
--   ### User
+-   ### Target Audience
 
-    #### The users of this website are music artists, film directors or media companies looking to hire a composer/producer who can create original music for their projects. Below is a list of the users goals.
-    <br>
+    - #### Music Artists
+    - #### Music Producers
+    - #### Film Directors
+    - #### Media Companies
+
+-   ### User's Objectives & Goals
 
     -   #### First Time User's Goals
-        1. As a First Time User, I want to quickly and easily identify if the site's owner will be suitable for my project.
-        2. As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content that will aid my decision.
-        3. As a First User, I want to be able to quickly and easily contact the site's owner for a project.
+        - As a First Time User, I want to quickly and easily identify if the site's owner will be suitable for my project.
+        - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content that will aid my decision.
+        - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
 
     -   #### Returning User's Goals
-        1. As a Returning User, I want to find more information about the different services offered.
-        2. As a Returning User, I want to find out about more information about the site owner's skills and experience.
-        3. As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
+        - As a Returning User, I want to find more information about the different services offered.
+        - As a Returning User, I want to find out about more information about the site owner's skills and experience.
+        - As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
 
     -   #### Frequent User's Goals
-        1. As a Frequent User, I want to be able to see if there are any newly added work examples, photos and reviews.
-        2. As a Frequent User, I want to check to see if the site's owner offers any new services.
-        3. As a Frequent User, I want to have a section where I can follow the owner's social media and other websites and keep up to date with his work.
+        - As a Frequent User, I want to be able to see if there are any newly added work examples, photos and reviews.
+        - As a Frequent User, I want to check to see if the site's owner offers any new services.
+        - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites and keep up to date with his work.
 
--   ### Owner
+-   ### Owner's Objectives & Goals
+
     #### The owner of this website is a freelance music composer / record producer who wants to attract clients and work on interesting projects.
-    <br>
 
     -   #### Owner's Goals
-        1. As the Owner, I want Users to contact me for a project using the contact form.
-        2. As the Owner, I want to present my services and skills in the best of light.
-        3. As the Owner, I want to work on a variety of interesting projects.
-        4. As the Owner, I want Users to connect with me on social media and subscribe to my newsletter.
+        - As the Owner, I want Users to contact me for a project using the contact form.
+        - As the Owner, I want to present my services and skills in the best of light.
+        - As the Owner, I want to work on a variety of interesting projects.
+        - As the Owner, I want Users to connect with me on social media and subscribe to my mailing list.
 
-## Design Choices
+## Scope Plane
 
--   #### Colour Scheme
+-   ### Home Page
+    - Users can see a full screen image of a musician playing the guitar which is the Owner's instrument of choice. They can also view some favourite quotes from the Owner to get a better sense of his personality and ethos.
+    - Users can use the navbar to easily and quickly scroll through the site.
+
+-   ### About Page
+    - Users can see a brief summary of Owner's biography, experience and who he is. 
+    - Users can see a photo of him working in the studio.
+
+-   ### Work Page
+    - Users can view a selection of the Owner's best work in both film composition and record production. 
+    - Users can see list of big companies that the Owner has worked with.
+    - Users can see a few 5-star reviews from his clients and colleagues.
+
+-   ### Services Page
+    - Users can view a list of services provided by the Owner.
+    - Users can find a short description of what's included in each services as well as the Owner's experience and skill set.
+
+-   ### Contact Page
+    - Users can contact the Onwer using the site's form.
+    - Users can opt in to be added to a mailing list to receive offers and news about the Owner.
+
+-   ### Footer
+    - Users can access the Owner's social media pages as well as his direct email and phone number if they prefer to not use the form.
+        
+## Skeleton Plane
+
+-   ### Wireframes
+    - I have designed the layout of the website based on a grid system using Adobe XD. I have created low fidelity wireframes to show case my layout.
+        - Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
+        - Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
+        - Wireframe for Tablet - [View](https://www.dropbox.com/s/e38tp54njyoz0rv/MS1_Wireframe%20-%20Tablet.pdf?raw=1)
+        - Wireframe for Mobile - [View](https://www.dropbox.com/s/84xm213iui0xn00/MS1_Wireframe%20-%20Mobile.pdf?raw=1)
+
+
+## Surface Plane
+
+-   ### Colour Scheme
     -   The main colours used are charcoal, yellow, off-white and gray.
     -   Charcoal is used for the background as I felt made the website look 'cooler'. 
     -   Gray is used for foreground elements as it creates an contrast with charcoal. 
     -   Yellow is used for all the titles and headings.
     -   Off-white is used for main text and subtitles.
 
--   #### Typography
+-   ### Typography
     -   I have used google fonts to import the fonts for the website.
     -   The fonts used are Raleway and Lato and the weight is 400 (Regular).
     -   The Raleway font is used for the headings of each page/section.
@@ -64,27 +104,17 @@
     -   I am using fluid font sizes that grow together with the viewport width. This is achieved by using the clamp attribute and for the min and desired values, I am using a combination of rem units with the viewport width unit.
     -   I have created 5 font sizes that are being shared by all the text elements in the site depending on their importance.
 
--   #### Images
+-   ### Images
     -   I have used unsplash to source all the images on the website. You can find more information on the Credit section.
 
--   #### Icons
+-   ### Icons
     -   I have used fontawesome to source all the icons used on the website.
 
--   #### Structure & Layout
+-   ### Structure & Layout
     -   Due to the simplicity and nature of the project, I decided to create a single-page scrolling website as it created a smoother user-experience with an easier and effective navigation.
     -   CSS grid was used to structure the website as it allowed me to easily place all the elements in the page and make them fully responsive without the use of bootstrap.
     -   I originally created a 16-column grid, which works similar to bootstrap but since the project is simple without too many elements, I decided to use the grid-template-areas attribute which is based on my wireframes. 
     -   The Work and Services pages fully take advantage of grid's autofit functionality.
-
-## Wireframes
-- I have designed the layout of the website using Adobe XD. I created low fidelity wireframes to show case my layout.
-    - Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
-    - Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
-    - Wireframe for Tablet - [View](https://www.dropbox.com/s/e38tp54njyoz0rv/MS1_Wireframe%20-%20Tablet.pdf?raw=1)
-    - Wireframe for Mobile - [View](https://www.dropbox.com/s/84xm213iui0xn00/MS1_Wireframe%20-%20Mobile.pdf?raw=1)
-
-## CSS
-- I have used the grid system with grid template areas to create and structure the layout of my website.
 
 # Technologies Used
 
