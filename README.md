@@ -18,10 +18,10 @@
 
 -   ### Target Audience
 
-    - #### Music Artists
-    - #### Music Producers
-    - #### Film Directors
-    - #### Media Companies
+    - Music Artists
+    - Music Producers
+    - Film Directors
+    - Media Companies
 
 -   ### User's Objectives & Goals
 
@@ -68,6 +68,9 @@
 -   ### Services Page
     - Users can view a list of services provided by the Owner.
     - Users can find a short description of what's included in each services as well as the Owner's experience and skill set.
+
+-   ### Page Page
+    - Users can view a selection of photos of the Owner in the studio working including some well-known clients.
 
 -   ### Contact Page
     - Users can contact the Onwer using the site's form.
