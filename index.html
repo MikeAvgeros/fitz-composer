@@ -23,12 +23,12 @@
             <label class="navbar-icon" for="navbar-menu-checkbox"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="navbar-menu-checkbox">
             <ul class="navbar-menu">
-                <li><a href="#home" onclick="collapseNav();">Home</a></li>
-                <li><a href="#about" onclick="collapseNav();">About</a></li>
-                <li><a href="#work" onclick="collapseNav();">Work</a></li>
-                <li><a href="#services" onclick="collapseNav();">Services</a></li>
-                <li><a href="#gallery" onclick="collapseNav();">Gallery</a></li>
-                <li><a href="#contact" onclick="collapseNav();">Contact</a></li>
+                <li><a href="#home" aria-label="Go to my home page" onclick="collapseNav();">Home</a></li>
+                <li><a href="#about" aria-label="Go to my about page" onclick="collapseNav();">About</a></li>
+                <li><a href="#work" aria-label="Go to my work page" onclick="collapseNav();">Work</a></li>
+                <li><a href="#services" aria-label="Go to my services page" onclick="collapseNav();">Services</a></li>
+                <li><a href="#gallery" aria-label="Go to my gallery page" onclick="collapseNav();">Gallery</a></li>
+                <li><a href="#contact" aria-label="Go to my contact page" onclick="collapseNav();">Contact</a></li>
             </ul>
         </nav>
         <div id="home">
@@ -49,8 +49,8 @@
                 </blockquote>
             </section>
             <footer class="home-btn">
-                <a href="#contact" id="btn-contact"><strong>Contact Me</strong></a>
-                <a href="#work" id="btn-learnmore"><strong>Learn More</strong></a>
+                <a href="#contact" aria-label="Go to my contact page" id="btn-contact"><strong>Contact Me</strong></a>
+                <a href="#work" aria-label="Go to my work page" id="btn-learnmore"><strong>Learn More</strong></a>
             </footer>
         </div>
     </div>
@@ -472,7 +472,7 @@
                     <textarea class="contact-input-field" name="description" id="description" rows="6" placeholder="Describe your project" required></textarea>
                 </div>
                 <div class="snd-btn">
-                    <button class="contact-btn" type="submit">Send</button>
+                    <button class="contact-btn" type="submit" aria-label="Submit the contact form">Send</button>
                     <p id="submit-notification"></p>
                 </div>
             </form>
@@ -484,10 +484,10 @@
             <div class="useful-links">
                 <h3>Useful Links</h3>
                 <ul>
-                    <li><a href="https://www.instagram.com/fitz.musicproduction/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://soundbetter.com/profiles/152111-f!tz" target="_blank" rel="noopener"><i class="fas fa-music"></i></a></li>
-                    <li><a href="mailto:fitz.musicproduction@gmail.com" target="_blank" rel="noopener"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="tel:00447928460179" target="_blank" rel="noopener"><i class="fas fa-phone"></i></a></li>
+                    <li><a href="https://www.instagram.com/fitz.musicproduction/" aria-label="Go to my instagram page (opens in a new tab)" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://soundbetter.com/profiles/152111-f!tz" aria-label="Go to my soundbetter page (opens in a new tab)" target="_blank" rel="noopener"><i class="fas fa-music"></i></a></li>
+                    <li><a href="mailto:fitz.musicproduction@gmail.com" aria-label="Opens my email address (opens in a new tab)" target="_blank" rel="noopener"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="tel:00447928460179" aria-label="Opens my telephone number (opens in a new tab)" target="_blank" rel="noopener"><i class="fas fa-phone"></i></a></li>
                 </ul>
             </div>
             <div class="copyright">
