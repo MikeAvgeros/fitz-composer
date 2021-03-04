@@ -544,7 +544,7 @@ body {
   text-align: center;
   font-size: var(--fs-l);
   letter-spacing: 3px;
-  padding: calc(1rem + 3vw) 0rem calc(1rem + 3vw);
+  padding: calc(1rem + 3vw) 0rem;
 }
 
 .company-credits {
@@ -1244,16 +1244,6 @@ body {
   ;
   }
 
-  #home {
-    grid: 5rem repeat(3, auto)/ 5% 90% 5%;
-    grid-template-areas:
-    "nav    nav     nav   "
-    "...... header  ......"
-    "...... quote   ......"
-    "...... buttons ......"
-    ;
-  }
-
   .home-title, .home-subtitle {
     letter-spacing: 3px;
   }
@@ -1282,8 +1272,6 @@ body {
     font-size: var(--fs-m);
   }
 }
-
-/*----------------------- LAPTOP -----------------------*/
 
 @media (min-width: 1024px) {
   .navbar-menu li {
@@ -1348,9 +1336,22 @@ body {
   }
 }
 
+/*----------------------- LAPTOP -----------------------*/
+
 @media (min-width: 1200px) {
+  #home {
+    grid: 5rem repeat(3, auto)/ 5% 90% 5%;
+    grid-template-areas:
+    "nav    nav     nav   "
+    "...... header  ......"
+    "...... quote   ......"
+    "...... buttons ......"
+    ;
+  }
+
   .home-header {
     place-self: center start;
+    padding-left: 8px;
   }
 
   .home-title, .home-subtitle {
@@ -1360,19 +1361,20 @@ body {
 
   .home-quotes {
     place-self: center end;
+    padding-right: 8px;
+  }
+
+  #bq1 {
+    place-self: start end;
+  }
+
+  #bq2 {
+    place-self: center end;
   }
 
   .home-quotes {
     -webkit-animation: fadetoright 2s forwards;
             animation: fadetoright 2s forwards;
-  }
-
-  #bq1 {
-    place-self: center end;
-  }
-
-  #bq2 {
-    place-self: end end;
   }
 
   #about {
@@ -1397,18 +1399,6 @@ body {
 @media (min-width: 1440px) {
   .navbar .navbar-menu {
     padding-right: 4vw;
-  }
-
-  .home-quotes blockquote {
-    padding-right: 8px;
-  }
-
-  #bq1 {
-    place-self: start end;
-  }
-
-  #bq2 {
-    place-self: center end;
   }
 
   .home-btn {

@@ -1,4 +1,4 @@
-![Fitz logo](https://www.dropbox.com/sh/5wdl8qasb5wzft7/AADqR667RZVgKeGhumkbZewea/New%20material/Logo%202%20-%20new%20name.png?raw=1)
+![Multi Device Website Mockup](https://www.dropbox.com/s/foxlncl7rsuu2o1/MS1_TechsiniMockup.png?raw=1)
 
 # Introduction
 
