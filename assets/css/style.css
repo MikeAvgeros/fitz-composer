@@ -1322,6 +1322,33 @@ body {
     font-size: var(--fs-s);
   }
 
+  .home-btn {
+    padding-bottom: 2vh;
+  }
+
+  .home-btn a {
+    width: calc(7.5rem + 1vw);
+  }
+
+  .review-description i {
+    font-size: var(--fs-l);
+  }
+
+  .service-description i {
+    font-size: var(--fs-l);
+  }
+
+  #gallery {
+    grid: 80px repeat(2, auto) / 5% 90% 5%;
+    grid-template-areas:
+    "nav    nav      nav   "
+    "header header   header"
+    ".....  gallery  ......"
+  ;
+  }
+}
+
+@media (min-width: 1200px) {
   .home-header {
     place-self: center start;
   }
@@ -1348,14 +1375,6 @@ body {
     place-self: end end;
   }
 
-  .home-btn {
-    padding-bottom: 2vh;
-  }
-
-  .home-btn a {
-    width: calc(7.5rem + 1vw);
-  }
-
   #about {
     grid: 5rem repeat(2, auto) / 8% 40% 4% 40% 8%;
     grid-template-areas:
@@ -1373,32 +1392,11 @@ body {
   .about-img {
     place-self: center center;
   }
-
-  .review-description i {
-    font-size: var(--fs-l);
-  }
-
-  .service-description i {
-    font-size: var(--fs-l);
-  }
-
-  #gallery {
-    grid: 80px repeat(2, auto) / 5% 90% 5%;
-    grid-template-areas:
-    "nav    nav      nav   "
-    "header header   header"
-    ".....  gallery  ......"
-  ;
-  }
 }
 
 @media (min-width: 1440px) {
   .navbar .navbar-menu {
     padding-right: 4vw;
-  }
-
-  .home-header {
-    place-self: end start;
   }
 
   .home-quotes blockquote {
