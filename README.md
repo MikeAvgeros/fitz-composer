@@ -12,6 +12,15 @@
 
 <br>
 
+# Table of Contents:
+- [User Experience](#user-experience)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
+<br>
+
 # User Experience
 
 ## Strategy Plane
