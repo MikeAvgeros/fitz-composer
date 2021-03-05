@@ -11,7 +11,7 @@
   --clr-secondary: #c4c4c4;
   --fs-xxl: clamp(2rem, 1.75rem + 3vw, 4rem);        
   --fs-xl: clamp(1.25rem, 1.25rem + 1.5vw, 2.5rem);  
-  --fs-l: clamp(1rem, .9rem + 1vw, 2rem);    
+  --fs-l: clamp(1rem, .9rem + 1.25vw, 1.9rem);    
   --fs-m: clamp(.9rem, .8rem + .75vw, 1.5rem);     
   --fs-s: clamp(.8rem, .7rem + .75vw, 1.25rem); 
   --fs-xs: clamp(.7rem, .7rem + .5vw, 1rem);  
@@ -37,11 +37,11 @@ body {
 /*--------------------- GLOBAL ANIMATIONS ---------------------*/
 
 @-webkit-keyframes wiggle {
-  0% {transform: scale(1);}
-  25% {transform: scale(.9);}
-  50% {transform: scale(.8);}
-  75% {transform: scale(.9);}
-  100% {transform: scale(1);}
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  25% {-webkit-transform: scale(.9);transform: scale(.9);}
+  50% {-webkit-transform: scale(.8);transform: scale(.8);}
+  75% {-webkit-transform: scale(.9);transform: scale(.9);}
+  100% {-webkit-transform: scale(1);transform: scale(1);}
 }
 
 @keyframes wiggle {
@@ -53,10 +53,9 @@ body {
 }
 
 @-webkit-keyframes zoom {
-  0% {transform: scale(1);}
-  100% {transform: scale(1.1);}
+  0% {-webkit-transform: scale(1);transform: scale(1);}
+  100% {-webkit-transform: scale(1.1);transform: scale(1.1);}
 }
-
 @keyframes zoom {
   0% {transform: scale(1);}
   100% {transform: scale(1.1);}
@@ -64,9 +63,9 @@ body {
 
 @-webkit-keyframes fadetoleft {
   0% {opacity: 0;}
-  0% {transform: translateX(50%);}
+  0% {-webkit-transform: translateX(50%);transform: translateX(50%);}
   100% {opacity: 1;}
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @keyframes fadetoleft {
@@ -78,9 +77,9 @@ body {
 
 @-webkit-keyframes fadetoright {
   0% {opacity: 0;}
-  0% {transform: translateX(-50%);}
+  0% {-webkit-transform: translateX(-50%);transform: translateX(-50%);}
   100% {opacity: 1;}
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
 
 @keyframes fadetoright {
@@ -92,9 +91,9 @@ body {
 
 @-webkit-keyframes fadetotop {
   0% {opacity: 0;}
-  0% {transform: translateY(-50%);}
+  0% {-webkit-transform: translateY(-50%);transform: translateY(-50%);}
   100% {opacity: 1;}
-  100% {transform: translateY(0);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0);}
 }
 
 @keyframes fadetotop {
@@ -106,9 +105,9 @@ body {
 
 @-webkit-keyframes fadetobottom {
   0% {opacity: 0;}
-  0% {transform: translateY(50%);}
+  0% {-webkit-transform: translateY(50%);transform: translateY(50%);}
   100% {opacity: 1;}
-  100% {transform: translateY(0);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0);}
 }
 
 @keyframes fadetobottom {
@@ -233,6 +232,8 @@ body {
 
 #navbar-menu-checkbox:checked + .navbar-menu{
   max-height: calc(30vh + 7vw);
+  -webkit-transition: max-height .2s ease-in;
+  -o-transition: max-height .2s ease-in;
   transition: max-height .2s ease-in;
 }
 
@@ -241,6 +242,8 @@ body {
 .navbar .navbar-menu {
   grid-area: list;
   max-height: 0;
+  -webkit-transition: max-height .2s ease-out;
+  -o-transition: max-height .2s ease-out;
   transition: max-height .2s ease-out;
 }
 
@@ -1438,13 +1441,25 @@ body {
     ;
   }
 
-  .contact-form {
-    max-width: 864px;
+  .music-links, .film-links {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .reviews {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
   .gallery  {
     max-width: 1080px;
     max-height: 720px;
+  }
+
+  .contact-form {
+    max-width: 864px;
   }
 
   .contact-form {

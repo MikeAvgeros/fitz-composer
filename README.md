@@ -1,4 +1,4 @@
-![Multi Device Website Mockup](https://www.dropbox.com/s/7vdng4elhkqvh8z/Fitz%20Website%20-%20Multi%20Device%20Website%20Mockup%20Generator%20-%20techsini.com.png?raw=1)
+![Multi Device Website Mockup](https://www.dropbox.com/s/qs3yfo9d7tkxtl7/Fitz%20Website%20-%20MS1%20-%20Multi%20Device%20Website%20Mockup.png?raw=1)
 
 # Introduction
 
