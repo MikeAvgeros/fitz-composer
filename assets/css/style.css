@@ -313,7 +313,7 @@ body {
 .home-subtitle {
   color: var(--clr-secondary);
   font-size: var(--fs-l);
-  padding-left: .5vw;
+  padding-left: .2vw;
 }
 
 /*------------------- HOME QUOTES -------------------*/
