@@ -9,12 +9,12 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem + 2vw, 4.5vw, 4rem);        
-  --fs-xl: clamp(1.25rem + 1.5vw, 2vw, 2rem);  
-  --fs-l: clamp(.9rem + 1vw, 1.25vw, 1.25rem);    
-  --fs-m: clamp(.8rem + .75vw, 1.2vw, 1rem);     
-  --fs-s: clamp(.7rem + .75vw, 1vw, .9rem); 
-  --fs-xs: clamp(.7rem + .5vw, .75vw, .8rem);  
+  --fs-xxl: clamp(2rem, 1.75rem + 3vw, 4rem);        
+  --fs-xl: clamp(1.25rem, 1.25rem + 1.5vw, 2.5rem);  
+  --fs-l: clamp(1rem, .9rem + 1vw, 2rem);    
+  --fs-m: clamp(.9rem, .8rem + .75vw, 1.5rem);     
+  --fs-s: clamp(.8rem, .7rem + .75vw, 1.25rem); 
+  --fs-xs: clamp(.7rem, .7rem + .5vw, 1rem);  
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
 }
@@ -421,7 +421,7 @@ body {
 
 .about-img img {
   width: 100%;
-  max-width: 640px;
+  max-width: 540px;
   min-width: 288px;
   height: auto;
   max-height: 640px;
@@ -1304,10 +1304,6 @@ body {
     grid-area: menu;
     place-self: center end;
     padding-right: 3.5vw;
-  }
-
-  .navbar-menu a {
-    font-size: var(--fs-s);
   }
 
   .home-btn {
