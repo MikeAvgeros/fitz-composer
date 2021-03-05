@@ -1441,15 +1441,7 @@ body {
     ;
   }
 
-  .music-links, .film-links {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  }
-
-  .reviews {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  }
-
-  .services {
+  .music-links, .film-links, .reviews, .services {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
@@ -1485,5 +1477,9 @@ body {
     "header header header header header"
     "...... img    ...... main   ......"
     ;
+  }
+
+  .music-links, .film-links, .reviews, .services {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
