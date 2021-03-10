@@ -35,8 +35,8 @@
 -   ### User's Objectives & Goals
 
     -   #### First Time User's Goals
-        - As a First Time User, I want to quickly and easily identify if the site's owner will be suitable for my project.
-        - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content that will aid my decision.
+        - As a First Time User, I want to identify if the site's owner will be suitable for my project.
+        - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
         - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
 
     -   #### Returning User's Goals
@@ -45,9 +45,9 @@
         - As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
 
     -   #### Frequent User's Goals
-        - As a Frequent User, I want to be able to see if there are any newly added work examples, photos and reviews.
-        - As a Frequent User, I want to check to see if the site's owner offers any new services.
-        - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites and keep up to date with his work.
+        - As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
+        - As a Frequent User, I want to check to see up to date photos of the owner working on projects.
+        - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
 
 -   ### Owner's Objectives & Goals
 
@@ -128,6 +128,8 @@
     -   I originally created a 16-column grid, which works similar to bootstrap but since the project is simple without too many elements, I decided to use the grid-template-areas attribute which is based on my wireframes. 
     -   The Work and Services pages fully take advantage of grid's autofit functionality.
 
+<br>
+
 # Technologies Used
 
 ## Languages
@@ -161,7 +163,71 @@
 12. [W3C Validator:](https://validator.w3.org/)
     - W3C Validator was used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
 
+<br>
+
 # Testing
+
+## User Stories
+
+-   #### First Time User's Goals
+    - As a First Time User, I want to identify if the site's owner will be suitable for my project.
+        - This has been achieved by showing a selection of the owners best work in a variety of projects as well as a list of companies the owner has worked with.
+    - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
+        - This has been achieved by creating a navigation menu to quickly take you to all the sections of the site as well as a 'hot' button in the landing page to immediately take to both the portfolio of the owner.
+    - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
+        - This has been achieved by adding a contact me page and a section in the navigation menu as well as a 'hot' button in the landing page to quickly take you there.
+
+-   #### Returning User's Goals
+    - As a Returning User, I want to find more information about the different services offered.
+        - This has been achieved by adding a services page with detailed descriptions and images of each service provided by the owner.
+    - As a Returning User, I want to find out about more information about the site owner's skills and experience.
+        - This has been achieved by adding a bio page with a lot of information on the owner's skills and experience. Users can also visit the work section to hear a selection of his best work.
+    - As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
+        - This has been achieved by adding a reviews section with testimonials from happy clients and colleagues.
+
+-   #### Frequent User's Goals
+    - As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
+        - This has been achieved by adding a subscribe to mailing list checkbox when contacting the owner.
+    - As a Frequent User, I want to check to see up to date photos of the owner working on projects.
+        - This has been achieved by adding a gallery page with a carouself showing up to date photos of the owner working in the studio.
+    - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
+        - This has been achieved by adding a useful links section with the owner's social media and soundbetter profile in the footer of the page.
+
+<br>
+
+## Browser Compatibility
+
+- ### The website is compatible with most modern web browsers. For the best viewing experience, I recommend using Chrome, Firefox, Edge or Safari. I have also added suitable vendor prefixes on my transitions and animations for all the aforementioned browsers.
+
+<br>
+
+- ### The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also know that most people, especially the target audience of this site do not use IE. 
+
+<br>
+
+## Responsiveness
+
+### In this section, I have checked how responsive my website is by using Google Development Tools, Am I Responsive? 
+
+<br>
+
+-  Google Development Tools
+    - Throughout the development process, I have been consistently checking if my pages work well in different screen sizes. 
+    - This has helped me adjust the values on my font size clamp attribute so that my fonts are responsive and work well with all image screens.
+    - This has helped me adjust my column minmax width of my work and services page so that all the elements respond and adapt to the screen size.
+    - This has helped me adjust the width of my gallery page.
+    - This has helped me adjust the width and height of my buttons as their size is responsive to the screen width.
+    - Overall, most of the elements in the website are responsive based on the screen size so being able to view the site adapts has helped me make suitable decisions.
+    - During the testing phase, I have used Lighthouse to generate a report for both Desktop and Mobile. You can view the results below.
+        - Desktop - 
+        - Mobile - 
+
+-  Am I Responsive?
+    - During my testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font sizing problems that were not so visible with the Google Development Tools.
+
+## Form Validation
+
+### I made sure to validate my forms and run suitable tests. All required input fields are using the required HTML attribute 
 
 # Deployment
 
