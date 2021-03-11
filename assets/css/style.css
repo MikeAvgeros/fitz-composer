@@ -161,16 +161,16 @@ body {
   row-gap: calc(16px + 3vw);
 }
 
-/*--------------------- LANDING PAGE ---------------------*/
+/*-------------------- LANDING PAGE OVERLAY --------------------*/
 
-/*----------------------- OVERLAY -----------------------*/
 #landing-page {
   background-color: rgba(20,20,20,0.8);
   height: 100vh;
   position: relative;
 }
 
-/*----------------------- BANNER ----------------------*/
+/*--------------------- LANDING PAGE BANNER --------------------*/
+
 #landing-page:before {
   content: '';
   background: var(--clr-bg) 
@@ -274,8 +274,8 @@ body {
 }
 
 .navbar-menu a:active, .navbar-icon:active, .brand-logo:active {
-  -webkit-animation: wiggle .2s ease-in-out;
-          animation: wiggle .2s ease-in-out;
+  -webkit-animation: wiggle .2s;
+          animation: wiggle .2s;
 }
 
 /*--------------------- HOME PAGE ---------------------*/
@@ -304,8 +304,8 @@ body {
 
 .home-title, .home-subtitle {
   letter-spacing: 2px;
-  -webkit-animation: fadetotop 2s forwards;
-          animation: fadetotop 2s forwards;
+  -webkit-animation: fadetotop 2s ease-out forwards;
+          animation: fadetotop 2s ease-out forwards;
 }
 
 .home-title {
@@ -327,13 +327,14 @@ body {
   place-self: center center;
   row-gap: calc(2rem + 3vh);
   font-family: var(--ff-secondary);
-  -webkit-animation: fadetobottom 2s forwards;
-          animation: fadetobottom 2s forwards;
+  -webkit-animation: fadetobottom 2s ease-out forwards;
+          animation: fadetobottom 2s ease-out forwards;
 }
 
 .home-quotes blockquote {
   color: var(--clr-primary);
   font-size: var(--fs-m);
+  font-style: italic;
 }
 
 #bq1 {
@@ -354,8 +355,8 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
-  -webkit-animation: fadein 4s forwards;
-          animation: fadein 4s forwards;
+  -webkit-animation: fadein 2s ease-in forwards;
+          animation: fadein 2s ease-in forwards;
 }
 
 .home-btn a {
@@ -394,8 +395,8 @@ body {
 }
 
 #btn-contact:active, #btn-learnmore:active {
-  -webkit-animation: wiggle .2s ease-in-out;
-          animation: wiggle .2s ease-in-out;
+  -webkit-animation: wiggle .2s;
+          animation: wiggle .2s;
 }
 
 /*-------------------- ABOUT PAGE --------------------*/
@@ -519,8 +520,8 @@ body {
 }
 
 .music-link:hover, .film-link:hover {
-  -webkit-animation: zoom .5s forwards;
-          animation: zoom .5s forwards;
+  -webkit-animation: zoom .5s ease-out forwards;
+          animation: zoom .5s ease-out forwards;
 }
 
 /*-------------------- LINKS DIVIDER --------------------*/
@@ -684,8 +685,8 @@ body {
 }
 
 .review-header:active {
-  -webkit-animation: wiggle .1s ease-in-out;
-          animation: wiggle .1s ease-in-out;
+  -webkit-animation: wiggle .1s;
+          animation: wiggle .1s;
 }
 
 /*----------------- REVIEW RADIO BUTTONS ------------------*/
@@ -817,8 +818,8 @@ body {
 }
 
 .service-header:active {
-  -webkit-animation: wiggle .1s ease-in-out;
-          animation: wiggle .1s ease-in-out;
+  -webkit-animation: wiggle .1s;
+          animation: wiggle .1s;
 }
 
 /*---------------- SERVICE RADIO BUTTONS ----------------*/
@@ -1131,8 +1132,8 @@ body {
 }
 
 .contact-btn:active {
-  -webkit-animation: wiggle .25s ease-in-out;
-          animation: wiggle .25s ease-in-out;
+  -webkit-animation: wiggle .2s;
+          animation: wiggle .2s;
 }
 
 /*-------------------- FOOTER SECTION --------------------*/
@@ -1354,8 +1355,8 @@ body {
   }
 
   .home-title, .home-subtitle {
-    -webkit-animation: fadetoleft 2s forwards;
-            animation: fadetoleft 2s forwards;
+    -webkit-animation: fadetoleft 2s ease-out forwards;
+            animation: fadetoleft 2s ease-out forwards;
   }
 
   .home-quotes {
@@ -1372,8 +1373,8 @@ body {
   }
 
   .home-quotes {
-    -webkit-animation: fadetoright 2s forwards;
-            animation: fadetoright 2s forwards;
+    -webkit-animation: fadetoright 2s ease-out forwards;
+            animation: fadetoright 2s ease-out forwards;
   }
 
   #about {
