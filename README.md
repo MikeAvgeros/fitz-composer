@@ -10,16 +10,12 @@
 
 ### You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
-<br>
-
 # Table of Contents:
 - [User Experience](#user-experience)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
-
-<br>
 
 # User Experience
 
@@ -128,8 +124,6 @@
     -   I originally created a 16-column grid, which works similar to bootstrap but since the project is simple without too many elements, I decided to use the grid-template-areas attribute which is based on my wireframes. 
     -   The Work and Services pages fully take advantage of grid's autofit functionality.
 
-<br>
-
 # Technologies Used
 
 ## Languages
@@ -163,8 +157,6 @@
 12. [W3C Validator:](https://validator.w3.org/)
     - W3C Validator was used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
 
-<br>
-
 # Testing
 
 ## User Stories
@@ -193,17 +185,11 @@
     - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
         - This has been achieved by adding a useful links section with the owner's social media and soundbetter profile in the footer of the page.
 
-<br>
-
 ## Browser Compatibility
 
-- ### The website is compatible with most modern web browsers. For the best viewing experience, I recommend using Chrome, Firefox, Edge or Safari. I have also added suitable vendor prefixes on my transitions and animations for all the aforementioned browsers.
+### The website is compatible with most modern web browsers. For the best viewing experience, I recommend using Chrome, Firefox, Edge or Safari. I have also added suitable vendor prefixes on my transitions and animations for all the aforementioned browsers.
 
-<br>
-
-- ### The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also know that most people, especially the target audience of this site do not use IE. 
-
-<br>
+### The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also know that most people, especially the target audience of this site do not use IE. 
 
 ## Responsiveness
 
@@ -230,11 +216,16 @@
 
 ### I made sure to validate my forms and run suitable tests. I can confirm that all of them behaved as expected. 
 
+- ### Constraint Validation
+    - I tested that my required input attribute behaved as expected and warned users to fill the required fields.
+
 ## HTML Validation
+
+### I have tested my HTML on the W3C Markup Validation Service which returned zero errors. It displayed a few warnings - 'Section lacks heading', however, the mentioned sections had heading within sibling divs.
 
 ## CSS Validation
 
-<br>
+### I have tested my CSS on the W3C CSS Validation Service which returned zero errors. It displayed a few warnings in regards to my root variables being an unknown vendor extension as well as some of the vendor prefixes.
 
 # Github Repository
 
@@ -245,11 +236,11 @@
 3.  I created a public repository for my Milestone project -  [Fitz Composer](https://github.com/MikeAvgeros/fitz-composer)
 4.  I deployed my repository using Github pages - [Deployed Site](https://mikeavgeros.github.io/fitz-composer/)
 
-<br>
-
 # Credits
 
-<br>
+## Images
+
+## Code
 
 # Acknowledgements
 
