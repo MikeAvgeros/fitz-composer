@@ -16,6 +16,7 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 # User Experience
 
@@ -132,29 +133,40 @@
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Libraries, Tools & Resources
-1. [VS Code:](https://code.visualstudio.com/)
+1. [VS Code](https://code.visualstudio.com/)
     - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
-2. [Google Fonts:](https://fonts.google.com/)
+
+2. [Google Fonts](https://fonts.google.com/)
     - Google Fonts was used to import my font of choice into CSS for use throughout the website.
-3. [Font Awesome:](https://fontawesome.com/)
+
+3. [Font Awesome](https://fontawesome.com/)
     - Font Awesome was used to add icons to the website for aesthetic and UX purposes.
-4. [Image Kit:](https://imagekit.io/)
+
+4. [Image Kit](https://imagekit.io/)
     - Image Kit was used to store, optimize and serve all the site's images using CDN.
-5. [Git:](https://git-scm.com/)
+    
+5. [Git](https://git-scm.com/)
     - Git was used to help me manage and keep track of my source code history.
-6. [Sourcetree:](https://www.sourcetreeapp.com/)
+
+6. [Sourcetree](https://www.sourcetreeapp.com/)
     - Sourcetree simplified and visualized my interaction with the Git repository.
-7. [GitHub:](https://github.com/)
+
+7. [GitHub](https://github.com/)
     - GitHub was used to store and manage the Git repository.
-8. [Adobe XD:](https://www.adobe.com/uk/products/xd.html)
+
+8. [Adobe XD](https://www.adobe.com/uk/products/xd.html)
     - Adobe XD was used to create the [wireframes](https://www.dropbox.com/sh/47nl19x70nqnbqe/AACs9wpsU86-84pEg55kyMyJa?dl=0) during the design and prototyping process.
-9. [CDNJS:](https://cdnjs.com/)
+
+9. [CDNJS](https://cdnjs.com/)
     - CDNJS was used to quickly import library files in my HTML document.
-10. [Squoosh:](https://squoosh.app/)
+
+10. [Squoosh](https://squoosh.app/)
     - Squoosh was used to convert, compress and resize my images.
-11. [Chrome DevTools:](https://developers.google.com/web/tools/chrome-devtools)
+
+11. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Chrome DevTools helped me debug issues that I've had during development. In addition, by using the inspection mode I could see how responsive my site was.
-12. [W3C Validator:](https://validator.w3.org/)
+
+12. [W3C Validator](https://validator.w3.org/)
     - W3C Validator was used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
 
 # Testing
