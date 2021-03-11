@@ -207,9 +207,7 @@
 
 ## Responsiveness
 
-### In this section, I have checked how responsive my website is by using Google Development Tools, Am I Responsive? 
-
-<br>
+### In this section, I have checked how responsive my website is by using Google Development Tools, Am I Responsive and Techsini? 
 
 -  Google Development Tools
     - Throughout the development process, I have been consistently checking if my pages work well in different screen sizes. 
@@ -225,10 +223,40 @@
 -  Am I Responsive?
     - During my testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font sizing problems that were not so visible with the Google Development Tools.
 
+-  Techsini
+    - During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive.
+
 ## Form Validation
 
-### I made sure to validate my forms and run suitable tests. All required input fields are using the required HTML attribute 
+### I made sure to validate my forms and run suitable tests. I can confirm that all of them behaved as expected. 
 
-# Deployment
+## HTML Validation
+
+## CSS Validation
+
+<br>
+
+# Github Repository
+
+## Creation and Deployment 
+
+1.  I created an account on GitHub - [My account](https://github.com/MikeAvgeros)
+2.  I used the suggested Code Institute Template - [Code Institute Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+3.  I created a public repository for my Milestone project -  [Fitz Composer](https://github.com/MikeAvgeros/fitz-composer)
+4.  I deployed my repository using Github pages - [Deployed Site](https://mikeavgeros.github.io/fitz-composer/)
+
+<br>
 
 # Credits
+
+<br>
+
+# Acknowledgements
+
+- I would like to thank [Stuart Crang](https://www.linkedin.com/in/stuart-crang-50401897/) for helping me enrol on this course and guiding me on my first couple of weeks.
+
+- I would like to thank my mentor, [Narender Singh](https://linkedin.com/in/nar3nd3r) for his support, guidance and design ideas.
+
+- I would like to thank the [Code Institute](https://codeinstitute.net/) for the well-thought-out curriculum and their amazing and super informative and helpful Slack community!
+
+- I would like to thank everyone at the Full Stack Developers WhatsApp group for their helpful input during my testing phase.
