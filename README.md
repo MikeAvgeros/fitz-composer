@@ -114,8 +114,9 @@
     -   I have created 5 font sizes that are being shared by all the text elements in the site depending on their importance.
 
 -   ### Images
-    -   I have used unsplash to source all the images on the website. You can find more information on the Credit section.
-
+    -   Most of the images were provided by the site's owner.
+    -   I have used unsplash to source some additional images for the website. You can find more information on the Credit section.
+    
 -   ### Icons
     -   I have used fontawesome to source all the icons used on the website.
 
@@ -137,7 +138,7 @@
     - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
 
 2. [Google Fonts](https://fonts.google.com/)
-    - Google Fonts was used to import my font of choice into CSS for use throughout the website.
+    - Google Fonts was used to import my fonts of choice into CSS for use throughout the website.
 
 3. [Font Awesome](https://fontawesome.com/)
     - Font Awesome was used to add icons to the website for aesthetic and UX purposes.
@@ -201,7 +202,7 @@
 
 ### The website is compatible with most modern web browsers. For the best viewing experience, I recommend using Chrome, Firefox, Edge or Safari. I have also added suitable vendor prefixes on my transitions and animations for all the aforementioned browsers.
 
-### The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also know that most people, especially the target audience of this site do not use IE. 
+### The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because as I am using grid on all the sections, it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also researched and found out that most people, especially the target audience of this site do not use IE. 
 
 ## Responsiveness
 
@@ -214,9 +215,7 @@
     - This has helped me adjust the width of my gallery page.
     - This has helped me adjust the width and height of my buttons as their size is responsive to the screen width.
     - Overall, most of the elements in the website are responsive based on the screen size so being able to view the site adapts has helped me make suitable decisions.
-    - During the testing phase, I have used Lighthouse to generate a report for both Desktop and Mobile. You can view the results below.
-        - Desktop - 
-        - Mobile - 
+    - During the testing phase, I have used Lighthouse to generate a report for both Desktop and Mobile. Lighthouse showed me some better practices and fixes on my HTML and CSS, which in turn helped boost the performance and accessibility of the site.
 
 -  Am I Responsive?
     - During my testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font sizing problems that were not so visible with the Google Development Tools.
@@ -233,7 +232,7 @@
 
 ## HTML Validation
 
-### I have tested my HTML on the W3C Markup Validation Service which returned zero errors. It displayed a few warnings - 'Section lacks heading', however, the mentioned sections had heading within sibling divs.
+### I have tested my HTML on the W3C Markup Validation Service which returned zero errors. It displayed a few warnings - 'Section lacks heading', however, the mentioned sections had suitable headings within child divs.
 
 ## CSS Validation
 
