@@ -251,7 +251,24 @@
 
 ## Images
 
+### I have used the following images from [Unsplash](https://unsplash.com/)
+- [Jefferson Santos](https://unsplash.com/photos/fCEJGBzAkrU)
+- [Augusto Oazi](https://unsplash.com/photos/KWOcA8_Vu10)
+- [Samuel Sianipar](https://unsplash.com/photos/4TNd3hsW3PM)
+- [Steve Harvey](https://unsplash.com/photos/l0V2dqXW_mI)
+- [Lorenzo Spoleti](https://unsplash.com/photos/MlhJNEUQpBs)
+- [Caught In Joy](https://unsplash.com/photos/ptVBlniJi50)
+- [Jacek Dylag](https://unsplash.com/photos/xPugU5J5ePc)
+
 ## Code
+
+-   ### Hamburger Menu
+    - I borrowed some code for my Hamburger Menu after watching this [YouTube video](https://www.youtube.com/watch?v=sjrp1FEHnyA) by [FollowAndrew](https://www.youtube.com/channel/UCETveVX7TPauIupxYz6sFtA)
+    - I then customized the code and adapted it to my needs.
+
+-   ### Carousel
+    - I borrowed some code for the image carousel on my Gallery and Company Credits sections after watching this [YouTube video](https://www.youtube.com/watch?v=pGHOaY4dhAA) by [w3newbie](https://www.youtube.com/channel/UCT5mYUgfTseT1axSXiA-ODQ)
+    - I then customized the code and adapted it to my needs.
 
 # Acknowledgements
 
