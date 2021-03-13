@@ -249,8 +249,10 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
     - As a First Time User, I want to identify if the site's owner will be suitable for my project.
         - This has been achieved by showing a selection of the owners best work in a variety of projects as well as a list of companies the owner has worked with.
+
     - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
         - This has been achieved by creating a navigation menu to quickly take you to all the sections of the site as well as a 'hot' button in the landing page to immediately take to both the portfolio of the owner.
+        
     - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
         - This has been achieved by adding a contact me page and a section in the navigation menu as well as a 'hot' button in the landing page to quickly take you there.
 
