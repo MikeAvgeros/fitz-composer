@@ -2,16 +2,17 @@
 
 # Introduction
 
-### This is my First Milestone Project - User Centric Frontend Development - for the Code Institute. 
+This is my First Milestone Project - User Centric Frontend Development - for the Code Institute. 
 
-### I have created a portfolio website for a film composer / record producer under the alias 'F!tz'.
+I have created a portfolio website for a film composer / record producer under the alias 'F!tz'.
 
-### The idea is to create a one-page scrolling site which quickly and effectively showcases the owner's work and skill set with a simple and easy to use navigation.
+The idea is to create a one-page scrolling site which quickly and effectively showcases the owner's work and skill set with a simple and easy to use navigation.
 
-### You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
+You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 # Table of Contents:
 - [User Experience](#user-experience)
+- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -48,7 +49,7 @@
 
 -   ### Owner's Objectives & Goals
 
-    #### The owner of this website is a freelance music composer / record producer who wants to attract clients and work on interesting projects.
+    The owner of this website is a freelance music composer / record producer who wants to attract clients and work on interesting projects.
 
     -   #### Owner's Goals
         - As the Owner, I want Users to contact me for a project using the contact form.
@@ -126,6 +127,11 @@
     -   I originally created a 16-column grid, which works similar to bootstrap but since the project is simple without too many elements, I decided to use the grid-template-areas attribute which is based on my wireframes. 
     -   The Work and Services pages fully take advantage of grid's autofit functionality.
 
+# Features
+
+-   Responsive on all device sizes
+-   Interactive elements
+
 # Technologies Used
 
 ## Languages
@@ -174,7 +180,7 @@
 
 ## User Stories
 
--   #### First Time User's Goals
+-   ### First Time User's Goals
     - As a First Time User, I want to identify if the site's owner will be suitable for my project.
         - This has been achieved by showing a selection of the owners best work in a variety of projects as well as a list of companies the owner has worked with.
     - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
@@ -182,7 +188,7 @@
     - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
         - This has been achieved by adding a contact me page and a section in the navigation menu as well as a 'hot' button in the landing page to quickly take you there.
 
--   #### Returning User's Goals
+-   ### Returning User's Goals
     - As a Returning User, I want to find more information about the different services offered.
         - This has been achieved by adding a services page with detailed descriptions and images of each service provided by the owner.
     - As a Returning User, I want to find out about more information about the site owner's skills and experience.
@@ -190,7 +196,7 @@
     - As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
         - This has been achieved by adding a reviews section with testimonials from happy clients and colleagues.
 
--   #### Frequent User's Goals
+-   ### Frequent User's Goals
     - As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
         - This has been achieved by adding a subscribe to mailing list checkbox when contacting the owner.
     - As a Frequent User, I want to check to see up to date photos of the owner working on projects.
@@ -200,15 +206,15 @@
 
 ## Browser Compatibility
 
-### The website is compatible with most modern web browsers. For the best viewing experience, I recommend using Chrome, Firefox, Edge or Safari. I have also added suitable vendor prefixes on my transitions and animations for all the aforementioned browsers.
+The website is compatible with most modern web browsers. For the best viewing experience, I recommend using Chrome, Firefox, Edge or Safari. I have also added suitable vendor prefixes on my transitions and animations for all the aforementioned browsers.
 
-### The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because as I am using grid on all the sections, it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also researched and found out that most people, especially the target audience of this site do not use IE. 
+The worst viewing experience is on Internet Explorer. I decided to not include any vendor prefixes for IE because as I am using grid on all the sections, it made a significant increase to my CSS size and I did not want to compromise on the loading speed and performance. I also researched and found out that most people, especially the target audience of this site do not use IE. 
 
 ## Responsiveness
 
-### In this section, I have checked how responsive my website is by using Google Development Tools, Am I Responsive and Techsini? 
+In this section, I have checked how responsive my website is by using Google Development Tools, Am I Responsive and Techsini? 
 
--  Google Development Tools
+-  ### Google Development Tools
     - Throughout the development process, I have been consistently checking if my pages work well in different screen sizes. 
     - This has helped me adjust the values on my font size clamp attribute so that my fonts are responsive and work well with all image screens.
     - This has helped me adjust my column minmax width of my work and services page so that all the elements respond and adapt to the screen size.
@@ -217,28 +223,28 @@
     - Overall, most of the elements in the website are responsive based on the screen size so being able to view the site adapts has helped me make suitable decisions.
     - During the testing phase, I have used Lighthouse to generate a report for both Desktop and Mobile. Lighthouse showed me some better practices and fixes on my HTML and CSS, which in turn helped boost the performance and accessibility of the site.
 
--  Am I Responsive?
+-  ### Am I Responsive?
     - During my testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font sizing problems that were not so visible with the Google Development Tools.
 
--  Techsini
+-  ### Techsini
     - During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive.
 
 ## Form Validation
 
-### I made sure to validate my forms and run suitable tests. I can confirm that all of them behaved as expected. 
+I made sure to validate my forms and run suitable tests. I can confirm that all of them behaved as expected. 
 
 - ### Constraint Validation
     - I tested that my required input attribute behaved as expected and warned users to fill the required fields.
 
 ## HTML Validation
 
-### I have tested my HTML on the W3C Markup Validation Service which returned zero errors. It displayed a few warnings - 'Section lacks heading', however, the mentioned sections had suitable headings within child divs.
+The W3C Markup Validator was used to validate every page of the website to ensure there were no syntax errors in my HTML. Although it returned no errors, it displayed a few warnings - 'Section lacks heading', however, the mentioned sections had suitable headings within child divs.
 
 ## CSS Validation
 
-### I have tested my CSS on the W3C CSS Validation Service which returned zero errors. It displayed a few warnings in regards to my root variables being an unknown vendor extension as well as some of the vendor prefixes.
+The W3C CSS Validator Service was used to validate every page of the website to ensure there were no syntax errors in my CSS. It displayed a few warnings in regards to my root variables being an unknown vendor extension as well as some of the vendor prefixes, however this was not a cause for concern.
 
-# Github Repository
+# Deployment
 
 ## Creation and Deployment 
 
@@ -251,7 +257,7 @@
 
 ## Images
 
-### I have used the following images from [Unsplash](https://unsplash.com/)
+I have used the following images from [Unsplash](https://unsplash.com/)
 - [Jefferson Santos](https://unsplash.com/photos/fCEJGBzAkrU)
 - [Augusto Oazi](https://unsplash.com/photos/KWOcA8_Vu10)
 - [Samuel Sianipar](https://unsplash.com/photos/4TNd3hsW3PM)
