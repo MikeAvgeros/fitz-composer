@@ -11,7 +11,7 @@
   --clr-secondary: #c4c4c4;
   --fs-xxl: clamp(2rem, 1.75rem + 3vw, 4.25rem);        
   --fs-xl: clamp(1.25rem, 1.25rem + 1.5vw, 2.5rem);  
-  --fs-l: clamp(1rem, .9rem + 1.25vw, 2rem);    
+  --fs-l: clamp(1rem, .9rem + 1vw, 2rem);    
   --fs-m: clamp(.9rem, .8rem + .75vw, 1.5rem);     
   --fs-s: clamp(.8rem, .7rem + .75vw, 1.25rem); 
   --fs-xs: clamp(.7rem, .7rem + .5vw, 1rem);  
@@ -384,7 +384,7 @@ body {
 /*-------------------- ABOUT PAGE --------------------*/
 
 #about {
-  grid: 5rem repeat(3, auto) / 10% 80% 10%;
+  grid: 5rem repeat(3, auto) / 7.5% 85% 7.5%;
   grid-template-areas:
   "nav    nav    nav   "
   "header header header"
@@ -1100,9 +1100,9 @@ body {
   background-color: var(--clr-bg);
   height: auto;
   display: grid;
-  grid: 5rem auto / 1fr;
+  grid: 3rem auto / 1fr;
   grid-template-areas:
-  "nav "
+  "space"
   "footer"
   ;
 }
@@ -1160,6 +1160,20 @@ body {
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
+
+/*----------------------- MOBILE -----------------------*/
+
+@media (min-width: 425px) {
+  #about {
+    grid: 5rem repeat(3, auto) / 10% 80% 10%;
+    grid-template-areas:
+    "nav    nav    nav   "
+    "header header header"
+    "...... img    ......"
+    "...... main   ......"
+    ;
+  }
+}
 
 /*----------------------- TABLET -----------------------*/
 
