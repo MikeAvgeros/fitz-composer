@@ -344,7 +344,7 @@ body {
 .home-btn {
   grid-area: buttons;
   place-self: center center;
-  width: calc(14.5rem + 5vw);
+  width: calc(15rem + 5vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -490,7 +490,7 @@ body {
 
 .film-link iframe, .music-link iframe {
   width: 100%;
-  height: calc(90px + 22.5vw);
+  height: calc(90px + 25vw);
   border-radius: 8px;
   padding-bottom: 1rem;
 }
@@ -1160,14 +1160,6 @@ body {
 }
 
 /*--------------------- MEDIA QUERIES ---------------------*/
-
-/*----------------------- MOBILE -----------------------*/
-
-@media (min-width: 425px) {
-  .home-btn {
-    width: calc(15.5rem + 5vw);
-  }
-}
 
 /*----------------------- TABLET -----------------------*/
 
