@@ -286,7 +286,7 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 ## Responsiveness
 
-I have tested how responsive my website is by using Google Development Tools, Am I Responsive and Techsini? 
+Since I haven't used Bootstrap, I have been constantly testing how responsive my website is by using Google Development Tools, [Am I Responsive](http://ami.responsivedesign.is/) and [Techsini Multi Device Mockup Generator](https://techsini.com/multi-mockup/index.php)
 
 -   ### Google Development Tools
 
@@ -302,13 +302,13 @@ I have tested how responsive my website is by using Google Development Tools, Am
 
     - Overall, most of the elements in the website are responsive based on the screen size so being able to view the site adapts has helped me make suitable decisions.
 
-    - During the testing phase, I have used Lighthouse to generate a report for both Desktop and Mobile. Lighthouse showed me some better practices and fixes on my HTML and CSS, which in turn helped boost the performance and accessibility of the site.
+    - During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. Lighthouse showed me better practices and fixes on my HTML and CSS, which in turn helped boost the performance and accessibility of the site.
 
 -   ### Am I Responsive?
 
     - During my testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font sizing problems that were not so visible with the Google Development Tools.
 
--   ### Techsini
+-   ### Techsini Multi Device Mockup Generator
 
     - During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive.
 
@@ -344,25 +344,31 @@ The project was stored on Github using the following steps.
 
 2.  I used the suggested Code Institute Template - [Code Institute Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-3.  I created a public repository for my 1st Milestone project -  [Fitz Composer](https://github.com/MikeAvgeros/fitz-composer)
-
-4.  I cloned my Github repository in [Sourcetree](https://www.sourcetreeapp.com/) using an HTTPS URL.
+3.  I created a public repository for my 1st Milestone project - [Fitz Composer](https://github.com/MikeAvgeros/fitz-composer)
 
 ## Github Pages
 
 The project was deployed to GitHub Pages using the following steps.
 
-1.  Log in to Github and locate the [Github Repository](https://github.com/MikeAvgeros/fitz-composer)
+1.  I logged in to Github and located the [Github Repository](https://github.com/MikeAvgeros/fitz-composer)
 
-2.  At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+2.  At the top of the Repository (not top of page), I clicked the "Settings" Button on the menu.
 
-3.  Scroll down the Settings page until you locate the "GitHub Pages" Section.
+3.  I Scrolled down the Settings page until you locate the "GitHub Pages" Section.
 
-4.  Under "Source", click the dropdown called "None" and select "Master Branch".
+4.  Under "Source", I clicked the dropdown called "None" and select "Master Branch".
 
-5.  The page will automatically refresh.
+5.  I scrolled back down through the page to locate the now published [site link](https://mikeavgeros.github.io/fitz-composer/) in the "GitHub Pages" section.
 
-6.  Scroll back down through the page to locate the now published [site link](https://mikeavgeros.github.io/fitz-composer/) in the "GitHub Pages" section.
+## Cloning the Github Repository
+
+The Github repository was cloned and stored locally on my machine using the following steps. 
+
+1.  I cloned my Github repository using HTTPS, under "Clone with HTTPS", and copied the link.
+
+2.  I opened [Sourcetree](https://www.sourcetreeapp.com/), opened a new tab and clicked on the Clone icon. I pasted the HTTPS link and added a local directory in my machine.
+
+3.  I opened [VS Code](https://code.visualstudio.com/), clicked on File/Open File and navigated to the local directory I had cloned my Github repository.
 
 # Credits
 
