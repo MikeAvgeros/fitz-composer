@@ -1164,6 +1164,10 @@ body {
 /*----------------------- MOBILE -----------------------*/
 
 @media (min-width: 425px) {
+  :root {
+    --fs-l: clamp(1rem, .9rem + 1.2vw, 2rem);  
+  }
+
   #about {
     grid: 5rem repeat(3, auto) / 10% 80% 10%;
     grid-template-areas:
