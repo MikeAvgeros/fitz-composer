@@ -9,9 +9,9 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem, 1.75rem + 3vw, 4rem);        
+  --fs-xxl: clamp(2rem, 1.75rem + 3vw, 4.25rem);        
   --fs-xl: clamp(1.25rem, 1.25rem + 1.5vw, 2.5rem);  
-  --fs-l: clamp(1rem, .9rem + 1.25vw, 1.9rem);    
+  --fs-l: clamp(1rem, .9rem + 1.25vw, 2rem);    
   --fs-m: clamp(.9rem, .8rem + .75vw, 1.5rem);     
   --fs-s: clamp(.8rem, .7rem + .75vw, 1.25rem); 
   --fs-xs: clamp(.7rem, .7rem + .5vw, 1rem);  
@@ -267,12 +267,6 @@ body {
   letter-spacing: 2px;
 }
 
-/*------------- TOPBAR HOVER/ACTIVE EFFECTS -------------*/
-
-.navbar-menu a:hover, .navbar-icon i:hover {
-  color: var(--clr-secondary);
-}
-
 .navbar-menu a:active, .navbar-icon:active, .brand-logo:active {
   -webkit-animation: wiggle .2s;
           animation: wiggle .2s;
@@ -350,7 +344,7 @@ body {
 .home-btn {
   grid-area: buttons;
   place-self: center center;
-  width: calc(13.5rem + 5vw);
+  width: calc(14.5rem + 5vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -380,18 +374,6 @@ body {
 #btn-learnmore {
   color: var(--clr-primary);
   background: none;
-}
-
-/*------------ BUTTONS HOVER/ACTIVE EFFECTS ------------*/
-
-#btn-contact:hover {
-  color: var(--clr-secondary);
-  background-color: var(--clr-fg);
-}
-
-#btn-learnmore:hover {
-  color: var(--clr-secondary);
-  background-color: var(--clr-fg);
 }
 
 #btn-contact:active, #btn-learnmore:active {
@@ -429,7 +411,7 @@ body {
   min-width: 288px;
   height: auto;
   max-height: 640px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /*------------------- ABOUT MAIN -------------------*/
@@ -444,6 +426,9 @@ body {
   font-family: var(--ff-secondary);
   font-size: var(--fs-s);
   letter-spacing: 1px;
+  text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 /*----------------------- WORK PAGE -----------------------*/
@@ -489,7 +474,6 @@ body {
 .film-link, .music-link {
   display: grid;
   width: calc(160px + 40vw);
-  max-width: 360px;
   height: auto;
   justify-self: center;
   padding-bottom: 10px;
@@ -506,22 +490,13 @@ body {
 
 .film-link iframe, .music-link iframe {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  height: calc(90px + 22.5vw);
+  border-radius: 8px;
   padding-bottom: 1rem;
-}
-
-.film-link iframe {
-  min-height: 215px;
 }
 
 .music-link iframe {
   max-height: 96px;
-}
-
-.music-link:hover, .film-link:hover {
-  -webkit-animation: zoom .5s ease-out forwards;
-          animation: zoom .5s ease-out forwards;
 }
 
 /*-------------------- LINKS DIVIDER --------------------*/
@@ -547,7 +522,7 @@ body {
   color: var(--clr-primary);
   text-align: center;
   font-size: var(--fs-l);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding: calc(1rem + 3vw) 0rem;
 }
 
@@ -559,7 +534,7 @@ body {
   max-height: 270px;
   justify-self: center;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /*------------------- COMPANY LOGOS -------------------*/
@@ -630,7 +605,6 @@ body {
 
 .review {
   width: calc(160px + 40vw);
-  max-width: 360px;
   height: auto;
   justify-self: center;
   place-content: start start;
@@ -649,18 +623,17 @@ body {
 .review img {
   grid-area: img;
   border-radius: 50%;
-  width: 50%;
   max-width: 150px;
   height: auto;
   justify-self: center;
-  padding: 10px 10px;
+  padding: 10px 10px 20px;
 }
 
 .stars {
   grid-area: stars;
   color: var(--clr-primary);
   justify-self: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /*------------------- REVIEW REVEAL -------------------*/
@@ -668,7 +641,7 @@ body {
 .review-header {
   grid-area: header;
   border: 2px solid var(--clr-secondary);
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: var(--clr-bg);
   color: var(--clr-secondary);
   font-size: var(--fs-s);
@@ -677,11 +650,8 @@ body {
   cursor: pointer;
   display: grid;
   place-items: center center;
-}
-
-.review-header:hover {
-  background-color: var(--clr-fg);
-  color: var(--clr-primary);
+  width: 99%;
+  justify-self: center;
 }
 
 .review-header:active {
@@ -717,11 +687,13 @@ body {
 
 .review-description {
   grid-area: description;
-  background-color: var(--clr-bg);
   color: var(--clr-secondary);
   height: 0;
   overflow: hidden;
   display: grid;
+  width: 99%;
+  justify-self: center;
+  padding-top: 10px;
 }
 
 .review-description blockquote, .review-description cite {
@@ -742,10 +714,6 @@ body {
   font-weight: bolder;
   cursor: pointer;
   padding-bottom: 20px;
-}
-
-.review-description i:hover {
-  color: var(--clr-primary);
 }
 
 /*----------------------- SERVICES PAGE -----------------------*/
@@ -774,13 +742,13 @@ body {
 
 .service {
   width: calc(160px + 40vw);
-  max-width: 360px;
   height: auto;
   justify-self: center;
   place-content: start start;
   display: grid;
   padding-bottom: 10px;
-  grid: calc(80px + 35vw) repeat(2, auto) / 100%;
+  row-gap: 20px;
+  grid: calc(120px + 30vw) repeat(2, auto) / 100%;
   grid-template-areas:
   "img"
   "header"
@@ -791,9 +759,11 @@ body {
 /*------------------- SERVICE IMAGE -------------------*/
 
 .service img {
+  border: 2px solid var(--clr-fg);
   grid-area: img;
   width: 100%;
-  height: calc(80px + 35vw);
+  height: calc(120px + 30vw);
+  border-radius: 10px;
 }
 
 /*------------------- SERVICE HEADER -------------------*/
@@ -806,15 +776,13 @@ body {
   font-family: var(--ff-secondary);
   font-size: var(--fs-l);
   letter-spacing: 1px;
-  padding: 16px 16px;
+  padding: 20px 20px;
   cursor: pointer;
   display: grid;
   place-items: center center;
-}
-
-.service-header:hover {
-  color: var(--clr-bg);
-  background-color: var(--clr-secondary);
+  border-radius: 15px;
+  width: 99%;
+  justify-self: center;
 }
 
 .service-header:active {
@@ -850,7 +818,6 @@ body {
 
 .service-description {
   grid-area: description;
-  background-color: var(--clr-fg);
   height: 0;
   overflow: hidden;
   display: grid;
@@ -862,8 +829,8 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-s);
   letter-spacing: 1px;
+  width: 95%;
   justify-self: center;
-  padding: 10px 10px;
 }
 
 .service-description i {
@@ -873,10 +840,6 @@ body {
   font-weight: bolder;
   cursor: pointer;
   padding-bottom: 20px;
-}
-
-.service-description i:hover {
-  color: var(--clr-secondary);
 }
 
 /*--------------------- GALLERY PAGE ---------------------*/
@@ -902,7 +865,7 @@ body {
   max-height: 576px;
   justify-self: center;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 8px;
   padding-top: calc(16px + 2vw);
 }
 
@@ -1057,7 +1020,7 @@ body {
 
 .contact.btn, .contact-input-field {
   padding: .625rem;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .contact-radio {
@@ -1073,7 +1036,7 @@ body {
   font-family: var(--ff-secondary);
   font-size: var(--fs-xs);
   background-color: var(--clr-fg);
-  border-radius: 5px;
+  border-radius: 8px;
   width: auto;
   text-align: center;
 }
@@ -1111,7 +1074,7 @@ body {
   font-weight: bolder;
   letter-spacing: 1px;
   border: 2px solid var(--clr-primary);
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--clr-primary);
   color: var(--clr-bg);
   font-family: var(--ff-secondary);
@@ -1124,11 +1087,6 @@ body {
   color: var(--clr-primary);
   font-size: var(--fs-xs);
   padding-top: 20px;
-}
-
-.contact-btn:hover {
-  color: var(--clr-secondary);
-  background-color: var(--clr-fg);
 }
 
 .contact-btn:active {
@@ -1173,14 +1131,6 @@ body {
   grid-area: useful-links;
 }
 
-.useful-links h3 {
-  place-self: start center;
-  color: var(--clr-primary);
-  padding-top: 20px;
-  font-size: var(--fs-l);
-  font-weight: lighter;
-}
-
 .useful-links ul {
   list-style-type: none;
   display: inline-flex;
@@ -1193,10 +1143,6 @@ body {
   font-size: var(--fs-s);
   padding: 20px;
   font-size: var(--fs-s);
-}
-
-.useful-links li a:hover {
-  color: var(--clr-secondary);
 }
 
 /*--------------------- COPYRIGHT ---------------------*/
@@ -1216,28 +1162,14 @@ body {
 /*--------------------- MEDIA QUERIES ---------------------*/
 
 /*----------------------- MOBILE -----------------------*/
+
 @media (min-width: 425px) {
   .home-btn {
-    width: calc(14.5rem + 5vw);
+    width: calc(15.5rem + 5vw);
   }
 }
 
 /*----------------------- TABLET -----------------------*/
-
-@media (min-width: 475px) {
-  .service {
-    grid: 240px repeat(2, auto) / 360px;
-    grid-template-areas:
-    "img"
-    "header"
-    "description"
-    ;
-  }
-
-  .service img {
-    height: 240px;
-  }
-}
 
 @media (min-width: 768px) {
   .navbar {
@@ -1253,7 +1185,7 @@ body {
   }
 
   .home-quotes blockquote {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
   
   .home-btn {
@@ -1263,13 +1195,28 @@ body {
   .home-btn a {
     width: calc(7rem + 1vw);
   }
+}
 
-  .review-header {
-    font-size: var(--fs-s);
+@media (min-width: 889px) {
+  .film-link, .music-link, .review, .service {
+    width: 360px;
+  }
+
+  .film-link iframe {
+    height: 215px;
+  }
+
+  .service {
+    grid: 240px repeat(2, auto) / 100%;
+    grid-template-areas:
+    "img"
+    "header"
+    "description"
+    ;
   }
 
   .service img {
-    max-height: 240px;
+    height: 240px;
   }
 
   .service-header {
@@ -1393,6 +1340,54 @@ body {
 
   .about-img {
     place-self: center center;
+  }
+
+  /*--------------------- HOVER EFFECTS ---------------------*/
+
+  .music-link:hover, .film-link:hover {
+    -webkit-animation: zoom .5s ease-out forwards;
+            animation: zoom .5s ease-out forwards;
+  }
+
+  .navbar-menu a:hover, .navbar-icon i:hover {
+    color: var(--clr-secondary);
+  }
+
+  #btn-contact:hover {
+    color: var(--clr-secondary);
+    background-color: var(--clr-fg);
+  }
+  
+  #btn-learnmore:hover {
+    color: var(--clr-secondary);
+    background-color: var(--clr-fg);
+  }
+
+  .review-header:hover {
+    background-color: var(--clr-fg);
+    color: var(--clr-primary);
+  }
+
+  .review-description i:hover {
+    color: var(--clr-primary);
+  }
+
+  .service-header:hover {
+    color: var(--clr-bg);
+    background-color: var(--clr-secondary);
+  }
+
+  .service-description i:hover {
+    color: var(--clr-secondary);
+  }
+
+  .contact-btn:hover {
+    color: var(--clr-secondary);
+    background-color: var(--clr-fg);
+  }
+
+  .useful-links li a:hover {
+    color: var(--clr-secondary);
   }
 }
 
