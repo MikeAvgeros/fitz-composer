@@ -243,6 +243,12 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 12. [W3C Validation Services](https://validator.w3.org/)
     - W3C Validation Services were used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
 
+13. [Am I Responsive](http://ami.responsivedesign.is/)
+    - Am I Responsive was used during my testing phase to check the responsiveness of my site.
+
+14. [Techsini Multi Device Mockup Generator](https://techsini.com/multi-mockup/index.php)
+    - Techsini Multi Device Mockup Generator was used during my testing phase to check the responsiveness of my site.
+
 # Testing
 
 ## User Stories
@@ -308,17 +314,19 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
 -   ### Am I Responsive?
 
-    - During the testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font sizing inconsistencies that were not so visible with the Google Development Tools.
+    - During the testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font size and button width inconsistencies that were not so visible with the Google Development Tools.
 
 -   ### Techsini Multi Device Mockup Generator
 
-    - During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive.
+    - During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive. I have also used their screenshot functionality to import a mockup of my site onto this README.
 
 ## Form Validation
 
 -   I made sure to validate my forms and ran suitable tests using different input scenarios. I can confirm that all of them behaved as expected. 
 
 -   I have tested that my required input attributes behaved as expected and warned users to fill the required fields.
+
+-   I have tested that the submitted form is being sent to my email address containing all the information added by the user.
 
 ## HTML Validation
 
