@@ -9,10 +9,10 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem, 1.75rem + 2.95vw, 4.25rem);        
+  --fs-xxl: clamp(2rem, 1.75rem + 2.95vw, 4.2rem);        
   --fs-xl: clamp(1.25rem, 1.25rem + 1.5vw, 2.5rem);  
   --fs-l: clamp(1rem, .9rem + 1vw, 2rem);    
-  --fs-m: clamp(.9rem, .8rem + .75vw, 1.5rem);     
+  --fs-m: clamp(.9rem, .8rem + .9vw, 1.5rem);     
   --fs-s: clamp(.8rem, .7rem + .75vw, 1.25rem); 
   --fs-xs: clamp(.7rem, .7rem + .5vw, 1rem);  
   --ff-primary: 'Raleway', sans-serif;
@@ -306,7 +306,6 @@ body {
 .home-subtitle {
   color: var(--clr-secondary);
   font-size: var(--fs-l);
-  padding-left: .2vw;
 }
 
 /*------------------- HOME QUOTES -------------------*/
