@@ -1,4 +1,4 @@
-![Multi Device Website Mockup](https://www.dropbox.com/s/9tnkymlkiigu9t2/MS1%20-%20Fitz%20Website%20-%20Multi%20Device%20Mockup%20Generator.png?raw=1)
+![Multi Device Website Mockup](https://www.dropbox.com/s/x8u15yvm8b4ni0l/MS1_Fitz%20Website_Multi%20Device%20Mockup%20Generator.png?raw=1)
 
 # Introduction
 
