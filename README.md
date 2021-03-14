@@ -191,7 +191,9 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 -   Interactive elements
 
--   Animated image carousel
+-   Animated image slider
+
+-   Direct emails from contact form
 
 # Technologies Used
 
@@ -398,9 +400,15 @@ I have used the following images from [Unsplash](https://unsplash.com/)
 
     - I then customized the code and adapted it to my needs.
 
--   ### Carousel
+-   ### Landing Page Overlay
 
-    - I borrowed some code for the image carousel on my Gallery and Company Credits sections after watching this [YouTube video](https://www.youtube.com/watch?v=pGHOaY4dhAA) by [w3newbie](https://www.youtube.com/channel/UCT5mYUgfTseT1axSXiA-ODQ)
+    - I borrowed some code for making an overlay over my hero banner after watching this [YouTube video](https://youtu.be/DZg6UfS5zYg) by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+
+    - I then customized the code and adapted it to my needs.
+
+-   ### Animated Image Slider
+
+    - I borrowed some code for the image slider on my Gallery and Company Credits sections after watching this [YouTube video](https://www.youtube.com/watch?v=pGHOaY4dhAA) by [w3newbie](https://www.youtube.com/channel/UCT5mYUgfTseT1axSXiA-ODQ)
 
     - I then customized the code and adapted it to my needs.
 
