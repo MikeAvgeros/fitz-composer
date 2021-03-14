@@ -647,7 +647,7 @@ body {
   cursor: pointer;
   display: grid;
   place-items: center center;
-  width: 99%;
+  width: 100%;
   justify-self: center;
 }
 
@@ -688,7 +688,7 @@ body {
   height: 0;
   overflow: hidden;
   display: grid;
-  width: 99%;
+  width: 100%;
   justify-self: center;
   padding-top: 10px;
 }
@@ -778,7 +778,7 @@ body {
   display: grid;
   place-items: center center;
   border-radius: 15px;
-  width: 99%;
+  width: 100%;
   justify-self: center;
 }
 
