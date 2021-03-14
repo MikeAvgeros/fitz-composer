@@ -9,12 +9,12 @@
   --clr-fg:  #333333;
   --clr-primary: #d19d24;
   --clr-secondary: #c4c4c4;
-  --fs-xxl: clamp(2rem, 1.75rem + 2.95vw, 4.2rem);        
+  --fs-xxl: clamp(2rem, 2rem + 2vw, 4.2rem);        
   --fs-xl: clamp(1.25rem, 1.25rem + 1.5vw, 2.5rem);  
   --fs-l: clamp(1rem, .9rem + 1vw, 2rem);    
   --fs-m: clamp(.9rem, .8rem + .9vw, 1.5rem);     
-  --fs-s: clamp(.8rem, .7rem + .75vw, 1.25rem); 
-  --fs-xs: clamp(.7rem, .7rem + .5vw, 1rem);  
+  --fs-s: clamp(.8rem, .7rem + .8vw, 1.25rem); 
+  --fs-xs: clamp(.7rem, .6rem + .7vw, 1rem);  
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Lato', sans-serif;
 }
@@ -293,7 +293,7 @@ body {
 }
 
 .home-title, .home-subtitle {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   -webkit-animation: fadetotop 2s ease-out forwards;
           animation: fadetotop 2s ease-out forwards;
 }
@@ -323,7 +323,7 @@ body {
 .home-quotes blockquote {
   color: var(--clr-primary);
   font-size: var(--fs-m);
-  font-style: italic;
+  letter-spacing: 1px;
 }
 
 #bq1 {
@@ -1161,10 +1161,6 @@ body {
 /*----------------------- MOBILE -----------------------*/
 
 @media (min-width: 425px) {
-  :root {
-    --fs-l: clamp(1rem, .9rem + 1.25vw, 2rem);  
-  }
-
   #about {
     grid: 5rem repeat(3, auto) / 10% 80% 10%;
     grid-template-areas:
@@ -1185,14 +1181,6 @@ body {
     "logo .... menu"
     "list list list"
   ;
-  }
-
-  .home-title, .home-subtitle {
-    letter-spacing: 3px;
-  }
-
-  .home-quotes blockquote {
-    letter-spacing: 2px;
   }
   
   .home-btn {
@@ -1266,6 +1254,7 @@ body {
 
   .home-btn {
     padding-bottom: 2vh;
+    width: calc(17rem + 5vw);
   }
 
   .home-btn a {
@@ -1305,7 +1294,7 @@ body {
 
   .home-header {
     place-self: center start;
-    padding-left: 8px;
+    padding-left: 10px;
   }
 
   .home-title, .home-subtitle {
@@ -1404,7 +1393,7 @@ body {
   }
 
   .home-btn {
-    width: calc(18rem + 5vw);
+    width: calc(19rem + 5vw);
   }
 
   .home-btn a {
