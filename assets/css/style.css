@@ -1293,7 +1293,7 @@ body {
 
 /*----------------------- LAPTOP -----------------------*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   #home {
     grid: 5rem repeat(3, auto)/ 5% 90% 5%;
     grid-template-areas:
