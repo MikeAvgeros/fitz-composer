@@ -11,19 +11,19 @@ The idea is to create a one-page scrolling site which quickly and effectively sh
 You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 # Table of Contents:
-- [User Experience](#user-experience)
+-   [User Experience](#user-experience)
 
-- [Features](#features)
+-   [Features](#features)
 
-- [Technologies Used](#technologies-used)
+-   [Technologies Used](#technologies-used)
 
-- [Testing](#testing)
+-   [Testing](#testing)
 
-- [Deployment](#deployment)
+-   [Deployment](#deployment)
 
-- [Credits](#credits)
+-   [Credits](#credits)
 
-- [Acknowledgements](#acknowledgements)
+-   [Acknowledgements](#acknowledgements)
 
 # User Experience
 
@@ -31,39 +31,39 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 -   ### Target Audience
 
-    - Music Artists
+    -   Music Artists
 
-    - Music Producers
+    -   Music Producers
 
-    - Film Directors
+    -   Film Directors
 
-    - Media Companies
+    -   Media Companies
 
 -   ### User's Objectives & Goals
 
     -   #### First Time User's Goals
 
-        - As a First Time User, I want to identify if the site's owner will be suitable for my project.
+        -   As a First Time User, I want to identify if the site's owner will be suitable for my project.
 
-        - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
+        -   As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
 
-        - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
+        -   As a First User, I want to be able to quickly and easily contact the site's owner for a project.
 
     -   #### Returning User's Goals
 
-        - As a Returning User, I want to find more information about the different services offered.
+        -   As a Returning User, I want to find more information about the different services offered.
 
-        - As a Returning User, I want to find out about more information about the site owner's skills and experience.
+        -   As a Returning User, I want to find out about more information about the site owner's skills and experience.
 
-        - As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
+        -   As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
 
     -   #### Frequent User's Goals
 
-        - As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
+        -   As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
 
-        - As a Frequent User, I want to check to see up to date photos of the owner working on projects.
+        -   As a Frequent User, I want to check to see up to date photos of the owner working on projects.
 
-        - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
+        -   As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
 
 -   ### Owner's Objectives & Goals
 
@@ -71,68 +71,68 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
     -   #### Owner's Goals
 
-        - As the Owner, I want Users to contact me for a project using the contact form.
+        -   As the Owner, I want Users to contact me for a project using the contact form.
 
-        - As the Owner, I want to present my services and skills in the best of light.
+        -   As the Owner, I want to present my services and skills in the best of light.
 
-        - As the Owner, I want to work on a variety of interesting projects.
+        -   As the Owner, I want to work on a variety of interesting projects.
 
-        - As the Owner, I want Users to connect with me on social media and subscribe to my mailing list.
+        -   As the Owner, I want Users to connect with me on social media and subscribe to my mailing list.
 
 ## Scope Plane
 
 -   ### Home Page
 
-    - Users can see a full screen image of a musician playing the guitar which is the Owner's instrument of choice. They can also view some favourite quotes from the Owner to get a better sense of his personality and ethos.
+    -   Users can see a full screen image of a musician playing the guitar which is the Owner's instrument of choice. They can also view some favourite quotes from the Owner to get a better sense of his personality and ethos.
 
-    - Users can use the navbar to easily and quickly scroll through the site.
+    -   Users can use the navbar to easily and quickly scroll through the site.
 
 -   ### About Page
 
-    - Users can see a brief summary of Owner's biography, experience and who he is. 
+    -   Users can see a brief summary of Owner's biography, experience and who he is. 
 
-    - Users can see a photo of him working in the studio.
+    -   Users can see a photo of him working in the studio.
 
 -   ### Work Page
 
-    - Users can view a selection of the Owner's best work in both film composition and record production. 
+    -   Users can view a selection of the Owner's best work in both film composition and record production. 
 
-    - Users can see list of big companies that the Owner has worked with.
+    -   Users can see list of big companies that the Owner has worked with.
 
-    - Users can see a few 5-star reviews from his clients and colleagues.
+    -   Users can see a few 5-star reviews from his clients and colleagues.
 
 -   ### Services Page
 
-    - Users can view a list of services provided by the Owner.
+    -   Users can view a list of services provided by the Owner.
 
-    - Users can find a short description of what's included in each services as well as the Owner's experience and skill set.
+    -   Users can find a short description of what's included in each services as well as the Owner's experience and skill set.
 
 -   ### Gallery Page
 
-    - Users can view a selection of photos of the Owner in the studio working including some well-known clients.
+    -   Users can view a selection of photos of the Owner in the studio working including some well-known clients.
 
 -   ### Contact Page
 
-    - Users can contact the Onwer using the site's form.
+    -   Users can contact the Onwer using the site's form.
 
-    - Users can opt in to be added to a mailing list to receive offers and news about the Owner.
+    -   Users can opt in to be added to a mailing list to receive offers and news about the Owner.
 
 -   ### Footer
 
-    - Users can access the Owner's social media pages as well as his direct email and phone number if they prefer to not use the form.
+    -   Users can access the Owner's social media pages as well as his direct email and phone number if they prefer to not use the form.
         
 ## Skeleton Plane
 
 -   ### Wireframes
 
-    - I have designed the layout of the website based on a grid system using Adobe XD. I have created low fidelity wireframes to show case my layout.
-        - Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
+    -   I have designed the layout of the website based on a grid system using Adobe XD. I have created low fidelity wireframes to show case my layout.
+        -   Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
 
-        - Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
+        -   Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
 
-        - Wireframe for Tablet - [View](https://www.dropbox.com/s/e38tp54njyoz0rv/MS1_Wireframe%20-%20Tablet.pdf?raw=1)
+        -   Wireframe for Tablet - [View](https://www.dropbox.com/s/e38tp54njyoz0rv/MS1_Wireframe%20-%20Tablet.pdf?raw=1)
         
-        - Wireframe for Mobile - [View](https://www.dropbox.com/s/84xm213iui0xn00/MS1_Wireframe%20-%20Mobile.pdf?raw=1)
+        -   Wireframe for Mobile - [View](https://www.dropbox.com/s/84xm213iui0xn00/MS1_Wireframe%20-%20Mobile.pdf?raw=1)
 
 
 ## Surface Plane
@@ -228,46 +228,46 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 ## Libraries, Tools & Resources
 
 1. [VS Code](https://code.visualstudio.com/)
-    - VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
+    -   VS Code was my IDE of choice for writing the HTML, CSS and JavaScript code.
 
 2. [Google Fonts](https://fonts.google.com/)
-    - Google Fonts was used to import my fonts of choice into CSS for use throughout the website.
+    -   Google Fonts was used to import my fonts of choice into CSS for use throughout the website.
 
 3. [Font Awesome](https://fontawesome.com/)
-    - Font Awesome was used to add icons to the website for aesthetic and UX purposes.
+    -   Font Awesome was used to add icons to the website for aesthetic and UX purposes.
 
 4. [Image Kit](https://imagekit.io/)
-    - Image Kit was used to store, optimize and serve all the site's images using CDN.
+    -   Image Kit was used to store, optimize and serve all the site's images using CDN.
     
 5. [Git](https://git-scm.com/)
-    - Git was used to help me manage and keep track of my source code history.
+    -   Git was used to help me manage and keep track of my source code history.
 
 6. [Sourcetree](https://www.sourcetreeapp.com/)
-    - Sourcetree simplified and visualized my interaction with the Git repository.
+    -   Sourcetree simplified and visualized my interaction with the Git repository.
 
 7. [GitHub](https://github.com/)
-    - GitHub was used to store and manage the Git repository.
+    -   GitHub was used to store and manage the Git repository.
 
 8. [Adobe XD](https://www.adobe.com/uk/products/xd.html)
-    - Adobe XD was used to create the [wireframes](https://www.dropbox.com/sh/47nl19x70nqnbqe/AACs9wpsU86-84pEg55kyMyJa?dl=0) during the design and prototyping process.
+    -   Adobe XD was used to create the [wireframes](https://www.dropbox.com/sh/47nl19x70nqnbqe/AACs9wpsU86-84pEg55kyMyJa?dl=0) during the design and prototyping process.
 
 9. [CDNJS](https://cdnjs.com/)
-    - CDNJS was used to quickly import library files in my HTML document.
+    -   CDNJS was used to quickly import library files in my HTML document.
 
 10. [Squoosh](https://squoosh.app/)
-    - Squoosh was used to convert, compress and resize my images.
+    -   Squoosh was used to convert, compress and resize my images.
 
 11. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
-    - Chrome DevTools helped me debug issues that I've had during development. In addition, by using the inspection mode I could see how responsive my site was.
+    -   Chrome DevTools helped me debug issues that I've had during development. In addition, by using the inspection mode I could see how responsive my site was.
 
 12. [W3C Validation Services](https://validator.w3.org/)
-    - W3C Validation Services were used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
+    -   W3C Validation Services were used to help me check if my HTML and CSS adheres to the standards. More details in the Testing section.
 
 13. [Am I Responsive](http://ami.responsivedesign.is/)
-    - Am I Responsive was used during my testing phase to check the responsiveness of my site.
+    -   Am I Responsive was used during my testing phase to check the responsiveness of my site.
 
 14. [Techsini Multi Device Mockup Generator](https://techsini.com/multi-mockup/index.php)
-    - Techsini Multi Device Mockup Generator was used during my testing phase to check the responsiveness of my site.
+    -   Techsini Multi Device Mockup Generator was used during my testing phase to check the responsiveness of my site.
 
 # Testing
 
@@ -275,36 +275,36 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 -   ### First Time User's Goals
 
-    - As a First Time User, I want to identify if the site's owner will be suitable for my project.
-        - This has been achieved by showing a selection of the owners best work in a variety of projects as well as a list of companies the owner has worked with.
+    -   As a First Time User, I want to identify if the site's owner will be suitable for my project.
+        -   This has been achieved by showing a selection of the owners best work in a variety of projects as well as a list of companies the owner has worked with.
 
-    - As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
-        - This has been achieved by creating a navigation menu to quickly take you to all the sections of the site as well as a 'hot' button in the landing page to immediately take to both the portfolio of the owner.
+    -   As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
+        -   This has been achieved by creating a navigation menu to quickly take you to all the sections of the site as well as a 'hot' button in the landing page to immediately take to both the portfolio of the owner.
         
-    - As a First User, I want to be able to quickly and easily contact the site's owner for a project.
-        - This has been achieved by adding a contact me page and a section in the navigation menu as well as a 'hot' button in the landing page to quickly take you there.
+    -   As a First User, I want to be able to quickly and easily contact the site's owner for a project.
+        -   This has been achieved by adding a contact me page and a section in the navigation menu as well as a 'hot' button in the landing page to quickly take you there.
 
 -   ### Returning User's Goals
 
-    - As a Returning User, I want to find more information about the different services offered.
-        - This has been achieved by adding a services page with detailed descriptions and images of each service provided by the owner.
+    -   As a Returning User, I want to find more information about the different services offered.
+        -   This has been achieved by adding a services page with detailed descriptions and images of each service provided by the owner.
 
-    - As a Returning User, I want to find out about more information about the site owner's skills and experience.
-        - This has been achieved by adding a bio page with a lot of information on the owner's skills and experience. Users can also visit the work section to hear a selection of his best work.
+    -   As a Returning User, I want to find out about more information about the site owner's skills and experience.
+        -   This has been achieved by adding a bio page with a lot of information on the owner's skills and experience. Users can also visit the work section to hear a selection of his best work.
 
-    - As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
-        - This has been achieved by adding a reviews section with testimonials from happy clients and colleagues.
+    -   As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
+        -   This has been achieved by adding a reviews section with testimonials from happy clients and colleagues.
 
 -   ### Frequent User's Goals
 
-    - As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
-        - This has been achieved by adding a subscribe to mailing list checkbox when contacting the owner.
+    -   As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
+        -   This has been achieved by adding a subscribe to mailing list checkbox when contacting the owner.
 
-    - As a Frequent User, I want to check to see up to date photos of the owner working on projects.
-        - This has been achieved by adding a gallery page with a carouself showing up to date photos of the owner working in the studio.
+    -   As a Frequent User, I want to check to see up to date photos of the owner working on projects.
+        -   This has been achieved by adding a gallery page with a carouself showing up to date photos of the owner working in the studio.
 
-    - As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
-        - This has been achieved by adding a useful links section with the owner's social media and soundbetter profile in the footer of the page.
+    -   As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
+        -   This has been achieved by adding a useful links section with the owner's social media and soundbetter profile in the footer of the page.
 
 ## Browser Compatibility
 
@@ -320,25 +320,27 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
     Throughout the development process, I have been consistently checking if all my pages work well in different screen sizes and devices. 
 
-    - This has helped me adjust the values on my font size variables so that my fonts are responsive and work well with all screen sizes.
+    -   This has helped me adjust the values on my font size variables so that my fonts are responsive and work well with all screen sizes.
 
-    - This has helped me adjust the grid column parameters in my work, reviews and services sections so that all the nested elements respond and adapt to the screen size of the viewport.
+    -   This has helped me adjust the grid column parameters in my work, reviews and services sections so that all the nested elements respond and adapt to the screen size of the viewport.
 
-    - This has helped me adjust the width and height of my gallery page.
+    -   This has helped me adjust the width and height of my gallery page.
 
-    - This has helped me adjust the width and height of my buttons as their size is responsive depending on the screen width.
+    -   This has helped me adjust the width and height of my buttons as their size is responsive depending on the screen width.
 
-    - Overall, most of the elements on the website are responsive based on the screen size so being able to view how the site adapts depending on the screen has helped me make suitable decisions, which have improved the UX of the site.
+    -   Overall, most of the elements on the website are responsive based on the screen size so being able to view how the site adapts depending on the screen has helped me make suitable decisions, which have improved the UX of the site.
 
-    - During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports have showed me better practices and fixes on my HTML and CSS syntax, which in turn helped boost the performance, accessibility and UX of the site.
+    -   During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports have showed me better practices and fixes on my HTML and CSS syntax, which in turn helped boost the performance, accessibility and UX of the site.
 
 -   ### Am I Responsive?
 
-    - During the testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some font size and button width inconsistencies that were not so visible with the Google Development Tools.
+    -   During the testing phase, I ran further tests on my site's responsiveness using the Am I Responsive website. This has helped me identify some size-related inconsistencies that were not so visible with the Google Development Tools.
 
 -   ### Techsini Multi Device Mockup Generator
 
-    - During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive. I have also used their screenshot functionality to import a mockup of my site onto this README.
+    -   During my testing phase, I also ran further tests on my site's responsiveness using the Multi Device Website Mockup Generator on Techsini. I then compared my findings with the mockups from Am I Responsive. 
+    
+    -   I have also used their screenshot functionality to import a mockup of my site onto this README.
 
 ## Form Validation
 
@@ -396,7 +398,7 @@ The Github repository was cloned and stored locally on my machine using the foll
 
 1.  I cloned my [Github Repository](https://github.com/MikeAvgeros/fitz-composer) using HTTPS, under "Clone with HTTPS", and copied the link.
 
-2.  I opened [Sourcetree](https://www.sourcetreeapp.com/), opened a new tab and clicked on the Clone icon. I pasted the HTTPS link and added a local directory in my machine.
+2.  I opened [SourceTree](https://www.sourcetreeapp.com/), opened a new tab and clicked on the Clone icon. I pasted the HTTPS link and added a local directory in my machine.
 
 3.  I opened [VS Code](https://code.visualstudio.com/), clicked on File/Open File and navigated to the local directory I had cloned my Github repository.
 
@@ -406,46 +408,46 @@ The Github repository was cloned and stored locally on my machine using the foll
 
 I have used the following images from [Unsplash](https://unsplash.com/)
 
-- [Jefferson Santos](https://unsplash.com/photos/fCEJGBzAkrU)
+-   [Jefferson Santos](https://unsplash.com/photos/fCEJGBzAkrU)
 
-- [Augusto Oazi](https://unsplash.com/photos/KWOcA8_Vu10)
+-   [Augusto Oazi](https://unsplash.com/photos/KWOcA8_Vu10)
 
-- [Samuel Sianipar](https://unsplash.com/photos/4TNd3hsW3PM)
+-   [Samuel Sianipar](https://unsplash.com/photos/4TNd3hsW3PM)
 
-- [Steve Harvey](https://unsplash.com/photos/l0V2dqXW_mI)
+-   [Steve Harvey](https://unsplash.com/photos/l0V2dqXW_mI)
 
-- [Lorenzo Spoleti](https://unsplash.com/photos/MlhJNEUQpBs)
+-   [Lorenzo Spoleti](https://unsplash.com/photos/MlhJNEUQpBs)
 
-- [Caught In Joy](https://unsplash.com/photos/ptVBlniJi50)
+-   [Caught In Joy](https://unsplash.com/photos/ptVBlniJi50)
 
-- [Jacek Dylag](https://unsplash.com/photos/xPugU5J5ePc)
+-   [Jacek Dylag](https://unsplash.com/photos/xPugU5J5ePc)
 
 ## Code
 
 -   ### Hamburger Menu
 
-    - I borrowed some code for my Hamburger Menu after watching this [YouTube video](https://www.youtube.com/watch?v=sjrp1FEHnyA) by [FollowAndrew](https://www.youtube.com/channel/UCETveVX7TPauIupxYz6sFtA)
+    -   I borrowed some code for my Hamburger Menu after watching this [YouTube video](https://www.youtube.com/watch?v=sjrp1FEHnyA) by [FollowAndrew](https://www.youtube.com/channel/UCETveVX7TPauIupxYz6sFtA)
 
-    - I then customized the code and adapted it to my needs.
+    -   I then customized the code and adapted it to my needs.
 
 -   ### Landing Page Overlay
 
-    - I borrowed some code for making an overlay over my hero banner after watching this [YouTube video](https://youtu.be/DZg6UfS5zYg) by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+    -   I borrowed some code for making an overlay over my hero banner after watching this [YouTube video](https://youtu.be/DZg6UfS5zYg) by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 
-    - I then customized the code and adapted it to my needs.
+    -   I then customized the code and adapted it to my needs.
 
 -   ### Animated Image Slider
 
-    - I borrowed some code for the image slider on my Gallery and Company Credits sections after watching this [YouTube video](https://www.youtube.com/watch?v=pGHOaY4dhAA) by [w3newbie](https://www.youtube.com/channel/UCT5mYUgfTseT1axSXiA-ODQ)
+    -   I borrowed some code for the image slider on my Gallery and Company Credits sections after watching this [YouTube video](https://www.youtube.com/watch?v=pGHOaY4dhAA) by [w3newbie](https://www.youtube.com/channel/UCT5mYUgfTseT1axSXiA-ODQ)
 
-    - I then customized the code and adapted it to my needs.
+    -   I then customized the code and adapted it to my needs.
 
 # Acknowledgements
 
-- I would like to thank [Stuart Crang](https://www.linkedin.com/in/stuart-crang-50401897/) for helping me enrol on this course and guiding me on my first couple of weeks.
+-   I would like to thank [Stuart Crang](https://www.linkedin.com/in/stuart-crang-50401897/) for helping me enrol on this course and guiding me on my first couple of weeks.
 
-- I would like to thank my mentor, [Narender Singh](https://linkedin.com/in/nar3nd3r) for his support, guidance and design ideas.
+-   I would like to thank my mentor, [Narender Singh](https://linkedin.com/in/nar3nd3r) for his support, guidance and design ideas.
 
-- I would like to thank the [Code Institute](https://codeinstitute.net/) for the well-thought-out curriculum and their amazing and super informative and helpful Slack community!
+-   I would like to thank the [Code Institute](https://codeinstitute.net/) for the well-thought-out curriculum and their amazing and super informative and helpful Slack community!
 
-- I would like to thank everyone at the Full Stack Developers WhatsApp group for their helpful input during my testing phase.
+-   I would like to thank everyone at the Full Stack Developers WhatsApp group for their helpful input during my testing phase.
