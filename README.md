@@ -187,13 +187,33 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 # Features
 
--   Responsive on all device sizes
+## Existing features
 
--   Interactive elements
+-   Responsive on all device sizes using media queries
 
--   Animated image slider
+-   Interactive and clickable elements on all pages
 
--   Direct emails from contact form
+-   Alt Attributes and Aria-labels in order to improve accessibility
+
+-   HTML Metadata in order to improve SEO
+
+-   Brand Logo and Navigation Bar
+
+-   Embedded audio and video for quick access to portfolio
+
+-   Testimonials section
+
+-   Animated Image Slider
+
+-   Direct emails from contact form using EmailJS
+
+-   Footer with useful links
+
+## Future Features
+
+-   Animated Popup on form submission
+
+-   Improved interactivity / animations on all clickable elements
 
 # Technologies Used
 
