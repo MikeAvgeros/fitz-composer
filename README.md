@@ -6,7 +6,7 @@ This is my First Milestone Project - User Centric Frontend Development - for the
 
 I have created a portfolio website for a film composer / record producer under the alias 'F!tz'.
 
-The idea is to create a one-page scrolling site which quickly and effectively showcases the owner's work and skill set with a simple and easy to use navigation.
+The idea is to create a one-page scrolling site which quickly and effectively showcases the Owner's work and skill set with a simple and easy to use navigation and interactive elements.
 
 You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
@@ -37,7 +37,11 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
     -   Film Directors
 
+    -   Film Producers
+
     -   Media Companies
+
+    -   Content Creators
 
 -   ### User's Objectives & Goals
 
@@ -268,6 +272,9 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 14. [Techsini Multi Device Mockup Generator](https://techsini.com/multi-mockup/index.php)
     -   Techsini Multi Device Mockup Generator was used during my testing phase to check the responsiveness of my site.
+
+15. [CSS Minifier](https://cssminifier.com/)
+    -   CSS Minifier was used to minify my CSS file in order to improve loading speed and performance.
 
 # Testing
 
