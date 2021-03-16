@@ -47,23 +47,23 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
         -   As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
 
-        -   As a First User, I want to be able to quickly and easily contact the site's owner for a project.
+        -   As a First User, I want to be able to quickly and easily contact the site's Owner for a project.
 
     -   #### Returning User's Goals
 
         -   As a Returning User, I want to find more information about the different services offered.
 
-        -   As a Returning User, I want to find out about more information about the site owner's skills and experience.
+        -   As a Returning User, I want to find out about more information about the site Owner's skills and experience.
 
-        -   As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
+        -   As a Returning User, I want to find out what previous clients and co-workers think of the site's Owner.
 
     -   #### Frequent User's Goals
 
-        -   As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
+        -   As a Frequent User, I want to be able to keep up to date with the Owner's news and find out if he offers any special deals.
 
-        -   As a Frequent User, I want to check to see up to date photos of the owner working on projects.
+        -   As a Frequent User, I want to check to see up to date photos of the Owner working on projects.
 
-        -   As a Frequent User, I want to have a section where I can follow the owner's social media and other relevant websites.
+        -   As a Frequent User, I want to have a section where I can follow the Owner's social media and other relevant websites.
 
 -   ### Owner's Objectives & Goals
 
@@ -275,7 +275,7 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 -   ### First Time User's Goals
 
-    -   As a First Time User, I want to identify if the site's owner will be suitable for my project.
+    -   As a First Time User, I want to identify if the site's Owner will be suitable for my project.
         -   This has been achieved by showing a selection of the owners best work in a variety of projects as well as a list of companies the owner has worked with.
 
     -   As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
@@ -318,7 +318,7 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
 -   ### Google Development Tools
 
-    Throughout the development process, I have been consistently checking if all my pages work well on different screen sizes and devices. 
+    Throughout the development process, I have been consistently testing that all my pages work well on different screen sizes and devices. 
 
     -   This has helped me adjust the values on my font size variables so that my fonts are responsive and work well with all screen sizes.
 
@@ -360,7 +360,7 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
 ## Further Testing
 
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, and a variety of Android and iOs mobile phones.
+-   The website was viewed and tested on a variety of devices such as Desktop, Laptop, iPad, and a variety of Android and iOs mobile phones.
 
 -   A large amount of testing was done to ensure that all pages were linking correctly including the site's navigation menu.
 
