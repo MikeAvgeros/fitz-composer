@@ -63,7 +63,7 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
         -   As a Frequent User, I want to check to see up to date photos of the owner working on projects.
 
-        -   As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
+        -   As a Frequent User, I want to have a section where I can follow the owner's social media and other relevant websites.
 
 -   ### Owner's Objectives & Goals
 
@@ -89,9 +89,9 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 -   ### About Page
 
-    -   Users can see a brief summary of Owner's biography, experience and who he is. 
+    -   Users can see a brief summary of Owner's biography, experience and skill set. 
 
-    -   Users can see a photo of him working in the studio.
+    -   Users can see a photo of the Owner working in the studio.
 
 -   ### Work Page
 
@@ -99,13 +99,13 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
     -   Users can see list of big companies that the Owner has worked with.
 
-    -   Users can see a few 5-star reviews from his clients and colleagues.
+    -   Users can see a selection of reviews from the Owner's clients and colleagues.
 
 -   ### Services Page
 
     -   Users can view a list of services provided by the Owner.
 
-    -   Users can find a short description of what's included in each services as well as the Owner's experience and skill set.
+    -   Users can find a short description of what's included in each service as well as the Owner's experience and skill set.
 
 -   ### Gallery Page
 
@@ -113,19 +113,19 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 -   ### Contact Page
 
-    -   Users can contact the Onwer using the site's form.
+    -   Users can contact the Owner using the site's contact form.
 
-    -   Users can opt in to be added to a mailing list to receive offers and news about the Owner.
+    -   Users can opt in to be added to a mailing list to receive offers and news about the Owner and his services.
 
 -   ### Footer
 
-    -   Users can access the Owner's social media pages as well as his direct email and phone number if they prefer to not use the form.
+    -   Users can access the Owner's social media pages as well as his direct email and phone number if they prefer to not use the contact form.
         
 ## Skeleton Plane
 
 -   ### Wireframes
 
-    -   I have designed the layout of the website based on a grid system using Adobe XD. I have created low fidelity wireframes to show case my layout.
+    -   I have designed the layout of the website based on a grid system using Adobe XD. I have created low fidelity wireframes for a variety of device sizes to showcase my layout.
         -   Wireframe for Desktop - [View](https://www.dropbox.com/s/y8ng46qqz3mv6fl/MS1_Wireframe%20-%20Desktop.pdf?raw=1)
 
         -   Wireframe for Laptop - [View](https://www.dropbox.com/s/xc8nmqrn9o70c3h/MS1_Wireframe%20-%20Laptop.pdf?raw=1)
@@ -141,49 +141,49 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
     -   The main colours used are charcoal, yellow, off-white and gray.
 
-    -   Charcoal is used for the background as I felt made the website look 'cooler'. 
+    -   Charcoal is used for the background as it was requested by the site Owner. 
 
-    -   Gray is used for foreground elements as it creates an contrast with charcoal. 
+    -   Gray is used on foreground elements as it creates a nice contrast with charcoal. 
 
-    -   Yellow is used for all the titles and headings.
+    -   Yellow is used for all of the titles and headings as it adds emphasis in contrast witht the charcoal.
 
-    -   Off-white is used for main text and subtitles.
+    -   Off-white is used for main text and subtitles as it makes it easily readable.
 
 -   ### Typography
 
-    -   I have used google fonts to import the fonts for the website.
+    -   I have used [Google Fonts](https://fonts.google.com/) to import the fonts for the website.
 
-    -   The fonts used are Raleway and Lato and the weight is 400 (Regular).
+    -   The fonts that I imported are Raleway and Lato and the weight is 400 (Regular).
 
     -   The Raleway font is used for the headings of each page/section.
 
     -   The Lato font is used for paragraphs and descriptions.
 
-    -   Sans Serif is used as the fallback font for both font options in case they aren't being imported into the site correctly.
+    -   Sans Serif is used as the fallback font in case Raleway or Lato aren't being imported into the site correctly.
 
-    -   I am using fluid font sizes that grow together with the viewport width. This is achieved by using the clamp attribute and for the min and desired values, I am using a combination of rem units with the viewport width unit.
+    -   I am using fluid font sizes that grow together with the viewport width. This is achieved by using the clamp attribute and setting a fixed min and max size and a fluid desired size with the help of the viewport width unit (vw).
 
-    -   I have created 5 font sizes that are being shared by all the text elements in the site depending on their importance.
+    -   I have created 5 font sizes from XL to XS that are being shared by all the text elements in the site depending on their importance.
 
 -   ### Images
 
-    -   Most of the images were provided by the site's owner.
+    -   Most of the images were provided by the site's Owner.
 
-    -   I have used unsplash to source some additional images for the website. You can find more information on the Credit section.
+    -   I have used [Unsplash](https://unsplash.com/) to source some additional images for the landing page and services section. You can find more information on the Credit section.
     
 -   ### Icons
 
-    -   I have used fontawesome to source all the icons used on the website.
+    -   I have used [fontawesome](https://fontawesome.com/) to source all the icons used thoughout the website.
 
 -   ### Structure & Layout
 
-    -   Due to the simplicity and nature of the project, I decided to create a single-page scrolling website as it created a smoother user-experience with an easier and effective navigation.
+    -   Due to the simplicity and nature of the project, I decided to create a single-page scrolling website as it created a smoother user-experience with an easier and more effective navigation.
 
     -   CSS grid was used to structure the website as it allowed me to easily place all the elements in the page and make them fully responsive without the use of bootstrap.
 
-    -   I originally created a 16-column grid, which works similar to bootstrap but since the project is simple without too many elements, I decided to use the grid-template-areas attribute which is based on my wireframes. 
+    -   I originally created a 16-column grid, which works similar to Bootstrap but since the project is simple without too many elements, I decided to use the grid-template-areas attribute which is based on my wireframes' layout. 
 
-    -   The Work and Services pages fully take advantage of grid's autofit functionality.
+    -   The Work and Services pages fully take advantage of the grid's autofit functionality as the containers are being added into the same row depending on the available size of the viewport width.
 
 # Features
 
@@ -281,7 +281,7 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
     -   As a First Time User, I want to be able to quickly and easily navigate the site to find suitable content.
         -   This has been achieved by creating a navigation menu to quickly take you to all the sections of the site as well as a 'hot' button in the landing page to immediately take to both the portfolio of the owner.
         
-    -   As a First User, I want to be able to quickly and easily contact the site's owner for a project.
+    -   As a First User, I want to be able to quickly and easily contact the site's Owner for a project.
         -   This has been achieved by adding a contact me page and a section in the navigation menu as well as a 'hot' button in the landing page to quickly take you there.
 
 -   ### Returning User's Goals
@@ -289,21 +289,21 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
     -   As a Returning User, I want to find more information about the different services offered.
         -   This has been achieved by adding a services page with detailed descriptions and images of each service provided by the owner.
 
-    -   As a Returning User, I want to find out about more information about the site owner's skills and experience.
+    -   As a Returning User, I want to find out about more information about the site Owner's skills and experience.
         -   This has been achieved by adding a bio page with a lot of information on the owner's skills and experience. Users can also visit the work section to hear a selection of his best work.
 
-    -   As a Returning User, I want to find out what previous clients and co-workers think of the site's owner.
+    -   As a Returning User, I want to find out what previous clients and co-workers think of the site's Owner.
         -   This has been achieved by adding a reviews section with testimonials from happy clients and colleagues.
 
 -   ### Frequent User's Goals
 
-    -   As a Frequent User, I want to be able to keep up to date with the owner's news and find out if he offers any special deals.
+    -   As a Frequent User, I want to be able to keep up to date with the Owner's news and find out if he offers any special deals.
         -   This has been achieved by adding a subscribe to mailing list checkbox when contacting the owner.
 
-    -   As a Frequent User, I want to check to see up to date photos of the owner working on projects.
+    -   As a Frequent User, I want to check to see up to date photos of the Owner working on projects.
         -   This has been achieved by adding a gallery page with a carouself showing up to date photos of the owner working in the studio.
 
-    -   As a Frequent User, I want to have a section where I can follow the owner's social media and other websites.
+    -   As a Frequent User, I want to have a section where I can follow the Owner's social media and other relevant websites.
         -   This has been achieved by adding a useful links section with the owner's social media and soundbetter profile in the footer of the page.
 
 ## Browser Compatibility
@@ -318,19 +318,19 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
 -   ### Google Development Tools
 
-    Throughout the development process, I have been consistently checking if all my pages work well in different screen sizes and devices. 
+    Throughout the development process, I have been consistently checking if all my pages work well on different screen sizes and devices. 
 
     -   This has helped me adjust the values on my font size variables so that my fonts are responsive and work well with all screen sizes.
 
     -   This has helped me adjust the grid column parameters in my work, reviews and services sections so that all the nested elements respond and adapt to the screen size of the viewport.
 
-    -   This has helped me adjust the width and height of my gallery page.
+    -   This has helped me adjust the width and height of all my images.
 
     -   This has helped me adjust the width and height of my buttons as their size is responsive depending on the screen width.
 
     -   Overall, most of the elements on the website are responsive based on the screen size so being able to view how the site adapts depending on the screen has helped me make suitable decisions, which have improved the UX of the site.
 
-    -   During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports have showed me better practices and fixes on my HTML and CSS syntax, which in turn helped boost the performance, accessibility and UX of the site.
+    -   During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports showed better practices and syntantical fixes on my HTML and CSS, which in turn helped boost the performance, accessibility and UX of the site.
 
 -   ### Am I Responsive?
 
@@ -451,3 +451,4 @@ I have used the following images from [Unsplash](https://unsplash.com/)
 -   I would like to thank the [Code Institute](https://codeinstitute.net/) for the well-thought-out curriculum and their amazing and super informative and helpful Slack community!
 
 -   I would like to thank everyone at the Full Stack Developers WhatsApp group for their helpful input during my testing phase.
+
