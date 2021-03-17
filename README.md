@@ -215,9 +215,11 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 
 ## Future Features
 
--   Animated Popup on form submission
+-   Animated notification popup on form submission
 
--   Improved interactivity / animations on all clickable elements
+-   Improved animations and effects on interactive elements
+
+-   Improved accessibility controls
 
 # Technologies Used
 
@@ -342,9 +344,9 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
     -   During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports showed better practices and syntantical fixes on my HTML and CSS, which in turn helped boost the performance, accessibility and UX of the site. You can view the final results below.
 
-    -   [Desktop](https://www.dropbox.com/s/1kfc7x9ooq3h8bx/Lighthouse_DesktopTest.png?raw=1)
+        -   [Desktop](https://www.dropbox.com/s/1kfc7x9ooq3h8bx/Lighthouse_DesktopTest.png?raw=1)
 
-    -   [Mobile](https://www.dropbox.com/s/6o8wcft348t2lzn/Lighthouse_MobileTest.png?raw=1)
+        -   [Mobile](https://www.dropbox.com/s/6o8wcft348t2lzn/Lighthouse_MobileTest.png?raw=1)
 
 -   ### Am I Responsive?
 
@@ -378,7 +380,9 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
 ## Accessibility
 
-The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was used to test the accessibility of my website. It identified missing ARIA-related attributes (especially in my navigation menu icon) that helped me improve the accessibility of the site for Users with disabilities.
+The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was used to test the accessibility of my website. It identified missing ARIA-related attributes (especially in my navigation menu icon) that helped me improve the accessibility of the site for Users with disabilities. The final results, which you can view below indicate 1 error with my navigation manu label, which I couldn't fix.
+
+-   [WAVE Results](https://www.dropbox.com/s/ugi4zh5u1hc1t13/WAVE%20Accessibility%20Evaluation%20Test.png?raw)
 
 ## Further Testing
 
@@ -473,4 +477,3 @@ I have used the following images from [Unsplash](https://unsplash.com/)
 -   I would like to thank the [Code Institute](https://codeinstitute.net/) for the well-thought-out curriculum and their amazing and super informative and helpful Slack community!
 
 -   I would like to thank everyone at the Full Stack Developers WhatsApp group for their helpful input during my testing phase.
-
