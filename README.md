@@ -276,6 +276,9 @@ You can view the live site [here](https://mikeavgeros.github.io/fitz-composer/)
 15. [CSS Minifier](https://cssminifier.com/)
     -   CSS Minifier was used to minify my CSS file in order to improve loading speed and performance.
 
+16. [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+    -   WAVE Accessibility Evaluation Tool was used to help me make my content more accessible to Users with disabilities.
+
 # Testing
 
 ## User Stories
@@ -364,6 +367,10 @@ The [W3C Markup Validator](https://validator.w3.org/#validate_by_upload) was use
 ## CSS Validation
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload) was used to validate every page of the website to ensure there were no syntax errors in my CSS. It displayed a few warnings in regards to my root variables being an unknown vendor extension as well as some of the vendor prefixes, however this was not a cause for concern.
+
+## Accessibility
+
+The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was used to test the accessibility of my website. It identified missing ARIA-related attributes (especially in my navigation menu icon) that helped me improve the accessibility of the site for Users with disabilities.
 
 ## Further Testing
 
