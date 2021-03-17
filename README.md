@@ -340,7 +340,11 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
     -   Overall, most of the elements on the website are responsive based on the screen size so being able to view how the site adapts depending on the screen has helped me make suitable decisions, which have improved the UX of the site.
 
-    -   During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports showed better practices and syntantical fixes on my HTML and CSS, which in turn helped boost the performance, accessibility and UX of the site.
+    -   During the testing phase, I have used Lighthouse to generate reports for both Desktop and Mobile. The reports showed better practices and syntantical fixes on my HTML and CSS, which in turn helped boost the performance, accessibility and UX of the site. You can view the final results below.
+
+    -   [Desktop](https://www.dropbox.com/s/1kfc7x9ooq3h8bx/Lighthouse_DesktopTest.png?raw=1)
+
+    -   [Mobile](https://www.dropbox.com/s/6o8wcft348t2lzn/Lighthouse_MobileTest.png?raw=1)
 
 -   ### Am I Responsive?
 
@@ -362,11 +366,15 @@ Since I haven't used Bootstrap, I have been constantly testing how responsive my
 
 ## HTML Validation
 
-The [W3C Markup Validator](https://validator.w3.org/#validate_by_upload) was used to validate every page of the website to ensure there were no syntax errors in my HTML. Although it returned no errors, it displayed a few warnings - 'Section lacks heading', however, the mentioned sections had suitable headings within child divs.
+The [W3C Markup Validator](https://validator.w3.org/#validate_by_upload) was used to validate every page of the website to ensure there were no syntax errors in my HTML. Although it returned no errors, it displayed a few warnings - 'Section lacks heading', however, the mentioned sections had suitable headings within child divs so I decided to filter them.
+
+-   [HTML Validation Results](https://www.dropbox.com/s/6kc3h5fgvi6n6sp/HTML%20Validation%20Test.png?raw=1)
 
 ## CSS Validation
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload) was used to validate every page of the website to ensure there were no syntax errors in my CSS. It displayed a few warnings in regards to my root variables being an unknown vendor extension as well as some of the vendor prefixes, however this was not a cause for concern.
+
+-   [CSS Validation Results](https://www.dropbox.com/s/ckk56nbksjec56b/CSS%20Validation%20Test.png?raw=1)
 
 ## Accessibility
 
